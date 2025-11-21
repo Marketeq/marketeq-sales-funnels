@@ -676,7 +676,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="mt-[50px] grid grid-cols-3 gap-x-[50px]">
+        <div className="mt-[50px] grid grid-cols-3 gap-x-5">
           <article className="rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
             <div className="border-primary-500 inline-flex h-11 shrink-0 items-center justify-center rounded-full border-[1.66px] px-[18px]">
               <Lightning01 className="text-primary-500 size-5" />{" "}
