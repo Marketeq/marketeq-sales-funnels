@@ -57,32 +57,6 @@ const Referrizer = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => {
   )
 }
 
-const Marketeq = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => {
-  return (
-    <svg
-      className={cn("h-[22px] w-[150px]", className)}
-      viewBox="0 0 150 22"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
-      <path
-        d="M33.826 21.968c-1.4 0-2.636-.731-3.994-1.624a5.16 5.16 0 0 0-5.603-.049C22.854 21.107 21.496 22 19.903 22h-.501a4.94 4.94 0 0 1-3.21-1.226 4.97 4.97 0 0 1-1.641-3.028l-.025-.699c.012-.853.234-1.69.647-2.435l1.94-3.41 1.213 2.135-1.374 2.338a2.81 2.81 0 0 0 1.04 3.8c.421.244.9.372 1.386.373h.573c2.078-.04 3.412-2.435 7.043-2.435 3.492 0 4.85 2.476 6.791 2.476a2.42 2.42 0 0 0 2.157-1.185 2.44 2.44 0 0 0 .018-2.469L28.756 3.53a2.81 2.81 0 0 0-2.425-1.401 2.8 2.8 0 0 0-2.426 1.401l-2.91 5.042-1.213-2.127 2.247-3.962a4.9 4.9 0 0 1 1.8-1.817 4.9 4.9 0 0 1 6.73 1.817l7.204 12.674a4.57 4.57 0 0 1-.017 4.543 4.55 4.55 0 0 1-1.658 1.66 4.5 4.5 0 0 1-2.262.608"
-        fill="#306cfe"
-      />
-      <path
-        opacity={0.5}
-        d="M23.462 15.573c-.138-.325-7.35-12.99-7.398-13.064a4.9 4.9 0 0 0-1.8-1.816 4.9 4.9 0 0 0-6.73 1.816L.62 14.615a4.93 4.93 0 0 0 .05 4.877 4.9 4.9 0 0 0 1.784 1.777 4.9 4.9 0 0 0 2.427.653h.51c1.616 0 2.95-.885 4.325-1.705a5.27 5.27 0 0 1 4.042-.593 6.3 6.3 0 0 1-.566-2.257 7.43 7.43 0 0 0-4.495.982c-6.169 3.589-7.277-.876-6.274-2.72L9.329 3.451a2.81 2.81 0 0 1 2.425-1.402 2.8 2.8 0 0 1 2.426 1.402l4.85 8.5.745 1.316c1.447 2.582 1.94 3.183 1.94 3.938q.042.26 0 .52a12.4 12.4 0 0 1 2.086-1.105 4.5 4.5 0 0 0-.34-1.047"
-        fill="#306cfe"
-      />
-      <path
-        d="M70.75 9.037a.572.572 0 0 1 .364-.773 14 14 0 0 1 1.822-.373q1.401-.22 2.932-.22 1.326 0 2.218.26.892.241 1.402.703.536.461.74 1.104.23.642.229 1.445 0 .882-.076 1.786-.076.882-.102 1.746 0 .863.076 1.686.031.337.105.66c.095.421-.2.865-.631.865h-1.381a.6.6 0 0 1-.562-.385l-.36-.93a.11.11 0 0 0-.187-.03q-.507.597-1.395 1.044-.892.441-2.32.441-.892 0-1.606-.2a4 4 0 0 1-1.224-.603 2.95 2.95 0 0 1-.79-.923 2.6 2.6 0 0 1-.28-1.204q0-.923.509-1.545.535-.643 1.504-1.024.994-.4 2.346-.542 1.377-.16 3.06-.1.177-1.124-.204-1.605-.383-.502-1.709-.502-.994 0-2.116.16-.708.104-1.255.25a.65.65 0 0 1-.774-.367zm3.97 6.882q.995 0 1.581-.341.587-.361.867-.763v-1.304a12 12 0 0 0-1.53-.02q-.713.039-1.275.18-.56.141-.892.402a.81.81 0 0 0-.331.662q0 .562.407.883.434.3 1.173.3m15.671-6.252c-.062.35-.412.566-.762.505a4.6 4.6 0 0 0-.781-.072q-.893 0-1.505.381-.538.33-.753.848a.5.5 0 0 0-.037.198v5.778c0 .332-.27.602-.602.602h-2.11a.6.6 0 0 1-.602-.602v-8.83c0-.333.27-.603.602-.603h1.52c.268 0 .504.178.578.435l.257.89c.29-.495.782-.877 1.275-1.144q.739-.402 1.734-.402.441 0 .963.099a.57.57 0 0 1 .444.669zm6.174 4.327a.6.6 0 0 0-.482-.242h-.591v3.553c0 .332-.27.602-.602.602h-2.11a.6.6 0 0 1-.603-.602V5.434c0-.256.163-.484.405-.568l2.11-.732c.392-.135.8.155.8.57v7.442c.498-.183.931-.51 1.244-.94l2.29-3.148a.46.46 0 0 1 .369-.187h2.159c.505 0 .786.585.47.979l-2.886 3.597.713.783 2.737 3.717a.602.602 0 0 1-.485.959h-2.307a.6.6 0 0 1-.482-.242zm17.707 2.539c.181.281.098.658-.206.799q-.645.3-1.556.535-1.3.32-2.779.32-3.085 0-4.513-1.404-1.428-1.425-1.427-3.894 0-2.649 1.606-3.973 1.606-1.325 4.513-1.325a8.8 8.8 0 0 1 1.886.2 4.9 4.9 0 0 1 1.632.663 3.4 3.4 0 0 1 1.147 1.244q.434.783.434 1.947 0 .422-.077.903c-.063.596-.599 1.004-1.198 1.004h-6.629q.076 1.264.816 1.906.765.642 2.448.642 1.044 0 1.861-.24.427-.133.75-.266c.301-.124.665-.038.841.236zm-4.413-6.855q-1.3 0-1.938.623-.612.601-.739 1.625h4.194c.31 0 .579-.238.557-.547q-.051-.693-.443-1.119-.51-.582-1.631-.582m6.165-1.204c0-.332.27-.602.602-.602h1.157V6.423c0-.261.169-.493.417-.573l2.111-.682a.602.602 0 0 1 .787.573v2.13h2.508c.333 0 .602.27.602.602v1.004a.6.6 0 0 1-.602.602h-2.508v3.853q0 1.043.255 1.505.28.442 1.02.442a4 4 0 0 0 1.101-.136c.334-.085.688.092.785.423l.252.864a.57.57 0 0 1-.371.712 12 12 0 0 1-1.079.264q-.918.18-1.861.18-1.76 0-2.601-.702-.816-.723-.816-2.348V10.08h-1.157a.6.6 0 0 1-.602-.602zm19.96 8.059c.181.281.098.658-.206.799q-.645.3-1.556.535-1.3.32-2.779.32-3.085 0-4.513-1.404-1.428-1.425-1.428-3.894 0-2.649 1.606-3.973 1.607-1.325 4.513-1.325a8.8 8.8 0 0 1 1.887.2 4.9 4.9 0 0 1 1.632.663 3.4 3.4 0 0 1 1.147 1.244q.434.783.434 1.947 0 .422-.077.903c-.063.596-.6 1.004-1.198 1.004h-6.629q.077 1.264.816 1.906.764.642 2.447.642 1.046 0 1.861-.24a9 9 0 0 0 .751-.266c.301-.124.664-.038.84.236zm-4.414-6.855q-1.3 0-1.937.623-.612.601-.74 1.625h4.194c.311 0 .58-.238.557-.547q-.05-.693-.442-1.119-.51-.582-1.632-.582m18.152 10.809a.6.6 0 0 1-.431.577l-2.11.627a.602.602 0 0 1-.774-.578v-4.07c-.289.348-.782.63-1.274.844q-.74.3-1.913.3-2.37.001-3.646-1.264-1.25-1.264-1.249-3.833 0-2.689 1.708-4.074 1.734-1.385 4.947-1.385.687 0 1.376.06.689.04 1.301.141.638.08 1.173.2.243.047.449.092a.57.57 0 0 1 .443.566zm-5.609-4.507q.97 0 1.478-.341.492-.314.769-.915a.54.54 0 0 0 .047-.228V10.1a2.8 2.8 0 0 0-.867-.2 9 9 0 0 0-1.096-.061q-1.352 0-2.04.803-.662.803-.662 2.348 0 1.465.611 2.227.612.763 1.76.763M64.168 8.816l-4.535 6.252a.6.6 0 0 1-.487.249h-.513a.6.6 0 0 1-.482-.242L53.595 8.98l-.006 8.324c0 .332-.27.602-.602.602h-2.11a.6.6 0 0 1-.603-.602V4.459c0-.332.27-.602.602-.602h2.287c.188 0 .365.088.48.238l5.397 7.094a.1.1 0 0 0 .163-.003L64.27 4.11a.6.6 0 0 1 .49-.252h2.25c.332 0 .602.27.602.602v12.845c0 .332-.27.602-.602.602h-2.286a.6.6 0 0 1-.602-.606z"
-        fill="#22376b"
-      />
-    </svg>
-  )
-}
-
 const Quote = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
@@ -524,11 +498,11 @@ const ChartBreakoutCircle = ({
 export default function Home() {
   return (
     <main className="relative isolate bg-white">
-      <header className="bg-dark-blue-600 sticky top-0 z-10 h-16 px-[150px] py-3">
-        <nav className="flex items-center justify-between">
-          <MarketeqWhite className="shrink-0" />
+      <header className="bg-dark-blue-600 sticky top-0 z-10 h-14 px-[100px] py-3 md:h-16 2xl:px-[150px]">
+        <nav className="lg-sm:px-0 flex items-center justify-between px-5">
+          <MarketeqWhite className="max-lg-sm:h-[17.04px] max-lg-sm:w-[116px] shrink-0" />
 
-          <div className="inline-flex gap-x-[50px] pt-[3px]">
+          <div className="lg-sm:inline-flex hidden gap-x-[50px] pt-[3px]">
             <span className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline">
               Problem
             </span>
@@ -549,39 +523,46 @@ export default function Home() {
             </span>
           </div>
 
-          <button className="bg-primary-500 inline-flex h-10 shrink-0 items-center justify-center gap-x-3 rounded-lg px-5 text-sm font-semibold whitespace-nowrap text-white focus-visible:outline-none">
+          <button
+            data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
+            data-embed-type="popup"
+            className="bg-primary-500 inline-flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-lg px-3 text-xs leading-5 font-semibold whitespace-nowrap text-white focus-visible:outline-none md:h-10 md:px-5 md:text-sm"
+          >
             Book a Call
           </button>
         </nav>
       </header>
       <div className="bg-dark-blue-600 relative">
-        <div className="px-[300px] py-[100px]">
+        <div className="lg-sm:px-[200px] lg-sm:py-[100px] px-[100px] pt-5 pb-10 xl:px-[275px] 2xl:px-[300px]">
           <div className="mx-auto max-w-[1040px]">
             <div className="flex items-center justify-center">
-              <div className="border-primary-500 flex h-11 shrink-0 items-center gap-x-[8.32px] rounded-full border-[1.66px] px-5 py-3">
-                <Lightning01 className="text-primary-500" />
-                <span className="text-base leading-5 font-bold text-white">
+              <div className="border-primary-500 lg-sm:h-11 lg-sm:px-5 lg-sm:py-3 flex h-8 shrink-0 items-center gap-x-[8.32px] rounded-full border-[1.66px] px-3 py-1.5">
+                <Lightning01 className="text-primary-500 max-lg-sm:size-3.5" />
+                <span className="lg-sm:text-base lg-sm:leading-5 text-xs leading-5 font-bold text-white">
                   UX/UI That Drives Growth
                 </span>
               </div>
             </div>
 
             <div className="mt-5">
-              <h1 className="text-center text-[80px] leading-none font-extrabold text-white">
-                We design digital products that perform
+              <h1 className="lg-sm:text-[80px] text-center text-[26px] leading-none font-extrabold text-white">
+                <span className="lg-sm:contents block">We design digital</span>{" "}
+                products that perform
               </h1>
 
-              <p className="mt-6 text-center text-lg leading-none text-white">
-                Data-backed UX/UI rooted in user testing, market insight, and
-                clear business outcomes.
-              </p>
+              <div className="lg-sm:max-w-none mx-auto mt-6 max-w-[324px]">
+                <p className="lg-sm:text-lg text-center text-sm leading-none text-white">
+                  Data-backed UX/UI rooted in user testing, market insight, and
+                  clear business outcomes.
+                </p>
+              </div>
 
-              <div className="mt-[50px] flex flex-col items-center gap-y-5">
-                <button className="bg-primary-500 inline-flex h-[70px] shrink-0 items-center justify-center gap-x-3 rounded-xl px-7 text-xl font-semibold whitespace-nowrap text-white focus-visible:outline-none">
+              <div className="lg-sm:mt-[50px] lg-sm:gap-y-5 mt-5 flex flex-col items-center gap-y-2">
+                <button className="bg-primary-500 lg-sm:h-[70px] lg-sm:px-7 lg-sm:gap-x-3 lg-sm:text-xl inline-flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-4 text-sm font-semibold whitespace-nowrap text-white focus-visible:outline-none">
                   Book a Strategy Call <ArrowRight className="size-[22px]" />
                 </button>
 
-                <p className="text-center text-sm leading-none text-white">
+                <p className="lg-sm:text-sm text-center text-[10px] leading-none text-white">
                   Talk to an expert ux designer
                 </p>
               </div>
@@ -589,17 +570,17 @@ export default function Home() {
           </div>
         </div>
 
-        <ChartAsIllustration className="absolute right-0 bottom-0" />
+        <ChartAsIllustration className="lg-sm:block absolute right-0 bottom-0 hidden" />
       </div>
 
-      <div className="bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-[300px] py-[100px]">
-        <div className="mx-auto max-w-[630px]">
-          <h1 className="text-dark-blue-400 text-center text-[54px] leading-none font-bold">
+      <div className="lg-sm:py-[100px] lg-sm:px-[150px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-[100px] py-[50px] 2xl:px-[300px]">
+        <div className="lg-sm:max-w-[630px] mx-auto max-w-[259px]">
+          <h1 className="text-dark-blue-400 lg-sm:text-[54px] text-center text-[22px] leading-none font-bold">
             What our clients have to say about us
           </h1>
         </div>
 
-        <div className="mt-[50px] grid grid-cols-2 gap-x-[75px]">
+        <div className="lg-sm:mt-[50px] lg-sm:gap-x-[75px] mt-[30px] grid grid-cols-2 gap-x-9">
           <div className="relative">
             <div className="relative size-full overflow-hidden rounded-[28px]">
               <Image
@@ -610,19 +591,19 @@ export default function Home() {
                 fill
               />
             </div>
-            <div className="border-primary-500 absolute -bottom-[30px] -left-[30px] h-[264.93px] w-[261px] rounded-tl-[28px] rounded-tr-[200px] rounded-br-[28px] rounded-bl-[48px] border-2" />
+            <div className="border-primary-500 lg-sm:h-[264.93px] lg-sm:w-[261px] absolute -bottom-[30px] -left-[30px] h-[88.99px] w-[88px] rounded-tl-[28px] rounded-tr-[200px] rounded-br-[28px] rounded-bl-[48px] border-2" />
           </div>
-          <div className="px-6 py-[100px]">
-            <div className="flex items-center gap-x-1">
-              <Star className="text-warning-500 size-[26px] shrink-0" />
-              <Star className="text-warning-500 size-[26px] shrink-0" />
-              <Star className="text-warning-500 size-[26px] shrink-0" />
-              <Star className="text-warning-500 size-[26px] shrink-0" />
-              <Star className="text-warning-500 size-[26px] shrink-0" />
+          <div className="lg-sm:px-6 lg-sm:py-[100px] px-6">
+            <div className="lg-sm:gap-x-1 flex items-center gap-x-[2.79px]">
+              <Star className="text-warning-500 lg-sm:size-[26px] size-[18.16px] shrink-0" />
+              <Star className="text-warning-500 lg-sm:size-[26px] size-[18.16px] shrink-0" />
+              <Star className="text-warning-500 lg-sm:size-[26px] size-[18.16px] shrink-0" />
+              <Star className="text-warning-500 lg-sm:size-[26px] size-[18.16px] shrink-0" />
+              <Star className="text-warning-500 lg-sm:size-[26px] size-[18.16px] shrink-0" />
             </div>
 
-            <div className="mt-5">
-              <span className="text-lg leading-[1.6] text-gray-500">
+            <div className="lg-sm:mt-5 mt-3">
+              <span className="lg-sm:text-lg lg-sm:leading-[1.6] text-sm text-gray-500">
                 Mauris sapien eget sem est facilisi suspendisse nisl mauris
                 proin. Vulputate at non pharetra lobortis etiam auctor dui. Eget
                 consequat viverra massa tellus. Nec rhoncus nunc lacus lobortis
@@ -633,9 +614,9 @@ export default function Home() {
             </div>
 
             <div className="mt-5">
-              <div className="flex items-center justify-between">
-                <div className="inline-flex items-center gap-x-3">
-                  <div className="relative size-[76px] shrink-0 overflow-hidden rounded-full">
+              <div className="lg-sm:flex-row lg-sm:justify-between flex flex-col items-center gap-3">
+                <div className="max-lg-sm:self-stretch inline-flex items-center gap-x-3">
+                  <div className="lg-sm:size-[76px] relative size-[52px] shrink-0 overflow-hidden rounded-full">
                     <Image
                       className="object-cover"
                       src="/avatar-01.jpg"
@@ -645,117 +626,117 @@ export default function Home() {
                     />
                   </div>
 
-                  <div className="space-y-1">
-                    <h2 className="text-dark-blue-400 text-[22px] leading-none font-bold">
+                  <div className="lg-sm:space-y-1">
+                    <h2 className="text-dark-blue-400 lg-sm:text-[22px] text-base leading-none font-bold">
                       Andre Cvijovic
                     </h2>
-                    <p className="text-base leading-[1.6] text-gray-500">
+                    <p className="lg-sm:text-base text-sm leading-[1.6] text-gray-500">
                       Andre Cvijovic
                     </p>
                   </div>
                 </div>
 
-                <Referrizer className="shrink-0" />
+                <Referrizer className="max-lg-sm:w-[95px] max-lg-sm:h-[19px] shrink-0" />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="px-[300px] py-[100px]">
-        <span className="bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-base leading-none font-semibold text-transparent uppercase">
+      <div className="lg-sm:py-[100px] lg-sm:px-[150px] px-[100px] py-[50px] 2xl:px-[300px]">
+        <span className="lg-sm:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-[10px] leading-none font-semibold text-transparent uppercase">
           The Problem
         </span>
-        <h1 className="text-dark-blue-400 mt-5 text-[52px] leading-none font-bold">
+        <h1 className="text-dark-blue-400 lg-sm:text-[52px] mt-5 text-[22px] leading-none font-bold">
           Why “looks good” isn’t good enough.
         </h1>
-        <div className="mt-5 max-w-[806px]">
-          <p className="text-lg leading-[1.6] text-gray-500">
+        <div className="lg-sm:max-w-[806px] mt-5 max-w-[629px]">
+          <p className="lg-sm:text-lg text-sm leading-[1.6] text-gray-500">
             Pretty interfaces don’t fix drop-offs, confusing flows, or weak
             onboarding. We pair high quality design with market research and
             user testing to remove friction and boost conversions.
           </p>
         </div>
 
-        <div className="mt-[50px] grid grid-cols-3 gap-x-5">
-          <article className="rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
-            <div className="border-primary-500 inline-flex h-11 shrink-0 items-center justify-center rounded-full border-[1.66px] px-[18px]">
+        <div className="lg-sm:mt-[50px] lg-sm:gap-x-5 mt-[30px] grid grid-cols-3 gap-x-3.5">
+          <article className="lg-sm:rounded-[25px] lg-sm:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <div className="border-primary-500 lg-sm:h-11 lg-sm:border-[1.66px] lg-sm:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center rounded-full border-[1.2px] px-[13px]">
               <Lightning01 className="text-primary-500 size-5" />{" "}
-              <span className="text-dark-blue-400 text-sm font-bold">
+              <span className="text-dark-blue-400 lg-sm:text-sm text-[14.4px] font-bold">
                 Problem 1
               </span>
             </div>
 
-            <div className="mt-[50px]">
-              <h2 className="text-dark-blue-400 text-[22px] leading-none font-bold">
+            <div className="lg-sm:mt-[50px] mt-[30px]">
+              <h2 className="text-dark-blue-400 lg-sm:text-[22px] text-lg leading-none font-bold">
                 Low Sign-up Completion
               </h2>
 
-              <p className="mt-5 text-base leading-[1.6] text-gray-500">
+              <p className="lg-sm:mt-5 mt-3 text-base leading-[1.6] text-gray-500">
                 Users drop off before finishing onboarding. We streamline flows
                 through tested UX patterns.
               </p>
 
-              <div className="mt-[26px] flex items-center gap-x-3 border-t-2 border-gray-200 pt-7">
-                <h1 className="text-dark-blue-400 text-[40px] leading-none font-black">
+              <div className="lg-sm:mt-[26px] lg-sm:flex-row lg-sm:items-center lg-sm:gap-x-3 lg-sm:pt-7 mt-[30px] flex flex-col items-start gap-y-1 border-t-2 border-gray-200 pt-5 xl:mt-[50px]">
+                <h1 className="text-dark-blue-400 lg-sm:text-[40px] text-[30px] leading-none font-black">
                   +32%
                 </h1>
-                <span className="text-dark-blue-400 text-lg leading-none font-semibold">
+                <span className="text-dark-blue-400 lg-sm:text-lg text-sm leading-none font-semibold">
                   Improved signup completion rate
                 </span>
               </div>
             </div>
           </article>
-          <article className="rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
-            <div className="border-primary-500 inline-flex h-11 shrink-0 items-center justify-center rounded-full border-[1.66px] px-[18px]">
+          <article className="lg-sm:rounded-[25px] lg-sm:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <div className="border-primary-500 lg-sm:h-11 lg-sm:border-[1.66px] lg-sm:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center rounded-full border-[1.2px] px-[13px]">
               <Lightning01 className="text-primary-500 size-5" />{" "}
-              <span className="text-dark-blue-400 text-sm font-bold">
+              <span className="text-dark-blue-400 lg-sm:text-sm text-[14.4px] font-bold">
                 Problem 2
               </span>
             </div>
 
-            <div className="mt-[50px]">
-              <h2 className="text-dark-blue-400 text-[22px] leading-none font-bold">
+            <div className="lg-sm:mt-[50px] mt-[30px]">
+              <h2 className="text-dark-blue-400 lg-sm:text-[22px] text-lg leading-none font-bold">
                 High Support Requests
               </h2>
 
-              <p className="mt-5 text-base leading-[1.6] text-gray-500">
+              <p className="lg-sm:mt-5 mt-3 text-base leading-[1.6] text-gray-500">
                 Users can’t find answers quickly. We simplify navigation and
                 create clarity.
               </p>
 
-              <div className="mt-[26px] flex items-center gap-x-3 border-t-2 border-gray-200 pt-7">
-                <h1 className="text-dark-blue-400 text-[40px] leading-none font-black">
+              <div className="lg-sm:mt-[26px] lg-sm:flex-row lg-sm:items-center lg-sm:gap-x-3 lg-sm:pt-7 mt-[30px] flex flex-col items-start gap-y-1 border-t-2 border-gray-200 pt-5 xl:mt-[50px]">
+                <h1 className="text-dark-blue-400 lg-sm:text-[40px] text-[30px] leading-none font-black">
                   -40%
                 </h1>
-                <span className="text-dark-blue-400 text-lg leading-none font-semibold">
+                <span className="text-dark-blue-400 lg-sm:text-lg text-sm leading-none font-semibold">
                   Reduction of support tickets
                 </span>
               </div>
             </div>
           </article>
-          <article className="rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
-            <div className="border-primary-500 inline-flex h-11 shrink-0 items-center justify-center rounded-full border-[1.66px] px-[18px]">
+          <article className="lg-sm:rounded-[25px] lg-sm:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <div className="border-primary-500 lg-sm:h-11 lg-sm:border-[1.66px] lg-sm:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center rounded-full border-[1.2px] px-[13px]">
               <Lightning01 className="text-primary-500 size-5" />{" "}
-              <span className="text-dark-blue-400 text-sm font-bold">
+              <span className="text-dark-blue-400 lg-sm:text-sm text-[14.4px] font-bold">
                 Problem 3
               </span>
             </div>
 
-            <div className="mt-[50px]">
-              <h2 className="text-dark-blue-400 text-[22px] leading-none font-bold">
+            <div className="lg-sm:mt-[50px] mt-[30px]">
+              <h2 className="text-dark-blue-400 lg-sm:text-[22px] text-lg leading-none font-bold">
                 Outdated Visuals
               </h2>
 
-              <p className="mt-5 text-base leading-[1.6] text-gray-500">
+              <p className="lg-sm:mt-5 mt-3 text-base leading-[1.6] text-gray-500">
                 Interfaces feel dated next to competitors. We modernize visuals
                 backed by competitive market research.
               </p>
 
-              <div className="mt-[26px] flex items-center gap-x-3 border-t-2 border-gray-200 pt-7">
-                <h1 className="text-dark-blue-400 text-[40px] leading-none font-black">
+              <div className="lg-sm:mt-[26px] lg-sm:flex-row lg-sm:items-center lg-sm:gap-x-3 lg-sm:pt-7 mt-[30px] flex flex-col items-start gap-y-1 border-t-2 border-gray-200 pt-5 xl:mt-[50px]">
+                <h1 className="text-dark-blue-400 lg-sm:text-[40px] text-[30px] leading-none font-black">
                   +18%
                 </h1>
-                <span className="text-dark-blue-400 text-lg leading-none font-semibold">
+                <span className="text-dark-blue-400 lg-sm:text-lg text-sm leading-none font-semibold">
                   Increased brand perception among users
                 </span>
               </div>
@@ -764,103 +745,103 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-[300px] py-[100px]">
+      <div className="lg-sm:py-[100px] lg-sm:px-[150px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-[100px] py-[50px] 2xl:px-[300px]">
         <div className="flex items-center justify-center">
-          <span className="bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-base leading-none font-semibold text-transparent uppercase">
+          <span className="lg-sm:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-xs leading-none font-semibold text-transparent uppercase">
             How we’re different
           </span>
         </div>
-        <h1 className="text-dark-blue-400 mt-5 text-center text-[52px] leading-none font-bold">
+        <h1 className="text-dark-blue-400 lg-sm:mt-5 lg-sm:text-[52px] mt-3 text-center text-[22px] leading-none font-bold">
           Why Choose Marketeq?
         </h1>
 
-        <div className="mt-[50px] grid grid-cols-3 gap-5">
-          <article className="rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+        <div className="lg-sm:mt-[50px] lg-sm:gap-5 mt-[30px] grid grid-cols-3 gap-3.5">
+          <article className="lg-sm:rounded-[25px] lg-sm:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <RefreshCw className="size-[29px]" />
             </div>
 
-            <div className="mt-[50px]">
-              <h3 className="text-dark-blue-400 text-[22px] leading-none font-bold">
+            <div className="lg-sm:mt-[50px] mt-[30px]">
+              <h3 className="text-dark-blue-400 lg-sm:text-[22px] text-lg leading-none font-bold">
                 Higher conversion & activation
               </h3>
-              <p className="mt-2.5 text-base leading-[1.6] text-gray-500">
+              <p className="lg-sm:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
                 Every design decision is tested and refined to boost engagement,
                 streamline flows, and drive measurable growth.
               </p>
             </div>
           </article>
-          <article className="rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="lg-sm:rounded-[25px] lg-sm:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <FaceContent className="size-[29px]" />
             </div>
 
-            <div className="mt-[50px]">
-              <h3 className="text-dark-blue-400 text-[22px] leading-none font-bold">
+            <div className="lg-sm:mt-[50px] mt-[30px]">
+              <h3 className="text-dark-blue-400 lg-sm:text-[22px] text-lg leading-none font-bold">
                 Faster paths to “Aha!” moments
               </h3>
-              <p className="mt-2.5 text-base leading-[1.6] text-gray-500">
+              <p className="lg-sm:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
                 We reduce friction so users reach success faster, turning first
                 impressions into lasting engagement and retention.
               </p>
             </div>
           </article>
-          <article className="rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="lg-sm:rounded-[25px] lg-sm:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <Dataflow03 className="size-[29px]" />
             </div>
 
-            <div className="mt-[50px]">
-              <h3 className="text-dark-blue-400 text-[22px] leading-none font-bold">
+            <div className="lg-sm:mt-[50px] mt-[30px]">
+              <h3 className="text-dark-blue-400 lg-sm:text-[22px] text-lg leading-none font-bold">
                 Clearer flows = fewer support tickets
               </h3>
-              <p className="mt-2.5 text-base leading-[1.6] text-gray-500">
+              <p className="lg-sm:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
                 Simplified interfaces help users navigate solutions quickly,
                 lowering confusion and reducing support overhead across
                 products.
               </p>
             </div>
           </article>
-          <article className="rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="lg-sm:rounded-[25px] lg-sm:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <Container className="size-[29px]" />
             </div>
 
-            <div className="mt-[50px]">
-              <h3 className="text-dark-blue-400 text-[22px] leading-none font-bold">
+            <div className="lg-sm:mt-[50px] mt-[30px]">
+              <h3 className="text-dark-blue-400 lg-sm:text-[22px] text-lg leading-none font-bold">
                 Consistent, dev-ready design system
               </h3>
-              <p className="mt-2.5 text-base leading-[1.6] text-gray-500">
+              <p className="lg-sm:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
                 Reusable components and clean documentation ensure seamless
                 developer handoff and consistent product experiences.
               </p>
             </div>
           </article>
-          <article className="rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="lg-sm:rounded-[25px] lg-sm:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <Beaker02 className="size-[29px]" />
             </div>
 
-            <div className="mt-[50px]">
-              <h3 className="text-dark-blue-400 text-[22px] leading-none font-bold">
+            <div className="lg-sm:mt-[50px] mt-[30px]">
+              <h3 className="text-dark-blue-400 lg-sm:text-[22px] text-lg leading-none font-bold">
                 Insight from user testing (not guesswork)
               </h3>
-              <p className="mt-2.5 text-base leading-[1.6] text-gray-500">
+              <p className="lg-sm:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
                 Real feedback guides every iteration, our designs evolve through
                 measurable user data, not assumptions or opinions.
               </p>
             </div>
           </article>
-          <article className="rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="lg-sm:rounded-[25px] lg-sm:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <ChartBreakoutCircle className="size-[29px]" />
             </div>
 
-            <div className="mt-[50px]">
-              <h3 className="text-dark-blue-400 text-[22px] leading-none font-bold">
+            <div className="lg-sm:mt-[50px] mt-[30px]">
+              <h3 className="text-dark-blue-400 lg-sm:text-[22px] text-lg leading-none font-bold">
                 Designed with awareness of your market
               </h3>
-              <p className="mt-2.5 text-base leading-[1.6] text-gray-500">
+              <p className="lg-sm:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
                 We heavily analyze your competitors to create experiences that
                 feel familiar yet distinctly ahead of the curve.
               </p>
@@ -868,8 +849,8 @@ export default function Home() {
           </article>
         </div>
 
-        <div className="mt-[75px] flex items-center justify-center">
-          <button className="bg-primary-500 inline-flex h-[52px] shrink-0 items-center justify-center gap-x-3 rounded-xl px-6 text-base leading-7 font-semibold whitespace-nowrap text-white focus-visible:outline-none">
+        <div className="lg-sm:mt-[75px] mt-[30px] flex items-center justify-center">
+          <button className="bg-primary-500 lg-sm:h-[52px] lg-sm:px-6 lg-sm:text-base inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-3.5 text-xs leading-7 font-semibold whitespace-nowrap text-white focus-visible:outline-none">
             Book a Strategy Call
           </button>
         </div>
@@ -879,7 +860,7 @@ export default function Home() {
         <ChartAsSection />
       </div>
 
-      <div className="px-[300px] py-[100px]">
+      <div className="lg-sm:py-[100px] lg-sm:px-[150px] px-[100px] py-[50px] 2xl:px-[300px]">
         <div className="flex items-center justify-center">
           <span className="bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-base leading-none font-semibold text-transparent uppercase">
             What we offer
@@ -898,7 +879,7 @@ export default function Home() {
 
         <div className="mt-[50px] grid gap-y-5">
           <div className="grid min-h-[475px] grid-cols-4 gap-5">
-            <article className="col-span-2 flex flex-col gap-y-[50px] rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="lg-sm:rounded-[25px] lg-sm:p-7 col-span-2 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
                   User Research & Insights
@@ -921,7 +902,7 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="flex flex-col gap-y-[50px] rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
                   UX Strategy & Product Roadmapping
@@ -943,7 +924,7 @@ export default function Home() {
                 />
               </div>
             </article>
-            <article className="flex flex-col gap-y-[50px] rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
                   User Journey Mapping
@@ -968,7 +949,7 @@ export default function Home() {
           </div>
 
           <div className="grid min-h-[847px] grid-cols-3 gap-5">
-            <article className="flex flex-col gap-y-[50px] rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
                   Information Architecture
@@ -992,7 +973,7 @@ export default function Home() {
             </article>
 
             <div className="grid grid-rows-2 gap-y-5">
-              <article className="flex flex-col gap-y-[50px] rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+              <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
                 <div className="space-y-2.5">
                   <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
                     Wireframing & Prototyping
@@ -1014,7 +995,7 @@ export default function Home() {
                   />
                 </div>
               </article>
-              <article className="flex flex-col gap-y-[50px] rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+              <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
                 <div className="space-y-2.5">
                   <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
                     Visual Design & Brand Integration
@@ -1038,7 +1019,7 @@ export default function Home() {
               </article>
             </div>
 
-            <article className="flex flex-col gap-y-[50px] rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
                   Interaction Design & UI Animations
@@ -1063,7 +1044,7 @@ export default function Home() {
           </div>
 
           <div className="grid min-h-[475px] grid-cols-4 gap-5">
-            <article className="flex flex-col gap-y-[50px] rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
                   Design Systems & Component Libraries
@@ -1085,7 +1066,7 @@ export default function Home() {
                 />
               </div>
             </article>
-            <article className="flex flex-col gap-y-[50px] rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
                   Usability & A/B Testing
@@ -1108,7 +1089,7 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="col-span-2 flex flex-col gap-y-[50px] rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="lg-sm:rounded-[25px] lg-sm:p-7 col-span-2 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
                   Accessibility & Inclusive Design
@@ -1133,7 +1114,7 @@ export default function Home() {
           </div>
 
           <div className="grid min-h-[501px] grid-cols-3 gap-5">
-            <article className="flex flex-col gap-y-[50px] rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
                   Market & Competitive Research
@@ -1156,7 +1137,7 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="flex flex-col gap-y-[50px] rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
                   Innovation & Feature Strategy
@@ -1179,7 +1160,7 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="flex flex-col gap-y-[50px] rounded-[25px] border border-gray-200 bg-white p-7 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
                   Product Launch & Growth Support
@@ -1205,7 +1186,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-[300px] py-[100px]">
+      <div className="lg-sm:py-[100px] lg-sm:px-[150px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-[100px] py-[50px] 2xl:px-[300px]">
         <div className="border-primary-100 rounded-[28px] border p-5">
           <div className="border-primary-300 flex items-center justify-between gap-x-[50px] rounded-[25px] border bg-white p-[100px]">
             <div className="max-w-[670px] flex-auto">
@@ -1227,7 +1208,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col items-center gap-y-5 pr-[50px]">
-              <button className="bg-primary-500 inline-flex h-[70px] shrink-0 items-center justify-center gap-x-3 rounded-xl px-7 text-xl font-semibold whitespace-nowrap text-white focus-visible:outline-none">
+              <button className="bg-primary-500 inline-flex h-[70px] shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-7 text-xl font-semibold whitespace-nowrap text-white focus-visible:outline-none">
                 Book a Strategy Call
               </button>
               <div className="max-w-[136px] flex-1">
@@ -1240,7 +1221,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex gap-x-[50px] px-[300px] py-[100px]">
+      <div className="lg-sm:py-[100px] lg-sm:px-[150px] flex gap-x-[50px] px-[100px] py-[50px] 2xl:px-[300px]">
         <div className="max-w-[595px] flex-auto">
           <div className="flex items-center">
             <span className="bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-base leading-none font-semibold text-transparent uppercase">
@@ -1249,7 +1230,7 @@ export default function Home() {
           </div>
           <div className="mx-auto mt-5 max-w-[964px]">
             <h1 className="text-dark-blue-400 text-[62px] leading-none font-bold">
-              Our Process
+              We Don’t Guess. We Engineer.
             </h1>
           </div>
           <p className="text-dark-blue-400 mt-5 text-[45px] leading-none">
@@ -1258,8 +1239,12 @@ export default function Home() {
             entire markets.
           </p>
 
-          <button className="bg-primary-500 mt-8 inline-flex h-[52px] shrink-0 items-center justify-center gap-x-3 rounded-xl px-6 text-base leading-7 font-semibold whitespace-nowrap text-white focus-visible:outline-none">
-            Book a Strategy Call
+          <button
+            data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
+            data-embed-type="popup"
+            className="bg-primary-500 mt-8 inline-flex h-[52px] shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-6 text-base leading-7 font-semibold whitespace-nowrap text-white focus-visible:outline-none"
+          >
+            Book a Call
           </button>
         </div>
         <div className="flex-auto">
@@ -1396,7 +1381,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-dark-blue-600 border border-gray-200 px-[300px] py-[100px]">
+      <div className="bg-dark-blue-600 lg-sm:py-[100px] lg-sm:px-[150px] border border-gray-200 px-[100px] py-[50px] 2xl:px-[300px]">
         <div className="space-y-5">
           <div className="flex items-center justify-center">
             <span className="text-base leading-none font-semibold text-white uppercase">
@@ -1459,7 +1444,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="px-[300px] py-[100px]">
+      <div className="lg-sm:py-[100px] lg-sm:px-[150px] px-[100px] py-[50px] 2xl:px-[300px]">
         <div className="grid grid-cols-2 gap-x-[75px]">
           <div>
             <div className="flex items-center">
@@ -1522,7 +1507,11 @@ export default function Home() {
             </ul>
 
             <div className="mt-[50px]">
-              <button className="bg-primary-500 inline-flex h-[52px] shrink-0 items-center justify-center gap-x-3 rounded-xl px-6 text-base leading-7 font-semibold whitespace-nowrap text-white focus-visible:outline-none">
+              <button
+                data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
+                data-embed-type="popup"
+                className="bg-primary-500 inline-flex h-[52px] shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-6 text-base leading-7 font-semibold whitespace-nowrap text-white focus-visible:outline-none"
+              >
                 Book a Call
               </button>
             </div>
@@ -1544,7 +1533,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-[300px] py-[100px]">
+      <div className="lg-sm:py-[100px] lg-sm:px-[150px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-[100px] py-[50px] 2xl:px-[300px]">
         <div className="flex items-center justify-center">
           <span className="bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-base leading-none font-semibold text-transparent uppercase">
             Results
@@ -1644,7 +1633,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="px-[300px] pt-[50px] pb-[100px]">
+      <div className="lg-sm:pb-[100px] px-[100px] pt-[50px] pb-[50px] xl:px-[150px] 2xl:px-[300px]">
         <div className="flex items-center justify-center">
           <span className="bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-base leading-none font-semibold text-transparent uppercase">
             Testimonials
@@ -1739,7 +1728,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="px-[450px] py-[100px]">
+      <div className="lg-sm:px-[300px] px-[200px] py-[100px] xl:px-[350px] 2xl:px-[450px]">
         <div className="flex items-center justify-center">
           <span className="bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-base leading-none font-semibold text-transparent uppercase">
             Faq’s
@@ -1895,7 +1884,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="px-[300px] py-[100px]">
+      <div className="lg-sm:py-[100px] lg-sm:px-[150px] px-[100px] py-[50px] 2xl:px-[300px]">
         <div className="border-primary-100 rounded-[28px] border p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
           <div className="relative">
             <div className="bg-dark-blue-600 relative rounded-[28px] border border-gray-200 py-[146px]">
@@ -1920,7 +1909,11 @@ export default function Home() {
 
               <div className="mx-auto mt-[50px] max-w-[461px]">
                 <div className="flex justify-center">
-                  <button className="bg-primary-500 inline-flex h-[70px] shrink-0 items-center justify-center gap-x-3 rounded-xl px-7 text-xl font-semibold whitespace-nowrap text-white focus-visible:outline-none">
+                  <button
+                    data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
+                    data-embed-type="popup"
+                    className="bg-primary-500 inline-flex h-[70px] shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-7 text-xl font-semibold whitespace-nowrap text-white focus-visible:outline-none"
+                  >
                     Book a Call
                   </button>
                 </div>
@@ -1933,57 +1926,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <footer className="px-[300px] pb-[50px]">
-        <div className="flex items-center justify-between py-[50px]">
-          <div className="flex items-center gap-x-[50px]">
-            <Marketeq />
-
-            <span className="text-dark-blue-400 inline-block text-sm leading-none">
-              © 2011 - 2025 Marketeq Digital Inc. All Rights Reserved.
-            </span>
-          </div>
-
-          <div className="flex items-center gap-x-5">
-            <button className="text-dark-blue-400 text-sm font-semibold underline focus-visible:outline-none">
-              Terms of Use
-            </button>
-            <button className="text-dark-blue-400 text-sm font-semibold underline focus-visible:outline-none">
-              Privacy Policy
-            </button>
-          </div>
-        </div>
-
-        <div className="mt-2.5">
-          <span className="text-dark-blue-400 inline-block text-center text-sm leading-none">
-            This site is not a part of Google™ or Meta™, including Facebook™
-            and Instagram™. It is not endorsed by Google™, Meta™, Facebook™,
-            or Instagram™ in any way. All trademarks and brand names mentioned
-            are the property of their respective owners.
-          </span>
-        </div>
-
-        <div className="mt-2.5">
-          <span className="text-dark-blue-400 inline-block text-center text-sm leading-none">
-            DISCLAIMER: The results and performance metrics shared on this page
-            and during our consultations represent the outcomes of our work and,
-            in some cases, those of previous or current clients. Please
-            understand that these results are not typical, and we are not
-            implying that you will achieve the same results (or any results at
-            all). The examples provided are for illustration purposes only. Your
-            results may vary based on numerous factors, including but not
-            limited to your business model, market conditions, background,
-            experience, and dedication. All business initiatives involve risk,
-            along with significant and consistent effort. If you are not ready
-            to accept this, please DO NOT ENGAGE WITH MARKETEQ&apos;S SERVICES.
-            Marketeq Digital is committed to delivering high-quality work in all
-            our projects. However, we do not offer any performance, results, or
-            outcome guarantees. Outcomes can vary widely and depend on numerous
-            factors beyond our control, so no specific return on investment or
-            success is promised.
-          </span>
-        </div>
-      </footer>
     </main>
   )
 }
