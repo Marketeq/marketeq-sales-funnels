@@ -50,27 +50,27 @@ export default function RootLayout({
       <body>
         {children}
 
-        <footer className="px-[300px] pb-[50px]">
-          <div className="flex items-center justify-between py-[50px]">
-            <div className="flex items-center gap-x-[50px]">
-              <Marketeq />
+        <footer className="5xl:px-[300px] 4xl:px-[150px] 3xl:pb-[50px] px-[100px] pb-5">
+          <div className="3xl:py-[50px] flex flex-col items-center justify-between md:flex-row">
+            <div className="3xl:gap-x-[50px] flex flex-col items-center gap-x-10 gap-y-5 md:flex-row">
+              <Marketeq className="max-3xl:w-28 max-3xl:h-[16.46px]" />
 
-              <span className="text-dark-blue-400 inline-block text-sm leading-none">
+              <span className="text-dark-blue-400 3xl:text-sm 3xl:leading-none inline-block text-xs leading-[1.8]">
                 © 2011 - 2025 Marketeq Digital Inc. All Rights Reserved.
               </span>
             </div>
 
             <div className="flex items-center gap-x-5">
-              <button className="text-dark-blue-400 cursor-pointer text-sm font-semibold underline focus-visible:outline-none">
+              <button className="text-dark-blue-400 3xl:text-sm cursor-pointer text-[10px] font-semibold underline focus-visible:outline-none">
                 Terms of Use
               </button>
-              <button className="text-dark-blue-400 cursor-pointer text-sm font-semibold underline focus-visible:outline-none">
+              <button className="text-dark-blue-400 3xl:text-sm cursor-pointer text-[10px] font-semibold underline focus-visible:outline-none">
                 Privacy Policy
               </button>
             </div>
           </div>
 
-          <div className="mt-2.5">
+          <div className="max-3xl:hidden mt-2.5">
             <span className="text-dark-blue-400 inline-block text-center text-sm leading-none">
               This site is not a part of Google™ or Meta™, including
               Facebook™ and Instagram™. It is not endorsed by Google™,
@@ -79,7 +79,7 @@ export default function RootLayout({
             </span>
           </div>
 
-          <div className="mt-2.5">
+          <div className="max-3xl:hidden mt-2.5">
             <span className="text-dark-blue-400 inline-block text-center text-sm leading-none">
               DISCLAIMER: The results and performance metrics shared on this
               page and during our consultations represent the outcomes of our

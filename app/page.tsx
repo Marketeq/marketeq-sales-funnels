@@ -60,14 +60,15 @@ const Referrizer = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => {
 const Quote = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       className={cn("size-[88px]", className)}
+      viewBox="0 0 39 39"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
       <path
-        fill="#306CFE"
-        d="M62.56 71.495c-7.333.194-15.297-5.262-16.584-16.867l-.1-1.147-.003-.022c-.7-12.17 7.788-28.81 26.33-36.81a1.834 1.834 0 0 1 2.314.766l4.07 7.037a1.834 1.834 0 0 1-.69 2.515c-6.27 3.527-11.157 9.06-14.098 15.774 4.364.77 7.499 2.578 9.6 4.987 2.445 2.808 3.318 6.233 3.318 9.229 0 8.118-6.244 14.685-14.153 14.538m-36.667 0c-7.333.194-15.297-5.262-16.584-16.867l-.1-1.147-.003-.022c-.7-12.17 7.788-28.81 26.33-36.81a1.833 1.833 0 0 1 2.314.766l4.07 7.037a1.834 1.834 0 0 1-.69 2.515c-6.27 3.527-11.157 9.06-14.098 15.774 4.364.77 7.499 2.578 9.6 4.987 2.446 2.808 3.318 6.233 3.318 9.229 0 8.118-6.252 14.685-14.157 14.538Z"
+        d="M27.726 31.685c-3.25.086-6.78-2.332-7.35-7.475l-.044-.508-.002-.01C20.02 18.299 23.782 10.924 32 7.379a.813.813 0 0 1 1.025.34l1.803 3.117a.81.81 0 0 1-.305 1.115c-2.779 1.563-4.945 4.016-6.248 6.991 1.934.341 3.323 1.142 4.254 2.21 1.084 1.245 1.47 2.762 1.47 4.09 0 3.598-2.767 6.508-6.272 6.443m-16.25 0c-3.25.086-6.78-2.332-7.35-7.475l-.043-.508-.002-.01c-.31-5.393 3.451-12.768 11.669-16.313a.813.813 0 0 1 1.025.34l1.804 3.117a.814.814 0 0 1-.305 1.115c-2.78 1.563-4.945 4.016-6.248 6.991 1.933.341 3.323 1.142 4.254 2.21 1.084 1.245 1.47 2.762 1.47 4.09 0 3.598-2.77 6.508-6.274 6.443"
+        fill="#306cfe"
       />
     </svg>
   )
@@ -498,11 +499,11 @@ const ChartBreakoutCircle = ({
 export default function Home() {
   return (
     <main className="relative isolate bg-white">
-      <header className="bg-dark-blue-600 sticky top-0 z-10 h-14 px-[100px] py-3 md:h-16 2xl:px-[150px]">
-        <nav className="lg-sm:px-0 flex items-center justify-between px-5">
-          <MarketeqWhite className="max-lg-sm:h-[17.04px] max-lg-sm:w-[116px] shrink-0" />
+      <header className="bg-dark-blue-600 5xl:px-[150px] 3xl:h-16 sticky top-0 z-10 h-14 px-5 py-3 lg:px-[100px]">
+        <nav className="3xl:px-0 flex items-center justify-between lg:px-5">
+          <MarketeqWhite className="max-3xl:h-[17.04px] max-3xl:w-[116px] shrink-0" />
 
-          <div className="lg-sm:inline-flex hidden gap-x-[50px] pt-[3px]">
+          <div className="3xl:inline-flex hidden gap-x-[50px] pt-[3px]">
             <span className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline">
               Problem
             </span>
@@ -526,43 +527,43 @@ export default function Home() {
           <button
             data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
             data-embed-type="popup"
-            className="bg-primary-500 inline-flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-lg px-3 text-xs leading-5 font-semibold whitespace-nowrap text-white focus-visible:outline-none md:h-10 md:px-5 md:text-sm"
+            className="bg-primary-500 3xl:h-10 3xl:px-5 3xl:text-sm inline-flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-lg px-3 text-xs leading-5 font-semibold whitespace-nowrap text-white focus-visible:outline-none"
           >
             Book a Call
           </button>
         </nav>
       </header>
       <div className="bg-dark-blue-600 relative">
-        <div className="lg-sm:px-[200px] lg-sm:py-[100px] px-[100px] pt-5 pb-10 xl:px-[275px] 2xl:px-[300px]">
+        <div className="5xl:px-[300px] 4xl:px-[275px] 3xl:px-[200px] 3xl:py-[100px] px-[30px] pt-5 pb-10 lg:px-[100px]">
           <div className="mx-auto max-w-[1040px]">
             <div className="flex items-center justify-center">
-              <div className="border-primary-500 lg-sm:h-11 lg-sm:px-5 lg-sm:py-3 flex h-8 shrink-0 items-center gap-x-[8.32px] rounded-full border-[1.66px] px-3 py-1.5">
-                <Lightning01 className="text-primary-500 max-lg-sm:size-3.5" />
-                <span className="lg-sm:text-base lg-sm:leading-5 text-xs leading-5 font-bold text-white">
+              <div className="border-primary-500 3xl:h-11 3xl:px-5 3xl:py-3 flex h-8 shrink-0 items-center gap-x-[8.32px] rounded-full border-[1.66px] px-3 py-1.5">
+                <Lightning01 className="text-primary-500 max-3xl:size-3.5" />
+                <span className="3xl:text-base 3xl:leading-5 text-xs leading-5 font-bold text-white">
                   UX/UI That Drives Growth
                 </span>
               </div>
             </div>
 
-            <div className="mt-5">
-              <h1 className="lg-sm:text-[80px] text-center text-[26px] leading-none font-extrabold text-white">
-                <span className="lg-sm:contents block">We design digital</span>{" "}
+            <div className="3xl:mt-6 mt-3">
+              <h1 className="3xl:text-[80px] text-center text-[62px] leading-none font-extrabold text-white">
+                <span className="3xl:contents block">We design digital</span>{" "}
                 products that perform
               </h1>
 
-              <div className="lg-sm:max-w-none mx-auto mt-6 max-w-[324px]">
-                <p className="lg-sm:text-lg text-center text-sm leading-none text-white">
+              <div className="3xl:max-w-none 3xl:mt-6 mx-auto mt-3 max-w-[324px]">
+                <p className="3xl:text-lg text-center text-sm leading-none text-white">
                   Data-backed UX/UI rooted in user testing, market insight, and
                   clear business outcomes.
                 </p>
               </div>
 
-              <div className="lg-sm:mt-[50px] lg-sm:gap-y-5 mt-5 flex flex-col items-center gap-y-2">
-                <button className="bg-primary-500 lg-sm:h-[70px] lg-sm:px-7 lg-sm:gap-x-3 lg-sm:text-xl inline-flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-4 text-sm font-semibold whitespace-nowrap text-white focus-visible:outline-none">
+              <div className="3xl:mt-[50px] 3xl:gap-y-5 mt-10 flex flex-col items-center gap-y-2">
+                <button className="bg-primary-500 3xl:h-[70px] 3xl:gap-x-3 3xl:px-7 3xl:text-xl inline-flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-4 text-sm font-semibold whitespace-nowrap text-white focus-visible:outline-none">
                   Book a Strategy Call <ArrowRight className="size-[22px]" />
                 </button>
 
-                <p className="lg-sm:text-sm text-center text-[10px] leading-none text-white">
+                <p className="3xl:text-sm text-center text-[10px] leading-none text-white">
                   Talk to an expert ux designer
                 </p>
               </div>
@@ -570,18 +571,18 @@ export default function Home() {
           </div>
         </div>
 
-        <ChartAsIllustration className="lg-sm:block absolute right-0 bottom-0 hidden" />
+        <ChartAsIllustration className="3xl:block absolute right-0 bottom-0 hidden" />
       </div>
 
-      <div className="lg-sm:py-[100px] lg-sm:px-[150px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-[100px] py-[50px] 2xl:px-[300px]">
-        <div className="lg-sm:max-w-[630px] mx-auto max-w-[259px]">
-          <h1 className="text-dark-blue-400 lg-sm:text-[54px] text-center text-[22px] leading-none font-bold">
+      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-5 py-10 md:p-5 lg:px-[100px] lg:py-[50px]">
+        <div className="3xl:max-w-[630px] mx-auto lg:max-w-[259px]">
+          <h1 className="text-dark-blue-400 3xl:text-[54px] text-center text-[22px] leading-none font-bold">
             What our clients have to say about us
           </h1>
         </div>
 
-        <div className="lg-sm:mt-[50px] lg-sm:gap-x-[75px] mt-[30px] grid grid-cols-2 gap-x-9">
-          <div className="relative">
+        <div className="3xl:mt-[50px] 3xl:gap-x-[75px] mt-[30px] grid gap-9 md:grid-cols-2">
+          <div className="relative h-[151px]">
             <div className="relative size-full overflow-hidden rounded-[28px]">
               <Image
                 className="object-cover"
@@ -591,19 +592,19 @@ export default function Home() {
                 fill
               />
             </div>
-            <div className="border-primary-500 lg-sm:h-[264.93px] lg-sm:w-[261px] absolute -bottom-[30px] -left-[30px] h-[88.99px] w-[88px] rounded-tl-[28px] rounded-tr-[200px] rounded-br-[28px] rounded-bl-[48px] border-2" />
+            <div className="border-primary-500 3xl:h-[264.93px] 3xl:w-[261px] 3xl:-bottom-[30px] 3xl:-left-[30px] absolute -bottom-[11.51px] -left-3 h-[88.99px] w-[88px] rounded-tl-[28px] rounded-tr-[200px] rounded-br-[28px] rounded-bl-[48px] border-2" />
           </div>
-          <div className="lg-sm:px-6 lg-sm:py-[100px] px-6">
-            <div className="lg-sm:gap-x-1 flex items-center gap-x-[2.79px]">
-              <Star className="text-warning-500 lg-sm:size-[26px] size-[18.16px] shrink-0" />
-              <Star className="text-warning-500 lg-sm:size-[26px] size-[18.16px] shrink-0" />
-              <Star className="text-warning-500 lg-sm:size-[26px] size-[18.16px] shrink-0" />
-              <Star className="text-warning-500 lg-sm:size-[26px] size-[18.16px] shrink-0" />
-              <Star className="text-warning-500 lg-sm:size-[26px] size-[18.16px] shrink-0" />
+          <div className="3xl:px-6 3xl:py-[100px] px-6">
+            <div className="3xl:gap-x-1 flex items-center gap-x-[2.79px]">
+              <Star className="text-warning-500 3xl:size-[26px] size-[18.16px] shrink-0" />
+              <Star className="text-warning-500 3xl:size-[26px] size-[18.16px] shrink-0" />
+              <Star className="text-warning-500 3xl:size-[26px] size-[18.16px] shrink-0" />
+              <Star className="text-warning-500 3xl:size-[26px] size-[18.16px] shrink-0" />
+              <Star className="text-warning-500 3xl:size-[26px] size-[18.16px] shrink-0" />
             </div>
 
-            <div className="lg-sm:mt-5 mt-3">
-              <span className="lg-sm:text-lg lg-sm:leading-[1.6] text-sm text-gray-500">
+            <div className="3xl:mt-5 mt-3">
+              <span className="3xl:text-lg 3xl:leading-[1.6] text-sm text-gray-500">
                 Mauris sapien eget sem est facilisi suspendisse nisl mauris
                 proin. Vulputate at non pharetra lobortis etiam auctor dui. Eget
                 consequat viverra massa tellus. Nec rhoncus nunc lacus lobortis
@@ -614,9 +615,9 @@ export default function Home() {
             </div>
 
             <div className="mt-5">
-              <div className="lg-sm:flex-row lg-sm:justify-between flex flex-col items-center gap-3">
-                <div className="max-lg-sm:self-stretch inline-flex items-center gap-x-3">
-                  <div className="lg-sm:size-[76px] relative size-[52px] shrink-0 overflow-hidden rounded-full">
+              <div className="3xl:flex-row 3xl:justify-between flex flex-col items-center gap-3">
+                <div className="max-3xl:self-stretch inline-flex items-center gap-x-3">
+                  <div className="3xl:size-[76px] relative size-[52px] shrink-0 overflow-hidden rounded-full">
                     <Image
                       className="object-cover"
                       src="/avatar-01.jpg"
@@ -626,117 +627,117 @@ export default function Home() {
                     />
                   </div>
 
-                  <div className="lg-sm:space-y-1">
-                    <h2 className="text-dark-blue-400 lg-sm:text-[22px] text-base leading-none font-bold">
+                  <div className="3xl:space-y-1">
+                    <h2 className="text-dark-blue-400 3xl:text-[22px] text-base leading-none font-bold">
                       Andre Cvijovic
                     </h2>
-                    <p className="lg-sm:text-base text-sm leading-[1.6] text-gray-500">
+                    <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
                       Andre Cvijovic
                     </p>
                   </div>
                 </div>
 
-                <Referrizer className="max-lg-sm:w-[95px] max-lg-sm:h-[19px] shrink-0" />
+                <Referrizer className="max-3xl:h-[19px] max-3xl:w-[95px] shrink-0" />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="lg-sm:py-[100px] lg-sm:px-[150px] px-[100px] py-[50px] 2xl:px-[300px]">
-        <span className="lg-sm:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-[10px] leading-none font-semibold text-transparent uppercase">
+      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
+        <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-[10px] leading-none font-semibold text-transparent uppercase">
           The Problem
         </span>
-        <h1 className="text-dark-blue-400 lg-sm:text-[52px] mt-5 text-[22px] leading-none font-bold">
+        <h1 className="text-dark-blue-400 3xl:text-[52px] mt-5 text-[22px] leading-none font-bold">
           Why “looks good” isn’t good enough.
         </h1>
-        <div className="lg-sm:max-w-[806px] mt-5 max-w-[629px]">
-          <p className="lg-sm:text-lg text-sm leading-[1.6] text-gray-500">
+        <div className="3xl:max-w-[806px] mt-5 max-w-[629px]">
+          <p className="3xl:text-lg text-sm leading-[1.6] text-gray-500">
             Pretty interfaces don’t fix drop-offs, confusing flows, or weak
             onboarding. We pair high quality design with market research and
             user testing to remove friction and boost conversions.
           </p>
         </div>
 
-        <div className="lg-sm:mt-[50px] lg-sm:gap-x-5 mt-[30px] grid grid-cols-3 gap-x-3.5">
-          <article className="lg-sm:rounded-[25px] lg-sm:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
-            <div className="border-primary-500 lg-sm:h-11 lg-sm:border-[1.66px] lg-sm:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center rounded-full border-[1.2px] px-[13px]">
+        <div className="3xl:mt-[50px] 3xl:gap-x-5 mt-[30px] grid gap-3.5 md:grid-cols-3">
+          <article className="3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center rounded-full border-[1.2px] px-[13px]">
               <Lightning01 className="text-primary-500 size-5" />{" "}
-              <span className="text-dark-blue-400 lg-sm:text-sm text-[14.4px] font-bold">
+              <span className="text-dark-blue-400 3xl:text-sm text-[14.4px] font-bold">
                 Problem 1
               </span>
             </div>
 
-            <div className="lg-sm:mt-[50px] mt-[30px]">
-              <h2 className="text-dark-blue-400 lg-sm:text-[22px] text-lg leading-none font-bold">
+            <div className="3xl:mt-[50px] mt-[30px]">
+              <h2 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold">
                 Low Sign-up Completion
               </h2>
 
-              <p className="lg-sm:mt-5 mt-3 text-base leading-[1.6] text-gray-500">
+              <p className="3xl:mt-5 mt-3 text-base leading-[1.6] text-gray-500">
                 Users drop off before finishing onboarding. We streamline flows
                 through tested UX patterns.
               </p>
 
-              <div className="lg-sm:mt-[26px] lg-sm:flex-row lg-sm:items-center lg-sm:gap-x-3 lg-sm:pt-7 mt-[30px] flex flex-col items-start gap-y-1 border-t-2 border-gray-200 pt-5 xl:mt-[50px]">
-                <h1 className="text-dark-blue-400 lg-sm:text-[40px] text-[30px] leading-none font-black">
+              <div className="4xl:mt-[50px] 3xl:mt-[26px] 3xl:flex-row 3xl:items-center 3xl:gap-x-3 3xl:pt-7 mt-[30px] flex flex-col items-start gap-y-1 border-t-2 border-gray-200 pt-5">
+                <h1 className="text-dark-blue-400 3xl:text-[40px] text-[30px] leading-none font-black">
                   +32%
                 </h1>
-                <span className="text-dark-blue-400 lg-sm:text-lg text-sm leading-none font-semibold">
+                <span className="text-dark-blue-400 3xl:text-lg text-sm leading-none font-semibold">
                   Improved signup completion rate
                 </span>
               </div>
             </div>
           </article>
-          <article className="lg-sm:rounded-[25px] lg-sm:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
-            <div className="border-primary-500 lg-sm:h-11 lg-sm:border-[1.66px] lg-sm:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center rounded-full border-[1.2px] px-[13px]">
+          <article className="3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center rounded-full border-[1.2px] px-[13px]">
               <Lightning01 className="text-primary-500 size-5" />{" "}
-              <span className="text-dark-blue-400 lg-sm:text-sm text-[14.4px] font-bold">
+              <span className="text-dark-blue-400 3xl:text-sm text-[14.4px] font-bold">
                 Problem 2
               </span>
             </div>
 
-            <div className="lg-sm:mt-[50px] mt-[30px]">
-              <h2 className="text-dark-blue-400 lg-sm:text-[22px] text-lg leading-none font-bold">
+            <div className="3xl:mt-[50px] mt-[30px]">
+              <h2 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold">
                 High Support Requests
               </h2>
 
-              <p className="lg-sm:mt-5 mt-3 text-base leading-[1.6] text-gray-500">
+              <p className="3xl:mt-5 mt-3 text-base leading-[1.6] text-gray-500">
                 Users can’t find answers quickly. We simplify navigation and
                 create clarity.
               </p>
 
-              <div className="lg-sm:mt-[26px] lg-sm:flex-row lg-sm:items-center lg-sm:gap-x-3 lg-sm:pt-7 mt-[30px] flex flex-col items-start gap-y-1 border-t-2 border-gray-200 pt-5 xl:mt-[50px]">
-                <h1 className="text-dark-blue-400 lg-sm:text-[40px] text-[30px] leading-none font-black">
+              <div className="4xl:mt-[50px] 3xl:mt-[26px] 3xl:flex-row 3xl:items-center 3xl:gap-x-3 3xl:pt-7 mt-[30px] flex flex-col items-start gap-y-1 border-t-2 border-gray-200 pt-5">
+                <h1 className="text-dark-blue-400 3xl:text-[40px] text-[30px] leading-none font-black">
                   -40%
                 </h1>
-                <span className="text-dark-blue-400 lg-sm:text-lg text-sm leading-none font-semibold">
+                <span className="text-dark-blue-400 3xl:text-lg text-sm leading-none font-semibold">
                   Reduction of support tickets
                 </span>
               </div>
             </div>
           </article>
-          <article className="lg-sm:rounded-[25px] lg-sm:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
-            <div className="border-primary-500 lg-sm:h-11 lg-sm:border-[1.66px] lg-sm:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center rounded-full border-[1.2px] px-[13px]">
+          <article className="3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center rounded-full border-[1.2px] px-[13px]">
               <Lightning01 className="text-primary-500 size-5" />{" "}
-              <span className="text-dark-blue-400 lg-sm:text-sm text-[14.4px] font-bold">
+              <span className="text-dark-blue-400 3xl:text-sm text-[14.4px] font-bold">
                 Problem 3
               </span>
             </div>
 
-            <div className="lg-sm:mt-[50px] mt-[30px]">
-              <h2 className="text-dark-blue-400 lg-sm:text-[22px] text-lg leading-none font-bold">
+            <div className="3xl:mt-[50px] mt-[30px]">
+              <h2 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold">
                 Outdated Visuals
               </h2>
 
-              <p className="lg-sm:mt-5 mt-3 text-base leading-[1.6] text-gray-500">
+              <p className="3xl:mt-5 mt-3 text-base leading-[1.6] text-gray-500">
                 Interfaces feel dated next to competitors. We modernize visuals
                 backed by competitive market research.
               </p>
 
-              <div className="lg-sm:mt-[26px] lg-sm:flex-row lg-sm:items-center lg-sm:gap-x-3 lg-sm:pt-7 mt-[30px] flex flex-col items-start gap-y-1 border-t-2 border-gray-200 pt-5 xl:mt-[50px]">
-                <h1 className="text-dark-blue-400 lg-sm:text-[40px] text-[30px] leading-none font-black">
+              <div className="4xl:mt-[50px] 3xl:mt-[26px] 3xl:flex-row 3xl:items-center 3xl:gap-x-3 3xl:pt-7 mt-[30px] flex flex-col items-start gap-y-1 border-t-2 border-gray-200 pt-5">
+                <h1 className="text-dark-blue-400 3xl:text-[40px] text-[30px] leading-none font-black">
                   +18%
                 </h1>
-                <span className="text-dark-blue-400 lg-sm:text-lg text-sm leading-none font-semibold">
+                <span className="text-dark-blue-400 3xl:text-lg text-sm leading-none font-semibold">
                   Increased brand perception among users
                 </span>
               </div>
@@ -745,103 +746,103 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="lg-sm:py-[100px] lg-sm:px-[150px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-[100px] py-[50px] 2xl:px-[300px]">
+      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
         <div className="flex items-center justify-center">
-          <span className="lg-sm:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-xs leading-none font-semibold text-transparent uppercase">
+          <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-xs leading-none font-semibold text-transparent uppercase">
             How we’re different
           </span>
         </div>
-        <h1 className="text-dark-blue-400 lg-sm:mt-5 lg-sm:text-[52px] mt-3 text-center text-[22px] leading-none font-bold">
+        <h1 className="text-dark-blue-400 3xl:mt-5 3xl:text-[52px] mt-3 text-center text-[22px] leading-none font-bold">
           Why Choose Marketeq?
         </h1>
 
-        <div className="lg-sm:mt-[50px] lg-sm:gap-5 mt-[30px] grid grid-cols-3 gap-3.5">
-          <article className="lg-sm:rounded-[25px] lg-sm:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+        <div className="3xl:mt-[50px] 3xl:gap-5 mt-[30px] grid gap-3.5 md:grid-cols-3">
+          <article className="3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <RefreshCw className="size-[29px]" />
             </div>
 
-            <div className="lg-sm:mt-[50px] mt-[30px]">
-              <h3 className="text-dark-blue-400 lg-sm:text-[22px] text-lg leading-none font-bold">
+            <div className="3xl:mt-[50px] mt-[30px]">
+              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold">
                 Higher conversion & activation
               </h3>
-              <p className="lg-sm:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
+              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
                 Every design decision is tested and refined to boost engagement,
                 streamline flows, and drive measurable growth.
               </p>
             </div>
           </article>
-          <article className="lg-sm:rounded-[25px] lg-sm:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <FaceContent className="size-[29px]" />
             </div>
 
-            <div className="lg-sm:mt-[50px] mt-[30px]">
-              <h3 className="text-dark-blue-400 lg-sm:text-[22px] text-lg leading-none font-bold">
+            <div className="3xl:mt-[50px] mt-[30px]">
+              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold">
                 Faster paths to “Aha!” moments
               </h3>
-              <p className="lg-sm:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
+              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
                 We reduce friction so users reach success faster, turning first
                 impressions into lasting engagement and retention.
               </p>
             </div>
           </article>
-          <article className="lg-sm:rounded-[25px] lg-sm:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <Dataflow03 className="size-[29px]" />
             </div>
 
-            <div className="lg-sm:mt-[50px] mt-[30px]">
-              <h3 className="text-dark-blue-400 lg-sm:text-[22px] text-lg leading-none font-bold">
+            <div className="3xl:mt-[50px] mt-[30px]">
+              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold">
                 Clearer flows = fewer support tickets
               </h3>
-              <p className="lg-sm:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
+              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
                 Simplified interfaces help users navigate solutions quickly,
                 lowering confusion and reducing support overhead across
                 products.
               </p>
             </div>
           </article>
-          <article className="lg-sm:rounded-[25px] lg-sm:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <Container className="size-[29px]" />
             </div>
 
-            <div className="lg-sm:mt-[50px] mt-[30px]">
-              <h3 className="text-dark-blue-400 lg-sm:text-[22px] text-lg leading-none font-bold">
+            <div className="3xl:mt-[50px] mt-[30px]">
+              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold">
                 Consistent, dev-ready design system
               </h3>
-              <p className="lg-sm:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
+              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
                 Reusable components and clean documentation ensure seamless
                 developer handoff and consistent product experiences.
               </p>
             </div>
           </article>
-          <article className="lg-sm:rounded-[25px] lg-sm:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <Beaker02 className="size-[29px]" />
             </div>
 
-            <div className="lg-sm:mt-[50px] mt-[30px]">
-              <h3 className="text-dark-blue-400 lg-sm:text-[22px] text-lg leading-none font-bold">
+            <div className="3xl:mt-[50px] mt-[30px]">
+              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold">
                 Insight from user testing (not guesswork)
               </h3>
-              <p className="lg-sm:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
+              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
                 Real feedback guides every iteration, our designs evolve through
                 measurable user data, not assumptions or opinions.
               </p>
             </div>
           </article>
-          <article className="lg-sm:rounded-[25px] lg-sm:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <ChartBreakoutCircle className="size-[29px]" />
             </div>
 
-            <div className="lg-sm:mt-[50px] mt-[30px]">
-              <h3 className="text-dark-blue-400 lg-sm:text-[22px] text-lg leading-none font-bold">
+            <div className="3xl:mt-[50px] mt-[30px]">
+              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold">
                 Designed with awareness of your market
               </h3>
-              <p className="lg-sm:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
+              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
                 We heavily analyze your competitors to create experiences that
                 feel familiar yet distinctly ahead of the curve.
               </p>
@@ -849,49 +850,49 @@ export default function Home() {
           </article>
         </div>
 
-        <div className="lg-sm:mt-[75px] mt-[30px] flex items-center justify-center">
-          <button className="bg-primary-500 lg-sm:h-[52px] lg-sm:px-6 lg-sm:text-base inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-3.5 text-xs leading-7 font-semibold whitespace-nowrap text-white focus-visible:outline-none">
+        <div className="3xl:mt-[75px] mt-[30px] flex items-center justify-center">
+          <button className="bg-primary-500 3xl:h-[52px] 3xl:px-6 3xl:text-base inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-3.5 text-xs leading-7 font-semibold whitespace-nowrap text-white focus-visible:outline-none">
             Book a Strategy Call
           </button>
         </div>
       </div>
 
-      <div className="relative py-[100px]">
+      <div className="relative py-10 lg:py-[100px]">
         <ChartAsSection />
       </div>
 
-      <div className="lg-sm:py-[100px] lg-sm:px-[150px] px-[100px] py-[50px] 2xl:px-[300px]">
+      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
         <div className="flex items-center justify-center">
-          <span className="bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-base leading-none font-semibold text-transparent uppercase">
+          <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-[10px] leading-none font-semibold text-transparent uppercase">
             What we offer
           </span>
         </div>
-        <div className="mx-auto mt-5 max-w-[964px]">
-          <h1 className="text-dark-blue-400 text-center text-[52px] leading-none font-bold">
+        <div className="3xl:mt-5 3xl:max-w-[964px] mx-auto mt-3 max-w-[420px]">
+          <h1 className="text-dark-blue-400 3xl:text-[52px] text-center text-[22px] leading-none font-bold">
             UX strategy that builds clarity, consistency, and measurable
             results.
           </h1>
         </div>
-        <p className="mt-5 text-center text-lg leading-[1.6] text-gray-500">
+        <p className="3xl:mt-5 3xl:text-lg mt-3 text-center text-sm leading-[1.6] text-gray-500">
           Data-backed UX/UI design built on user testing, market research, and
           real-world product strategy.
         </p>
 
-        <div className="mt-[50px] grid gap-y-5">
-          <div className="grid min-h-[475px] grid-cols-4 gap-5">
-            <article className="lg-sm:rounded-[25px] lg-sm:p-7 col-span-2 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+        <div className="max-3xl:grid-cols-2 3xl:mt-[50px] 3xl:gap-y-5 mt-[30px] grid gap-3.5 max-md:grid-cols-none">
+          <div className="3xl:grid contents min-h-[475px] grid-cols-4 gap-5">
+            <article className="3xl:col-span-2 3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   User Research & Insights
                 </h1>
 
-                <p className="text-base leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
                   Understand your audience through interviews, surveys, and
                   behavioral data to inform smarter product decisions.
                 </p>
               </div>
 
-              <div className="relative flex-auto overflow-hidden rounded-xl">
+              <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
                   src="/todos.jpg"
@@ -902,19 +903,19 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   UX Strategy & Product Roadmapping
                 </h1>
 
-                <p className="text-base leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
                   Align design priorities with business goals using competitive
                   analysis, opportunity mapping, and roadmap planning.
                 </p>
               </div>
 
-              <div className="relative flex-auto overflow-hidden rounded-xl">
+              <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
                   src="/todos.jpg"
@@ -924,19 +925,19 @@ export default function Home() {
                 />
               </div>
             </article>
-            <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   User Journey Mapping
                 </h1>
 
-                <p className="text-base leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
                   Visualize end-to-end user flows to identify friction points
                   and optimize every key touchpoint.
                 </p>
               </div>
 
-              <div className="relative flex-auto overflow-hidden rounded-xl">
+              <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
                   src="/todos.jpg"
@@ -948,20 +949,20 @@ export default function Home() {
             </article>
           </div>
 
-          <div className="grid min-h-[847px] grid-cols-3 gap-5">
-            <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <div className="3xl:grid contents min-h-[847px] grid-cols-3 gap-5">
+            <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   Information Architecture
                 </h1>
 
-                <p className="text-base leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
                   Structure complex products into clear, intuitive navigation
                   systems that users can move through effortlessly.
                 </p>
               </div>
 
-              <div className="relative flex-auto overflow-hidden rounded-xl">
+              <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
                   src="/todos.jpg"
@@ -972,20 +973,20 @@ export default function Home() {
               </div>
             </article>
 
-            <div className="grid grid-rows-2 gap-y-5">
-              <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <div className="3xl:grid contents grid-rows-2 gap-y-5">
+              <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
                 <div className="space-y-2.5">
-                  <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
+                  <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                     Wireframing & Prototyping
                   </h1>
 
-                  <p className="text-base leading-[1.6] text-gray-500">
+                  <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
                     Translate ideas into interactive prototypes that are fast,
                     testable, and ready for stakeholder validation.
                   </p>
                 </div>
 
-                <div className="relative flex-auto overflow-hidden rounded-xl">
+                <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                   <Image
                     className="object-cover"
                     src="/todos.jpg"
@@ -995,19 +996,19 @@ export default function Home() {
                   />
                 </div>
               </article>
-              <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+              <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
                 <div className="space-y-2.5">
-                  <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
+                  <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                     Visual Design & Brand Integration
                   </h1>
 
-                  <p className="text-base leading-[1.6] text-gray-500">
+                  <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
                     Unify aesthetics and usability through typography, color,
                     and layout systems that enhance brand perception.
                   </p>
                 </div>
 
-                <div className="relative flex-auto overflow-hidden rounded-xl">
+                <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                   <Image
                     className="object-cover"
                     src="/todos.jpg"
@@ -1019,19 +1020,19 @@ export default function Home() {
               </article>
             </div>
 
-            <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   Interaction Design & UI Animations
                 </h1>
 
-                <p className="text-base leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
                   Design responsive behaviors and motion patterns that make
                   interfaces feel natural and alive.
                 </p>
               </div>
 
-              <div className="relative flex-auto overflow-hidden rounded-xl">
+              <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
                   src="/todos.jpg"
@@ -1043,20 +1044,20 @@ export default function Home() {
             </article>
           </div>
 
-          <div className="grid min-h-[475px] grid-cols-4 gap-5">
-            <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <div className="3xl:grid contents min-h-[475px] grid-cols-4 gap-5">
+            <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   Design Systems & Component Libraries
                 </h1>
 
-                <p className="text-base leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
                   Build scalable design infrastructure; component libraries,
                   tokens, and documentation for consistent releases.
                 </p>
               </div>
 
-              <div className="relative flex-auto overflow-hidden rounded-xl">
+              <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
                   src="/todos.jpg"
@@ -1066,19 +1067,19 @@ export default function Home() {
                 />
               </div>
             </article>
-            <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   Usability & A/B Testing
                 </h1>
 
-                <p className="text-base leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
                   Test real users, validate assumptions, and iterate designs
                   based on data-driven performance insights.
                 </p>
               </div>
 
-              <div className="relative flex-auto overflow-hidden rounded-xl">
+              <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
                   src="/todos.jpg"
@@ -1089,19 +1090,19 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="lg-sm:rounded-[25px] lg-sm:p-7 col-span-2 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:col-span-2 3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   Accessibility & Inclusive Design
                 </h1>
 
-                <p className="text-base leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
                   Ensure every user can interact with your product confidently
                   through WCAG-compliant design practices.
                 </p>
               </div>
 
-              <div className="relative flex-auto overflow-hidden rounded-xl">
+              <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
                   src="/todos.jpg"
@@ -1113,20 +1114,20 @@ export default function Home() {
             </article>
           </div>
 
-          <div className="grid min-h-[501px] grid-cols-3 gap-5">
-            <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <div className="3xl:grid contents min-h-[501px] grid-cols-3 gap-5">
+            <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   Market & Competitive Research
                 </h1>
 
-                <p className="text-base leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
                   Benchmark against leading products, uncover gaps, and position
                   your experience as the superior alternative.
                 </p>
               </div>
 
-              <div className="relative flex-auto overflow-hidden rounded-xl">
+              <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
                   src="/todos.jpg"
@@ -1137,19 +1138,19 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   Innovation & Feature Strategy
                 </h1>
 
-                <p className="text-base leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
                   Identify opportunities for new product features and UX
                   improvements that help you lead, not follow... your market.
                 </p>
               </div>
 
-              <div className="relative flex-auto overflow-hidden rounded-xl">
+              <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
                   src="/todos.jpg"
@@ -1160,19 +1161,19 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="lg-sm:rounded-[25px] lg-sm:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="max-3xl:col-span-2 3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] max-md:col-span-1">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   Product Launch & Growth Support
                 </h1>
 
-                <p className="text-base leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
                   Support go-to-market efforts with landing pages, onboarding
                   flows, and UX that convert new users into loyal advocates.
                 </p>
               </div>
 
-              <div className="relative flex-auto overflow-hidden rounded-xl">
+              <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
                   src="/todos.jpg"
@@ -1186,33 +1187,35 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="lg-sm:py-[100px] lg-sm:px-[150px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-[100px] py-[50px] 2xl:px-[300px]">
-        <div className="border-primary-100 rounded-[28px] border p-5">
-          <div className="border-primary-300 flex items-center justify-between gap-x-[50px] rounded-[25px] border bg-white p-[100px]">
-            <div className="max-w-[670px] flex-auto">
-              <div className="flex items-center">
-                <span className="bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-base leading-none font-semibold text-transparent uppercase">
+      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
+        <div className="border-primary-100 3xl:p-5 rounded-[28px] border p-3">
+          <div className="border-primary-300 3xl:flex-row 3xl:items-center 3xl:justify-between 3xl:gap-x-[50px] 3xl:rounded-[25px] 3xl:p-[100px] flex flex-col rounded-[14px] border bg-white p-[30px]">
+            <div className="max-3xl:self-center max-w-[670px] flex-auto">
+              <div className="max-3xl:justify-center flex items-center">
+                <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-[10px] leading-none font-semibold text-transparent uppercase">
                   Talk to us
                 </span>
               </div>
-              <div className="mx-auto mt-5 max-w-[964px]">
-                <h1 className="text-dark-blue-400 text-[52px] leading-none font-bold">
+              <div className="3xl:mt-5 3xl:max-w-[964px] mx-auto mt-3 max-w-[288px]">
+                <h1 className="text-dark-blue-400 3xl:text-left 3xl:text-[52px] text-center text-[22px] leading-none font-bold">
                   Build a product that dominates your industry
                 </h1>
               </div>
-              <p className="mt-5 text-lg leading-[1.6] text-gray-500">
-                Set a new standard in your market with a product experience
-                built to lead, not follow, and finally give your team the
-                strategy they need to execute.
-              </p>
+              <div className="max-3xl:mx-auto max-3xl:max-w-[338px] 3xl:mt-5 mt-3">
+                <p className="3xl:text-left 3xl:text-lg text-center text-sm leading-[1.6] text-gray-500">
+                  Set a new standard in your market with a product experience
+                  built to lead, not follow, and finally give your team the
+                  strategy they need to execute.
+                </p>
+              </div>
             </div>
 
-            <div className="flex flex-col items-center gap-y-5 pr-[50px]">
-              <button className="bg-primary-500 inline-flex h-[70px] shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-7 text-xl font-semibold whitespace-nowrap text-white focus-visible:outline-none">
+            <div className="3xl:gap-y-5 3xl:pr-[50px] mt-[30px] flex flex-col items-center gap-y-3">
+              <button className="bg-primary-500 3xl:h-[70px] 3xl:px-7 3xl:text-xl inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-3.5 text-[12px] font-semibold whitespace-nowrap text-white focus-visible:outline-none">
                 Book a Strategy Call
               </button>
-              <div className="max-w-[136px] flex-1">
-                <span className="text-sm leading-[1.6] text-gray-500">
+              <div className="3xl:block 3xl:max-w-[136px] flex flex-1 items-center">
+                <span className="3xl:text-sm text-center text-[10px] leading-[1.6] text-gray-500">
                   Get on a call with an expert UX designer
                 </span>
               </div>
@@ -1221,19 +1224,19 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="lg-sm:py-[100px] lg-sm:px-[150px] flex gap-x-[50px] px-[100px] py-[50px] 2xl:px-[300px]">
-        <div className="max-w-[595px] flex-auto">
+      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] flex flex-col gap-[50px] px-5 py-10 md:p-10 lg:flex-row lg:px-[100px] lg:py-[50px]">
+        <div className="3xl:max-w-[775px] flex-auto lg:max-w-[393px]">
           <div className="flex items-center">
-            <span className="bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-base leading-none font-semibold text-transparent uppercase">
+            <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-[10px] leading-none font-semibold text-transparent uppercase">
               Our Process
             </span>
           </div>
-          <div className="mx-auto mt-5 max-w-[964px]">
-            <h1 className="text-dark-blue-400 text-[62px] leading-none font-bold">
-              We Don’t Guess. We Engineer.
-            </h1>
-          </div>
-          <p className="text-dark-blue-400 mt-5 text-[45px] leading-none">
+
+          <h1 className="3xl:mt-5 text-dark-blue-400 3xl:text-[62px] mx-auto mt-3 text-[32px] leading-none font-bold">
+            We Don’t Guess. We Engineer.
+          </h1>
+
+          <p className="text-dark-blue-400 3xl:mt-5 3xl:text-[45px] mt-3 text-lg leading-none">
             Our UX/UI design process is built on research, data, and relentless
             testing. The same methodology that helps our clients outperform
             entire markets.
@@ -1242,12 +1245,12 @@ export default function Home() {
           <button
             data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
             data-embed-type="popup"
-            className="bg-primary-500 mt-8 inline-flex h-[52px] shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-6 text-base leading-7 font-semibold whitespace-nowrap text-white focus-visible:outline-none"
+            className="bg-primary-500 3xl:mt-8 3xl:h-[52px] 3xl:px-6 3xl:text-base 3xl:leading-7 mt-[30px] inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white focus-visible:outline-none"
           >
             Book a Call
           </button>
         </div>
-        <div className="flex-auto">
+        <div className="3xl:w-[495px] lg:w-[376px] lg:flex-none">
           <div className="group flex gap-x-5">
             <div className="relative">
               <div className="bg-primary-25 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
@@ -1255,16 +1258,16 @@ export default function Home() {
               </div>
               <div className="absolute top-[50px] bottom-0 left-1/2 w-px -translate-x-1/2 bg-gray-200 group-data-[last=true]:hidden" />
             </div>
-            <div className="pb-6">
-              <span className="text-dark-blue-400 block text-base leading-none font-semibold">
+            <div className="3xl:pb-6 pb-5">
+              <span className="text-dark-blue-400 3xl:text-base block text-[10px] leading-none font-semibold">
                 Step 1
               </span>
 
-              <h1 className="text-dark-blue-400 mt-3 text-2xl leading-none font-bold">
+              <h1 className="text-dark-blue-400 3xl:mt-3 3xl:text-4xl mt-2 text-base leading-none font-bold">
                 Research & Discovery
               </h1>
 
-              <p className="mt-3 text-base leading-[1.6] text-gray-500">
+              <p className="3xl:mt-3 3xl:text-base mt-2 text-sm leading-[1.6] text-gray-500">
                 We map users, goals, and competitor insights to uncover growth
                 opportunities.
               </p>
@@ -1277,16 +1280,16 @@ export default function Home() {
               </div>
               <div className="absolute top-[50px] bottom-0 left-1/2 w-px -translate-x-1/2 bg-gray-200 group-data-[last=true]:hidden" />
             </div>
-            <div className="pb-6">
-              <span className="text-dark-blue-400 block text-base leading-none font-semibold">
+            <div className="3xl:pb-6 pb-5">
+              <span className="text-dark-blue-400 3xl:text-base block text-[10px] leading-none font-semibold">
                 Step 2
               </span>
 
-              <h1 className="text-dark-blue-400 mt-3 text-2xl leading-none font-bold">
+              <h1 className="text-dark-blue-400 3xl:mt-3 3xl:text-4xl mt-2 text-base leading-none font-bold">
                 UX Architecture
               </h1>
 
-              <p className="mt-3 text-base leading-[1.6] text-gray-500">
+              <p className="3xl:mt-3 3xl:text-base mt-2 text-sm leading-[1.6] text-gray-500">
                 Clear information hierarchy, journey mapping, and user flows
                 aligned to user intent.
               </p>
@@ -1299,16 +1302,16 @@ export default function Home() {
               </div>
               <div className="absolute top-[50px] bottom-0 left-1/2 w-px -translate-x-1/2 bg-gray-200 group-data-[last=true]:hidden" />
             </div>
-            <div className="pb-6">
-              <span className="text-dark-blue-400 block text-base leading-none font-semibold">
+            <div className="3xl:pb-6 pb-5">
+              <span className="text-dark-blue-400 3xl:text-base block text-[10px] leading-none font-semibold">
                 Step 3
               </span>
 
-              <h1 className="text-dark-blue-400 mt-3 text-2xl leading-none font-bold">
+              <h1 className="text-dark-blue-400 3xl:mt-3 3xl:text-4xl mt-2 text-base leading-none font-bold">
                 Wireframing & Prototyping
               </h1>
 
-              <p className="mt-3 text-base leading-[1.6] text-gray-500">
+              <p className="3xl:mt-3 3xl:text-base mt-2 text-sm leading-[1.6] text-gray-500">
                 Clear information hierarchy and journey mapping aligned to user
                 intent.
               </p>
@@ -1321,16 +1324,16 @@ export default function Home() {
               </div>
               <div className="absolute top-[50px] bottom-0 left-1/2 w-px -translate-x-1/2 bg-gray-200 group-data-[last=true]:hidden" />
             </div>
-            <div className="pb-6">
-              <span className="text-dark-blue-400 block text-base leading-none font-semibold">
+            <div className="3xl:pb-6 pb-5">
+              <span className="text-dark-blue-400 3xl:text-base block text-[10px] leading-none font-semibold">
                 Step 4
               </span>
 
-              <h1 className="text-dark-blue-400 mt-3 text-2xl leading-none font-bold">
+              <h1 className="text-dark-blue-400 3xl:mt-3 3xl:text-4xl mt-2 text-base leading-none font-bold">
                 Visual & UI Design
               </h1>
 
-              <p className="mt-3 text-base leading-[1.6] text-gray-500">
+              <p className="3xl:mt-3 3xl:text-base mt-2 text-sm leading-[1.6] text-gray-500">
                 High-fidelity UIs that express brand personality and usability
                 equally.
               </p>
@@ -1343,16 +1346,16 @@ export default function Home() {
               </div>
               <div className="absolute top-[50px] bottom-0 left-1/2 w-px -translate-x-1/2 bg-gray-200 group-data-[last=true]:hidden" />
             </div>
-            <div className="pb-6">
-              <span className="text-dark-blue-400 block text-base leading-none font-semibold">
+            <div className="3xl:pb-6 pb-5">
+              <span className="text-dark-blue-400 3xl:text-base block text-[10px] leading-none font-semibold">
                 Step 5
               </span>
 
-              <h1 className="text-dark-blue-400 mt-3 text-2xl leading-none font-bold">
+              <h1 className="text-dark-blue-400 3xl:mt-3 3xl:text-4xl mt-2 text-base leading-none font-bold">
                 User Testing & Iteration
               </h1>
 
-              <p className="mt-3 text-base leading-[1.6] text-gray-500">
+              <p className="3xl:mt-3 3xl:text-base mt-2 text-sm leading-[1.6] text-gray-500">
                 Rapid feedback loops ensure every flow feels intuitive and
                 converts.
               </p>
@@ -1365,39 +1368,39 @@ export default function Home() {
               </div>
               <div className="absolute top-[50px] bottom-0 left-1/2 w-px -translate-x-1/2 bg-gray-200 group-data-[last=true]:hidden" />
             </div>
-            <div className="pb-6">
-              <span className="text-dark-blue-400 block text-base leading-none font-semibold">
+            <div className="3xl:pb-6 pb-5">
+              <span className="text-dark-blue-400 3xl:text-base block text-[10px] leading-none font-semibold">
                 Step 6
               </span>
 
-              <h1 className="text-dark-blue-400 mt-3 text-2xl leading-none font-bold">
+              <h1 className="text-dark-blue-400 3xl:mt-3 3xl:text-4xl mt-2 text-base leading-none font-bold">
                 Launch & Optimization
               </h1>
 
-              <p className="mt-3 text-base leading-[1.6] text-gray-500">
+              <p className="3xl:mt-3 3xl:text-base mt-2 text-sm leading-[1.6] text-gray-500">
                 Continuous tracking, A/B testing, and data-driven refinements.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-dark-blue-600 lg-sm:py-[100px] lg-sm:px-[150px] border border-gray-200 px-[100px] py-[50px] 2xl:px-[300px]">
-        <div className="space-y-5">
+      <div className="bg-dark-blue-600 5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] border border-gray-200 px-5 py-10 lg:p-10 lg:px-[100px] lg:py-[50px]">
+        <div className="3xl:space-y-5 space-y-3">
           <div className="flex items-center justify-center">
-            <span className="text-base leading-none font-semibold text-white uppercase">
+            <span className="3xl:text-base text-[10px] leading-none font-semibold text-white uppercase">
               Our Framework
             </span>
           </div>
 
-          <div className="mx-auto max-w-[870px]">
-            <h1 className="text-center text-[62px] leading-none font-bold text-white">
+          <div className="3xl:max-w-[870px] mx-auto max-w-[354px]">
+            <h1 className="3xl:text-[62px] text-center text-[24px] leading-none font-bold text-white">
               <span className="text-primary-500">Real Results...</span> Based on
               Advanced Market Research
             </h1>
           </div>
 
-          <div className="mx-auto max-w-[924px]">
-            <p className="text-center text-lg leading-[1.6] text-white">
+          <div className="3xl:max-w-[924px] mx-auto max-w-[620px]">
+            <p className="3xl:text-lg text-center text-sm leading-[1.6] text-white">
               From first impression to final interaction, our ux/ui process is
               designed to turn every click, every screen, and every journey into
               measurable growth. Every project follows a proven five-phase
@@ -1408,10 +1411,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="border-primary-500 mt-[50px] rounded-[28px] border p-5">
-          <div className="flex items-center gap-x-[50px] rounded-[25px] bg-white p-[100px] pr-[120px] shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+        <div className="border-primary-500 3xl:mt-[50px] 3xl:rounded-[28px] 3xl:p-5 mt-[30px] rounded-[18px] border p-3">
+          <div className="3xl:p-[100px] 3xl:pr-[120px] 3xl:gap-x-[50px] 3xl:rounded-[25px] flex flex-col-reverse items-start gap-y-[30px] rounded-[14px] bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] lg:flex-row lg:items-center lg:gap-x-10 lg:px-[104px] lg:py-10">
             <div className="shrink-0">
-              <div className="relative size-[248px] overflow-hidden rounded-[28px]">
+              <div className="3xl:size-[248px] relative size-[94px] overflow-hidden rounded-[28px]">
                 <Image
                   className="object-cover"
                   src="/founder.png"
@@ -1422,21 +1425,21 @@ export default function Home() {
               </div>
 
               <div className="mt-5">
-                <h1 className="text-dark-blue-400 text-xl leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-base leading-none font-bold">
                   Christopher Torres
                 </h1>
-                <p className="text-base leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
                   Founder of Marketeq
                 </p>
               </div>
             </div>
 
-            <div className="flex gap-x-3">
-              <Quote className="shrink-0" />{" "}
-              <div className="flex-auto py-8">
-                <h1 className="text-dark-blue-400 text-[46px] leading-none font-bold">
-                  Mattis elit mi tortor vestibulum volutpatis elit mi tortor
-                  vestibulum volutpat
+            <div className="3xl:flex-row flex flex-col gap-3">
+              <Quote className="max-3xl:size-[39px] shrink-0" />{" "}
+              <div className="3xl:py-8 flex-auto">
+                <h1 className="text-dark-blue-400 3xl:text-[46px] text-xl leading-none font-bold">
+                  Great products aren’t built by guessing… they’re engineered
+                  with strategy, data, and research.
                 </h1>
               </div>
             </div>
@@ -1444,80 +1447,80 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="lg-sm:py-[100px] lg-sm:px-[150px] px-[100px] py-[50px] 2xl:px-[300px]">
-        <div className="grid grid-cols-2 gap-x-[75px]">
+      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] px-5 py-10 lg:p-10 lg:px-[100px] lg:py-[50px]">
+        <div className="3xl:gap-x-[75px] flex flex-col-reverse gap-[30px] lg:grid lg:grid-cols-2">
           <div>
-            <div className="flex items-center">
-              <span className="bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-base leading-none font-semibold text-transparent uppercase">
-                Our Process
+            <div className="flex">
+              <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-[10px] leading-none font-semibold text-transparent uppercase">
+                What you get
               </span>
             </div>
 
-            <h1 className="text-dark-blue-400 mt-5 text-[52px] leading-none font-bold">
+            <h1 className="text-dark-blue-400 3xl:mt-5 3xl:text-[52px] mt-3 text-[22px] leading-none font-bold">
               UX Deliverables
             </h1>
 
-            <p className="mt-5 text-lg leading-[1.6] text-gray-500">
+            <p className="3xl:mt-5 3xl:text-lg mt-3 text-sm leading-[1.6] text-gray-500">
               Clear deliverables. No guesswork.
             </p>
 
-            <ul className="mt-8 space-y-5">
+            <ul className="3xl:mt-8 mt-5 space-y-5">
               <li className="flex items-center gap-x-3">
                 <Check className="text-primary-500 size-5" />
-                <span className="text-lg leading-none font-bold text-gray-500">
+                <span className="3xl:text-lg text-sm leading-none font-bold text-gray-500">
                   UX audit summary (with key findings)
                 </span>
               </li>
               <li className="flex items-center gap-x-3">
                 <Check className="text-primary-500 size-5" />
-                <span className="text-lg leading-none font-bold text-gray-500">
+                <span className="3xl:text-lg text-sm leading-none font-bold text-gray-500">
                   Market growth strategy baked into every screen
                 </span>
               </li>
               <li className="flex items-center gap-x-3">
                 <Check className="text-primary-500 size-5" />
-                <span className="text-lg leading-none font-bold text-gray-500">
+                <span className="3xl:text-lg text-sm leading-none font-bold text-gray-500">
                   Wireframes & clickable prototypes
                 </span>
               </li>
               <li className="flex items-center gap-x-3">
                 <Check className="text-primary-500 size-5" />
-                <span className="text-lg leading-none font-bold text-gray-500">
+                <span className="3xl:text-lg text-sm leading-none font-bold text-gray-500">
                   High-fidelity UI screens
                 </span>
               </li>
               <li className="flex items-center gap-x-3">
                 <Check className="text-primary-500 size-5" />
-                <span className="text-lg leading-none font-bold text-gray-500">
+                <span className="3xl:text-lg text-sm leading-none font-bold text-gray-500">
                   Design system components & tokens
                 </span>
               </li>
               <li className="flex items-center gap-x-3">
                 <Check className="text-primary-500 size-5" />
-                <span className="text-lg leading-none font-bold text-gray-500">
+                <span className="3xl:text-lg text-sm leading-none font-bold text-gray-500">
                   Dev-ready handoff (Figma Inspect, redlines)
                 </span>
               </li>
               <li className="flex items-center gap-x-3">
                 <Check className="text-primary-500 size-5" />
-                <span className="text-lg leading-none font-bold text-gray-500">
+                <span className="3xl:text-lg text-sm leading-none font-bold text-gray-500">
                   Post-launch optimization plan
                 </span>
               </li>
             </ul>
 
-            <div className="mt-[50px]">
+            <div className="3xl:mt-[50px] mt-[30px]">
               <button
                 data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
                 data-embed-type="popup"
-                className="bg-primary-500 inline-flex h-[52px] shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-6 text-base leading-7 font-semibold whitespace-nowrap text-white focus-visible:outline-none"
+                className="bg-primary-500 3xl:h-[52px] 3xl:px-6 3xl:text-base 3xl:leading-7 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white focus-visible:outline-none"
               >
                 Book a Call
               </button>
             </div>
           </div>
 
-          <div className="relative">
+          <div className="max-3xl:h-[296px] relative">
             <div className="relative size-full overflow-hidden rounded-[28px]">
               <Image
                 className="object-cover"
@@ -1528,30 +1531,30 @@ export default function Home() {
               />
             </div>
 
-            <div className="border-primary-500 absolute -right-[30px] -bottom-[30px] h-[264px] w-[260px] rounded-tl-[200px] rounded-tr-[28px] rounded-br-[48px] rounded-bl-[28px] border-2" />
+            <div className="border-primary-500 3xl:h-[264px] 3xl:w-[260px] 3xl:rounded-br-[48px] 3xl:-right-[30px] 3xl:-bottom-[30px] absolute -right-2.5 bottom-[17px] h-[139px] w-[137px] rounded-tl-[200px] rounded-tr-[28px] rounded-br-[28px] rounded-bl-[28px] border-2" />
           </div>
         </div>
       </div>
 
-      <div className="lg-sm:py-[100px] lg-sm:px-[150px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-[100px] py-[50px] 2xl:px-[300px]">
+      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-5 py-10 lg:p-10 lg:px-[100px] lg:py-[50px]">
         <div className="flex items-center justify-center">
-          <span className="bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-base leading-none font-semibold text-transparent uppercase">
+          <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-[10px] leading-none font-semibold text-transparent uppercase">
             Results
           </span>
         </div>
 
-        <h1 className="text-dark-blue-400 mt-5 text-center text-[52px] leading-none font-bold">
+        <h1 className="text-dark-blue-400 3xl:mt-5 mt-3 text-center text-[22px] leading-none font-bold 2xl:text-[52px]">
           What you can expect
         </h1>
 
-        <p className="mt-5 text-center text-lg leading-[1.6] text-gray-500">
+        <p className="3xl:mt-5 3xl:text-lg mt-3 text-center text-sm leading-[1.6] text-gray-500">
           Data-backed UX/UI design built on user testing, market research, and
           real-world product strategy.
         </p>
 
-        <div className="mt-[50px] space-y-5">
-          <div className="grid min-h-[420px] grid-cols-12 gap-5">
-            <div className="relative col-span-7 overflow-hidden rounded-[28px]">
+        <div className="3xl:mt-[50px] 3xl:space-y-5 mt-[30px] space-y-3.5">
+          <div className="3xl:min-h-[420px] 3xl:grid-cols-12 3xl:gap-5 grid min-h-[203px] gap-3.5 lg:grid-cols-2">
+            <div className="3xl:col-span-7 3xl:rounded-[28px] relative overflow-hidden rounded-[18px]">
               <Image
                 className="object-cover"
                 src="/demo-01.gif"
@@ -1560,7 +1563,7 @@ export default function Home() {
                 fill
               />
             </div>
-            <div className="relative col-span-5 overflow-hidden rounded-[28px]">
+            <div className="3xl:col-span-5 3xl:rounded-[28px] relative overflow-hidden rounded-[18px]">
               <Image
                 className="object-cover"
                 src="/demo-02.gif"
@@ -1570,8 +1573,8 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="grid min-h-[420px] grid-cols-12 gap-5">
-            <div className="relative col-span-5 overflow-hidden rounded-[28px]">
+          <div className="3xl:min-h-[420px] 3xl:grid-cols-12 3xl:gap-5 grid min-h-[203px] gap-3.5 lg:grid-cols-2">
+            <div className="3xl:col-span-5 relative overflow-hidden rounded-[28px]">
               <Image
                 className="object-cover"
                 src="/demo-03.gif"
@@ -1580,7 +1583,7 @@ export default function Home() {
                 fill
               />
             </div>
-            <div className="relative col-span-7 overflow-hidden rounded-[28px]">
+            <div className="3xl:col-span-7 relative overflow-hidden rounded-[28px]">
               <Image
                 className="object-cover"
                 src="/demo-04.gif"
@@ -1590,8 +1593,8 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="grid min-h-[420px] grid-cols-12 gap-5">
-            <div className="relative col-span-7 overflow-hidden rounded-[28px]">
+          <div className="3xl:min-h-[420px] 3xl:grid-cols-12 3xl:gap-5 grid min-h-[203px] gap-3.5 lg:grid-cols-2">
+            <div className="3xl:col-span-7 relative overflow-hidden rounded-[28px]">
               <Image
                 className="object-cover"
                 src="/demo-05.gif"
@@ -1600,7 +1603,7 @@ export default function Home() {
                 fill
               />
             </div>
-            <div className="relative col-span-5 overflow-hidden rounded-[28px]">
+            <div className="3xl:col-span-5 relative overflow-hidden rounded-[28px]">
               <Image
                 className="object-cover"
                 src="/demo-06.gif"
@@ -1610,8 +1613,8 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="grid min-h-[420px] grid-cols-12 gap-5">
-            <div className="relative col-span-5 overflow-hidden rounded-[28px]">
+          <div className="3xl:min-h-[420px] 3xl:grid-cols-12 3xl:gap-5 grid min-h-[203px] gap-3.5 lg:grid-cols-2">
+            <div className="3xl:col-span-5 relative overflow-hidden rounded-[28px]">
               <Image
                 className="object-cover"
                 src="/demo-07.gif"
@@ -1620,7 +1623,7 @@ export default function Home() {
                 fill
               />
             </div>
-            <div className="relative col-span-7 overflow-hidden rounded-[28px]">
+            <div className="3xl:col-span-7 relative overflow-hidden rounded-[28px]">
               <Image
                 className="object-cover"
                 src="/demo-08.gif"
@@ -1633,122 +1636,202 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="lg-sm:pb-[100px] px-[100px] pt-[50px] pb-[50px] xl:px-[150px] 2xl:px-[300px]">
+      <div className="5xl:px-[300px] 4xl:px-[150px] 3xl:pb-[100px] pt-5 pb-10 md:p-10 md:pt-5 lg:px-[100px] lg:pt-[50px] lg:pb-[50px]">
         <div className="flex items-center justify-center">
-          <span className="bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-base leading-none font-semibold text-transparent uppercase">
+          <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-[10px] leading-none font-semibold text-transparent uppercase">
             Testimonials
           </span>
         </div>
 
-        <h1 className="text-dark-blue-400 mt-5 text-center text-[52px] leading-none font-bold">
+        <h1 className="text-dark-blue-400 3xl:mt-5 3xl:text-[52px] mt-3 text-center text-[22px] leading-none font-bold">
           What people are saying about us...
         </h1>
 
-        <p className="mt-5 text-center text-lg leading-[1.6] text-gray-500">
+        <p className="3xl:mt-5 3xl:text-lg mt-3 text-center text-sm leading-[1.6] text-gray-500">
           Real feedback from clients who’ve seen measurable results.
         </p>
 
-        <div className="mt-[50px] grid grid-cols-2 gap-x-8">
-          <div className="grid gap-10">
-            <div className="relative h-[359.07px]">
-              <Image
-                className="object-contain"
-                src="/testimonial-01.png"
-                alt="Testimonial"
-                sizes="50vw"
-                fill
-              />
+        <div className="3xl:mt-[50px] 3xl:gap-x-8 mt-[30px] grid gap-3.5 md:grid-cols-2">
+          <div className="3xl:gap-y-10 grid gap-y-3.5">
+            <div className="3xl:contents hidden">
+              <div className="relative h-[359.07px]">
+                <Image
+                  className="object-contain"
+                  src="/testimonial-01.png"
+                  alt="Testimonial"
+                  sizes="50vw"
+                  fill
+                />
+              </div>
+              <div className="relative h-[311.41px]">
+                <Image
+                  className="object-contain"
+                  src="/testimonial-02.png"
+                  alt="Testimonial"
+                  sizes="50vw"
+                  fill
+                />
+              </div>
+              <div className="relative h-[343.18px]">
+                <Image
+                  className="object-contain"
+                  src="/testimonial-03.png"
+                  alt="Testimonial"
+                  sizes="50vw"
+                  fill
+                />
+              </div>
+              <div className="relative h-[459.69px]">
+                <Image
+                  className="object-contain"
+                  src="/testimonial-04.png"
+                  alt="Testimonial"
+                  sizes="50vw"
+                  fill
+                />
+              </div>
             </div>
-            <div className="relative h-[311.41px]">
-              <Image
-                className="object-contain"
-                src="/testimonial-02.png"
-                alt="Testimonial"
-                sizes="50vw"
-                fill
-              />
-            </div>
-            <div className="relative h-[343.18px]">
-              <Image
-                className="object-contain"
-                src="/testimonial-03.png"
-                alt="Testimonial"
-                sizes="50vw"
-                fill
-              />
-            </div>
-            <div className="relative h-[459.69px]">
-              <Image
-                className="object-contain"
-                src="/testimonial-04.png"
-                alt="Testimonial"
-                sizes="50vw"
-                fill
-              />
+            <div className="3xl:hidden contents">
+              <div className="relative h-[187.89px]">
+                <Image
+                  className="object-contain"
+                  src="/testimonial-01-lg.png"
+                  alt="Testimonial"
+                  sizes="50vw"
+                  fill
+                />
+              </div>
+              <div className="relative h-[162.96px]">
+                <Image
+                  className="object-contain"
+                  src="/testimonial-02-lg.png"
+                  alt="Testimonial"
+                  sizes="50vw"
+                  fill
+                />
+              </div>
+              <div className="relative h-[179.59px]">
+                <Image
+                  className="object-contain"
+                  src="/testimonial-03-lg.png"
+                  alt="Testimonial"
+                  sizes="50vw"
+                  fill
+                />
+              </div>
+              <div className="relative h-[240.56px]">
+                <Image
+                  className="object-contain"
+                  src="/testimonial-04-lg.png"
+                  alt="Testimonial"
+                  sizes="50vw"
+                  fill
+                />
+              </div>
             </div>
           </div>
-          <div className="grid gap-8">
-            <div className="relative h-[295.52px]">
-              <Image
-                className="object-contain"
-                src="/testimonial-05.png"
-                alt="Testimonial"
-                sizes="50vw"
-                fill
-              />
+          <div className="3xl:gap-y-8 grid gap-y-3.5">
+            <div className="3xl:contents hidden">
+              <div className="relative h-[295.52px]">
+                <Image
+                  className="object-contain"
+                  src="/testimonial-05.png"
+                  alt="Testimonial"
+                  sizes="50vw"
+                  fill
+                />
+              </div>
+              <div className="relative h-[459.69px]">
+                <Image
+                  className="object-contain"
+                  src="/testimonial-06.png"
+                  alt="Testimonial"
+                  sizes="50vw"
+                  fill
+                />
+              </div>
+              <div className="relative h-[390.85px]">
+                <Image
+                  className="object-contain"
+                  src="/testimonial-07.png"
+                  alt="Testimonial"
+                  sizes="50vw"
+                  fill
+                />
+              </div>
+              <div className="relative h-[295.52px]">
+                <Image
+                  className="object-contain"
+                  src="/testimonial-08.png"
+                  alt="Testimonial"
+                  sizes="50vw"
+                  fill
+                />
+              </div>
             </div>
-            <div className="relative h-[459.69px]">
-              <Image
-                className="object-contain"
-                src="/testimonial-06.png"
-                alt="Testimonial"
-                sizes="50vw"
-                fill
-              />
-            </div>
-            <div className="relative h-[390.85px]">
-              <Image
-                className="object-contain"
-                src="/testimonial-07.png"
-                alt="Testimonial"
-                sizes="50vw"
-                fill
-              />
-            </div>
-            <div className="relative h-[295.52px]">
-              <Image
-                className="object-contain"
-                src="/testimonial-08.png"
-                alt="Testimonial"
-                sizes="50vw"
-                fill
-              />
+            <div className="3xl:hidden contents">
+              <div className="relative h-[154.64px]">
+                <Image
+                  className="object-contain"
+                  src="/testimonial-05-lg.png"
+                  alt="Testimonial"
+                  sizes="50vw"
+                  fill
+                />
+              </div>
+              <div className="relative h-[240.56px]">
+                <Image
+                  className="object-contain"
+                  src="/testimonial-06-lg.png"
+                  alt="Testimonial"
+                  sizes="50vw"
+                  fill
+                />
+              </div>
+              <div className="relative h-[204.53px]">
+                <Image
+                  className="object-contain"
+                  src="/testimonial-07-lg.png"
+                  alt="Testimonial"
+                  sizes="50vw"
+                  fill
+                />
+              </div>
+              <div className="relative h-[154.64px]">
+                <Image
+                  className="object-contain"
+                  src="/testimonial-08-lg.png"
+                  alt="Testimonial"
+                  sizes="50vw"
+                  fill
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="lg-sm:px-[300px] px-[200px] py-[100px] xl:px-[350px] 2xl:px-[450px]">
+      <div className="5xl:px-[450px] 4xl:px-[350px] 3xl:px-[300px] 3xl:py-[100px] px-5 py-10 md:px-20 md:py-10 lg:px-[200px] lg:py-[50px]">
         <div className="flex items-center justify-center">
-          <span className="bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-base leading-none font-semibold text-transparent uppercase">
+          <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-[10px] leading-none font-semibold text-transparent uppercase">
             Faq’s
           </span>
         </div>
 
-        <div className="mx-auto mt-5 max-w-[670px]">
-          <h1 className="text-dark-blue-400 text-center text-[52px] leading-none font-bold">
+        <div className="3xl:mt-5 3xl:max-w-[670px] mx-auto mt-3">
+          <h1 className="text-dark-blue-400 3xl:text-[52px] text-center text-[22px] leading-none font-bold">
             Frequently asked questions
           </h1>
         </div>
 
-        <div className="mx-auto mt-5 max-w-[560px]">
-          <p className="text-center text-lg leading-[1.6] text-gray-500">
+        <div className="3xl:max-w-[560px] 3xl:mt-5 mx-auto mt-3 max-w-[368px]">
+          <p className="3xl:text-lg text-center text-sm leading-[1.6] text-gray-500">
             Data-backed UX/UI design built on user testing, market research, and
             real-world product strategy.
           </p>
         </div>
 
-        <div className="mt-[50px]">
+        <div className="3xl:mt-[50px] mt-[30px]">
           <Accordion
             type="single"
             collapsible
@@ -1884,41 +1967,43 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="lg-sm:py-[100px] lg-sm:px-[150px] px-[100px] py-[50px] 2xl:px-[300px]">
-        <div className="border-primary-100 rounded-[28px] border p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
+        <div className="border-primary-100 3xl:p-5 3xl:rounded-[28px] rounded-[18px] border p-3 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
           <div className="relative">
-            <div className="bg-dark-blue-600 relative rounded-[28px] border border-gray-200 py-[146px]">
-              <div className="mx-auto max-w-[750px]">
-                <div className="flex justify-center">
-                  <span className="inline-block text-base leading-none font-semibold text-white">
-                    Let’s Elevate Your Product
-                  </span>
-                </div>
-
-                <h1 className="mt-5 text-center text-[52px] leading-none font-bold text-white">
-                  Ready to turn your UX strategy into business results?
-                </h1>
-
-                <div className="mx-auto mt-5 max-w-[436px]">
-                  <p className="text-center text-lg leading-[1.6] text-white">
-                    Book a strategy call with us. We’ll review your goals and
-                    outline a clear path forward.
-                  </p>
-                </div>
+            <div className="bg-dark-blue-600 3xl:py-[146px] 3xl:rounded-[28px] relative rounded-[14px] border border-gray-200 py-10">
+              <div className="flex justify-center">
+                <span className="inline-block text-base leading-none font-semibold text-white">
+                  Let’s Elevate Your Product
+                </span>
               </div>
 
-              <div className="mx-auto mt-[50px] max-w-[461px]">
+              <div className="3xl:mt-5 3xl:max-w-[796px] mx-auto mt-3 max-w-[368px]">
+                <h1 className="3xl:text-[52px] text-center text-[22px] leading-none font-bold text-white">
+                  Ready to turn your UX strategy into business results?
+                </h1>
+              </div>
+
+              <div className="3xl:max-w-[436px] 3xl:mt-5 mx-auto mt-3 max-w-[380px]">
+                <p className="3xl:text-lg text-center text-sm leading-[1.6] text-white">
+                  Book a strategy call with us.{" "}
+                  <span className="3xl:contents block">
+                    We’ll review your goals and outline a clear path forward.
+                  </span>
+                </p>
+              </div>
+
+              <div className="3xl:mt-[50px] mx-auto mt-[30px] max-w-[461px]">
                 <div className="flex justify-center">
                   <button
                     data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
                     data-embed-type="popup"
-                    className="bg-primary-500 inline-flex h-[70px] shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-7 text-xl font-semibold whitespace-nowrap text-white focus-visible:outline-none"
+                    className="bg-primary-500 3xl:h-[70px] 3xl:px-7 3xl:text-xl inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white focus-visible:outline-none"
                   >
                     Book a Call
                   </button>
                 </div>
 
-                <p className="mt-[30px] text-center text-sm leading-[1.6] text-white">
+                <p className="3xl:mt-[30px] 3xl:text-sm mt-3 text-center text-[10px] leading-[1.6] text-white">
                   Get on a call with an expert UX designer
                 </p>
               </div>

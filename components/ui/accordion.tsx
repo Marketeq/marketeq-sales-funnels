@@ -46,14 +46,14 @@ function AccordionTrigger({
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
-          "text-dark-blue-400 flex flex-1 items-center justify-between px-7 py-5 text-left text-xl font-bold focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50",
+          "text-dark-blue-400 3xl:px-7 3xl:py-5 3xl:text-xl flex flex-1 items-center justify-between p-5 pb-3 text-left text-base font-bold focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50",
           className,
         )}
         {...props}
       >
         {children}
-        <Plus className="size-4 shrink-0 text-gray-500 group-data-[state=open]/item:hidden" />
-        <Minus className="size-4 shrink-0 text-gray-500 group-data-[state=closed]/item:hidden" />
+        <Plus className="size-5 shrink-0 text-gray-500 group-data-[state=open]/item:hidden" />
+        <Minus className="size-5 shrink-0 text-gray-500 group-data-[state=closed]/item:hidden" />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   )
@@ -72,7 +72,7 @@ function AccordionContent({
     >
       <div
         className={cn(
-          "px-7 pb-7 text-lg leading-[1.6] text-gray-500",
+          "3xl:px-7 3xl:pb-7 3xl:text-lg px-5 pb-5 text-sm leading-[1.6] text-gray-500",
           className,
         )}
       >

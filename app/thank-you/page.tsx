@@ -54,7 +54,7 @@ export default function ThankYou() {
         <div className="px-[126px] pt-[50px] pb-[100px]">
           <div className="flex items-center justify-center">
             <div className="border-primary-500 flex h-11 shrink-0 items-center gap-x-[8.32px] rounded-full border-[1.66px] px-5 py-3">
-              <Lightning01 className="text-primary-500 max-md:size-3.5" />
+              <Lightning01 className="text-primary-500 max-3xl:size-3.5" />
               <span className="text-base leading-5 font-bold text-white">
                 UX/UI That Drives Growth
               </span>
@@ -128,7 +128,7 @@ export default function ThankYou() {
                   <CalendarCheck01 />
                 </div>
                 <div className="py-4">
-                  <h1 className="text-dark-blue-400 text-2xl leading-none font-extrabold">
+                  <h1 className="text-dark-blue-400 text-4xl leading-none font-extrabold">
                     Step 1: Add the Appointment to Your Calendar
                   </h1>
 
