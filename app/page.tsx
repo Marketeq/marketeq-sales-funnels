@@ -527,7 +527,7 @@ export default function Home() {
           <button
             data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
             data-embed-type="popup"
-            className="bg-primary-500 3xl:h-10 3xl:px-5 3xl:text-sm inline-flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-lg px-3 text-xs leading-5 font-semibold whitespace-nowrap text-white focus-visible:outline-none"
+            className="bg-primary-500 3xl:h-10 3xl:px-5 3xl:text-sm inline-flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-lg px-3 text-[10px] leading-5 font-semibold whitespace-nowrap text-white focus-visible:outline-none"
           >
             Book a Call
           </button>
@@ -539,19 +539,19 @@ export default function Home() {
             <div className="flex items-center justify-center">
               <div className="border-primary-500 3xl:h-11 3xl:px-5 3xl:py-3 flex h-8 shrink-0 items-center gap-x-[8.32px] rounded-full border-[1.66px] px-3 py-1.5">
                 <Lightning01 className="text-primary-500 max-3xl:size-3.5" />
-                <span className="3xl:text-base 3xl:leading-5 text-xs leading-5 font-bold text-white">
+                <span className="3xl:text-base 3xl:leading-5 text-[10px] leading-5 font-bold text-white">
                   UX/UI That Drives Growth
                 </span>
               </div>
             </div>
 
             <div className="3xl:mt-6 mt-3">
-              <h1 className="3xl:text-[80px] text-center text-[62px] leading-none font-extrabold text-white">
+              <h1 className="3xl:text-[80px] text-center text-[26px] leading-none font-extrabold text-white md:text-[62px]">
                 <span className="3xl:contents block">We design digital</span>{" "}
                 products that perform
               </h1>
 
-              <div className="3xl:max-w-none 3xl:mt-6 mx-auto mt-3 max-w-[324px]">
+              <div className="3xl:mt-6 mt-3">
                 <p className="3xl:text-lg text-center text-sm leading-none text-white">
                   Data-backed UX/UI rooted in user testing, market insight, and
                   clear business outcomes.
@@ -560,7 +560,8 @@ export default function Home() {
 
               <div className="3xl:mt-[50px] 3xl:gap-y-5 mt-10 flex flex-col items-center gap-y-2">
                 <button className="bg-primary-500 3xl:h-[70px] 3xl:gap-x-3 3xl:px-7 3xl:text-xl inline-flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-4 text-sm font-semibold whitespace-nowrap text-white focus-visible:outline-none">
-                  Book a Strategy Call <ArrowRight className="size-[22px]" />
+                  Book a Strategy Call{" "}
+                  <ArrowRight className="3xl:size-[22px] size-[15px]" />
                 </button>
 
                 <p className="3xl:text-sm text-center text-[10px] leading-none text-white">
@@ -575,14 +576,14 @@ export default function Home() {
       </div>
 
       <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-5 py-10 md:p-5 lg:px-[100px] lg:py-[50px]">
-        <div className="3xl:max-w-[630px] mx-auto lg:max-w-[259px]">
+        <div className="3xl:max-w-[630px] mx-auto">
           <h1 className="text-dark-blue-400 3xl:text-[54px] text-center text-[22px] leading-none font-bold">
             What our clients have to say about us
           </h1>
         </div>
 
         <div className="3xl:mt-[50px] 3xl:gap-x-[75px] mt-[30px] grid gap-9 md:grid-cols-2">
-          <div className="relative h-[151px]">
+          <div className="relative max-md:h-[151px]">
             <div className="relative size-full overflow-hidden rounded-[28px]">
               <Image
                 className="object-cover"
@@ -659,8 +660,8 @@ export default function Home() {
         </div>
 
         <div className="3xl:mt-[50px] 3xl:gap-x-5 mt-[30px] grid gap-3.5 md:grid-cols-3">
-          <article className="3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
-            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center rounded-full border-[1.2px] px-[13px]">
+          <article className="3xl:rounded-[25px] 3xl:p-7 grid rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center justify-self-start rounded-full border-[1.2px] px-[13px]">
               <Lightning01 className="text-primary-500 size-5" />{" "}
               <span className="text-dark-blue-400 3xl:text-sm text-[14.4px] font-bold">
                 Problem 1
@@ -676,19 +677,18 @@ export default function Home() {
                 Users drop off before finishing onboarding. We streamline flows
                 through tested UX patterns.
               </p>
-
-              <div className="4xl:mt-[50px] 3xl:mt-[26px] 3xl:flex-row 3xl:items-center 3xl:gap-x-3 3xl:pt-7 mt-[30px] flex flex-col items-start gap-y-1 border-t-2 border-gray-200 pt-5">
-                <h1 className="text-dark-blue-400 3xl:text-[40px] text-[30px] leading-none font-black">
-                  +32%
-                </h1>
-                <span className="text-dark-blue-400 3xl:text-lg text-sm leading-none font-semibold">
-                  Improved signup completion rate
-                </span>
-              </div>
+            </div>
+            <div className="4xl:mt-[50px] 3xl:mt-[26px] 3xl:flex-row 3xl:items-center 3xl:pt-7 mt-[30px] flex flex-row items-center gap-x-3 gap-y-1 self-end border-t-2 border-gray-200 pt-5 md:flex-col md:items-start">
+              <h1 className="text-dark-blue-400 3xl:text-[40px] text-[30px] leading-none font-black">
+                +32%
+              </h1>
+              <span className="text-dark-blue-400 3xl:text-lg text-sm leading-none font-semibold">
+                Improved signup completion rate
+              </span>
             </div>
           </article>
-          <article className="3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
-            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center rounded-full border-[1.2px] px-[13px]">
+          <article className="3xl:rounded-[25px] 3xl:p-7 grid rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center justify-self-start rounded-full border-[1.2px] px-[13px]">
               <Lightning01 className="text-primary-500 size-5" />{" "}
               <span className="text-dark-blue-400 3xl:text-sm text-[14.4px] font-bold">
                 Problem 2
@@ -704,19 +704,18 @@ export default function Home() {
                 Users can’t find answers quickly. We simplify navigation and
                 create clarity.
               </p>
-
-              <div className="4xl:mt-[50px] 3xl:mt-[26px] 3xl:flex-row 3xl:items-center 3xl:gap-x-3 3xl:pt-7 mt-[30px] flex flex-col items-start gap-y-1 border-t-2 border-gray-200 pt-5">
-                <h1 className="text-dark-blue-400 3xl:text-[40px] text-[30px] leading-none font-black">
-                  -40%
-                </h1>
-                <span className="text-dark-blue-400 3xl:text-lg text-sm leading-none font-semibold">
-                  Reduction of support tickets
-                </span>
-              </div>
+            </div>
+            <div className="4xl:mt-[50px] 3xl:mt-[26px] 3xl:flex-row 3xl:items-center 3xl:pt-7 mt-[30px] flex flex-row items-center gap-x-3 gap-y-1 self-end border-t-2 border-gray-200 pt-5 md:flex-col md:items-start">
+              <h1 className="text-dark-blue-400 3xl:text-[40px] text-[30px] leading-none font-black">
+                -40%
+              </h1>
+              <span className="text-dark-blue-400 3xl:text-lg text-sm leading-none font-semibold">
+                Reduction of support tickets
+              </span>
             </div>
           </article>
-          <article className="3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
-            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center rounded-full border-[1.2px] px-[13px]">
+          <article className="3xl:rounded-[25px] 3xl:p-7 grid rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center justify-self-start rounded-full border-[1.2px] px-[13px]">
               <Lightning01 className="text-primary-500 size-5" />{" "}
               <span className="text-dark-blue-400 3xl:text-sm text-[14.4px] font-bold">
                 Problem 3
@@ -732,15 +731,14 @@ export default function Home() {
                 Interfaces feel dated next to competitors. We modernize visuals
                 backed by competitive market research.
               </p>
-
-              <div className="4xl:mt-[50px] 3xl:mt-[26px] 3xl:flex-row 3xl:items-center 3xl:gap-x-3 3xl:pt-7 mt-[30px] flex flex-col items-start gap-y-1 border-t-2 border-gray-200 pt-5">
-                <h1 className="text-dark-blue-400 3xl:text-[40px] text-[30px] leading-none font-black">
-                  +18%
-                </h1>
-                <span className="text-dark-blue-400 3xl:text-lg text-sm leading-none font-semibold">
-                  Increased brand perception among users
-                </span>
-              </div>
+            </div>
+            <div className="4xl:mt-[50px] 3xl:mt-[26px] 3xl:flex-row 3xl:items-center 3xl:pt-7 mt-[30px] flex flex-row items-center gap-x-3 gap-y-1 self-end border-t-2 border-gray-200 pt-5 md:flex-col md:items-start">
+              <h1 className="text-dark-blue-400 3xl:text-[40px] text-[30px] leading-none font-black">
+                +18%
+              </h1>
+              <span className="text-dark-blue-400 3xl:text-lg text-sm leading-none font-semibold">
+                Increased brand perception among users
+              </span>
             </div>
           </article>
         </div>
@@ -873,14 +871,16 @@ export default function Home() {
             results.
           </h1>
         </div>
-        <p className="3xl:mt-5 3xl:text-lg mt-3 text-center text-sm leading-[1.6] text-gray-500">
-          Data-backed UX/UI design built on user testing, market research, and
-          real-world product strategy.
-        </p>
+        <div className="max-3xl:max-w-[378px] 3xl:mt-5 mx-auto mt-3">
+          <p className="3xl:text-lg text-center text-sm leading-[1.6] text-gray-500">
+            Data-backed UX/UI design built on user testing, market research, and
+            real-world product strategy.
+          </p>
+        </div>
 
         <div className="max-3xl:grid-cols-2 3xl:mt-[50px] 3xl:gap-y-5 mt-[30px] grid gap-3.5 max-md:grid-cols-none">
           <div className="3xl:grid contents min-h-[475px] grid-cols-4 gap-5">
-            <article className="3xl:col-span-2 3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:col-span-2 3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   User Research & Insights
@@ -903,7 +903,7 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   UX Strategy & Product Roadmapping
@@ -925,7 +925,7 @@ export default function Home() {
                 />
               </div>
             </article>
-            <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   User Journey Mapping
@@ -950,7 +950,7 @@ export default function Home() {
           </div>
 
           <div className="3xl:grid contents min-h-[847px] grid-cols-3 gap-5">
-            <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   Information Architecture
@@ -974,7 +974,7 @@ export default function Home() {
             </article>
 
             <div className="3xl:grid contents grid-rows-2 gap-y-5">
-              <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+              <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
                 <div className="space-y-2.5">
                   <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                     Wireframing & Prototyping
@@ -996,7 +996,7 @@ export default function Home() {
                   />
                 </div>
               </article>
-              <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+              <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
                 <div className="space-y-2.5">
                   <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                     Visual Design & Brand Integration
@@ -1020,7 +1020,7 @@ export default function Home() {
               </article>
             </div>
 
-            <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   Interaction Design & UI Animations
@@ -1045,7 +1045,7 @@ export default function Home() {
           </div>
 
           <div className="3xl:grid contents min-h-[475px] grid-cols-4 gap-5">
-            <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   Design Systems & Component Libraries
@@ -1067,7 +1067,7 @@ export default function Home() {
                 />
               </div>
             </article>
-            <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   Usability & A/B Testing
@@ -1090,7 +1090,7 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="3xl:col-span-2 3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:col-span-2 3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   Accessibility & Inclusive Design
@@ -1115,7 +1115,7 @@ export default function Home() {
           </div>
 
           <div className="3xl:grid contents min-h-[501px] grid-cols-3 gap-5">
-            <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   Market & Competitive Research
@@ -1138,7 +1138,7 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   Innovation & Feature Strategy
@@ -1161,7 +1161,7 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="max-3xl:col-span-2 3xl:rounded-[25px] 3xl:p-7 flex flex-col gap-y-[50px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] max-md:col-span-1">
+            <article className="max-3xl:col-span-2 3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] max-md:col-span-1">
               <div className="space-y-2.5">
                 <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
                   Product Launch & Growth Support
@@ -1224,7 +1224,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] flex flex-col gap-[50px] px-5 py-10 md:p-10 lg:flex-row lg:px-[100px] lg:py-[50px]">
+      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] flex flex-col gap-[50px] px-5 py-10 md:flex-row md:p-10 lg:px-[100px] lg:py-[50px]">
         <div className="3xl:max-w-[775px] flex-auto lg:max-w-[393px]">
           <div className="flex items-center">
             <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-[10px] leading-none font-semibold text-transparent uppercase">
@@ -1250,7 +1250,7 @@ export default function Home() {
             Book a Call
           </button>
         </div>
-        <div className="3xl:w-[495px] lg:w-[376px] lg:flex-none">
+        <div className="3xl:w-[495px] md:w-[381px] md:flex-none">
           <div className="group flex gap-x-5">
             <div className="relative">
               <div className="bg-primary-25 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
@@ -1412,8 +1412,8 @@ export default function Home() {
         </div>
 
         <div className="border-primary-500 3xl:mt-[50px] 3xl:rounded-[28px] 3xl:p-5 mt-[30px] rounded-[18px] border p-3">
-          <div className="3xl:p-[100px] 3xl:pr-[120px] 3xl:gap-x-[50px] 3xl:rounded-[25px] flex flex-col-reverse items-start gap-y-[30px] rounded-[14px] bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] lg:flex-row lg:items-center lg:gap-x-10 lg:px-[104px] lg:py-10">
-            <div className="shrink-0">
+          <div className="3xl:p-[100px] 3xl:pr-[120px] 3xl:gap-x-[50px] 3xl:rounded-[25px] flex flex-col-reverse items-start gap-y-[30px] rounded-[14px] bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] md:flex-row md:items-center md:gap-x-10 md:px-[104px] md:py-10">
+            <div className="shrink-0 max-md:px-[21.5px]">
               <div className="3xl:size-[248px] relative size-[94px] overflow-hidden rounded-[28px]">
                 <Image
                   className="object-cover"
@@ -1447,8 +1447,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] px-5 py-10 lg:p-10 lg:px-[100px] lg:py-[50px]">
-        <div className="3xl:gap-x-[75px] flex flex-col-reverse gap-[30px] lg:grid lg:grid-cols-2">
+      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
+        <div className="3xl:gap-x-[75px] flex flex-col-reverse gap-[30px] md:grid md:grid-cols-2">
           <div>
             <div className="flex">
               <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-[10px] leading-none font-semibold text-transparent uppercase">
@@ -1536,7 +1536,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-5 py-10 lg:p-10 lg:px-[100px] lg:py-[50px]">
+      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
         <div className="flex items-center justify-center">
           <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-[10px] leading-none font-semibold text-transparent uppercase">
             Results
@@ -1547,10 +1547,12 @@ export default function Home() {
           What you can expect
         </h1>
 
-        <p className="3xl:mt-5 3xl:text-lg mt-3 text-center text-sm leading-[1.6] text-gray-500">
-          Data-backed UX/UI design built on user testing, market research, and
-          real-world product strategy.
-        </p>
+        <div className="3xl:mt-5 max-3xl:max-w-[370px] mx-auto mt-3">
+          <p className="3xl:text-lg text-center text-sm leading-[1.6] text-gray-500">
+            Data-backed UX/UI design built on user testing, market research, and
+            real-world product strategy.
+          </p>
+        </div>
 
         <div className="3xl:mt-[50px] 3xl:space-y-5 mt-[30px] space-y-3.5">
           <div className="3xl:min-h-[420px] 3xl:grid-cols-12 3xl:gap-5 grid min-h-[203px] gap-3.5 lg:grid-cols-2">
@@ -1824,7 +1826,7 @@ export default function Home() {
           </h1>
         </div>
 
-        <div className="3xl:max-w-[560px] 3xl:mt-5 mx-auto mt-3 max-w-[368px]">
+        <div className="3xl:max-w-[560px] 3xl:mt-5 mx-auto mt-3 max-w-[368px] max-md:max-w-none">
           <p className="3xl:text-lg text-center text-sm leading-[1.6] text-gray-500">
             Data-backed UX/UI design built on user testing, market research, and
             real-world product strategy.
@@ -1967,7 +1969,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
+      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] px-5 pb-10 md:p-10 lg:px-[100px] lg:py-[50px]">
         <div className="border-primary-100 3xl:p-5 3xl:rounded-[28px] rounded-[18px] border p-3 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
           <div className="relative">
             <div className="bg-dark-blue-600 3xl:py-[146px] 3xl:rounded-[28px] relative rounded-[14px] border border-gray-200 py-10">

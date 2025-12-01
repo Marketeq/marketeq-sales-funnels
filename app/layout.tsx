@@ -50,14 +50,16 @@ export default function RootLayout({
       <body>
         {children}
 
-        <footer className="5xl:px-[300px] 4xl:px-[150px] 3xl:pb-[50px] px-[100px] pb-5">
+        <footer className="5xl:px-[300px] 4xl:px-[150px] 3xl:pb-[50px] p-5 pb-5 md:px-[50px] md:pt-0 lg:px-[100px]">
           <div className="3xl:py-[50px] flex flex-col items-center gap-y-5 md:flex-row md:justify-between">
             <div className="3xl:gap-x-[50px] flex flex-col items-center gap-x-10 gap-y-5 md:flex-row">
-              <Marketeq className="max-3xl:w-28 max-3xl:h-[16.46px]" />
+              <Marketeq className="max-3xl:w-28 max-3xl:h-[16.46px] max-md:h-[18.95px] max-md:w-[129px]" />
 
-              <span className="text-dark-blue-400 3xl:text-sm 3xl:leading-none inline-block text-center text-xs leading-[1.8] md:text-left">
-                © 2011 - 2025 Marketeq Digital Inc. All Rights Reserved.
-              </span>
+              <div className="mx-auto max-md:max-w-[205px]">
+                <span className="text-dark-blue-400 3xl:text-sm 3xl:leading-none inline-block text-center text-xs leading-[1.8] md:text-left">
+                  © 2011 - 2025 Marketeq Digital Inc. All Rights Reserved.
+                </span>
+              </div>
             </div>
 
             <div className="flex items-center gap-x-5">
