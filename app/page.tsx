@@ -29,6 +29,7 @@ import testimonial06Lg from "@/public/testimonial-06-lg.png"
 import testimonial07Lg from "@/public/testimonial-07-lg.png"
 import testimonial08Lg from "@/public/testimonial-08-lg.png"
 import Link from "next/link"
+import { LandingHeader } from "@/components/landing-header"
 
 const Referrizer = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => {
   return (
@@ -516,60 +517,7 @@ const ChartBreakoutCircle = ({
 export default function Home() {
   return (
     <main className="relative isolate bg-white">
-      <header className="bg-dark-blue-600 5xl:px-[150px] 3xl:h-16 sticky top-0 z-10 h-14 px-5 py-3 lg:px-[100px]">
-        <nav className="3xl:px-0 flex items-center justify-between lg:px-5">
-          <Link href="/" className="focus-visible:outline-none">
-            <MarketeqWhite className="max-3xl:h-[17.04px] max-3xl:w-[116px] shrink-0" />
-          </Link>
-
-          <div className="3xl:inline-flex hidden gap-x-[50px] pt-[3px]">
-            <Link
-              href="#problem"
-              className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline focus-visible:outline-none"
-            >
-              Problem
-            </Link>
-            <Link
-              href="#advantage"
-              className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline focus-visible:outline-none"
-            >
-              Advantage
-            </Link>
-            <Link
-              href="#services"
-              className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline focus-visible:outline-none"
-            >
-              Services
-            </Link>
-            <Link
-              href="#process"
-              className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline focus-visible:outline-none"
-            >
-              Process
-            </Link>
-            <Link
-              href="#deliverables"
-              className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline focus-visible:outline-none"
-            >
-              Deliverables
-            </Link>
-            <Link
-              href="#results"
-              className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline focus-visible:outline-none"
-            >
-              Results
-            </Link>
-          </div>
-
-          <button
-            data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
-            data-embed-type="popup"
-            className="bg-primary-500 3xl:h-10 3xl:px-5 3xl:text-sm hover:bg-primary-600 inline-flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg px-3 text-[10px] leading-5 font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
-          >
-            Book a Call
-          </button>
-        </nav>
-      </header>
+      <LandingHeader />
       <div className="bg-dark-blue-600 relative">
         <div className="5xl:px-[300px] 4xl:px-[275px] 3xl:px-[200px] 3xl:py-[100px] px-[30px] pt-5 pb-10 lg:px-[100px]">
           <div className="mx-auto max-w-[1040px]">
@@ -791,7 +739,7 @@ export default function Home() {
 
       <div
         id="advantage"
-        className="3xl:scroll-mt-16 5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] scroll-mt-14 bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]"
+        className="3xl:scroll-mt-16 5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] scroll-mt-14 bg-[linear-gradient(180deg,rgba(225,234,250,0.2)_0%,rgba(255,255,255,0.2)_70.7%,rgba(255,255,255,0.04)_75.12%,rgba(255,255,255,0.2)_89.72%)] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]"
       >
         <div className="flex items-center justify-center">
           <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-xs leading-none font-semibold text-transparent uppercase">

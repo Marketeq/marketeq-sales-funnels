@@ -498,7 +498,7 @@ export default function ThankYou() {
         <div className="max-3xl:max-w-[428px] max-3xl:mx-auto 3xl:mt-5 mt-3">
           <h1 className="text-dark-blue-400 3xl:text-[52px] text-center text-[22px] leading-none font-bold">
             Why companies choose Marketeq over{" "}
-            <span className="block">traditional design agencies</span>
+            <span className="md:block">traditional design agencies</span>
           </h1>
         </div>
 
