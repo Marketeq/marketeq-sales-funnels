@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
           Privacy Policy
         </h1>
         <div className="3xl:mt-[30px] mt-5">
-          <p className="text-lg leading-none text-gray-500">
+          <p className="3xl:text-lg text-sm leading-none text-gray-500">
             Last Updated: November 18th, 2025
           </p>
 
