@@ -1671,7 +1671,7 @@ export default function Home() {
 
         <div className="3xl:mt-[50px] 3xl:gap-x-8 mt-[30px] grid gap-3.5 md:grid-cols-2">
           <div>
-            <div className="3xl:block hidden space-y-10">
+            <div className="3xl:block hidden space-y-8">
               <Image className="w-full" src={testimonial01} alt="Testimonial" />
               <Image className="w-full" src={testimonial02} alt="Testimonial" />
               <Image className="w-full" src={testimonial03} alt="Testimonial" />
