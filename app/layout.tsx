@@ -53,12 +53,12 @@ export default function RootLayout({
         {children}
         <footer className="5xl:px-[300px] 4xl:px-[150px] p-5 md:p-10 lg:px-[100px] lg:py-[50px]">
           <div className="3xl:flex 3xl:items-center 3xl:justify-between grid">
-            <div className="3xl:gap-x-[50px] 3xl:justify-start flex items-center justify-between">
+            <div className="3xl:gap-x-[50px] 3xl:justify-start flex flex-col items-center gap-y-5 md:flex-row md:justify-between">
               <Link href="/" className="focus-visible:outline-none">
                 <Marketeq className="3xl:w-[149.72px] 3xl:h-[22px] h-[18.95px] w-[129px]" />
               </Link>
 
-              <span className="text-dark-blue-400 3xl:text-sm 3xl:leading-none inline-block text-center text-xs leading-[1.8] md:text-left">
+              <span className="text-dark-blue-400 3xl:text-sm inline-block text-center text-xs leading-none max-md:max-w-[205px] max-md:flex-auto md:text-left">
                 © 2011 - 2025 Marketeq Digital Inc. All Rights Reserved.
               </span>
             </div>
