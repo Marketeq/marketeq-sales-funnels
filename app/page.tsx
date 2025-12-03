@@ -28,6 +28,7 @@ import testimonial05Lg from "@/public/testimonial-05-lg.png"
 import testimonial06Lg from "@/public/testimonial-06-lg.png"
 import testimonial07Lg from "@/public/testimonial-07-lg.png"
 import testimonial08Lg from "@/public/testimonial-08-lg.png"
+import Link from "next/link"
 
 const Referrizer = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => {
   return (
@@ -517,33 +518,53 @@ export default function Home() {
     <main className="relative isolate bg-white">
       <header className="bg-dark-blue-600 5xl:px-[150px] 3xl:h-16 sticky top-0 z-10 h-14 px-5 py-3 lg:px-[100px]">
         <nav className="3xl:px-0 flex items-center justify-between lg:px-5">
-          <MarketeqWhite className="max-3xl:h-[17.04px] max-3xl:w-[116px] shrink-0" />
+          <Link href="/" className="focus-visible:outline-none">
+            <MarketeqWhite className="max-3xl:h-[17.04px] max-3xl:w-[116px] shrink-0" />
+          </Link>
 
           <div className="3xl:inline-flex hidden gap-x-[50px] pt-[3px]">
-            <span className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline">
+            <Link
+              href="#problem"
+              className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline focus-visible:outline-none"
+            >
               Problem
-            </span>
-            <span className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline">
+            </Link>
+            <Link
+              href="#advantage"
+              className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline focus-visible:outline-none"
+            >
               Advantage
-            </span>
-            <span className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline">
+            </Link>
+            <Link
+              href="#services"
+              className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline focus-visible:outline-none"
+            >
               Services
-            </span>
-            <span className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline">
+            </Link>
+            <Link
+              href="#process"
+              className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline focus-visible:outline-none"
+            >
               Process
-            </span>
-            <span className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline">
+            </Link>
+            <Link
+              href="#deliverables"
+              className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline focus-visible:outline-none"
+            >
               Deliverables
-            </span>
-            <span className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline">
+            </Link>
+            <Link
+              href="#results"
+              className="inline-block cursor-pointer text-[15px] leading-none font-medium text-white transition duration-300 hover:underline focus-visible:outline-none"
+            >
               Results
-            </span>
+            </Link>
           </div>
 
           <button
             data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
             data-embed-type="popup"
-            className="bg-primary-500 3xl:h-10 3xl:px-5 3xl:text-sm inline-flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-lg px-3 text-[10px] leading-5 font-semibold whitespace-nowrap text-white focus-visible:outline-none"
+            className="bg-primary-500 3xl:h-10 3xl:px-5 3xl:text-sm hover:bg-primary-600 inline-flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg px-3 text-[10px] leading-5 font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
           >
             Book a Call
           </button>
@@ -575,7 +596,11 @@ export default function Home() {
               </div>
 
               <div className="3xl:mt-[50px] 3xl:gap-y-5 mt-10 flex flex-col items-center gap-y-2">
-                <button className="bg-primary-500 3xl:h-[70px] 3xl:gap-x-3 3xl:px-7 3xl:text-xl inline-flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-4 text-sm font-semibold whitespace-nowrap text-white focus-visible:outline-none">
+                <button
+                  data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
+                  data-embed-type="popup"
+                  className="bg-primary-500 3xl:h-[70px] 3xl:gap-x-3 3xl:px-7 3xl:text-xl hover:bg-primary-600 inline-flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-4 text-sm font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+                >
                   Book a Strategy Call{" "}
                   <ArrowRight className="3xl:size-[22px] size-[15px]" />
                 </button>
@@ -661,7 +686,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
+      <div
+        id="problem"
+        className="3xl:scroll-mt-16 5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] scroll-mt-14 px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]"
+      >
         <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-[10px] leading-none font-semibold text-transparent uppercase">
           The Problem
         </span>
@@ -761,7 +789,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
+      <div
+        id="advantage"
+        className="3xl:scroll-mt-16 5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] scroll-mt-14 bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]"
+      >
         <div className="flex items-center justify-center">
           <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-xs leading-none font-semibold text-transparent uppercase">
             How we’re different
@@ -866,7 +897,11 @@ export default function Home() {
         </div>
 
         <div className="3xl:mt-[75px] mt-[30px] flex items-center justify-center">
-          <button className="bg-primary-500 3xl:h-[52px] 3xl:px-6 3xl:text-base inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-3.5 text-xs leading-7 font-semibold whitespace-nowrap text-white focus-visible:outline-none">
+          <button
+            data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
+            data-embed-type="popup"
+            className="bg-primary-500 3xl:h-[52px] 3xl:px-6 3xl:text-base hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs leading-7 font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+          >
             Book a Strategy Call
           </button>
         </div>
@@ -876,7 +911,10 @@ export default function Home() {
         <ChartAsSection />
       </div>
 
-      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
+      <div
+        id="services"
+        className="3xl:scroll-mt-16 5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] scroll-mt-14 px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]"
+      >
         <div className="flex items-center justify-center">
           <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-[10px] leading-none font-semibold text-transparent uppercase">
             What we offer
@@ -912,7 +950,7 @@ export default function Home() {
               <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
-                  src="/todos.jpg"
+                  src="/ux-strategy-01.jpg"
                   alt="Todos"
                   sizes="50vw"
                   fill
@@ -935,7 +973,7 @@ export default function Home() {
               <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
-                  src="/todos.jpg"
+                  src="/ux-strategy-02.jpg"
                   alt="Todos"
                   sizes="25vw"
                   fill
@@ -957,7 +995,7 @@ export default function Home() {
               <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
-                  src="/todos.jpg"
+                  src="/ux-strategy-03.jpg"
                   alt="Todos"
                   sizes="25vw"
                   fill
@@ -982,7 +1020,7 @@ export default function Home() {
               <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
-                  src="/todos.jpg"
+                  src="/ux-strategy-04.jpg"
                   alt="Todos"
                   sizes="50vw"
                   fill
@@ -1006,7 +1044,7 @@ export default function Home() {
                 <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                   <Image
                     className="object-cover"
-                    src="/todos.jpg"
+                    src="/ux-strategy-05.jpg"
                     alt="Todos"
                     sizes="25vw"
                     fill
@@ -1028,7 +1066,7 @@ export default function Home() {
                 <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                   <Image
                     className="object-cover"
-                    src="/todos.jpg"
+                    src="/ux-strategy-06.jpg"
                     alt="Todos"
                     sizes="25vw"
                     fill
@@ -1052,7 +1090,7 @@ export default function Home() {
               <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
-                  src="/todos.jpg"
+                  src="/ux-strategy-07.jpg"
                   alt="Todos"
                   sizes="25vw"
                   fill
@@ -1077,7 +1115,7 @@ export default function Home() {
               <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
-                  src="/todos.jpg"
+                  src="/ux-strategy-08.jpg"
                   alt="Todos"
                   sizes="25vw"
                   fill
@@ -1099,7 +1137,7 @@ export default function Home() {
               <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
-                  src="/todos.jpg"
+                  src="/ux-strategy-09.jpg"
                   alt="Todos"
                   sizes="25vw"
                   fill
@@ -1122,7 +1160,7 @@ export default function Home() {
               <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
-                  src="/todos.jpg"
+                  src="/ux-strategy-10.jpg"
                   alt="Todos"
                   sizes="50vw"
                   fill
@@ -1147,7 +1185,7 @@ export default function Home() {
               <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
-                  src="/todos.jpg"
+                  src="/ux-strategy-11.jpg"
                   alt="Todos"
                   sizes="25vw"
                   fill
@@ -1170,7 +1208,7 @@ export default function Home() {
               <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
-                  src="/todos.jpg"
+                  src="/ux-strategy-12.jpg"
                   alt="Todos"
                   sizes="25vw"
                   fill
@@ -1193,7 +1231,7 @@ export default function Home() {
               <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
-                  src="/todos.jpg"
+                  src="/ux-strategy-13.jpg"
                   alt="Todos"
                   sizes="50vw"
                   fill
@@ -1228,7 +1266,11 @@ export default function Home() {
             </div>
 
             <div className="3xl:gap-y-5 3xl:pr-[50px] mt-[30px] flex flex-col items-center gap-y-3">
-              <button className="bg-primary-500 3xl:h-[70px] 3xl:px-7 3xl:text-xl inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-3.5 text-[12px] font-semibold whitespace-nowrap text-white focus-visible:outline-none">
+              <button
+                data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
+                data-embed-type="popup"
+                className="bg-primary-500 3xl:h-[70px] 3xl:px-7 3xl:text-xl hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-[12px] font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+              >
                 Book a Strategy Call
               </button>
               <div className="3xl:block 3xl:max-w-[136px] flex flex-1 items-center">
@@ -1241,7 +1283,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] flex flex-col gap-[50px] px-5 py-10 md:flex-row md:p-10 lg:px-[100px] lg:py-[50px]">
+      <div
+        id="process"
+        className="3xl:scroll-mt-16 5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] flex scroll-mt-14 flex-col gap-[50px] px-5 py-10 md:flex-row md:p-10 lg:px-[100px] lg:py-[50px]"
+      >
         <div className="3xl:max-w-[775px] flex-auto lg:max-w-[393px]">
           <div className="flex items-center">
             <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-[10px] leading-none font-semibold text-transparent uppercase">
@@ -1262,7 +1307,7 @@ export default function Home() {
           <button
             data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
             data-embed-type="popup"
-            className="bg-primary-500 3xl:mt-8 3xl:h-[52px] 3xl:px-6 3xl:text-base 3xl:leading-7 mt-[30px] inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white focus-visible:outline-none"
+            className="bg-primary-500 3xl:mt-8 3xl:h-[52px] 3xl:px-6 3xl:text-base 3xl:leading-7 hover:bg-primary-600 mt-[30px] inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
           >
             Book a Call
           </button>
@@ -1401,7 +1446,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-dark-blue-600 5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] border border-gray-200 px-5 py-10 lg:p-10 lg:px-[100px] lg:py-[50px]">
+      <div className="bg-dark-blue-600 5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] px-5 py-10 lg:p-10 lg:px-[100px] lg:py-[50px]">
         <div className="3xl:space-y-5 space-y-3">
           <div className="flex items-center justify-center">
             <span className="3xl:text-base text-[10px] leading-none font-semibold text-white uppercase">
@@ -1464,7 +1509,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
+      <div
+        id="deliverables"
+        className="3xl:scroll-mt-16 5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] scroll-mt-14 px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]"
+      >
         <div className="3xl:gap-x-[75px] flex flex-col-reverse gap-[30px] md:grid md:grid-cols-2">
           <div>
             <div className="flex">
@@ -1530,7 +1578,7 @@ export default function Home() {
               <button
                 data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
                 data-embed-type="popup"
-                className="bg-primary-500 3xl:h-[52px] 3xl:px-6 3xl:text-base 3xl:leading-7 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white focus-visible:outline-none"
+                className="bg-primary-500 3xl:h-[52px] 3xl:px-6 3xl:text-base 3xl:leading-7 hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
               >
                 Book a Call
               </button>
@@ -1553,7 +1601,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
+      <div
+        id="results"
+        className="3xl:scroll-mt-16 5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] scroll-mt-14 bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]"
+      >
         <div className="flex items-center justify-center">
           <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-[10px] leading-none font-semibold text-transparent uppercase">
             Results
@@ -1793,31 +1844,37 @@ export default function Home() {
                 recommend using our in-house front-end engineers for
                 implementation. This ensures your new designs are built
                 pixel-perfect, without quality loss, delays, or back-and-forth
-                debates with internal dev teams. If you don’t have a development
-                team, we can provide full front-end and back-end support through
-                our in-house engineering teams.
+                debates with internal dev teams.{" "}
+                <span className="mt-5 block">
+                  If you don’t have a development team, we can provide full
+                  front-end and back-end support through our in-house
+                  engineering teams.
+                </span>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger>
-                How long does it take to redesign a full product experience?
-              </AccordionTrigger>
+              <AccordionTrigger>How does your pricing work?</AccordionTrigger>
               <AccordionContent>
                 We keep pricing simple. We work on a monthly retainer that
                 covers your full UX strategy, research, and design workload. The
                 retainer amount depends on the size of your product, the volume
-                of UX work required, and how fast you need to move. On top of
-                the retainer, we collect a quarterly performance-based bonus
-                that only applies when your revenue grows beyond the same
-                revenue amount from last year. You never pay both, you simply
-                pay whichever amount is greater for that quarter. You’ll see the
-                exact pricing options and what’s included on the confirmation
-                page after you book your call.
+                of UX work required, and how fast you need to move.
+                <span className="mt-5 block">
+                  On top of the retainer, we collect a quarterly
+                  performance-based bonus that only applies when your revenue
+                  grows beyond the same revenue amount from last year. You never
+                  pay both, you simply pay whichever amount is greater for that
+                  quarter.
+                </span>
+                <span className="mt-5 block">
+                  You’ll see the exact pricing options and what’s included on
+                  the confirmation page after you book your call.
+                </span>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
               <AccordionTrigger>
-                Do you replace our internal designers or work with them?
+                How long does it take to redesign a full product experience?
               </AccordionTrigger>
               <AccordionContent>
                 A major redesign can take 3–6 months or more depending on the
@@ -1828,7 +1885,7 @@ export default function Home() {
             </AccordionItem>
             <AccordionItem value="item-6">
               <AccordionTrigger>
-                Do you offer development or only design?
+                Do you replace our internal designers or work with them?
               </AccordionTrigger>
               <AccordionContent>
                 We can do both. Some clients use us as their primary UX team.
@@ -1838,32 +1895,48 @@ export default function Home() {
             </AccordionItem>
             <AccordionItem value="item-7">
               <AccordionTrigger>
-                What makes your process different from hiring a freelancer or
-                agency?
+                Do you offer development or only design?
               </AccordionTrigger>
               <AccordionContent>
                 We do offer development. We provide in-house front-end
                 engineering and back-end support to make sure your redesigned
                 experience is implemented correctly — without losing quality,
-                speed, or functionality during development. Even if you already
-                have developers, we still recommend using our in-house front-end
-                team to ensure the final shipped product matches the design
-                vision perfectly.
+                speed, or functionality during development.{" "}
+                <span className="mt-5 block">
+                  Even if you already have developers, we still recommend using
+                  our in-house front-end team to ensure the final shipped
+                  product matches the design vision perfectly.
+                </span>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-8">
+              <AccordionTrigger>
+                What makes your process different from hiring a freelancer or
+                agency?
+              </AccordionTrigger>
+              <AccordionContent>
+                We don’t just deliver designs. We deliver product outcomes:
+                smoother flows, clearer UX, higher conversion rates, and a
+                product built to compete at the top of your market. Every
+                engagement is led by senior product strategists — not junior
+                designers.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-9">
               <AccordionTrigger>
                 What kind of companies is this best for?
               </AccordionTrigger>
               <AccordionContent>
                 This is ideal for SaaS, fintech, marketplaces, and fast-growing
-                startups generating at least $100,000/month in revenue. For
-                early-stage startups, we typically work with Series A+
-                companies. If you’re earlier than that, the Essentials tier is
-                usually the best fit until your revenue grows.
+                startups generating at least $100,000/month in revenue.{" "}
+                <span className="mt-5 block">
+                  For early-stage startups, we typically work with Series A+
+                  companies. If you’re earlier than that, the Essentials tier is
+                  usually the best fit until your revenue grows.
+                </span>
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-9">
+            <AccordionItem value="item-10">
               <AccordionTrigger>
                 What if we only need a few screens redesigned?
               </AccordionTrigger>
@@ -1874,7 +1947,7 @@ export default function Home() {
                 research-driven process.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-10">
+            <AccordionItem value="item-11">
               <AccordionTrigger>
                 What happens on the strategy call?
               </AccordionTrigger>
@@ -1920,7 +1993,7 @@ export default function Home() {
                   <button
                     data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
                     data-embed-type="popup"
-                    className="bg-primary-500 3xl:h-[70px] 3xl:px-7 3xl:text-xl inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white focus-visible:outline-none"
+                    className="bg-primary-500 3xl:h-[70px] 3xl:px-7 3xl:text-xl hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
                   >
                     Book a Call
                   </button>

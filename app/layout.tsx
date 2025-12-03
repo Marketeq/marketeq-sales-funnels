@@ -3,6 +3,7 @@ import "./globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import Script from "next/script"
+import Link from "next/link"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -47,34 +48,39 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={cn("scroll-smooth", inter.variable)}>
       <body>
         {children}
+        <footer className="5xl:px-[300px] 4xl:px-[150px] p-5 md:p-10 lg:px-[100px] lg:py-[50px]">
+          <div className="3xl:flex 3xl:items-center 3xl:justify-between grid">
+            <div className="3xl:gap-x-[50px] 3xl:justify-start flex items-center justify-between">
+              <Link href="/" className="focus-visible:outline-none">
+                <Marketeq className="3xl:w-[149.72px] 3xl:h-[22px] h-[18.95px] w-[129px]" />
+              </Link>
 
-        <footer className="5xl:px-[300px] 4xl:px-[150px] 3xl:pb-[50px] p-5 pb-5 md:px-[50px] md:pt-0 lg:px-[100px]">
-          <div className="3xl:py-[50px] flex flex-col items-center gap-y-5 md:flex-row md:justify-between">
-            <div className="3xl:gap-x-[50px] flex flex-col items-center gap-x-10 gap-y-5 md:flex-row">
-              <Marketeq className="max-3xl:w-28 max-3xl:h-[16.46px] max-md:h-[18.95px] max-md:w-[129px]" />
-
-              <div className="mx-auto max-md:max-w-[205px]">
-                <span className="text-dark-blue-400 3xl:text-sm 3xl:leading-none inline-block text-center text-xs leading-[1.8] md:text-left">
-                  © 2011 - 2025 Marketeq Digital Inc. All Rights Reserved.
-                </span>
-              </div>
+              <span className="text-dark-blue-400 3xl:text-sm 3xl:leading-none inline-block text-center text-xs leading-[1.8] md:text-left">
+                © 2011 - 2025 Marketeq Digital Inc. All Rights Reserved.
+              </span>
             </div>
 
-            <div className="flex items-center gap-x-5">
-              <button className="text-dark-blue-400 3xl:text-sm cursor-pointer text-[10px] font-semibold underline focus-visible:outline-none">
+            <div className="3xl:flex hidden items-center gap-x-5">
+              <Link
+                href="/terms-of-use"
+                className="text-dark-blue-400 decoration-dark-blue-400/50 hover:decoration-dark-blue-400 cursor-pointer text-[10px] font-semibold underline transition duration-300 focus-visible:outline-none md:text-sm"
+              >
                 Terms of Use
-              </button>
-              <button className="text-dark-blue-400 3xl:text-sm cursor-pointer text-[10px] font-semibold underline focus-visible:outline-none">
+              </Link>
+              <Link
+                href="/privacy-policy"
+                className="text-dark-blue-400 decoration-dark-blue-400/50 hover:decoration-dark-blue-400 cursor-pointer text-[10px] font-semibold underline transition duration-300 focus-visible:outline-none md:text-sm"
+              >
                 Privacy Policy
-              </button>
+              </Link>
             </div>
           </div>
 
-          <div className="max-3xl:hidden mt-2.5">
-            <span className="text-dark-blue-400 inline-block text-center text-sm leading-none">
+          <div className="3xl:mt-[50px] mt-5">
+            <span className="text-dark-blue-400 3xl:text-sm inline-block text-center text-xs leading-none">
               This site is not a part of Google™ or Meta™, including
               Facebook™ and Instagram™. It is not endorsed by Google™,
               Meta™, Facebook™, or Instagram™ in any way. All trademarks and
@@ -82,8 +88,8 @@ export default function RootLayout({
             </span>
           </div>
 
-          <div className="max-3xl:hidden mt-2.5">
-            <span className="text-dark-blue-400 inline-block text-center text-sm leading-none">
+          <div className="mt-5">
+            <span className="text-dark-blue-400 3xl:text-sm inline-block text-center text-xs leading-none">
               DISCLAIMER: The results and performance metrics shared on this
               page and during our consultations represent the outcomes of our
               work and, in some cases, those of previous or current clients.
@@ -102,6 +108,21 @@ export default function RootLayout({
               control, so no specific return on investment or success is
               promised.
             </span>
+          </div>
+
+          <div className="3xl:hidden mt-5 flex items-center justify-center gap-x-5">
+            <Link
+              href="/terms-of-use"
+              className="text-dark-blue-400 decoration-dark-blue-400/50 hover:decoration-dark-blue-400 cursor-pointer text-[10px] font-semibold underline transition duration-300 focus-visible:outline-none md:text-sm"
+            >
+              Terms of Use
+            </Link>
+            <Link
+              href="/privacy-policy"
+              className="text-dark-blue-400 decoration-dark-blue-400/50 hover:decoration-dark-blue-400 cursor-pointer text-[10px] font-semibold underline transition duration-300 focus-visible:outline-none md:text-sm"
+            >
+              Privacy Policy
+            </Link>
           </div>
         </footer>
       </body>

@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
-import { ChevronDownIcon, Plus } from "lucide-react"
+import { Plus } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Minus } from "@blend-metrics/icons"
@@ -46,7 +46,7 @@ function AccordionTrigger({
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
-          "text-dark-blue-400 3xl:px-7 3xl:py-5 3xl:text-xl flex flex-1 items-center justify-between p-5 pb-3 text-left text-base font-bold focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50",
+          "text-dark-blue-400 3xl:px-7 3xl:py-5 3xl:text-xl flex flex-1 cursor-pointer items-center justify-between p-5 pb-3 text-left text-base font-bold focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50",
           className,
         )}
         {...props}
