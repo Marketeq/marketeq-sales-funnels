@@ -9,7 +9,15 @@ import { ArrowRight, Check, Lightning01, Star } from "@blend-metrics/icons"
 
 import Image from "next/image"
 import * as React from "react"
-import { ChartAsSection } from "@/components/chart-as-section"
+import {
+  ChartAsSection,
+  ChartAsSection3xl,
+  ChartAsSection4xl,
+  ChartAsSection5xl,
+  ChartAsSectionDefault,
+  ChartAsSectionLg,
+  ChartAsSectionMd,
+} from "@/components/chart-as-section"
 import { ChartAsIllustration } from "@/components/chart-as-illustration"
 import testimonial01 from "@/public/testimonial-01.png"
 import testimonial02 from "@/public/testimonial-02.png"
@@ -854,7 +862,12 @@ export default function Home() {
       </div>
 
       <div className="relative py-10 lg:py-[100px]">
-        <ChartAsSection />
+        <ChartAsSection5xl className="5xl:block hidden" />
+        <ChartAsSection4xl className="4xl:block 5xl:hidden hidden" />
+        <ChartAsSection3xl className="3xl:block 4xl:hidden hidden" />
+        <ChartAsSectionLg className="3xl:hidden hidden lg:block" />
+        <ChartAsSectionMd className="hidden md:block lg:hidden" />
+        <ChartAsSection className="md:hidden" />
       </div>
 
       <div
