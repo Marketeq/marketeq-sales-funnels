@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function TermsOfUse() {
   return (
     <main className="bg-white">
@@ -184,9 +186,14 @@ export default function TermsOfUse() {
             12. Contact Information
           </h1>
 
-          <p className="3xl:text-lg mt-4 text-sm leading-none text-gray-500 lg:mt-6">
+          <p className="3xl:text-lg mt-4 text-sm leading-tight text-gray-500 lg:mt-6">
             If you have questions about these Terms, you may contact us at:{" "}
-            <span className="block font-bold">support@marketeqdigital.com</span>
+            <Link
+              href="mailto:support@marketeqdigital.com"
+              className="block font-bold focus-visible:outline-none"
+            >
+              support@marketeqdigital.com
+            </Link>
           </p>
         </div>
       </div>

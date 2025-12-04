@@ -113,13 +113,13 @@ export default function RootLayout({
           <div className="3xl:hidden mt-5 flex items-center justify-center gap-x-5">
             <Link
               href="/terms-of-use"
-              className="text-dark-blue-400 decoration-dark-blue-400/50 hover:decoration-dark-blue-400 cursor-pointer text-[10px] font-semibold underline transition duration-300 focus-visible:outline-none md:text-sm"
+              className="text-dark-blue-400 decoration-dark-blue-400/30 hover:decoration-dark-blue-400 cursor-pointer text-[10px] font-semibold underline transition duration-300 focus-visible:outline-none md:text-sm"
             >
               Terms of Use
             </Link>
             <Link
               href="/privacy-policy"
-              className="text-dark-blue-400 decoration-dark-blue-400/50 hover:decoration-dark-blue-400 cursor-pointer text-[10px] font-semibold underline transition duration-300 focus-visible:outline-none md:text-sm"
+              className="text-dark-blue-400 decoration-dark-blue-400/30 hover:decoration-dark-blue-400 cursor-pointer text-[10px] font-semibold underline transition duration-300 focus-visible:outline-none md:text-sm"
             >
               Privacy Policy
             </Link>

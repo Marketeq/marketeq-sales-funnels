@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function PrivacyPolicy() {
   return (
     <main className="bg-white">
@@ -326,7 +328,12 @@ export default function PrivacyPolicy() {
           <p className="3xl:text-lg mt-4 text-sm leading-tight text-gray-500 lg:mt-6">
             If you have any questions about this Privacy Policy, you may contact
             us at:
-            <span className="block font-bold">support@marketeqdigital.com</span>
+            <Link
+              href="mailto:support@marketeqdigital.com"
+              className="block font-bold focus-visible:outline-none"
+            >
+              support@marketeqdigital.com
+            </Link>
           </p>
         </div>
       </div>

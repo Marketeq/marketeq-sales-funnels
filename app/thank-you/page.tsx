@@ -175,7 +175,7 @@ export default function ThankYou() {
     <main>
       <div className="bg-dark-blue-600 5xl:px-[300px] 4xl:py-0 4xl:px-[150px]">
         <div className="3xl:h-[72px] flex h-[47.04px] items-end justify-center">
-          <Link href="/" className="focus-visible:outline-none">
+          <Link href="/" className="focus-visible:outline-none" target="_blank">
             <MarketeqWhite className="3xl:h-[22px] 3xl:w-[149.72px] h-[17.04px] w-[116px] shrink-0" />
           </Link>
         </div>
@@ -192,7 +192,9 @@ export default function ThankYou() {
           <div className="3xl:mt-6 mt-3">
             <h1 className="3xl:text-[54px] max-3xl:leading-tight text-center text-[26px] leading-none font-extrabold text-white">
               Congratulations Your Appointment Has{" "}
-              <span className="block">Been Scheduled, But Not Confirmed!</span>
+              <span className="md:block">
+                Been Scheduled, But Not Confirmed!
+              </span>
             </h1>
 
             <div className="3xl:mt-6 mt-3">

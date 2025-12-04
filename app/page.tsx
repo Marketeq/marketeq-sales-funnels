@@ -11,7 +11,6 @@ import Image from "next/image"
 import * as React from "react"
 import { ChartAsSection } from "@/components/chart-as-section"
 import { ChartAsIllustration } from "@/components/chart-as-illustration"
-import { MarketeqWhite } from "@/components/icons/marketeq-white"
 import testimonial01 from "@/public/testimonial-01.png"
 import testimonial02 from "@/public/testimonial-02.png"
 import testimonial03 from "@/public/testimonial-03.png"
@@ -28,7 +27,6 @@ import testimonial05Lg from "@/public/testimonial-05-lg.png"
 import testimonial06Lg from "@/public/testimonial-06-lg.png"
 import testimonial07Lg from "@/public/testimonial-07-lg.png"
 import testimonial08Lg from "@/public/testimonial-08-lg.png"
-import Link from "next/link"
 import { LandingHeader } from "@/components/landing-header"
 
 const Referrizer = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => {
@@ -532,8 +530,8 @@ export default function Home() {
 
             <div className="3xl:mt-6 mt-3">
               <h1 className="3xl:text-[80px] text-center text-[26px] leading-none font-extrabold text-white md:text-[62px]">
-                <span className="3xl:contents block">We design digital</span>{" "}
-                products that perform
+                <span className="3xl:contents block">We Design Digital</span>{" "}
+                Products That Perform
               </h1>
 
               <div className="3xl:mt-6 mt-3">
@@ -547,7 +545,7 @@ export default function Home() {
                 <button
                   data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
                   data-embed-type="popup"
-                  className="bg-primary-500 3xl:h-[70px] 3xl:gap-x-3 3xl:px-7 3xl:text-xl hover:bg-primary-600 inline-flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-4 text-sm font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+                  className="max-3xl:rounded-lg bg-primary-500 3xl:h-[70px] 3xl:gap-x-3 3xl:px-7 3xl:text-xl hover:bg-primary-600 inline-flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-4 text-sm font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
                 >
                   Book a Strategy Call{" "}
                   <ArrowRight className="3xl:size-[22px] size-[15px]" />
@@ -564,7 +562,7 @@ export default function Home() {
         <ChartAsIllustration className="3xl:block absolute right-0 bottom-0 hidden" />
       </div>
 
-      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-5 py-10 md:p-5 lg:px-[100px] lg:py-[50px]">
+      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
         <div className="3xl:max-w-[630px] mx-auto">
           <h1 className="text-dark-blue-400 3xl:text-[54px] text-center text-[22px] leading-none font-bold">
             What our clients have to say about us
@@ -573,7 +571,7 @@ export default function Home() {
 
         <div className="3xl:mt-[50px] 3xl:gap-x-[75px] mt-[30px] grid gap-9 md:grid-cols-2">
           <div className="relative max-md:h-[151px]">
-            <div className="relative size-full overflow-hidden rounded-[28px]">
+            <div className="3xl:rounded-[28px] relative size-full overflow-hidden rounded-[18px]">
               <Image
                 className="object-cover"
                 src="/reading-on-ipad.png"
@@ -654,9 +652,9 @@ export default function Home() {
 
         <div className="3xl:mt-[50px] 3xl:gap-x-5 mt-[30px] grid gap-3.5 md:grid-cols-3">
           <article className="3xl:rounded-[25px] 3xl:p-7 grid rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
-            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center justify-self-start rounded-full border-[1.2px] px-[13px]">
+            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center gap-x-[8.32px] justify-self-start rounded-full border-[1.2px] pr-[13px] pl-2.5">
               <Lightning01 className="text-primary-500 size-5" />{" "}
-              <span className="text-dark-blue-400 3xl:text-sm text-[14.4px] font-bold">
+              <span className="text-dark-blue-400 3xl:text-sm text-xs leading-[14.4px] font-bold">
                 Problem 1
               </span>
             </div>
@@ -681,9 +679,9 @@ export default function Home() {
             </div>
           </article>
           <article className="3xl:rounded-[25px] 3xl:p-7 grid rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
-            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center justify-self-start rounded-full border-[1.2px] px-[13px]">
+            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center gap-x-[8.32px] justify-self-start rounded-full border-[1.2px] pr-[13px] pl-2.5">
               <Lightning01 className="text-primary-500 size-5" />{" "}
-              <span className="text-dark-blue-400 3xl:text-sm text-[14.4px] font-bold">
+              <span className="text-dark-blue-400 3xl:text-sm text-xs leading-[14.4px] font-bold">
                 Problem 2
               </span>
             </div>
@@ -708,9 +706,9 @@ export default function Home() {
             </div>
           </article>
           <article className="3xl:rounded-[25px] 3xl:p-7 grid rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
-            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center justify-self-start rounded-full border-[1.2px] px-[13px]">
+            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center gap-x-[8.32px] justify-self-start rounded-full border-[1.2px] pr-[13px] pl-2.5">
               <Lightning01 className="text-primary-500 size-5" />{" "}
-              <span className="text-dark-blue-400 3xl:text-sm text-[14.4px] font-bold">
+              <span className="text-dark-blue-400 3xl:text-sm text-xs leading-[14.4px] font-bold">
                 Problem 3
               </span>
             </div>
@@ -848,7 +846,7 @@ export default function Home() {
           <button
             data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
             data-embed-type="popup"
-            className="bg-primary-500 3xl:h-[52px] 3xl:px-6 3xl:text-base hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs leading-7 font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+            className="max-3xl:rounded-lg bg-primary-500 3xl:h-[52px] 3xl:px-6 3xl:text-base hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs leading-7 font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
           >
             Book a Strategy Call
           </button>
@@ -1179,7 +1177,7 @@ export default function Home() {
               <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
-                  src="/ux-strategy-13.jpg"
+                  src="/ux-strategy-13.png"
                   alt="Todos"
                   sizes="50vw"
                   fill
@@ -1217,7 +1215,7 @@ export default function Home() {
               <button
                 data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
                 data-embed-type="popup"
-                className="bg-primary-500 3xl:h-[70px] 3xl:px-7 3xl:text-xl hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-[12px] font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+                className="max-3xl:rounded-lg bg-primary-500 3xl:h-[70px] 3xl:px-7 3xl:text-xl hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-[12px] font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
               >
                 Book a Strategy Call
               </button>
@@ -1255,7 +1253,7 @@ export default function Home() {
           <button
             data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
             data-embed-type="popup"
-            className="bg-primary-500 3xl:mt-8 3xl:h-[52px] 3xl:px-6 3xl:text-base 3xl:leading-7 hover:bg-primary-600 mt-[30px] inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+            className="max-3xl:rounded-lg bg-primary-500 3xl:mt-8 3xl:h-[52px] 3xl:px-6 3xl:text-base 3xl:leading-7 hover:bg-primary-600 mt-[30px] inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
           >
             Book a Call
           </button>
@@ -1394,7 +1392,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-dark-blue-600 5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] px-5 py-10 lg:p-10 lg:px-[100px] lg:py-[50px]">
+      <div className="bg-dark-blue-600 5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
         <div className="3xl:space-y-5 space-y-3">
           <div className="flex items-center justify-center">
             <span className="3xl:text-base text-[10px] leading-none font-semibold text-white uppercase">
@@ -1526,7 +1524,7 @@ export default function Home() {
               <button
                 data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
                 data-embed-type="popup"
-                className="bg-primary-500 3xl:h-[52px] 3xl:px-6 3xl:text-base 3xl:leading-7 hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+                className="max-3xl:rounded-lg bg-primary-500 3xl:h-[52px] 3xl:px-6 3xl:text-base 3xl:leading-7 hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
               >
                 Book a Call
               </button>
@@ -1534,7 +1532,7 @@ export default function Home() {
           </div>
 
           <div className="max-3xl:h-[296px] relative">
-            <div className="relative size-full overflow-hidden rounded-[28px]">
+            <div className="3xl:rounded-[28px] relative size-full overflow-hidden rounded-[18px]">
               <Image
                 className="object-cover"
                 src="/desktop.jpg"
@@ -1544,14 +1542,14 @@ export default function Home() {
               />
             </div>
 
-            <div className="border-primary-500 3xl:h-[264px] 3xl:w-[260px] 3xl:rounded-br-[48px] 3xl:-right-[30px] 3xl:-bottom-[30px] absolute -right-2.5 bottom-[17px] h-[139px] w-[137px] rounded-tl-[200px] rounded-tr-[28px] rounded-br-[28px] rounded-bl-[28px] border-2" />
+            <div className="border-primary-500 3xl:h-[264px] 3xl:w-[260px] 3xl:rounded-br-[48px] 3xl:-right-[30px] 3xl:-bottom-[30px] absolute -right-2.5 -bottom-2.5 h-[139px] w-[137px] rounded-tl-[200px] rounded-tr-[28px] rounded-br-[28px] rounded-bl-[28px] border-2" />
           </div>
         </div>
       </div>
 
       <div
         id="results"
-        className="3xl:scroll-mt-16 5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] scroll-mt-14 bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]"
+        className="3xl:scroll-mt-16 5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] scroll-mt-14 bg-[linear-gradient(211.42deg,rgba(225,234,250,.2)_18.96%,rgba(255,255,255,.2)_34.72%,rgba(255,255,255,.04)_53.21%,rgba(255,255,255,.2)_64.43%)] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]"
       >
         <div className="flex items-center justify-center">
           <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-[10px] leading-none font-semibold text-transparent uppercase">
@@ -1571,8 +1569,8 @@ export default function Home() {
         </div>
 
         <div className="3xl:mt-[50px] 3xl:space-y-5 mt-[30px] space-y-3.5">
-          <div className="3xl:min-h-[420px] 3xl:grid-cols-12 3xl:gap-5 grid min-h-[203px] gap-3.5 lg:grid-cols-2">
-            <div className="3xl:col-span-7 3xl:rounded-[28px] relative overflow-hidden rounded-[18px]">
+          <div className="3xl:min-h-[420px] 3xl:grid-cols-12 3xl:gap-5 grid gap-3.5 md:min-h-[203px] md:grid-cols-2">
+            <div className="3xl:col-span-7 3xl:rounded-[28px] relative overflow-hidden rounded-[18px] max-md:min-h-[203px]">
               <Image
                 className="object-cover"
                 src="/demo-01.gif"
@@ -1581,7 +1579,7 @@ export default function Home() {
                 fill
               />
             </div>
-            <div className="3xl:col-span-5 3xl:rounded-[28px] relative overflow-hidden rounded-[18px]">
+            <div className="3xl:col-span-5 3xl:rounded-[28px] relative overflow-hidden rounded-[18px] max-md:min-h-[203px]">
               <Image
                 className="object-cover"
                 src="/demo-02.gif"
@@ -1591,8 +1589,8 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="3xl:min-h-[420px] 3xl:grid-cols-12 3xl:gap-5 grid min-h-[203px] gap-3.5 lg:grid-cols-2">
-            <div className="3xl:col-span-5 relative overflow-hidden rounded-[28px]">
+          <div className="3xl:min-h-[420px] 3xl:grid-cols-12 3xl:gap-5 grid gap-3.5 md:min-h-[203px] md:grid-cols-2">
+            <div className="3xl:col-span-5 relative overflow-hidden rounded-[28px] max-md:min-h-[203px]">
               <Image
                 className="object-cover"
                 src="/demo-03.gif"
@@ -1601,7 +1599,7 @@ export default function Home() {
                 fill
               />
             </div>
-            <div className="3xl:col-span-7 relative overflow-hidden rounded-[28px]">
+            <div className="3xl:col-span-7 relative overflow-hidden rounded-[28px] max-md:min-h-[203px]">
               <Image
                 className="object-cover"
                 src="/demo-04.gif"
@@ -1611,8 +1609,8 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="3xl:min-h-[420px] 3xl:grid-cols-12 3xl:gap-5 grid min-h-[203px] gap-3.5 lg:grid-cols-2">
-            <div className="3xl:col-span-7 relative overflow-hidden rounded-[28px]">
+          <div className="3xl:min-h-[420px] 3xl:grid-cols-12 3xl:gap-5 grid gap-3.5 md:min-h-[203px] md:grid-cols-2">
+            <div className="3xl:col-span-7 relative overflow-hidden rounded-[28px] max-md:min-h-[203px]">
               <Image
                 className="object-cover"
                 src="/demo-05.gif"
@@ -1621,7 +1619,7 @@ export default function Home() {
                 fill
               />
             </div>
-            <div className="3xl:col-span-5 relative overflow-hidden rounded-[28px]">
+            <div className="3xl:col-span-5 relative overflow-hidden rounded-[28px] max-md:min-h-[203px]">
               <Image
                 className="object-cover"
                 src="/demo-06.gif"
@@ -1631,8 +1629,8 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="3xl:min-h-[420px] 3xl:grid-cols-12 3xl:gap-5 grid min-h-[203px] gap-3.5 lg:grid-cols-2">
-            <div className="3xl:col-span-5 relative overflow-hidden rounded-[28px]">
+          <div className="3xl:min-h-[420px] 3xl:grid-cols-12 3xl:gap-5 grid gap-3.5 md:min-h-[203px] md:grid-cols-2">
+            <div className="3xl:col-span-5 relative overflow-hidden rounded-[28px] max-md:min-h-[203px]">
               <Image
                 className="object-cover"
                 src="/demo-07.gif"
@@ -1641,7 +1639,7 @@ export default function Home() {
                 fill
               />
             </div>
-            <div className="3xl:col-span-7 relative overflow-hidden rounded-[28px]">
+            <div className="3xl:col-span-7 relative overflow-hidden rounded-[28px] max-md:min-h-[203px]">
               <Image
                 className="object-cover"
                 src="/demo-08.gif"
@@ -1807,13 +1805,6 @@ export default function Home() {
                 covers your full UX strategy, research, and design workload. The
                 retainer amount depends on the size of your product, the volume
                 of UX work required, and how fast you need to move.
-                <span className="mt-5 block">
-                  On top of the retainer, we collect a quarterly
-                  performance-based bonus that only applies when your revenue
-                  grows beyond the same revenue amount from last year. You never
-                  pay both, you simply pay whichever amount is greater for that
-                  quarter.
-                </span>
                 <span className="mt-5 block">
                   You’ll see the exact pricing options and what’s included on
                   the confirmation page after you book your call.

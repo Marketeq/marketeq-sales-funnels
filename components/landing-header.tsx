@@ -12,7 +12,7 @@ export const LandingHeader = () => {
   return (
     <header
       data-scrolled={shouldBeWhite}
-      className="group/header bg-dark-blue-600 5xl:px-[150px] 3xl:h-16 sticky top-0 z-10 h-14 px-5 py-3 transition duration-300 data-[scrolled=true]:bg-white lg:px-[100px]"
+      className="group/header bg-dark-blue-600 5xl:px-[150px] 3xl:h-16 sticky top-0 z-10 h-14 px-5 py-3 transition duration-300 data-[scrolled=true]:bg-white data-[scrolled=true]:shadow-[0px_1px_3px_0px_rgba(16,24,40,.1)] lg:px-[100px]"
     >
       <nav className="3xl:px-0 flex items-center justify-between lg:px-5">
         <Link href="/" className="focus-visible:outline-none">
