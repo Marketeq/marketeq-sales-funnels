@@ -812,29 +812,29 @@ export const ChartAsSectionMd = ({
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g clip-path="url(#clip0_13247_21761)">
-        <g clip-path="url(#clip1_13247_21761)">
+      <g clipPath="url(#clip0_13247_21761)">
+        <g clipPath="url(#clip1_13247_21761)">
           <path
             d="M1.78363 101.641C56.8041 95.2645 53.6265 136.64 126.252 143.466C198.878 150.292 218.576 108.215 251.494 96.488C284.412 84.7608 298.447 29.8524 353.595 34.1661C408.744 38.4798 436.742 76.034 482.717 81.178C528.693 86.322 538.246 117.246 581.684 140.487C625.121 163.728 615.331 187.271 656.524 181.799C702.931 168.973 713.679 139.659 739.372 138.078C765.065 136.496 785.7 170.501 807.803 175.852C829.906 181.203 865.168 175.61 865.168 175.61"
             stroke="#EAECF0"
-            stroke-width="2.4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2.4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M1.98932 168.008C41.4105 162.668 73.4666 127.829 120.515 122.429C145.591 119.55 165.782 125.907 188.342 135.687C210.902 145.467 206.556 149.536 257.126 157.439C298.858 163.96 308.981 98.678 349.833 101.637C390.685 104.596 408.635 26.17 451.813 33.205C494.99 40.2399 503.401 23.3633 544.296 55.9692C585.19 88.5751 621.733 14.014 672.513 8.0059C723.293 1.99781 714.385 46.7978 738.49 44.4361C762.595 42.0743 762.278 61.5952 783.052 69.0416C803.825 76.488 829.114 22.7029 873.076 23.1833"
             stroke="#306CFE"
-            stroke-width="3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M0.802102 66.9735C52.3645 60.9979 49.3866 99.773 117.448 106.17C185.509 112.567 203.969 73.1346 234.818 62.1445C265.667 51.1543 278.82 -0.303075 330.502 3.73949C382.184 7.78206 408.423 42.976 451.509 47.7967C494.595 52.6174 503.548 81.5978 544.255 103.378C584.962 125.158 575.788 147.222 614.392 142.094C657.882 130.074 667.955 102.602 692.033 101.12C716.111 99.6383 735.449 131.506 756.163 136.52C776.876 141.535 809.923 136.294 809.923 136.294"
             stroke="white"
-            stroke-opacity="0.2"
-            stroke-width="2.4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeOpacity="0.2"
+            strokeWidth="2.4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M120.515 122.415C73.4665 127.816 41.4103 162.654 1.98916 167.994L2.15771 182.229L899.974 192.041L874.476 23.2501C830.514 22.7697 804.369 76.7744 783.595 69.328C762.822 61.8816 761.244 43.0969 737.139 45.4587C713.035 47.8205 723.293 1.9841 672.513 7.9922C621.733 14.0003 585.19 88.5614 544.296 55.9555C503.401 23.3496 494.99 40.2262 451.813 33.1912C408.635 26.1563 390.685 104.582 349.833 101.623C308.981 98.6643 298.858 163.946 257.126 157.425C206.556 149.522 210.902 145.453 188.342 135.673C165.782 125.893 145.591 119.537 120.515 122.415Z"
@@ -847,8 +847,8 @@ export const ChartAsSectionMd = ({
           x2="165.9"
           y2="176.999"
           stroke="#306CFE"
-          stroke-width="0.6"
-          stroke-dasharray="2.64 2.64"
+          strokeWidth="0.6"
+          strokeDasharray="2.64 2.64"
         />
         <path
           d="M41.7196 191.966V191.269H43.2988V197.342H42.526V191.966H41.7196Z"
@@ -887,7 +887,7 @@ export const ChartAsSectionMd = ({
           r="5.7"
           transform="rotate(-30 165.835 127.393)"
           stroke="#306CFE"
-          stroke-width="3"
+          strokeWidth="3"
         />
         <circle
           cx="165.878"
@@ -913,8 +913,8 @@ export const ChartAsSectionMd = ({
             height="66.4908"
             rx="9.69476"
             stroke="#3D4160"
-            stroke-opacity="0.07"
-            stroke-width="0.497167"
+            strokeOpacity="0.07"
+            strokeWidth="0.497167"
             shape-rendering="crispEdges"
           />
           <path
@@ -947,7 +947,7 @@ export const ChartAsSectionMd = ({
           width="140.682"
           height="120.682"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood flood-opacity="0" result="BackgroundImageFix" />
           <feColorMatrix
@@ -983,8 +983,8 @@ export const ChartAsSectionMd = ({
           y2="187.246"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#306CFE" stop-opacity="0.1" />
-          <stop offset="0.998978" stop-color="white" stop-opacity="0" />
+          <stop stopColor="#306CFE" stopOpacity="0.1" />
+          <stop offset="0.998978" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <clipPath id="clip0_13247_21761">
           <rect width="768" height="208.345" fill="white" />
