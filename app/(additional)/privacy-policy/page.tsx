@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function PrivacyPolicy() {
   return (
-    <main className="bg-white">
+    <main className="3xl:scroll-mt-16 scroll-mt-14 bg-white">
       <div className="3xl:px-[200px] 4xl:px-[300px] 5xl:px-[400px] 3xl:py-[100px] px-5 py-10 md:p-10 lg:p-[50px]">
         <h1 className="text-dark-blue-400 3xl:text-[46px] text-[26px] leading-none font-semibold">
           Privacy Policy
