@@ -5,6 +5,12 @@ import { Inter } from "next/font/google"
 import Script from "next/script"
 import Link from "next/link"
 
+declare global {
+  interface Window {
+    dataLayer?: unknown[][]
+  }
+}
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -127,9 +133,17 @@ export default function RootLayout({
         </footer>
       </body>
 
+      <Script src="https://app.iclosed.io/assets/widget.js" />
       <Script
-        src="https://app.iclosed.io/assets/widget.js"
-        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-1017877798"
+        onLoad={() => {
+          const dataLayer = window.dataLayer || []
+          function gtag(...args: unknown[]) {
+            dataLayer.push(args)
+          }
+          gtag("js", new Date())
+          gtag("config", "AW-1017877798")
+        }}
       />
     </html>
   )
