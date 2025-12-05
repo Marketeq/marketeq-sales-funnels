@@ -1190,7 +1190,7 @@ export default function Home() {
               <div className="max-3xl:h-[180px] relative flex-auto overflow-hidden rounded-xl">
                 <Image
                   className="object-cover"
-                  src="/ux-strategy-13.png"
+                  src="/ux-strategy-13.jpg"
                   alt="Todos"
                   sizes="50vw"
                   fill
@@ -1778,8 +1778,8 @@ export default function Home() {
               <AccordionContent>
                 You get ongoing UX/UI design, product strategy, competitive
                 analysis, testing, and continuous improvements delivered every
-                month — not one-off advice. We redesign your product flow by
-                flow and upgrade your entire user experience over time.
+                month, not one-off advice. We redesign your product flow by flow
+                and upgrade your entire user experience over time.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
@@ -1799,7 +1799,7 @@ export default function Home() {
                 else?
               </AccordionTrigger>
               <AccordionContent>
-                We work directly with your development team — but we strongly
+                We work directly with your development team, but we strongly
                 recommend using our in-house front-end engineers for
                 implementation. This ensures your new designs are built
                 pixel-perfect, without quality loss, delays, or back-and-forth
@@ -1852,7 +1852,7 @@ export default function Home() {
               <AccordionContent>
                 We do offer development. We provide in-house front-end
                 engineering and back-end support to make sure your redesigned
-                experience is implemented correctly — without losing quality,
+                experience is implemented correctly, without losing quality,
                 speed, or functionality during development.{" "}
                 <span className="mt-5 block">
                   Even if you already have developers, we still recommend using
@@ -1870,7 +1870,7 @@ export default function Home() {
                 We don’t just deliver designs. We deliver product outcomes:
                 smoother flows, clearer UX, higher conversion rates, and a
                 product built to compete at the top of your market. Every
-                engagement is led by senior product strategists — not junior
+                engagement is led by senior product strategists, not junior
                 designers.
               </AccordionContent>
             </AccordionItem>
