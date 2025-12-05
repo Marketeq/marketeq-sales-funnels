@@ -570,7 +570,7 @@ export default function Home() {
         <ChartAsIllustration className="3xl:block absolute right-0 bottom-0 hidden" />
       </div>
 
-      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
+      {/* <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82%)] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
         <div className="3xl:max-w-[630px] mx-auto">
           <h1 className="text-dark-blue-400 3xl:text-[54px] text-center text-[22px] leading-none font-bold">
             What our clients have to say about us
@@ -638,7 +638,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div
         id="problem"
