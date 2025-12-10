@@ -6,12 +6,6 @@ import Script from "next/script"
 import { GoogleAnalytics } from "@/components/google-analytics"
 import { Footer } from "@/components/footer"
 
-declare global {
-  interface Window {
-    dataLayer?: unknown[][]
-  }
-}
-
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
