@@ -36,6 +36,7 @@ import review25 from "@/public/review-25.png"
 import review26 from "@/public/review-26.png"
 import Image from "next/image"
 import Link from "next/link"
+import { SalesConversion } from "@/components/google-analytics"
 
 const CalendarCheck01 = ({
   className,
@@ -173,6 +174,7 @@ const MessageChatSquare = ({
 export default function ThankYou() {
   return (
     <main>
+      <SalesConversion />
       <div className="bg-dark-blue-600 5xl:px-[300px] 4xl:py-0 4xl:px-[150px]">
         <div className="3xl:h-[72px] flex h-[47.04px] items-end justify-center">
           <Link href="/" className="focus-visible:outline-none" target="_blank">
