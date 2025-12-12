@@ -3,8 +3,8 @@ import "./globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import Script from "next/script"
-import { GoogleAnalytics } from "@/components/google-analytics"
 import { Footer } from "@/components/footer"
+import { GoogleTagManager } from "@next/third-parties/google"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -30,7 +30,7 @@ export default function RootLayout({
       </body>
 
       <Script src="https://app.iclosed.io/assets/widget.js" />
-      <GoogleAnalytics />
+      <GoogleTagManager gtmId="AW-1017877798" />
     </html>
   )
 }
