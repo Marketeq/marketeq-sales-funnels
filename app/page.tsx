@@ -1802,7 +1802,7 @@ export default function Home() {
       <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] px-5 pb-10 md:p-10 lg:px-[100px] lg:py-[50px]">
         <div className="border-primary-100 3xl:p-5 3xl:rounded-[28px] rounded-[18px] border p-3 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
           <div className="relative">
-            <div className="bg-dark-blue-600 3xl:py-[146px] 3xl:rounded-[28px] relative rounded-[14px] border border-gray-200 p-[30px] md:py-10">
+            <div className="bg-dark-blue-600 3xl:py-[146px] 3xl:px-0 3xl:rounded-[28px] relative rounded-[14px] border border-gray-200 p-[30px] md:p-10">
               <div className="flex justify-center">
                 <span className="inline-block text-base leading-none font-semibold text-white">
                   Let’s Elevate Your Product
@@ -1829,7 +1829,7 @@ export default function Home() {
                   <button
                     data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
                     data-embed-type="popup"
-                    className="bg-primary-500 3xl:h-[70px] 3xl:px-7 3xl:text-xl hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+                    className="bg-primary-500 3xl:h-[70px] 3xl:px-7 3xl:text-xl hover:bg-primary-600 3xl:rounded-xl inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg px-3.5 text-xs font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
                   >
                     Book a Call
                   </button>
