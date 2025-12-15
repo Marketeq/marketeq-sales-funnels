@@ -1488,7 +1488,7 @@ export default function Home() {
             </div>
           </div>
           <div className="3xl:min-h-[420px] 3xl:grid-cols-12 3xl:gap-5 grid gap-3.5 md:min-h-[203px] md:grid-cols-2">
-            <div className="3xl:col-span-5 relative overflow-hidden rounded-[28px] max-md:min-h-[203px]">
+            <div className="3xl:col-span-5 3xl:rounded-[28px] relative overflow-hidden rounded-[18px] max-md:min-h-[203px]">
               <Image
                 className="object-cover"
                 src="/demo-03.gif"
@@ -1497,7 +1497,7 @@ export default function Home() {
                 fill
               />
             </div>
-            <div className="3xl:col-span-7 relative overflow-hidden rounded-[28px] max-md:min-h-[203px]">
+            <div className="3xl:col-span-7 3xl:rounded-[28px] relative overflow-hidden rounded-[18px] max-md:min-h-[203px]">
               <Image
                 className="object-cover"
                 src="/demo-04.gif"
@@ -1508,7 +1508,7 @@ export default function Home() {
             </div>
           </div>
           <div className="3xl:min-h-[420px] 3xl:grid-cols-12 3xl:gap-5 grid gap-3.5 md:min-h-[203px] md:grid-cols-2">
-            <div className="3xl:col-span-7 relative overflow-hidden rounded-[28px] max-md:min-h-[203px]">
+            <div className="3xl:col-span-7 3xl:rounded-[28px] relative overflow-hidden rounded-[18px] max-md:min-h-[203px]">
               <Image
                 className="object-cover"
                 src="/demo-05.gif"
@@ -1517,7 +1517,7 @@ export default function Home() {
                 fill
               />
             </div>
-            <div className="3xl:col-span-5 relative overflow-hidden rounded-[28px] max-md:min-h-[203px]">
+            <div className="3xl:col-span-5 3xl:rounded-[28px] relative overflow-hidden rounded-[18px] max-md:min-h-[203px]">
               <Image
                 className="object-cover"
                 src="/demo-06.gif"
@@ -1528,7 +1528,7 @@ export default function Home() {
             </div>
           </div>
           <div className="3xl:min-h-[420px] 3xl:grid-cols-12 3xl:gap-5 grid gap-3.5 md:min-h-[203px] md:grid-cols-2">
-            <div className="3xl:col-span-5 relative overflow-hidden rounded-[28px] max-md:min-h-[203px]">
+            <div className="3xl:col-span-5 3xl:rounded-[28px] relative overflow-hidden rounded-[18px] max-md:min-h-[203px]">
               <Image
                 className="object-cover"
                 src="/demo-07.gif"
@@ -1537,7 +1537,7 @@ export default function Home() {
                 fill
               />
             </div>
-            <div className="3xl:col-span-7 relative overflow-hidden rounded-[28px] max-md:min-h-[203px]">
+            <div className="3xl:col-span-7 3xl:rounded-[28px] relative overflow-hidden rounded-[18px] max-md:min-h-[203px]">
               <Image
                 className="object-cover"
                 src="/demo-08.gif"
