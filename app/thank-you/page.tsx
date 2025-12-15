@@ -36,7 +36,7 @@ import review25 from "@/public/review-25.png"
 import review26 from "@/public/review-26.png"
 import Image from "next/image"
 import Link from "next/link"
-import { SalesConversion } from "@/components/google-analytics"
+import { SalesConversion } from "@/components/sales-conversion"
 
 const CalendarCheck01 = ({
   className,
