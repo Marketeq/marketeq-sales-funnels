@@ -1475,6 +1475,7 @@ export default function Home() {
                 alt="Stack"
                 sizes="50vw"
                 fill
+                unoptimized
               />
             </div>
             <div className="3xl:col-span-5 3xl:rounded-[28px] relative overflow-hidden rounded-[18px] max-md:min-h-[203px]">
@@ -1484,6 +1485,7 @@ export default function Home() {
                 alt="Profile"
                 sizes="50vw"
                 fill
+                unoptimized
               />
             </div>
           </div>
@@ -1495,6 +1497,7 @@ export default function Home() {
                 alt="App screens"
                 sizes="50vw"
                 fill
+                unoptimized
               />
             </div>
             <div className="3xl:col-span-7 3xl:rounded-[28px] relative overflow-hidden rounded-[18px] max-md:min-h-[203px]">
@@ -1504,6 +1507,7 @@ export default function Home() {
                 alt="Dashboard"
                 sizes="50vw"
                 fill
+                unoptimized
               />
             </div>
           </div>
@@ -1515,6 +1519,7 @@ export default function Home() {
                 alt="Eggie"
                 sizes="50vw"
                 fill
+                unoptimized
               />
             </div>
             <div className="3xl:col-span-5 3xl:rounded-[28px] relative overflow-hidden rounded-[18px] max-md:min-h-[203px]">
@@ -1524,6 +1529,7 @@ export default function Home() {
                 alt="Interaction"
                 sizes="50vw"
                 fill
+                unoptimized
               />
             </div>
           </div>
@@ -1535,6 +1541,7 @@ export default function Home() {
                 alt="Dashboard"
                 sizes="50vw"
                 fill
+                unoptimized
               />
             </div>
             <div className="3xl:col-span-7 3xl:rounded-[28px] relative overflow-hidden rounded-[18px] max-md:min-h-[203px]">
@@ -1544,6 +1551,7 @@ export default function Home() {
                 alt="UX design"
                 sizes="50vw"
                 fill
+                unoptimized
               />
             </div>
           </div>
