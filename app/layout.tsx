@@ -5,6 +5,7 @@ import { Inter } from "next/font/google"
 import Script from "next/script"
 import { Footer } from "@/components/footer"
 import { GoogleAnalytics } from "@next/third-parties/google"
+import { FacebookPixel } from "@/components/facebook-pixel"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -31,6 +32,7 @@ export default function RootLayout({
 
       <Script src="https://app.iclosed.io/assets/widget.js" />
       <GoogleAnalytics gaId="AW-1017877798" />
+      <FacebookPixel />
     </html>
   )
 }
