@@ -4,6 +4,7 @@ import Link from "next/link"
 import { MarketeqWhite } from "./icons/marketeq-white"
 import { useWindowScroll } from "@/lib/hooks"
 import { MarketeqBlue } from "./icons/marketeq-blue"
+import { InitiateCheckoutTrigger } from "./initiate-checkout-trigger"
 
 export const LandingHeader = () => {
   const { y } = useWindowScroll()
@@ -59,13 +60,15 @@ export const LandingHeader = () => {
           </Link>
         </div>
 
-        <button
-          data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
-          data-embed-type="popup"
-          className="bg-primary-500 3xl:h-10 3xl:px-5 3xl:text-sm hover:bg-primary-600 inline-flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg px-3 text-[10px] leading-5 font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
-        >
-          Book a Call
-        </button>
+        <InitiateCheckoutTrigger asChild>
+          <button
+            data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
+            data-embed-type="popup"
+            className="bg-primary-500 3xl:h-10 3xl:px-5 3xl:text-sm hover:bg-primary-600 inline-flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg px-3 text-[10px] leading-5 font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+          >
+            Book a Call
+          </button>
+        </InitiateCheckoutTrigger>
       </nav>
     </header>
   )

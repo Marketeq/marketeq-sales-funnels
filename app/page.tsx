@@ -35,6 +35,7 @@ import testimonial06Lg from "@/public/testimonial-06-lg.png"
 import testimonial07Lg from "@/public/testimonial-07-lg.png"
 import testimonial08Lg from "@/public/testimonial-08-lg.png"
 import { LandingHeader } from "@/components/landing-header"
+import { InitiateCheckoutTrigger } from "@/components/initiate-checkout-trigger"
 
 const Quote = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => {
   return (
@@ -505,14 +506,16 @@ export default function Home() {
               </div>
 
               <div className="3xl:mt-[50px] 3xl:gap-y-5 mt-10 flex flex-col items-center gap-y-2">
-                <button
-                  data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
-                  data-embed-type="popup"
-                  className="max-3xl:rounded-lg bg-primary-500 3xl:h-[70px] 3xl:gap-x-3 3xl:px-7 3xl:text-xl hover:bg-primary-600 inline-flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-4 text-sm font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
-                >
-                  Book a Strategy Call{" "}
-                  <ArrowRight className="3xl:size-[22px] size-[15px]" />
-                </button>
+                <InitiateCheckoutTrigger asChild>
+                  <button
+                    data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
+                    data-embed-type="popup"
+                    className="max-3xl:rounded-lg bg-primary-500 3xl:h-[70px] 3xl:gap-x-3 3xl:px-7 3xl:text-xl hover:bg-primary-600 inline-flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-4 text-sm font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+                  >
+                    Book a Strategy Call{" "}
+                    <ArrowRight className="3xl:size-[22px] size-[15px]" />
+                  </button>
+                </InitiateCheckoutTrigger>
 
                 <p className="3xl:text-sm text-center text-[10px] leading-none text-white">
                   Talk to an expert ux designer
@@ -736,13 +739,15 @@ export default function Home() {
         </div>
 
         <div className="3xl:mt-[75px] mt-[30px] flex items-center justify-center">
-          <button
-            data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
-            data-embed-type="popup"
-            className="max-3xl:rounded-lg bg-primary-500 3xl:h-[52px] 3xl:px-6 3xl:text-base hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs leading-7 font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
-          >
-            Book a Strategy Call
-          </button>
+          <InitiateCheckoutTrigger asChild>
+            <button
+              data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
+              data-embed-type="popup"
+              className="max-3xl:rounded-lg bg-primary-500 3xl:h-[52px] 3xl:px-6 3xl:text-base hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs leading-7 font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+            >
+              Book a Strategy Call
+            </button>
+          </InitiateCheckoutTrigger>
         </div>
       </div>
 
@@ -1110,13 +1115,15 @@ export default function Home() {
             </div>
 
             <div className="3xl:gap-y-5 3xl:pr-[50px] mt-[30px] flex flex-col items-center gap-y-3">
-              <button
-                data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
-                data-embed-type="popup"
-                className="max-3xl:rounded-lg bg-primary-500 3xl:h-[70px] 3xl:px-7 3xl:text-xl hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-[12px] font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
-              >
-                Book a Strategy Call
-              </button>
+              <InitiateCheckoutTrigger asChild>
+                <button
+                  data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
+                  data-embed-type="popup"
+                  className="max-3xl:rounded-lg bg-primary-500 3xl:h-[70px] 3xl:px-7 3xl:text-xl hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-[12px] font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+                >
+                  Book a Strategy Call
+                </button>
+              </InitiateCheckoutTrigger>
               <div className="3xl:block 3xl:max-w-[136px] flex flex-1 items-center">
                 <span className="3xl:text-sm text-center text-[10px] leading-[1.6] text-gray-500">
                   Get on a call with an expert UX designer
@@ -1147,14 +1154,15 @@ export default function Home() {
             testing. The same methodology that helps our clients outperform
             entire markets.
           </p>
-
-          <button
-            data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
-            data-embed-type="popup"
-            className="max-3xl:rounded-lg bg-primary-500 3xl:mt-8 3xl:h-[52px] 3xl:px-6 3xl:text-base 3xl:leading-7 hover:bg-primary-600 mt-[30px] inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
-          >
-            Book a Call
-          </button>
+          <InitiateCheckoutTrigger asChild>
+            <button
+              data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
+              data-embed-type="popup"
+              className="max-3xl:rounded-lg bg-primary-500 3xl:mt-8 3xl:h-[52px] 3xl:px-6 3xl:text-base 3xl:leading-7 hover:bg-primary-600 mt-[30px] inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+            >
+              Book a Call
+            </button>
+          </InitiateCheckoutTrigger>
         </div>
         <div className="3xl:w-[495px] md:w-[381px] md:flex-none">
           <div className="group flex gap-x-5">
@@ -1419,13 +1427,15 @@ export default function Home() {
             </ul>
 
             <div className="3xl:mt-[50px] mt-[30px]">
-              <button
-                data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
-                data-embed-type="popup"
-                className="max-3xl:rounded-lg bg-primary-500 3xl:h-[52px] 3xl:px-6 3xl:text-base 3xl:leading-7 hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
-              >
-                Book a Call
-              </button>
+              <InitiateCheckoutTrigger asChild>
+                <button
+                  data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
+                  data-embed-type="popup"
+                  className="max-3xl:rounded-lg bg-primary-500 3xl:h-[52px] 3xl:px-6 3xl:text-base 3xl:leading-7 hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+                >
+                  Book a Call
+                </button>
+              </InitiateCheckoutTrigger>
             </div>
           </div>
 
@@ -1834,13 +1844,15 @@ export default function Home() {
 
               <div className="3xl:mt-[50px] mx-auto mt-[30px] max-w-[461px]">
                 <div className="flex justify-center">
-                  <button
-                    data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
-                    data-embed-type="popup"
-                    className="bg-primary-500 3xl:h-[70px] 3xl:px-7 3xl:text-xl hover:bg-primary-600 3xl:rounded-xl inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg px-3.5 text-xs font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
-                  >
-                    Book a Call
-                  </button>
+                  <InitiateCheckoutTrigger asChild>
+                    <button
+                      data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
+                      data-embed-type="popup"
+                      className="bg-primary-500 3xl:h-[70px] 3xl:px-7 3xl:text-xl hover:bg-primary-600 3xl:rounded-xl inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg px-3.5 text-xs font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+                    >
+                      Book a Call
+                    </button>
+                  </InitiateCheckoutTrigger>
                 </div>
 
                 <p className="3xl:mt-[30px] 3xl:text-sm mt-3 text-center text-[10px] leading-[1.6] text-white">
