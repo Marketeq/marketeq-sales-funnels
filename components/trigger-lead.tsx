@@ -21,7 +21,7 @@ export const TriggerLead = () => {
         clearInterval(intervalIdRef.current)
         intervalIdRef.current = undefined
       }
-    }, 125)
+    })
 
     return () => {
       clearInterval(intervalIdRef.current)
