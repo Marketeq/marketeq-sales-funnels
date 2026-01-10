@@ -37,6 +37,7 @@ import review26 from "@/public/review-26.png"
 import Image from "next/image"
 import Link from "next/link"
 import { SalesConversion } from "@/components/sales-conversion"
+import { TriggerLead } from "@/components/trigger-lead"
 
 const CalendarCheck01 = ({
   className,
@@ -175,6 +176,7 @@ export default function ThankYou() {
   return (
     <main>
       <SalesConversion />
+      <TriggerLead />
       <div className="bg-dark-blue-600 5xl:px-[300px] 4xl:py-0 4xl:px-[150px]">
         <div className="3xl:h-[72px] flex h-[47.04px] items-end justify-center">
           <Link href="/" className="focus-visible:outline-none" target="_blank">
