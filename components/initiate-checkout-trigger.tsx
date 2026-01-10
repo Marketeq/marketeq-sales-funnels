@@ -5,7 +5,7 @@ import { Slot } from "@radix-ui/react-slot"
 
 declare global {
   interface Window {
-    fbq?: (arg1: string, arg2: string) => void
+    fbq?: unknown
   }
 }
 
@@ -18,7 +18,10 @@ export const InitiateCheckoutTrigger = ({
 
   const handleClick: React.MouseEventHandler<HTMLButtonElement> = (event) => {
     onClick?.(event)
-    window.fbq?.("track", "InitiateCheckout")
+
+    if ("fbq" in window && typeof window.fbq === "function") {
+      window.fbq("track", "InitiateCheckout")
+    }
   }
 
   return <Comp onClick={handleClick} {...props} />
