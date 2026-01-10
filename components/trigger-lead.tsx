@@ -11,7 +11,7 @@ export const TriggerLead = () => {
       if (
         isNotTriggeredRef.current &&
         "fbq" in window &&
-        typeof window.fbq !== "undefined"
+        typeof window.fbq === "function"
       ) {
         window.fbq("track", "Lead")
         isNotTriggeredRef.current = false
