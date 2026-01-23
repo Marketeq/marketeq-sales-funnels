@@ -38,6 +38,7 @@ import Link from "next/link"
 import { SalesConversion } from "@/components/sales-conversion"
 import { TriggerLead } from "@/components/trigger-lead"
 import { BookingConfirmation } from "@/components/booking-confirmation"
+import { Suspense } from "react"
 
 const CalendarCheck01 = ({
   className,
@@ -172,7 +173,7 @@ const MessageChatSquare = ({
   </svg>
 )
 
-export default function ThankYou() {
+function ThankYou() {
   return (
     <main>
       <SalesConversion />
@@ -658,5 +659,13 @@ export default function ThankYou() {
         </div>
       </div>
     </main>
+  )
+}
+
+export default function ThankYouRoot() {
+  return (
+    <Suspense>
+      <ThankYou />
+    </Suspense>
   )
 }
