@@ -7,7 +7,6 @@ import { RefreshCw } from "@/components/icons/refresh-cw"
 import { cn } from "@/lib/utils"
 import { ChartBreakoutCircle, Lightning01 } from "@blend-metrics/icons"
 import { Check } from "lucide-react"
-import React from "react"
 import review01 from "@/public/review-01.png"
 import review02 from "@/public/review-02.png"
 import review03 from "@/public/review-03.png"
@@ -38,6 +37,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { SalesConversion } from "@/components/sales-conversion"
 import { TriggerLead } from "@/components/trigger-lead"
+import { BookingConfirmation } from "@/components/booking-confirmation"
 
 const CalendarCheck01 = ({
   className,
@@ -227,11 +227,8 @@ export default function ThankYou() {
       </div>
 
       <div className="5xl:px-[300px] 4xl:px-[150px] 4xl:py-[100px] 3xl:p-[100px] 3xl:gap-y-[50px] flex flex-col gap-y-[30px] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
-        <div
-          className="call-details-widget"
-          data-url="https://app.iclosed.io/embed"
-          style={{ width: "100%", height: "340px" }}
-        />
+        <BookingConfirmation />
+
         <div>
           <div className="flex items-center justify-center">
             <span className="3xl:text-base bg-[linear-gradient(91.85deg,rgba(34,55,107,1)_0%,rgba(48,108,254,1)_99.34%)] bg-clip-text text-xs leading-none font-semibold text-transparent uppercase">

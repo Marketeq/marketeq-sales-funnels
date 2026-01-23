@@ -6,6 +6,7 @@ import Script from "next/script"
 import { Footer } from "@/components/footer"
 import { GoogleAnalytics } from "@next/third-parties/google"
 import { FacebookPixel } from "@/components/facebook-pixel"
+import { InitializeCal } from "@/components/initialize-cal"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -28,11 +29,12 @@ export default function RootLayout({
       <body>
         {children}
         <Footer />
-      </body>
 
-      <Script src="https://app.iclosed.io/assets/widget.js" />
-      <GoogleAnalytics gaId="AW-1017877798" />
-      <FacebookPixel />
+        <Script src="https://app.iclosed.io/assets/widget.js" />
+        <GoogleAnalytics gaId="AW-1017877798" />
+        <FacebookPixel />
+        <InitializeCal />
+      </body>
     </html>
   )
 }

@@ -36,6 +36,7 @@ import testimonial07Lg from "@/public/testimonial-07-lg.png"
 import testimonial08Lg from "@/public/testimonial-08-lg.png"
 import { LandingHeader } from "@/components/landing-header"
 import { InitiateCheckoutTrigger } from "@/components/initiate-checkout-trigger"
+import { WistiaPlayer } from "@wistia/wistia-player-react"
 
 const Quote = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => {
   return (
@@ -482,7 +483,7 @@ export default function Home() {
       <LandingHeader />
       <div className="bg-dark-blue-600 relative">
         <div className="5xl:px-[300px] 4xl:px-[275px] 3xl:px-[200px] 3xl:py-[100px] px-[30px] pt-5 pb-10 lg:px-[100px]">
-          <div className="mx-auto max-w-[1040px]">
+          <div className="mx-auto max-w-[1320px]">
             <div className="flex items-center justify-center">
               <div className="border-primary-500 3xl:h-11 3xl:px-5 3xl:py-3 flex h-8 shrink-0 items-center gap-x-[8.32px] rounded-full border-[1.66px] px-3 py-1.5">
                 <Lightning01 className="text-primary-500 max-3xl:size-3.5" />
@@ -493,9 +494,12 @@ export default function Home() {
             </div>
 
             <div className="3xl:mt-6 mt-3">
-              <h1 className="3xl:text-[80px] text-center text-[26px] leading-none font-extrabold text-white md:text-[62px]">
-                <span className="3xl:contents block">We Design Digital</span>{" "}
-                Products That Perform
+              <h1 className="3xl:text-[80px] text-center text-[26px] leading-none font-extrabold text-white capitalize md:text-[62px]">
+                <span className="3xl:contents xl:block">
+                  We design experiences that
+                </span>{" "}
+                <span className="text-primary-500">outperform</span> your
+                competitors
               </h1>
 
               <div className="3xl:mt-6 mt-3">
@@ -508,12 +512,19 @@ export default function Home() {
               <div className="3xl:mt-[50px] 3xl:gap-y-5 mt-10 flex flex-col items-center gap-y-2">
                 <InitiateCheckoutTrigger asChild>
                   <button
-                    data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
-                    data-embed-type="popup"
-                    className="max-3xl:rounded-lg bg-primary-500 3xl:h-[70px] 3xl:gap-x-3 3xl:px-7 3xl:text-xl hover:bg-primary-600 inline-flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-3 rounded-xl px-4 text-sm font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+                    data-cal-link="marketeq/ux-strategy-call"
+                    data-cal-config='{"layout":"month_view","theme":"light"}'
+                    className="bg-primary-500 3xl:rounded-xl 3xl:px-[30px] 3xl:py-[21px] border-primary-500 hover:border-dark-blue-500 inline-flex cursor-pointer flex-col items-center gap-y-px rounded-lg border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
                   >
-                    Book a Strategy Call{" "}
-                    <ArrowRight className="3xl:size-[22px] size-[15px]" />
+                    <span className="3xl:gap-x-3 flex items-center gap-x-2">
+                      <span className="3xl:text-xl 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
+                        Book a Strategy Call
+                      </span>
+                      <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
+                    </span>
+                    <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
+                      Yes, I want my FREE Strategy Session
+                    </span>
                   </button>
                 </InitiateCheckoutTrigger>
 
@@ -526,6 +537,55 @@ export default function Home() {
         </div>
 
         <ChartAsIllustration className="3xl:block absolute right-0 bottom-0 hidden" />
+      </div>
+
+      <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82.01%)] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
+        <div className="3xl:gap-x-6 mx-auto flex flex-col items-center gap-3 text-center md:max-w-2xl md:flex-row md:items-center md:justify-center md:text-left">
+          <span className="text-dark-blue-400 3xl:text-[22px] text-base leading-none font-bold whitespace-nowrap">
+            Step 1
+          </span>
+          <span className="text-dark-blue-400 3xl:text-lg text-sm leading-none font-medium">
+            Watch the video below and see exactly how this offer works.
+          </span>
+        </div>
+
+        <div className="border-primary-500 5xl:w-[1040px] 5xl:h-[621.05px] 4xl:w-[940px] 4xl:h-[561.33px] 3xl:w-[840px] 3xl:h-[501.62px] xs:max-3xl:aspect-video 3xl:mt-[50px] 3xl:p-[33.27px] 4xl:p-[37.24px] 5xl:p-[41.2px] 3xl:rounded-[16.64px] 4xl:rounded-[18.62px] 5xl:rounded-[20.6px] mx-auto mt-10 rounded-[13.27px] border p-[13.27px] md:rounded-[13.63px] md:p-[27.25px] lg:rounded-[16.32px] lg:p-[32.64px]">
+          <WistiaPlayer mediaId="7654igdhr1" />
+        </div>
+
+        <div className="3xl:gap-x-6 3xl:mt-[50px] mx-auto mt-10 flex flex-col items-center gap-3 text-center md:max-w-2xl md:flex-row md:items-start md:justify-center md:text-left">
+          <span className="text-dark-blue-400 3xl:text-[22px] text-base leading-none font-bold whitespace-nowrap">
+            Step 2
+          </span>
+          <span className="text-dark-blue-400 3xl:text-lg text-sm leading-none font-medium">
+            Book a strategy call with us so that we can go through the current
+            state of your digital product and put together a plan to fix it.
+          </span>
+        </div>
+
+        <div className="3xl:gap-y-8 3xl:mt-[50px] mt-10 flex flex-col items-center gap-y-[18.83px]">
+          <InitiateCheckoutTrigger asChild>
+            <button
+              data-cal-link="marketeq/ux-strategy-call"
+              data-cal-config='{"layout":"month_view","theme":"light"}'
+              className="bg-primary-500 3xl:rounded-xl 3xl:px-12 3xl:py-[21px] border-primary-500 hover:border-dark-blue-500 inline-flex cursor-pointer flex-col items-center gap-y-px rounded-[15px] border px-[34px] py-[15.89px] shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+            >
+              <span className="flex items-center gap-x-3">
+                <span className="3xl:text-[33.76px] 3xl:leading-[47.26px] inline-block text-[19.86px] leading-[27.8px] font-semibold whitespace-nowrap text-white">
+                  Book a Strategy Call
+                </span>
+                <ArrowRight className="3xl:size-[30.38px] size-[17.87px] text-white" />
+              </span>
+              <span className="3xl:text-[18.67px] text-xs leading-none whitespace-nowrap text-white">
+                Yes, I want my FREE Strategy Session
+              </span>
+            </button>
+          </InitiateCheckoutTrigger>
+
+          <p className="text-dark-blue-400 3xl:text-base text-xs leading-none">
+            Skip the sales team and talk directly with an expert ux/ui designer
+          </p>
+        </div>
       </div>
 
       <div
@@ -547,83 +607,83 @@ export default function Home() {
         </div>
 
         <div className="3xl:mt-[50px] 3xl:gap-x-5 mt-[30px] grid gap-3.5 md:grid-cols-3">
-          <article className="3xl:rounded-[25px] 3xl:p-7 grid rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
-            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center gap-x-[8.32px] justify-self-start rounded-full border-[1.2px] pr-[13px] pl-2.5">
-              <Lightning01 className="text-primary-500 size-5" />{" "}
-              <span className="text-dark-blue-400 3xl:text-sm text-xs leading-[14.4px] font-bold">
+          <article className="group/article 3xl:rounded-[25px] 3xl:p-7 hover:bg-primary-500 hover:border-primary-500 grid rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
+            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center gap-x-[8.32px] justify-self-start rounded-full border-[1.2px] pr-[13px] pl-2.5 group-hover/article:border-white">
+              <Lightning01 className="text-primary-500 size-5 group-hover/article:text-white" />{" "}
+              <span className="text-dark-blue-400 3xl:text-sm text-xs leading-[14.4px] font-bold group-hover/article:text-white">
                 Problem 1
               </span>
             </div>
 
             <div className="3xl:mt-[50px] mt-[30px]">
-              <h2 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold">
+              <h2 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
                 Low Sign-up Completion
               </h2>
 
-              <p className="3xl:mt-5 mt-3 text-base leading-[1.6] text-gray-500">
+              <p className="3xl:mt-5 mt-3 text-base leading-[1.6] text-gray-500 group-hover/article:text-white">
                 Users drop off before finishing onboarding. We streamline flows
                 through tested UX patterns.
               </p>
             </div>
-            <div className="4xl:mt-[50px] 3xl:mt-[26px] 3xl:flex-row 3xl:items-center 3xl:pt-7 mt-[30px] flex flex-row items-center gap-x-3 gap-y-1 self-end border-t-2 border-gray-200 pt-5 md:flex-col md:items-start">
-              <h1 className="text-dark-blue-400 3xl:text-[40px] text-[30px] leading-none font-black">
+            <div className="4xl:mt-[50px] 3xl:mt-[26px] 3xl:flex-row 3xl:items-center 3xl:pt-7 group-hover/article:border-primary-400 mt-[30px] flex flex-row items-center gap-x-3 gap-y-1 self-end border-t-2 border-gray-200 pt-5 transition duration-300 md:flex-col md:items-start">
+              <h1 className="text-dark-blue-400 3xl:text-[40px] text-[30px] leading-none font-black group-hover/article:text-white">
                 +32%
               </h1>
-              <span className="text-dark-blue-400 3xl:text-lg text-sm leading-none font-semibold">
+              <span className="text-dark-blue-400 3xl:text-lg text-sm leading-none font-semibold group-hover/article:text-white">
                 Improved signup completion rate
               </span>
             </div>
           </article>
-          <article className="3xl:rounded-[25px] 3xl:p-7 grid rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
-            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center gap-x-[8.32px] justify-self-start rounded-full border-[1.2px] pr-[13px] pl-2.5">
-              <Lightning01 className="text-primary-500 size-5" />{" "}
-              <span className="text-dark-blue-400 3xl:text-sm text-xs leading-[14.4px] font-bold">
+          <article className="group/article 3xl:rounded-[25px] 3xl:p-7 hover:bg-primary-500 hover:border-primary-500 grid rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
+            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center gap-x-[8.32px] justify-self-start rounded-full border-[1.2px] pr-[13px] pl-2.5 group-hover/article:border-white">
+              <Lightning01 className="text-primary-500 size-5 group-hover/article:text-white" />{" "}
+              <span className="text-dark-blue-400 3xl:text-sm text-xs leading-[14.4px] font-bold group-hover/article:text-white">
                 Problem 2
               </span>
             </div>
 
             <div className="3xl:mt-[50px] mt-[30px]">
-              <h2 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold">
+              <h2 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
                 High Support Requests
               </h2>
 
-              <p className="3xl:mt-5 mt-3 text-base leading-[1.6] text-gray-500">
+              <p className="3xl:mt-5 mt-3 text-base leading-[1.6] text-gray-500 group-hover/article:text-white">
                 Users can’t find answers quickly. We simplify navigation and
                 create clarity.
               </p>
             </div>
-            <div className="4xl:mt-[50px] 3xl:mt-[26px] 3xl:flex-row 3xl:items-center 3xl:pt-7 mt-[30px] flex flex-row items-center gap-x-3 gap-y-1 self-end border-t-2 border-gray-200 pt-5 md:flex-col md:items-start">
-              <h1 className="text-dark-blue-400 3xl:text-[40px] text-[30px] leading-none font-black">
+            <div className="4xl:mt-[50px] 3xl:mt-[26px] 3xl:flex-row 3xl:items-center 3xl:pt-7 group-hover/article:border-primary-400 mt-[30px] flex flex-row items-center gap-x-3 gap-y-1 self-end border-t-2 border-gray-200 pt-5 transition duration-300 md:flex-col md:items-start">
+              <h1 className="text-dark-blue-400 3xl:text-[40px] text-[30px] leading-none font-black group-hover/article:text-white">
                 -40%
               </h1>
-              <span className="text-dark-blue-400 3xl:text-lg text-sm leading-none font-semibold">
+              <span className="text-dark-blue-400 3xl:text-lg text-sm leading-none font-semibold group-hover/article:text-white">
                 Reduction of support tickets
               </span>
             </div>
           </article>
-          <article className="3xl:rounded-[25px] 3xl:p-7 grid rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
-            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center gap-x-[8.32px] justify-self-start rounded-full border-[1.2px] pr-[13px] pl-2.5">
-              <Lightning01 className="text-primary-500 size-5" />{" "}
-              <span className="text-dark-blue-400 3xl:text-sm text-xs leading-[14.4px] font-bold">
+          <article className="group/article 3xl:rounded-[25px] 3xl:p-7 hover:bg-primary-500 hover:border-primary-500 grid rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
+            <div className="border-primary-500 3xl:h-11 3xl:border-[1.66px] 3xl:px-[18px] inline-flex h-[33px] shrink-0 items-center justify-center gap-x-[8.32px] justify-self-start rounded-full border-[1.2px] pr-[13px] pl-2.5 group-hover/article:border-white">
+              <Lightning01 className="text-primary-500 size-5 group-hover/article:text-white" />{" "}
+              <span className="text-dark-blue-400 3xl:text-sm text-xs leading-[14.4px] font-bold group-hover/article:text-white">
                 Problem 3
               </span>
             </div>
 
             <div className="3xl:mt-[50px] mt-[30px]">
-              <h2 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold">
+              <h2 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
                 Outdated Visuals
               </h2>
 
-              <p className="3xl:mt-5 mt-3 text-base leading-[1.6] text-gray-500">
+              <p className="3xl:mt-5 mt-3 text-base leading-[1.6] text-gray-500 group-hover/article:text-white">
                 Interfaces feel dated next to competitors. We modernize visuals
                 backed by competitive market research.
               </p>
             </div>
-            <div className="4xl:mt-[50px] 3xl:mt-[26px] 3xl:flex-row 3xl:items-center 3xl:pt-7 mt-[30px] flex flex-row items-center gap-x-3 gap-y-1 self-end border-t-2 border-gray-200 pt-5 md:flex-col md:items-start">
-              <h1 className="text-dark-blue-400 3xl:text-[40px] text-[30px] leading-none font-black">
+            <div className="4xl:mt-[50px] 3xl:mt-[26px] 3xl:flex-row 3xl:items-center 3xl:pt-7 group-hover/article:border-primary-400 mt-[30px] flex flex-row items-center gap-x-3 gap-y-1 self-end border-t-2 border-gray-200 pt-5 transition duration-300 md:flex-col md:items-start">
+              <h1 className="text-dark-blue-400 3xl:text-[40px] text-[30px] leading-none font-black group-hover/article:text-white">
                 +18%
               </h1>
-              <span className="text-dark-blue-400 3xl:text-lg text-sm leading-none font-semibold">
+              <span className="text-dark-blue-400 3xl:text-lg text-sm leading-none font-semibold group-hover/article:text-white">
                 Increased brand perception among users
               </span>
             </div>
@@ -738,16 +798,28 @@ export default function Home() {
           </article>
         </div>
 
-        <div className="3xl:mt-[75px] mt-[30px] flex items-center justify-center">
+        <div className="3xl:mt-[75px] 3xl:gap-y-5 mt-[30px] flex flex-col items-center gap-y-3">
           <InitiateCheckoutTrigger asChild>
             <button
-              data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
-              data-embed-type="popup"
-              className="max-3xl:rounded-lg bg-primary-500 3xl:h-[52px] 3xl:px-6 3xl:text-base hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs leading-7 font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+              data-cal-link="marketeq/ux-strategy-call"
+              data-cal-config='{"layout":"month_view","theme":"light"}'
+              className="bg-primary-500 3xl:px-[30px] 3xl:py-[21px] border-primary-500 hover:border-dark-blue-500 inline-flex cursor-pointer flex-col items-center gap-y-px rounded-xl border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
             >
-              Book a Strategy Call
+              <span className="3xl:gap-x-3 flex items-center gap-x-2">
+                <span className="3xl:text-xl 3xl:leading-7 inline-block text-sm leading-5 font-semibold whitespace-nowrap text-white">
+                  Book a Strategy Call
+                </span>
+                <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
+              </span>
+              <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
+                Yes, I want my FREE Strategy Session
+              </span>
             </button>
           </InitiateCheckoutTrigger>
+
+          <p className="3xl:text-sm text-center text-xs leading-[1.6] text-gray-500">
+            Get on a call with an expert UX designer
+          </p>
         </div>
       </div>
 
@@ -784,13 +856,13 @@ export default function Home() {
 
         <div className="max-3xl:grid-cols-2 3xl:mt-[50px] 3xl:gap-y-5 mt-[30px] grid gap-3.5 max-md:grid-cols-none">
           <div className="3xl:grid contents min-h-[475px] grid-cols-4 gap-5">
-            <article className="3xl:col-span-2 3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:col-span-2 3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] group/article hover:bg-primary-500 flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold group-hover/article:text-white">
                   User Research & Insights
                 </h1>
 
-                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                   Understand your audience through interviews, surveys, and
                   behavioral data to inform smarter product decisions.
                 </p>
@@ -804,16 +876,30 @@ export default function Home() {
                   sizes="50vw"
                   fill
                 />
+                <div className="absolute inset-0 flex flex-col justify-center gap-y-6 bg-black/50 opacity-0 group-hover/article:opacity-100">
+                  <div className="max-w-[300px] self-center">
+                    <h1 className="text-center text-xl font-semibold text-white">
+                      Make your product feel more responsive and alive.
+                    </h1>
+                  </div>
+                  <button
+                    data-cal-link="marketeq/ux-strategy-call"
+                    data-cal-config='{"layout":"month_view","theme":"light"}'
+                    className="hover:text-dark-blue-400 inline-flex h-11 cursor-pointer items-center self-center rounded-lg border border-white px-[18px] text-base leading-6 font-semibold whitespace-nowrap text-white transition duration-300 hover:bg-white"
+                  >
+                    Book a Strategy Call
+                  </button>
+                </div>
               </div>
             </article>
 
-            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] hover:bg-primary-500 group/article flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold group-hover/article:text-white">
                   UX Strategy & Product Roadmapping
                 </h1>
 
-                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                   Align design priorities with business goals using competitive
                   analysis, opportunity mapping, and roadmap planning.
                 </p>
@@ -827,15 +913,33 @@ export default function Home() {
                   sizes="25vw"
                   fill
                 />
+                <div className="absolute inset-0 flex flex-col justify-center gap-y-6 opacity-0 group-hover/article:bg-black/50 group-hover/article:opacity-100">
+                  <div className="max-w-[300px] self-center">
+                    <h1 className="3xl:text-base text-center text-xl leading-none font-semibold text-white">
+                      Get a clear, data-driven plan to scale your product
+                      faster.
+                    </h1>
+                  </div>
+                  <button
+                    data-cal-link="marketeq/ux-strategy-call"
+                    data-cal-config='{"layout":"month_view","theme":"light"}'
+                    className="hover:text-dark-blue-400 inline-flex h-11 cursor-pointer items-center justify-center self-center rounded-lg border border-white px-[18px] whitespace-nowrap text-white transition duration-300 hover:bg-white focus:outline-none"
+                  >
+                    <span className="3xl:inline-block hidden">Book a Call</span>
+                    <span className="3xl:hidden inline-block">
+                      Book a Strategy Call
+                    </span>
+                  </button>
+                </div>
               </div>
             </article>
-            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] hover:bg-primary-500 group/article flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold group-hover/article:text-white">
                   User Journey Mapping
                 </h1>
 
-                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                   Visualize end-to-end user flows to identify friction points
                   and optimize every key touchpoint.
                 </p>
@@ -849,18 +953,36 @@ export default function Home() {
                   sizes="25vw"
                   fill
                 />
+                <div className="absolute inset-0 flex flex-col justify-center gap-y-6 opacity-0 group-hover/article:bg-black/50 group-hover/article:opacity-100">
+                  <div className="max-w-[300px] self-center">
+                    <h1 className="3xl:text-base text-center text-xl leading-none font-semibold text-white">
+                      Find and fix the friction points that are costing you
+                      users.
+                    </h1>
+                  </div>
+                  <button
+                    data-cal-link="marketeq/ux-strategy-call"
+                    data-cal-config='{"layout":"month_view","theme":"light"}'
+                    className="hover:text-dark-blue-400 inline-flex h-11 cursor-pointer items-center justify-center self-center rounded-lg border border-white px-[18px] whitespace-nowrap text-white transition duration-300 hover:bg-white focus:outline-none"
+                  >
+                    <span className="3xl:inline-block hidden">Book a Call</span>
+                    <span className="3xl:hidden inline-block">
+                      Book a Strategy Call
+                    </span>
+                  </button>
+                </div>
               </div>
             </article>
           </div>
 
           <div className="3xl:grid contents min-h-[847px] grid-cols-3 gap-5">
-            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] hover:bg-primary-500 group/article flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold group-hover/article:text-white">
                   Information Architecture
                 </h1>
 
-                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                   Structure complex products into clear, intuitive navigation
                   systems that users can move through effortlessly.
                 </p>
@@ -874,17 +996,32 @@ export default function Home() {
                   sizes="50vw"
                   fill
                 />
+                <div className="absolute inset-0 flex flex-col justify-center gap-y-6 opacity-0 group-hover/article:bg-black/50 group-hover/article:opacity-100">
+                  <div className="max-w-[300px] self-center">
+                    <h1 className="text-center text-xl leading-none font-semibold text-white">
+                      See how we turn complex workflows into intuitive
+                      processes.
+                    </h1>
+                  </div>
+                  <button
+                    data-cal-link="marketeq/ux-strategy-call"
+                    data-cal-config='{"layout":"month_view","theme":"light"}'
+                    className="hover:text-dark-blue-400 inline-flex h-11 cursor-pointer items-center justify-center self-center rounded-lg border border-white px-[18px] whitespace-nowrap text-white transition duration-300 hover:bg-white focus:outline-none"
+                  >
+                    Book a Strategy Call
+                  </button>
+                </div>
               </div>
             </article>
 
             <div className="3xl:grid contents grid-rows-2 gap-y-5">
-              <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+              <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] hover:bg-primary-500 group/article flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
                 <div className="space-y-2.5">
-                  <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
+                  <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold group-hover/article:text-white">
                     Wireframing & Prototyping
                   </h1>
 
-                  <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
+                  <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                     Translate ideas into interactive prototypes that are fast,
                     testable, and ready for stakeholder validation.
                   </p>
@@ -898,15 +1035,30 @@ export default function Home() {
                     sizes="25vw"
                     fill
                   />
+                  <div className="absolute inset-0 flex flex-col justify-center gap-y-6 opacity-0 group-hover/article:bg-black/50 group-hover/article:opacity-100">
+                    <div className="max-w-[300px] self-center">
+                      <h1 className="text-center text-xl leading-none font-semibold text-white">
+                        Visualise your ideas and get stakeholder buy-in
+                        immediately.
+                      </h1>
+                    </div>
+                    <button
+                      data-cal-link="marketeq/ux-strategy-call"
+                      data-cal-config='{"layout":"month_view","theme":"light"}'
+                      className="hover:text-dark-blue-400 inline-flex h-11 cursor-pointer items-center justify-center self-center rounded-lg border border-white px-[18px] whitespace-nowrap text-white transition duration-300 hover:bg-white focus:outline-none"
+                    >
+                      Book a Strategy Call
+                    </button>
+                  </div>
                 </div>
               </article>
-              <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+              <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] hover:bg-primary-500 group/article flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
                 <div className="space-y-2.5">
-                  <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
+                  <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold group-hover/article:text-white">
                     Visual Design & Brand Integration
                   </h1>
 
-                  <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
+                  <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                     Unify aesthetics and usability through typography, color,
                     and layout systems that enhance brand perception.
                   </p>
@@ -920,17 +1072,31 @@ export default function Home() {
                     sizes="25vw"
                     fill
                   />
+                  <div className="absolute inset-0 flex flex-col justify-center gap-y-6 opacity-0 group-hover/article:bg-black/50 group-hover/article:opacity-100">
+                    <div className="max-w-[300px] self-center">
+                      <h1 className="text-center text-xl leading-none font-semibold text-white">
+                        Make your product feel more responsive and alive.
+                      </h1>
+                    </div>
+                    <button
+                      data-cal-link="marketeq/ux-strategy-call"
+                      data-cal-config='{"layout":"month_view","theme":"light"}'
+                      className="hover:text-dark-blue-400 inline-flex h-11 cursor-pointer items-center justify-center self-center rounded-lg border border-white px-[18px] whitespace-nowrap text-white transition duration-300 hover:bg-white focus:outline-none"
+                    >
+                      Book a Strategy Call
+                    </button>
+                  </div>
                 </div>
               </article>
             </div>
 
-            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] hover:bg-primary-500 group/article flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold group-hover/article:text-white">
                   Interaction Design & UI Animations
                 </h1>
 
-                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                   Design responsive behaviors and motion patterns that make
                   interfaces feel natural and alive.
                 </p>
@@ -944,18 +1110,33 @@ export default function Home() {
                   sizes="25vw"
                   fill
                 />
+                <div className="absolute inset-0 flex flex-col justify-center gap-y-6 opacity-0 group-hover/article:bg-black/50 group-hover/article:opacity-100">
+                  <div className="max-w-[300px] self-center">
+                    <h1 className="text-center text-xl leading-none font-semibold text-white">
+                      Give your interface a world-class look that builds instant
+                      trust.
+                    </h1>
+                  </div>
+                  <button
+                    data-cal-link="marketeq/ux-strategy-call"
+                    data-cal-config='{"layout":"month_view","theme":"light"}'
+                    className="hover:text-dark-blue-400 inline-flex h-11 cursor-pointer items-center justify-center self-center rounded-lg border border-white px-[18px] whitespace-nowrap text-white transition duration-300 hover:bg-white focus:outline-none"
+                  >
+                    Book a Strategy Call
+                  </button>
+                </div>
               </div>
             </article>
           </div>
 
           <div className="3xl:grid contents min-h-[475px] grid-cols-4 gap-5">
-            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] hover:bg-primary-500 group/article flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold group-hover/article:text-white">
                   Design Systems & Component Libraries
                 </h1>
 
-                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                   Build scalable design infrastructure; component libraries,
                   tokens, and documentation for consistent releases.
                 </p>
@@ -969,15 +1150,33 @@ export default function Home() {
                   sizes="25vw"
                   fill
                 />
+                <div className="absolute inset-0 flex flex-col justify-center gap-y-6 opacity-0 group-hover/article:bg-black/50 group-hover/article:opacity-100">
+                  <div className="max-w-[300px] self-center">
+                    <h1 className="3xl:text-base text-center text-xl leading-none font-semibold text-white">
+                      Get the infrastructure you need to ship features 2x
+                      faster.
+                    </h1>
+                  </div>
+                  <button
+                    data-cal-link="marketeq/ux-strategy-call"
+                    data-cal-config='{"layout":"month_view","theme":"light"}'
+                    className="hover:text-dark-blue-400 inline-flex h-11 cursor-pointer items-center justify-center self-center rounded-lg border border-white px-[18px] whitespace-nowrap text-white transition duration-300 hover:bg-white focus:outline-none"
+                  >
+                    <span className="3xl:inline-block hidden">Book a Call</span>
+                    <span className="3xl:hidden inline-block">
+                      Book a Strategy Call
+                    </span>
+                  </button>
+                </div>
               </div>
             </article>
-            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] hover:bg-primary-500 group/article flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold group-hover/article:text-white">
                   Usability & A/B Testing
                 </h1>
 
-                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                   Test real users, validate assumptions, and iterate designs
                   based on data-driven performance insights.
                 </p>
@@ -991,16 +1190,33 @@ export default function Home() {
                   sizes="25vw"
                   fill
                 />
+                <div className="absolute inset-0 flex flex-col justify-center gap-y-6 opacity-0 group-hover/article:bg-black/50 group-hover/article:opacity-100">
+                  <div className="max-w-[300px] self-center">
+                    <h1 className="3xl:text-base text-center text-xl leading-none font-semibold text-white">
+                      See exactly where to optimize for higher conversion rates.
+                    </h1>
+                  </div>
+                  <button
+                    data-cal-link="marketeq/ux-strategy-call"
+                    data-cal-config='{"layout":"month_view","theme":"light"}'
+                    className="hover:text-dark-blue-400 inline-flex h-11 cursor-pointer items-center justify-center self-center rounded-lg border border-white px-[18px] whitespace-nowrap text-white transition duration-300 hover:bg-white focus:outline-none"
+                  >
+                    <span className="3xl:inline-block hidden">Book a Call</span>
+                    <span className="3xl:hidden inline-block">
+                      Book a Strategy Call
+                    </span>
+                  </button>
+                </div>
               </div>
             </article>
 
-            <article className="3xl:col-span-2 3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:col-span-2 3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] hover:bg-primary-500 group/article flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold group-hover/article:text-white">
                   Accessibility & Inclusive Design
                 </h1>
 
-                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                   Ensure every user can interact with your product confidently
                   through WCAG-compliant design practices.
                 </p>
@@ -1014,18 +1230,32 @@ export default function Home() {
                   sizes="50vw"
                   fill
                 />
+                <div className="absolute inset-0 flex flex-col justify-center gap-y-6 opacity-0 group-hover/article:bg-black/50 group-hover/article:opacity-100">
+                  <div className="max-w-[300px] self-center">
+                    <h1 className="text-center text-xl leading-none font-semibold text-white">
+                      Ensure your product is usable and compliant for everyone.
+                    </h1>
+                  </div>
+                  <button
+                    data-cal-link="marketeq/ux-strategy-call"
+                    data-cal-config='{"layout":"month_view","theme":"light"}'
+                    className="hover:text-dark-blue-400 inline-flex h-11 cursor-pointer items-center justify-center self-center rounded-lg border border-white px-[18px] whitespace-nowrap text-white transition duration-300 hover:bg-white focus:outline-none"
+                  >
+                    Book a Strategy Call
+                  </button>
+                </div>
               </div>
             </article>
           </div>
 
           <div className="3xl:grid contents min-h-[501px] grid-cols-3 gap-5">
-            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] hover:bg-primary-500 group/article flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold group-hover/article:text-white">
                   Market & Competitive Research
                 </h1>
 
-                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                   Benchmark against leading products, uncover gaps, and position
                   your experience as the superior alternative.
                 </p>
@@ -1039,16 +1269,31 @@ export default function Home() {
                   sizes="25vw"
                   fill
                 />
+                <div className="absolute inset-0 flex flex-col justify-center gap-y-6 opacity-0 group-hover/article:bg-black/50 group-hover/article:opacity-100">
+                  <div className="max-w-[300px] self-center">
+                    <h1 className="text-center text-xl leading-none font-semibold text-white">
+                      See where your competitors are falling short and how to
+                      beat them.
+                    </h1>
+                  </div>
+                  <button
+                    data-cal-link="marketeq/ux-strategy-call"
+                    data-cal-config='{"layout":"month_view","theme":"light"}'
+                    className="hover:text-dark-blue-400 inline-flex h-11 cursor-pointer items-center justify-center self-center rounded-lg border border-white px-[18px] whitespace-nowrap text-white transition duration-300 hover:bg-white focus:outline-none"
+                  >
+                    Book a Strategy Call
+                  </button>
+                </div>
               </div>
             </article>
 
-            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+            <article className="3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] hover:bg-primary-500 group/article flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold group-hover/article:text-white">
                   Innovation & Feature Strategy
                 </h1>
 
-                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                   Identify opportunities for new product features and UX
                   improvements that help you lead, not follow... your market.
                 </p>
@@ -1062,16 +1307,30 @@ export default function Home() {
                   sizes="25vw"
                   fill
                 />
+                <div className="absolute inset-0 flex flex-col justify-center gap-y-6 opacity-0 group-hover/article:bg-black/50 group-hover/article:opacity-100">
+                  <div className="max-w-[300px] self-center">
+                    <h1 className="text-center text-xl leading-none font-semibold text-white">
+                      Discover the next feature that will disrupt your market.
+                    </h1>
+                  </div>
+                  <button
+                    data-cal-link="marketeq/ux-strategy-call"
+                    data-cal-config='{"layout":"month_view","theme":"light"}'
+                    className="hover:text-dark-blue-400 inline-flex h-11 cursor-pointer items-center justify-center self-center rounded-lg border border-white px-[18px] whitespace-nowrap text-white transition duration-300 hover:bg-white focus:outline-none"
+                  >
+                    Book a Strategy Call
+                  </button>
+                </div>
               </div>
             </article>
 
-            <article className="max-3xl:col-span-2 3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] max-md:col-span-1">
+            <article className="max-3xl:col-span-2 3xl:rounded-[25px] 3xl:p-7 3xl:gap-y-[50px] hover:bg-primary-500 group/article flex flex-col gap-y-[30px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05] max-md:col-span-1">
               <div className="space-y-2.5">
-                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold">
+                <h1 className="text-dark-blue-400 3xl:text-xl text-lg leading-none font-bold group-hover/article:text-white">
                   Product Launch & Growth Support
                 </h1>
 
-                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500">
+                <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                   Support go-to-market efforts with landing pages, onboarding
                   flows, and UX that convert new users into loyal advocates.
                 </p>
@@ -1085,6 +1344,20 @@ export default function Home() {
                   sizes="50vw"
                   fill
                 />
+                <div className="absolute inset-0 flex flex-col justify-center gap-y-6 opacity-0 group-hover/article:bg-black/50 group-hover/article:opacity-100">
+                  <div className="max-w-[300px] self-center">
+                    <h1 className="text-center text-xl leading-none font-semibold text-white">
+                      Take your onboarding experience to a professional level.
+                    </h1>
+                  </div>
+                  <button
+                    data-cal-link="marketeq/ux-strategy-call"
+                    data-cal-config='{"layout":"month_view","theme":"light"}'
+                    className="hover:text-dark-blue-400 inline-flex h-11 cursor-pointer items-center justify-center self-center rounded-lg border border-white px-[18px] whitespace-nowrap text-white transition duration-300 hover:bg-white focus:outline-none"
+                  >
+                    Book a Strategy Call
+                  </button>
+                </div>
               </div>
             </article>
           </div>
@@ -1114,18 +1387,26 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="3xl:gap-y-5 3xl:pr-[50px] mt-[30px] flex flex-col items-center gap-y-3">
+            <div className="3xl:gap-y-5 3xl:pr-[50px] 3xl:items-start mt-[30px] flex flex-col items-center gap-y-3">
               <InitiateCheckoutTrigger asChild>
                 <button
-                  data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
-                  data-embed-type="popup"
-                  className="max-3xl:rounded-lg bg-primary-500 3xl:h-[70px] 3xl:px-7 3xl:text-xl hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-[12px] font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+                  data-cal-link="marketeq/ux-strategy-call"
+                  data-cal-config='{"layout":"month_view","theme":"light"}'
+                  className="bg-primary-500 3xl:px-[30px] 3xl:py-[21px] border-primary-500 hover:border-dark-blue-500 inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
                 >
-                  Book a Strategy Call
+                  <span className="3xl:gap-x-3 flex items-center gap-x-2">
+                    <span className="3xl:text-xl 3xl:leading-7 inline-block text-sm leading-5 font-semibold whitespace-nowrap text-white">
+                      Book a Strategy Call
+                    </span>
+                    <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
+                  </span>
+                  <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
+                    Yes, I want my FREE Strategy Session
+                  </span>
                 </button>
               </InitiateCheckoutTrigger>
-              <div className="3xl:block 3xl:max-w-[136px] flex flex-1 items-center">
-                <span className="3xl:text-sm text-center text-[10px] leading-[1.6] text-gray-500">
+              <div className="3xl:block 3xl:max-w-[136px] 3xl:ml-[21.5px] 3xl:items-start flex flex-1 items-center">
+                <span className="3xl:text-sm text-center text-[10px] leading-[1.6] whitespace-nowrap text-gray-500">
                   Get on a call with an expert UX designer
                 </span>
               </div>
@@ -1154,13 +1435,22 @@ export default function Home() {
             testing. The same methodology that helps our clients outperform
             entire markets.
           </p>
+
           <InitiateCheckoutTrigger asChild>
             <button
-              data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
-              data-embed-type="popup"
-              className="max-3xl:rounded-lg bg-primary-500 3xl:mt-8 3xl:h-[52px] 3xl:px-6 3xl:text-base 3xl:leading-7 hover:bg-primary-600 mt-[30px] inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+              data-cal-link="marketeq/ux-strategy-call"
+              data-cal-config='{"layout":"month_view","theme":"light"}'
+              className="bg-primary-500 3xl:mt-8 3xl:gap-y-px 3xl:px-6 3xl:py-3 border-primary-500 hover:border-dark-blue-500 mt-[30px] inline-flex cursor-pointer flex-col items-start rounded-xl border px-3.5 py-2 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
             >
-              Book a Call
+              <span className="3xl:gap-x-3 flex items-center gap-x-2">
+                <span className="3xl:text-base 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
+                  Book a Strategy Call
+                </span>
+                <ArrowRight className="3xl:size-5 size-[15px] text-white" />
+              </span>
+              <span className="3xl:text-xs text-[8px] leading-none whitespace-nowrap text-white">
+                Yes, I want my FREE Strategy Session
+              </span>
             </button>
           </InitiateCheckoutTrigger>
         </div>
@@ -1429,11 +1719,19 @@ export default function Home() {
             <div className="3xl:mt-[50px] mt-[30px]">
               <InitiateCheckoutTrigger asChild>
                 <button
-                  data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
-                  data-embed-type="popup"
-                  className="max-3xl:rounded-lg bg-primary-500 3xl:h-[52px] 3xl:px-6 3xl:text-base 3xl:leading-7 hover:bg-primary-600 inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-xl px-3.5 text-xs font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
+                  data-cal-link="marketeq/ux-strategy-call"
+                  data-cal-config='{"layout":"month_view","theme":"light"}'
+                  className="bg-primary-500 3xl:gap-y-px 3xl:px-6 3xl:py-3 border-primary-500 hover:border-dark-blue-500 inline-flex cursor-pointer flex-col items-start rounded-xl border px-3.5 py-2 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
                 >
-                  Book a Call
+                  <span className="3xl:gap-x-3 flex items-center gap-x-2">
+                    <span className="3xl:text-base 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
+                      Book a Strategy Call
+                    </span>
+                    <ArrowRight className="3xl:size-5 size-[15px] text-white" />
+                  </span>
+                  <span className="3xl:text-xs text-[8px] leading-none whitespace-nowrap text-white">
+                    Yes, I want my FREE Strategy Session
+                  </span>
                 </button>
               </InitiateCheckoutTrigger>
             </div>
@@ -1842,20 +2140,26 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="3xl:mt-[50px] mx-auto mt-[30px] max-w-[461px]">
-                <div className="flex justify-center">
-                  <InitiateCheckoutTrigger asChild>
-                    <button
-                      data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
-                      data-embed-type="popup"
-                      className="bg-primary-500 3xl:h-[70px] 3xl:px-7 3xl:text-xl hover:bg-primary-600 3xl:rounded-xl inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg px-3.5 text-xs font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
-                    >
-                      Book a Call
-                    </button>
-                  </InitiateCheckoutTrigger>
-                </div>
+              <div className="3xl:gap-y-[30px] 3xl:mt-[50px] mt-[30px] flex flex-col items-center gap-y-3">
+                <InitiateCheckoutTrigger asChild>
+                  <button
+                    data-cal-link="marketeq/ux-strategy-call"
+                    data-cal-config='{"layout":"month_view","theme":"light"}'
+                    className="bg-primary-500 3xl:px-[30px] 3xl:py-[21px] border-primary-500 hover:border-dark-blue-500 inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+                  >
+                    <span className="3xl:gap-x-3 flex items-center gap-x-2">
+                      <span className="3xl:text-xl 3xl:leading-7 inline-block text-sm leading-5 font-semibold whitespace-nowrap text-white">
+                        Book a Strategy Call
+                      </span>
+                      <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
+                    </span>
+                    <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
+                      Yes, I want my FREE Strategy Session
+                    </span>
+                  </button>
+                </InitiateCheckoutTrigger>
 
-                <p className="3xl:mt-[30px] 3xl:text-sm mt-3 text-center text-[10px] leading-[1.6] text-white">
+                <p className="3xl:text-sm text-center text-[10px] leading-[1.6] text-white">
                   Get on a call with an expert UX designer
                 </p>
               </div>

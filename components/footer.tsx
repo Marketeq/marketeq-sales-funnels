@@ -20,7 +20,8 @@ export const Footer = () => {
           </Link>
 
           <span className="text-dark-blue-400 3xl:text-sm inline-block text-center text-xs leading-none max-md:max-w-[205px] max-md:flex-auto md:text-left">
-            © 2011 - 2025 Marketeq Digital Inc. All Rights Reserved.
+            © 2011 - {new Date().getFullYear()} Marketeq Digital Inc. All
+            Rights Reserved.
           </span>
         </div>
 

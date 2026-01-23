@@ -62,8 +62,8 @@ export const LandingHeader = () => {
 
         <InitiateCheckoutTrigger asChild>
           <button
-            data-iclosed-link="https://app.iclosed.io/e/marketeq/ux-strategy-call"
-            data-embed-type="popup"
+            data-cal-link="marketeq/ux-strategy-call"
+            data-cal-config='{"layout":"month_view","theme":"light"}'
             className="bg-primary-500 3xl:h-10 3xl:px-5 3xl:text-sm hover:bg-primary-600 inline-flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg px-3 text-[10px] leading-5 font-semibold whitespace-nowrap text-white transition duration-300 focus-visible:outline-none"
           >
             Book a Call
