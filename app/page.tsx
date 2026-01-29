@@ -477,9 +477,187 @@ const ChartBreakoutCircle = ({
   )
 }
 
+const Ellipse = (props: React.SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      width={1306}
+      height={750}
+      viewBox="0 0 1306 750"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <g opacity={0.15} filter="url(#filter0_d_13682_28754)">
+        <circle cx={653} cy={176} r={176} fill="#306CFE" />
+      </g>
+      <defs>
+        <filter
+          id="filter0_d_13682_28754"
+          x={0}
+          y={-477}
+          width={1306}
+          height={1306}
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity={0} result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feMorphology
+            radius={227}
+            operator="dilate"
+            in="SourceAlpha"
+            result="effect1_dropShadow_13682_28754"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation={125} />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0.186719 0 0 0 0 0.42188 0 0 0 0 0.995833 0 0 0 1 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_13682_28754"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_13682_28754"
+            result="shape"
+          />
+        </filter>
+      </defs>
+    </svg>
+  )
+}
+
+const Circle01 = (props: React.SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      width={599}
+      height={682}
+      viewBox="0 0 599 682"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <g opacity={0.15} filter="url(#filter0_d_13688_15975)">
+        <circle cx={20} cy={579} r={102} fill="#306CFE" />
+      </g>
+      <defs>
+        <filter
+          id="filter0_d_13688_15975"
+          x={-559}
+          y={0}
+          width={1158}
+          height={1158}
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity={0} result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feMorphology
+            radius={227}
+            operator="dilate"
+            in="SourceAlpha"
+            result="effect1_dropShadow_13688_15975"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation={125} />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0.186719 0 0 0 0 0.42188 0 0 0 0 0.995833 0 0 0 1 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_13688_15975"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_13688_15975"
+            result="shape"
+          />
+        </filter>
+      </defs>
+    </svg>
+  )
+}
+
+const Circle02 = (props: React.SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      width={599}
+      height={681}
+      viewBox="0 0 599 681"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <g opacity={0.15} filter="url(#filter0_d_13688_15974)">
+        <circle cx={579} cy={102} r={102} fill="#306CFE" />
+      </g>
+      <defs>
+        <filter
+          id="filter0_d_13688_15974"
+          x={0}
+          y={-477}
+          width={1158}
+          height={1158}
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity={0} result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feMorphology
+            radius={227}
+            operator="dilate"
+            in="SourceAlpha"
+            result="effect1_dropShadow_13688_15974"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation={125} />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0.186719 0 0 0 0 0.42188 0 0 0 0 0.995833 0 0 0 1 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_13688_15974"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_13688_15974"
+            result="shape"
+          />
+        </filter>
+      </defs>
+    </svg>
+  )
+}
+
 export default function Home() {
   return (
     <main className="relative isolate bg-white">
+      <Ellipse className="absolute top-0 left-1/2 z-10 -translate-1/2" />
       <LandingHeader />
       <div className="bg-dark-blue-600 relative">
         <div className="5xl:px-[300px] 4xl:px-[275px] 3xl:px-[200px] 3xl:py-[100px] px-[30px] pt-5 pb-10 lg:px-[100px]">
@@ -504,28 +682,31 @@ export default function Home() {
 
               <div className="3xl:mt-6 mt-3">
                 <p className="3xl:text-lg text-center text-sm leading-none text-white">
-                  Data-backed UX/UI rooted in user testing, market insight, and
-                  clear business outcomes.
+                  Every design decision is grounded in market research, tested
+                  with users, and built for measurable business growth
                 </p>
               </div>
 
               <div className="3xl:mt-[50px] 3xl:gap-y-5 mt-10 flex flex-col items-center gap-y-2">
                 <InitiateCheckoutTrigger asChild>
-                  <button
-                    data-cal-link="marketeq/ux-strategy-call"
-                    data-cal-config='{"layout":"month_view","theme":"light"}'
-                    className="bg-primary-500 3xl:rounded-xl 3xl:px-[30px] 3xl:py-[21px] border-primary-500 hover:border-dark-blue-500 inline-flex cursor-pointer flex-col items-center gap-y-px rounded-lg border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
-                  >
-                    <span className="3xl:gap-x-3 flex items-center gap-x-2">
-                      <span className="3xl:text-xl 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
-                        Book a Strategy Call
+                  <div className="group relative inline-block">
+                    <span className="bg-primary-500 absolute inset-0 rounded-lg opacity-0 blur-[25.5px] transition-[opacity,filter,inset] duration-300 group-hover:-inset-1 group-hover:opacity-100" />
+                    <button
+                      data-cal-link="marketeq/ux-strategy-call"
+                      data-cal-config='{"layout":"month_view","theme":"light"}'
+                      className="bg-primary-500 3xl:rounded-xl 3xl:px-[30px] 3xl:py-[21px] border-primary-500 hover:bg-primary-600 relative isolate inline-flex cursor-pointer flex-col items-start gap-y-px rounded-lg border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:border-white/5 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+                    >
+                      <span className="3xl:gap-x-3 flex items-center gap-x-2">
+                        <span className="3xl:text-xl 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
+                          Book a Strategy Call
+                        </span>
+                        <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
                       </span>
-                      <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
-                    </span>
-                    <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
-                      Yes, I want my FREE Strategy Session
-                    </span>
-                  </button>
+                      <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
+                        Yes, I want my FREE Strategy Session
+                      </span>
+                    </button>
+                  </div>
                 </InitiateCheckoutTrigger>
 
                 <p className="3xl:text-sm text-center text-[10px] leading-none text-white">
@@ -565,21 +746,24 @@ export default function Home() {
 
         <div className="3xl:gap-y-8 3xl:mt-[50px] mt-10 flex flex-col items-center gap-y-[18.83px]">
           <InitiateCheckoutTrigger asChild>
-            <button
-              data-cal-link="marketeq/ux-strategy-call"
-              data-cal-config='{"layout":"month_view","theme":"light"}'
-              className="bg-primary-500 3xl:rounded-xl 3xl:px-12 3xl:py-[21px] border-primary-500 hover:border-dark-blue-500 inline-flex cursor-pointer flex-col items-center gap-y-px rounded-[15px] border px-[34px] py-[15.89px] shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
-            >
-              <span className="flex items-center gap-x-3">
-                <span className="3xl:text-[33.76px] 3xl:leading-[47.26px] inline-block text-[19.86px] leading-[27.8px] font-semibold whitespace-nowrap text-white">
-                  Book a Strategy Call
+            <div className="group relative inline-block">
+              <span className="bg-primary-500 absolute inset-0 rounded-lg opacity-0 blur-[25.5px] transition-[opacity,filter,inset] duration-300 group-hover:-inset-1 group-hover:opacity-100" />
+              <button
+                data-cal-link="marketeq/ux-strategy-call"
+                data-cal-config='{"layout":"month_view","theme":"light"}'
+                className="bg-primary-500 3xl:rounded-xl 3xl:px-12 3xl:py-[21px] border-primary-500 hover:border-dark-blue-500 hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-[15px] border px-[34px] py-[15.89px] shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+              >
+                <span className="flex items-center gap-x-3">
+                  <span className="3xl:text-[33.76px] 3xl:leading-[47.26px] inline-block text-[19.86px] leading-[27.8px] font-semibold whitespace-nowrap text-white">
+                    Book a Strategy Call
+                  </span>
+                  <ArrowRight className="3xl:size-[30.38px] size-[17.87px] text-white" />
                 </span>
-                <ArrowRight className="3xl:size-[30.38px] size-[17.87px] text-white" />
-              </span>
-              <span className="3xl:text-[18.67px] text-xs leading-none whitespace-nowrap text-white">
-                Yes, I want my FREE Strategy Session
-              </span>
-            </button>
+                <span className="3xl:text-[18.67px] text-xs leading-none whitespace-nowrap text-white">
+                  Yes, I want my FREE Strategy Session
+                </span>
+              </button>
+            </div>
           </InitiateCheckoutTrigger>
 
           <p className="text-dark-blue-400 3xl:text-base text-xs leading-none">
@@ -596,13 +780,15 @@ export default function Home() {
           The Problem
         </span>
         <h1 className="text-dark-blue-400 3xl:text-[52px] mt-5 text-[22px] leading-none font-bold">
-          Why “looks good” isn’t good enough.
+          Why Great Products Still Lose Users
         </h1>
         <div className="3xl:max-w-[806px] mt-5 max-w-[629px]">
           <p className="3xl:text-lg text-sm leading-[1.6] text-gray-500">
             Pretty interfaces don’t fix drop-offs, confusing flows, or weak
             onboarding. We pair high quality design with market research and
-            user testing to remove friction and boost conversions.
+            user testing to remove friction and maximize conversions. Most
+            designs stop at usability. Ours are tested, competitively
+            benchmarked, and market-optimized.
           </p>
         </div>
 
@@ -705,92 +891,92 @@ export default function Home() {
         </h1>
 
         <div className="3xl:mt-[50px] 3xl:gap-5 mt-[30px] grid gap-3.5 md:grid-cols-3">
-          <article className="3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="group/article hover:bg-primary-500 3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <RefreshCw className="size-[29px]" />
             </div>
 
             <div className="3xl:mt-[50px] mt-[30px]">
-              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold">
+              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
                 Higher conversion & activation
               </h3>
-              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
+              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                 Every design decision is tested and refined to boost engagement,
                 streamline flows, and drive measurable growth.
               </p>
             </div>
           </article>
-          <article className="3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="group/article hover:bg-primary-500 3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <FaceContent className="size-[29px]" />
             </div>
 
             <div className="3xl:mt-[50px] mt-[30px]">
-              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold">
+              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
                 Faster paths to “Aha!” moments
               </h3>
-              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
+              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                 We reduce friction so users reach success faster, turning first
                 impressions into lasting engagement and retention.
               </p>
             </div>
           </article>
-          <article className="3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="group/article hover:bg-primary-500 3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <Dataflow03 className="size-[29px]" />
             </div>
 
             <div className="3xl:mt-[50px] mt-[30px]">
-              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold">
+              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
                 Clearer flows = fewer support tickets
               </h3>
-              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
+              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                 Simplified interfaces help users navigate solutions quickly,
                 lowering confusion and reducing support overhead across
                 products.
               </p>
             </div>
           </article>
-          <article className="3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="group/article hover:bg-primary-500 3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <Container className="size-[29px]" />
             </div>
 
             <div className="3xl:mt-[50px] mt-[30px]">
-              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold">
+              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
                 Consistent, dev-ready design system
               </h3>
-              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
+              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                 Reusable components and clean documentation ensure seamless
                 developer handoff and consistent product experiences.
               </p>
             </div>
           </article>
-          <article className="3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="group/article hover:bg-primary-500 3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <Beaker02 className="size-[29px]" />
             </div>
 
             <div className="3xl:mt-[50px] mt-[30px]">
-              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold">
+              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
                 Insight from user testing (not guesswork)
               </h3>
-              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
+              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                 Real feedback guides every iteration, our designs evolve through
                 measurable user data, not assumptions or opinions.
               </p>
             </div>
           </article>
-          <article className="3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="group/article hover:bg-primary-500 3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <ChartBreakoutCircle className="size-[29px]" />
             </div>
 
             <div className="3xl:mt-[50px] mt-[30px]">
-              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold">
+              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
                 Designed with awareness of your market
               </h3>
-              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
+              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                 We heavily analyze your competitors to create experiences that
                 feel familiar yet distinctly ahead of the curve.
               </p>
@@ -800,21 +986,24 @@ export default function Home() {
 
         <div className="3xl:mt-[75px] 3xl:gap-y-5 mt-[30px] flex flex-col items-center gap-y-3">
           <InitiateCheckoutTrigger asChild>
-            <button
-              data-cal-link="marketeq/ux-strategy-call"
-              data-cal-config='{"layout":"month_view","theme":"light"}'
-              className="bg-primary-500 3xl:px-[30px] 3xl:py-[21px] border-primary-500 hover:border-dark-blue-500 inline-flex cursor-pointer flex-col items-center gap-y-px rounded-xl border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
-            >
-              <span className="3xl:gap-x-3 flex items-center gap-x-2">
-                <span className="3xl:text-xl 3xl:leading-7 inline-block text-sm leading-5 font-semibold whitespace-nowrap text-white">
-                  Book a Strategy Call
+            <div className="group relative inline-block">
+              <span className="bg-primary-500 absolute inset-0 rounded-lg opacity-0 blur-[25.5px] transition-[opacity,filter,inset] duration-300 group-hover:-inset-1 group-hover:opacity-100" />
+              <button
+                data-cal-link="marketeq/ux-strategy-call"
+                data-cal-config='{"layout":"month_view","theme":"light"}'
+                className="bg-primary-500 3xl:px-[30px] 3xl:py-[21px] border-primary-500 hover:border-dark-blue-500 hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+              >
+                <span className="3xl:gap-x-3 flex items-center gap-x-2">
+                  <span className="3xl:text-xl 3xl:leading-7 inline-block text-sm leading-5 font-semibold whitespace-nowrap text-white">
+                    Book a Strategy Call
+                  </span>
+                  <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
                 </span>
-                <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
-              </span>
-              <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
-                Yes, I want my FREE Strategy Session
-              </span>
-            </button>
+                <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
+                  Yes, I want my FREE Strategy Session
+                </span>
+              </button>
+            </div>
           </InitiateCheckoutTrigger>
 
           <p className="3xl:text-sm text-center text-xs leading-[1.6] text-gray-500">
@@ -863,7 +1052,7 @@ export default function Home() {
                 </h1>
 
                 <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
-                  Understand your audience through interviews, surveys, and
+                  We learn about your audience through interviews, surveys, and
                   behavioral data to inform smarter product decisions.
                 </p>
               </div>
@@ -900,8 +1089,9 @@ export default function Home() {
                 </h1>
 
                 <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
-                  Align design priorities with business goals using competitive
-                  analysis, opportunity mapping, and roadmap planning.
+                  We align design priorities with business goals using
+                  competitive analysis, opportunity mapping, and roadmap
+                  planning.
                 </p>
               </div>
 
@@ -940,8 +1130,8 @@ export default function Home() {
                 </h1>
 
                 <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
-                  Visualize end-to-end user flows to identify friction points
-                  and optimize every key touchpoint.
+                  We’ll visualize end-to-end user flows to identify friction
+                  points and optimize every key touchpoint.
                 </p>
               </div>
 
@@ -983,7 +1173,7 @@ export default function Home() {
                 </h1>
 
                 <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
-                  Structure complex products into clear, intuitive navigation
+                  We structure complex products into clear, intuitive navigation
                   systems that users can move through effortlessly.
                 </p>
               </div>
@@ -1022,8 +1212,8 @@ export default function Home() {
                   </h1>
 
                   <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
-                    Translate ideas into interactive prototypes that are fast,
-                    testable, and ready for stakeholder validation.
+                    We’ll translate your ideas into interactive prototypes that
+                    are fast, testable, and ready for stakeholder validation.
                   </p>
                 </div>
 
@@ -1059,7 +1249,7 @@ export default function Home() {
                   </h1>
 
                   <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
-                    Unify aesthetics and usability through typography, color,
+                    We unify aesthetics and usability through typography, color,
                     and layout systems that enhance brand perception.
                   </p>
                 </div>
@@ -1097,7 +1287,7 @@ export default function Home() {
                 </h1>
 
                 <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
-                  Design responsive behaviors and motion patterns that make
+                  We design responsive behaviors and motion patterns that make
                   interfaces feel natural and alive.
                 </p>
               </div>
@@ -1137,8 +1327,8 @@ export default function Home() {
                 </h1>
 
                 <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
-                  Build scalable design infrastructure; component libraries,
-                  tokens, and documentation for consistent releases.
+                  We’ll build scalable design infrastructure; component
+                  libraries, tokens, and documentation for consistent releases.
                 </p>
               </div>
 
@@ -1177,7 +1367,7 @@ export default function Home() {
                 </h1>
 
                 <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
-                  Test real users, validate assumptions, and iterate designs
+                  We test real users, validate assumptions, and iterate designs
                   based on data-driven performance insights.
                 </p>
               </div>
@@ -1217,8 +1407,8 @@ export default function Home() {
                 </h1>
 
                 <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
-                  Ensure every user can interact with your product confidently
-                  through WCAG-compliant design practices.
+                  We’ll ensure every user can interact with your product
+                  confidently through WCAG-compliant design practices.
                 </p>
               </div>
 
@@ -1256,8 +1446,8 @@ export default function Home() {
                 </h1>
 
                 <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
-                  Benchmark against leading products, uncover gaps, and position
-                  your experience as the superior alternative.
+                  We benchmark against leading products, uncover gaps, and
+                  position your experience as the superior alternative.
                 </p>
               </div>
 
@@ -1294,7 +1484,7 @@ export default function Home() {
                 </h1>
 
                 <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
-                  Identify opportunities for new product features and UX
+                  We identify opportunities for new product features and UX
                   improvements that help you lead, not follow... your market.
                 </p>
               </div>
@@ -1331,8 +1521,9 @@ export default function Home() {
                 </h1>
 
                 <p className="3xl:text-base text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
-                  Support go-to-market efforts with landing pages, onboarding
-                  flows, and UX that convert new users into loyal advocates.
+                  We support your go-to-market efforts with landing pages,
+                  onboarding flows, and UX that converts new users into loyal
+                  advocates.
                 </p>
               </div>
 
@@ -1389,21 +1580,24 @@ export default function Home() {
 
             <div className="3xl:gap-y-5 3xl:pr-[50px] 3xl:items-start mt-[30px] flex flex-col items-center gap-y-3">
               <InitiateCheckoutTrigger asChild>
-                <button
-                  data-cal-link="marketeq/ux-strategy-call"
-                  data-cal-config='{"layout":"month_view","theme":"light"}'
-                  className="bg-primary-500 3xl:px-[30px] 3xl:py-[21px] border-primary-500 hover:border-dark-blue-500 inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
-                >
-                  <span className="3xl:gap-x-3 flex items-center gap-x-2">
-                    <span className="3xl:text-xl 3xl:leading-7 inline-block text-sm leading-5 font-semibold whitespace-nowrap text-white">
-                      Book a Strategy Call
+                <div className="group relative inline-block">
+                  <span className="bg-primary-500 absolute inset-0 rounded-lg opacity-0 blur-[25.5px] transition-[opacity,filter,inset] duration-300 group-hover:-inset-1 group-hover:opacity-100" />
+                  <button
+                    data-cal-link="marketeq/ux-strategy-call"
+                    data-cal-config='{"layout":"month_view","theme":"light"}'
+                    className="bg-primary-500 3xl:px-[30px] 3xl:py-[21px] border-primary-500 hover:border-dark-blue-500 hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+                  >
+                    <span className="3xl:gap-x-3 flex items-center gap-x-2">
+                      <span className="3xl:text-xl 3xl:leading-7 inline-block text-sm leading-5 font-semibold whitespace-nowrap text-white">
+                        Book a Strategy Call
+                      </span>
+                      <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
                     </span>
-                    <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
-                  </span>
-                  <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
-                    Yes, I want my FREE Strategy Session
-                  </span>
-                </button>
+                    <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
+                      Yes, I want my FREE Strategy Session
+                    </span>
+                  </button>
+                </div>
               </InitiateCheckoutTrigger>
               <div className="3xl:block 3xl:max-w-[136px] 3xl:ml-[21.5px] 3xl:items-start flex flex-1 items-center">
                 <span className="3xl:text-sm text-center text-[10px] leading-[1.6] whitespace-nowrap text-gray-500">
@@ -1437,21 +1631,24 @@ export default function Home() {
           </p>
 
           <InitiateCheckoutTrigger asChild>
-            <button
-              data-cal-link="marketeq/ux-strategy-call"
-              data-cal-config='{"layout":"month_view","theme":"light"}'
-              className="bg-primary-500 3xl:mt-8 3xl:gap-y-px 3xl:px-6 3xl:py-3 border-primary-500 hover:border-dark-blue-500 mt-[30px] inline-flex cursor-pointer flex-col items-start rounded-xl border px-3.5 py-2 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
-            >
-              <span className="3xl:gap-x-3 flex items-center gap-x-2">
-                <span className="3xl:text-base 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
-                  Book a Strategy Call
+            <div className="group 3xl:mt-8 relative mt-[30px] inline-block">
+              <span className="bg-primary-500 absolute inset-0 rounded-lg opacity-0 blur-[25.5px] transition-[opacity,filter,inset] duration-300 group-hover:-inset-1 group-hover:opacity-100" />
+              <button
+                data-cal-link="marketeq/ux-strategy-call"
+                data-cal-config='{"layout":"month_view","theme":"light"}'
+                className="bg-primary-500 3xl:gap-y-px 3xl:px-6 3xl:py-3 border-primary-500 hover:border-dark-blue-500 hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start rounded-xl border px-3.5 py-2 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+              >
+                <span className="3xl:gap-x-3 flex items-center gap-x-2">
+                  <span className="3xl:text-base 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
+                    Book a Strategy Call
+                  </span>
+                  <ArrowRight className="3xl:size-5 size-[15px] text-white" />
                 </span>
-                <ArrowRight className="3xl:size-5 size-[15px] text-white" />
-              </span>
-              <span className="3xl:text-xs text-[8px] leading-none whitespace-nowrap text-white">
-                Yes, I want my FREE Strategy Session
-              </span>
-            </button>
+                <span className="3xl:text-xs text-[8px] leading-none whitespace-nowrap text-white">
+                  Yes, I want my FREE Strategy Session
+                </span>
+              </button>
+            </div>
           </InitiateCheckoutTrigger>
         </div>
         <div className="3xl:w-[495px] md:w-[381px] md:flex-none">
@@ -1718,21 +1915,24 @@ export default function Home() {
 
             <div className="3xl:mt-[50px] mt-[30px]">
               <InitiateCheckoutTrigger asChild>
-                <button
-                  data-cal-link="marketeq/ux-strategy-call"
-                  data-cal-config='{"layout":"month_view","theme":"light"}'
-                  className="bg-primary-500 3xl:gap-y-px 3xl:px-6 3xl:py-3 border-primary-500 hover:border-dark-blue-500 inline-flex cursor-pointer flex-col items-start rounded-xl border px-3.5 py-2 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
-                >
-                  <span className="3xl:gap-x-3 flex items-center gap-x-2">
-                    <span className="3xl:text-base 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
-                      Book a Strategy Call
+                <div className="group relative inline-block">
+                  <span className="bg-primary-500 absolute inset-0 rounded-lg opacity-0 blur-[25.5px] transition-[opacity,filter,inset] duration-300 group-hover:-inset-1 group-hover:opacity-100" />
+                  <button
+                    data-cal-link="marketeq/ux-strategy-call"
+                    data-cal-config='{"layout":"month_view","theme":"light"}'
+                    className="bg-primary-500 3xl:gap-y-px 3xl:px-6 3xl:py-3 border-primary-500 hover:border-dark-blue-500 hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start rounded-xl border px-3.5 py-2 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+                  >
+                    <span className="3xl:gap-x-3 flex items-center gap-x-2">
+                      <span className="3xl:text-base 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
+                        Book a Strategy Call
+                      </span>
+                      <ArrowRight className="3xl:size-5 size-[15px] text-white" />
                     </span>
-                    <ArrowRight className="3xl:size-5 size-[15px] text-white" />
-                  </span>
-                  <span className="3xl:text-xs text-[8px] leading-none whitespace-nowrap text-white">
-                    Yes, I want my FREE Strategy Session
-                  </span>
-                </button>
+                    <span className="3xl:text-xs text-[8px] leading-none whitespace-nowrap text-white">
+                      Yes, I want my FREE Strategy Session
+                    </span>
+                  </button>
+                </div>
               </InitiateCheckoutTrigger>
             </div>
           </div>
@@ -2093,10 +2293,10 @@ export default function Home() {
                 What if we only need a few screens redesigned?
               </AccordionTrigger>
               <AccordionContent>
-                Then the Essentials tier ($5K/month) is the best fit. It focuses
-                on one high-impact flow at a time (onboarding, checkout,
-                dashboard, etc.) and still follows our competitive,
-                research-driven process.
+                Then the Essentials tier is the best fit. It focuses on one
+                high-impact flow at a time (onboarding, checkout, dashboard,
+                etc.) and still follows our competitive, research-driven
+                process.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-11">
@@ -2118,7 +2318,9 @@ export default function Home() {
       <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] px-5 pb-10 md:p-10 lg:px-[100px] lg:py-[50px]">
         <div className="border-primary-100 3xl:p-5 3xl:rounded-[28px] rounded-[18px] border p-3 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
           <div className="relative">
-            <div className="bg-dark-blue-600 3xl:py-[146px] 3xl:px-0 3xl:rounded-[28px] relative rounded-[14px] border border-gray-200 p-[30px] md:p-10">
+            <div className="bg-dark-blue-600 3xl:py-[146px] 3xl:px-0 3xl:rounded-[28px] relative overflow-hidden rounded-[14px] border border-gray-200 p-[30px] md:p-10">
+              <Circle01 className="absolute bottom-0 -left-[82px]" />
+              <Circle02 className="absolute top-0 -right-[82px]" />
               <div className="flex justify-center">
                 <span className="inline-block text-base leading-none font-semibold text-white">
                   Let’s Elevate Your Product
@@ -2142,21 +2344,24 @@ export default function Home() {
 
               <div className="3xl:gap-y-[30px] 3xl:mt-[50px] mt-[30px] flex flex-col items-center gap-y-3">
                 <InitiateCheckoutTrigger asChild>
-                  <button
-                    data-cal-link="marketeq/ux-strategy-call"
-                    data-cal-config='{"layout":"month_view","theme":"light"}'
-                    className="bg-primary-500 3xl:px-[30px] 3xl:py-[21px] border-primary-500 hover:border-dark-blue-500 inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
-                  >
-                    <span className="3xl:gap-x-3 flex items-center gap-x-2">
-                      <span className="3xl:text-xl 3xl:leading-7 inline-block text-sm leading-5 font-semibold whitespace-nowrap text-white">
-                        Book a Strategy Call
+                  <div className="group relative inline-block">
+                    <span className="bg-primary-500 absolute inset-0 rounded-lg opacity-0 blur-[25.5px] transition-[opacity,filter,inset] duration-300 group-hover:-inset-1 group-hover:opacity-100" />
+                    <button
+                      data-cal-link="marketeq/ux-strategy-call"
+                      data-cal-config='{"layout":"month_view","theme":"light"}'
+                      className="bg-primary-500 3xl:px-[30px] 3xl:py-[21px] border-primary-500 hover:border-dark-blue-500 hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+                    >
+                      <span className="3xl:gap-x-3 flex items-center gap-x-2">
+                        <span className="3xl:text-xl 3xl:leading-7 inline-block text-sm leading-5 font-semibold whitespace-nowrap text-white">
+                          Book a Strategy Call
+                        </span>
+                        <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
                       </span>
-                      <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
-                    </span>
-                    <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
-                      Yes, I want my FREE Strategy Session
-                    </span>
-                  </button>
+                      <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
+                        Yes, I want my FREE Strategy Session
+                      </span>
+                    </button>
+                  </div>
                 </InitiateCheckoutTrigger>
 
                 <p className="3xl:text-sm text-center text-[10px] leading-[1.6] text-white">

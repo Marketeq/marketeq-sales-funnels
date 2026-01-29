@@ -36,3 +36,9 @@ export const useIsMounted = () => {
 
   return isMounted
 }
+
+export const useForceUpdate = () => {
+  const [, setState] = React.useState(0)
+
+  return React.useCallback(() => setState((prev) => prev + 1), [])
+}
