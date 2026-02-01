@@ -657,65 +657,67 @@ const Circle02 = (props: React.SVGProps<SVGSVGElement>) => {
 export default function Home() {
   return (
     <main className="relative isolate bg-white">
-      <Ellipse className="absolute top-0 left-1/2 z-10 -translate-1/2" />
-      <LandingHeader />
-      <div className="bg-dark-blue-600 relative">
-        <div className="5xl:px-[300px] 4xl:px-[275px] 3xl:px-[200px] 3xl:py-[100px] px-[30px] pt-5 pb-10 lg:px-[100px]">
-          <div className="mx-auto max-w-[1320px]">
-            <div className="flex items-center justify-center">
-              <div className="border-primary-500 3xl:h-11 3xl:px-5 3xl:py-3 flex h-8 shrink-0 items-center gap-x-[8.32px] rounded-full border-[1.66px] px-3 py-1.5">
-                <Lightning01 className="text-primary-500 max-3xl:size-3.5" />
-                <span className="3xl:text-base 3xl:leading-5 text-[10px] leading-5 font-bold text-white">
-                  UX/UI That Drives Growth
-                </span>
+      <div className="bg-dark-blue-600">
+        <LandingHeader />
+        <Ellipse className="absolute top-0 left-1/2 -translate-1/2" />
+        <div className="relative">
+          <div className="5xl:px-[300px] 4xl:px-[275px] 3xl:px-[200px] 3xl:py-[100px] px-[30px] pt-5 pb-10 lg:px-[100px]">
+            <div className="mx-auto max-w-[1320px]">
+              <div className="flex items-center justify-center">
+                <div className="border-primary-500 3xl:h-11 3xl:px-5 3xl:py-3 flex h-8 shrink-0 items-center gap-x-[8.32px] rounded-full border-[1.66px] px-3 py-1.5">
+                  <Lightning01 className="text-primary-500 max-3xl:size-3.5" />
+                  <span className="3xl:text-base 3xl:leading-5 text-[10px] leading-5 font-bold text-white">
+                    UX/UI That Drives Growth
+                  </span>
+                </div>
               </div>
-            </div>
-
-            <div className="3xl:mt-6 mt-3">
-              <h1 className="3xl:text-[80px] text-center text-[26px] leading-none font-extrabold text-white capitalize md:text-[62px]">
-                <span className="3xl:contents xl:block">
-                  We design experiences that
-                </span>{" "}
-                <span className="text-primary-500">outperform</span> your
-                competitors
-              </h1>
 
               <div className="3xl:mt-6 mt-3">
-                <p className="3xl:text-lg text-center text-sm leading-none text-white">
-                  Every design decision is grounded in market research, tested
-                  with users, and built for measurable business growth
-                </p>
-              </div>
+                <h1 className="3xl:text-[80px] text-center text-[26px] leading-none font-extrabold text-white capitalize md:text-[62px]">
+                  <span className="3xl:contents xl:block">
+                    We design experiences that
+                  </span>{" "}
+                  <span className="text-primary-500">outperform</span> your
+                  competitors
+                </h1>
 
-              <div className="3xl:mt-[50px] 3xl:gap-y-5 mt-10 flex flex-col items-center gap-y-2">
-                <InitiateCheckoutTrigger asChild>
-                  <button
-                    data-cal-link="marketeq/ux-strategy-call"
-                    data-cal-config='{"layout":"month_view","theme":"light"}'
-                    className="beam-circular bg-primary-500 3xl:rounded-xl 3xl:px-[30px] 3xl:py-[21px] hover:bg-primary-600 relative isolate inline-flex cursor-pointer flex-col items-start gap-y-px rounded-lg border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:border-white/5 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
-                  >
-                    <span className="right-left-beam-renderer" />
-                    <span className="3xl:gap-x-3 flex items-center gap-x-2">
-                      <span className="3xl:text-xl 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
-                        Book a Strategy Call
+                <div className="3xl:mt-6 mt-3">
+                  <p className="3xl:text-lg text-center text-sm leading-none text-white">
+                    Every design decision is grounded in market research, tested
+                    with users, and built for measurable business growth
+                  </p>
+                </div>
+
+                <div className="3xl:mt-[50px] 3xl:gap-y-5 mt-10 flex flex-col items-center gap-y-2">
+                  <InitiateCheckoutTrigger asChild>
+                    <button
+                      data-cal-link="marketeq/ux-strategy-call"
+                      data-cal-config='{"layout":"month_view","theme":"light"}'
+                      className="beam-circular bg-primary-500 3xl:rounded-xl 3xl:px-[30px] 3xl:py-[21px] hover:bg-primary-600 relative isolate inline-flex cursor-pointer flex-col items-start gap-y-px rounded-lg border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:border-white/5 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+                    >
+                      <span className="right-left-beam-renderer" />
+                      <span className="3xl:gap-x-3 flex items-center gap-x-2">
+                        <span className="3xl:text-xl 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
+                          Book a Strategy Call
+                        </span>
+                        <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
                       </span>
-                      <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
-                    </span>
-                    <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
-                      Yes, I want my FREE Strategy Session
-                    </span>
-                  </button>
-                </InitiateCheckoutTrigger>
+                      <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
+                        Yes, I want my FREE Strategy Session
+                      </span>
+                    </button>
+                  </InitiateCheckoutTrigger>
 
-                <p className="3xl:text-sm text-center text-[10px] leading-none text-white">
-                  Talk to an expert ux designer
-                </p>
+                  <p className="3xl:text-sm text-center text-[10px] leading-none text-white">
+                    Talk to an expert ux designer
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <ChartAsIllustration className="3xl:block absolute right-0 bottom-0 hidden" />
+          <ChartAsIllustration className="3xl:block absolute right-0 bottom-0 hidden" />
+        </div>
       </div>
 
       <div className="5xl:px-[300px] 3xl:px-[150px] 3xl:py-[100px] bg-[linear-gradient(211.42deg,rgba(255,255,255,.2)_36.54%,rgba(255,255,255,.04)_47.76%,rgba(255,255,255,.2)_66.25%,rgba(225,234,250,.2)_82.01%)] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
