@@ -5,14 +5,15 @@ import { MarketeqWhite } from "./icons/marketeq-white"
 import { useWindowScroll } from "@/lib/hooks"
 import { MarketeqBlue } from "./icons/marketeq-blue"
 import { InitiateCheckoutTrigger } from "./initiate-checkout-trigger"
+import { cn } from "@/lib/utils"
 
 export const LandingHeader = () => {
   const { y } = useWindowScroll()
-  const shouldBeWhite = y > 0
+  const hasScrollingBegun = y > 0
 
   return (
     <header
-      data-scrolled={shouldBeWhite}
+      data-scrolled={hasScrollingBegun}
       className="group/header bg-dark-blue-600 5xl:px-[150px] 3xl:h-16 sticky top-0 h-14 px-5 py-3 transition duration-300 data-[scrolled=true]:z-10 data-[scrolled=true]:bg-white data-[scrolled=true]:shadow-[0px_1px_3px_0px_rgba(16,24,40,.1)] lg:px-[100px]"
     >
       <nav className="3xl:px-0 flex items-center justify-between lg:px-5">
@@ -64,8 +65,14 @@ export const LandingHeader = () => {
           <button
             data-cal-link="marketeq/ux-strategy-call"
             data-cal-config='{"layout":"month_view","theme":"light"}'
-            className="bg-primary-500 3xl:h-10 3xl:px-5 3xl:text-sm hover:bg-primary-600 inline-flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg px-3 text-[10px] leading-5 font-semibold whitespace-nowrap text-white shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 focus-visible:outline-none"
+            className={cn(
+              "bg-primary-500 3xl:h-10 3xl:px-5 3xl:text-sm hover:bg-primary-600 inline-flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg px-3 text-[10px] leading-5 font-semibold whitespace-nowrap text-white shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 focus-visible:outline-none",
+              hasScrollingBegun ? "neon-pulse" : "beam-circular",
+            )}
           >
+            {!hasScrollingBegun && (
+              <span className="right-left-beam-renderer" />
+            )}
             Book a Call
           </button>
         </InitiateCheckoutTrigger>

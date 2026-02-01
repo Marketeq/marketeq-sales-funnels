@@ -689,24 +689,22 @@ export default function Home() {
 
               <div className="3xl:mt-[50px] 3xl:gap-y-5 mt-10 flex flex-col items-center gap-y-2">
                 <InitiateCheckoutTrigger asChild>
-                  <div className="group relative inline-block">
-                    <span className="bg-primary-500 absolute inset-0 rounded-lg opacity-0 blur-[25.5px] transition-[opacity,filter,inset] duration-300 group-hover:-inset-1 group-hover:opacity-100" />
-                    <button
-                      data-cal-link="marketeq/ux-strategy-call"
-                      data-cal-config='{"layout":"month_view","theme":"light"}'
-                      className="bg-primary-500 3xl:rounded-xl 3xl:px-[30px] 3xl:py-[21px] border-primary-500 hover:bg-primary-600 relative isolate inline-flex cursor-pointer flex-col items-start gap-y-px rounded-lg border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:border-white/5 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
-                    >
-                      <span className="3xl:gap-x-3 flex items-center gap-x-2">
-                        <span className="3xl:text-xl 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
-                          Book a Strategy Call
-                        </span>
-                        <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
+                  <button
+                    data-cal-link="marketeq/ux-strategy-call"
+                    data-cal-config='{"layout":"month_view","theme":"light"}'
+                    className="beam-circular bg-primary-500 3xl:rounded-xl 3xl:px-[30px] 3xl:py-[21px] hover:bg-primary-600 relative isolate inline-flex cursor-pointer flex-col items-start gap-y-px rounded-lg border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:border-white/5 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+                  >
+                    <span className="right-left-beam-renderer" />
+                    <span className="3xl:gap-x-3 flex items-center gap-x-2">
+                      <span className="3xl:text-xl 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
+                        Book a Strategy Call
                       </span>
-                      <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
-                        Yes, I want my FREE Strategy Session
-                      </span>
-                    </button>
-                  </div>
+                      <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
+                    </span>
+                    <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
+                      Yes, I want my FREE Strategy Session
+                    </span>
+                  </button>
                 </InitiateCheckoutTrigger>
 
                 <p className="3xl:text-sm text-center text-[10px] leading-none text-white">
@@ -746,24 +744,21 @@ export default function Home() {
 
         <div className="3xl:gap-y-8 3xl:mt-[50px] mt-10 flex flex-col items-center gap-y-[18.83px]">
           <InitiateCheckoutTrigger asChild>
-            <div className="group relative inline-block">
-              <span className="bg-primary-500 absolute inset-0 rounded-lg opacity-0 blur-[25.5px] transition-[opacity,filter,inset] duration-300 group-hover:-inset-1 group-hover:opacity-100" />
-              <button
-                data-cal-link="marketeq/ux-strategy-call"
-                data-cal-config='{"layout":"month_view","theme":"light"}'
-                className="bg-primary-500 3xl:rounded-xl 3xl:px-12 3xl:py-[21px] border-primary-500 hover:border-dark-blue-500 hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-[15px] border px-[34px] py-[15.89px] shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
-              >
-                <span className="flex items-center gap-x-3">
-                  <span className="3xl:text-[33.76px] 3xl:leading-[47.26px] inline-block text-[19.86px] leading-[27.8px] font-semibold whitespace-nowrap text-white">
-                    Book a Strategy Call
-                  </span>
-                  <ArrowRight className="3xl:size-[30.38px] size-[17.87px] text-white" />
+            <button
+              data-cal-link="marketeq/ux-strategy-call"
+              data-cal-config='{"layout":"month_view","theme":"light"}'
+              className="neon-pulse bg-primary-500 3xl:rounded-xl 3xl:px-12 3xl:py-[21px] hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-[15px] px-[34px] py-[15.89px] shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+            >
+              <span className="flex items-center gap-x-3">
+                <span className="3xl:text-[33.76px] 3xl:leading-[47.26px] inline-block text-[19.86px] leading-[27.8px] font-semibold whitespace-nowrap text-white">
+                  Book a Strategy Call
                 </span>
-                <span className="3xl:text-[18.67px] text-xs leading-none whitespace-nowrap text-white">
-                  Yes, I want my FREE Strategy Session
-                </span>
-              </button>
-            </div>
+                <ArrowRight className="3xl:size-[30.38px] size-[17.87px] text-white" />
+              </span>
+              <span className="3xl:text-[18.67px] text-xs leading-none whitespace-nowrap text-white">
+                Yes, I want my FREE Strategy Session
+              </span>
+            </button>
           </InitiateCheckoutTrigger>
 
           <p className="text-dark-blue-400 3xl:text-base text-xs leading-none">
@@ -986,24 +981,21 @@ export default function Home() {
 
         <div className="3xl:mt-[75px] 3xl:gap-y-5 mt-[30px] flex flex-col items-center gap-y-3">
           <InitiateCheckoutTrigger asChild>
-            <div className="group relative inline-block">
-              <span className="bg-primary-500 absolute inset-0 rounded-lg opacity-0 blur-[25.5px] transition-[opacity,filter,inset] duration-300 group-hover:-inset-1 group-hover:opacity-100" />
-              <button
-                data-cal-link="marketeq/ux-strategy-call"
-                data-cal-config='{"layout":"month_view","theme":"light"}'
-                className="bg-primary-500 3xl:px-[30px] 3xl:py-[21px] border-primary-500 hover:border-dark-blue-500 hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
-              >
-                <span className="3xl:gap-x-3 flex items-center gap-x-2">
-                  <span className="3xl:text-xl 3xl:leading-7 inline-block text-sm leading-5 font-semibold whitespace-nowrap text-white">
-                    Book a Strategy Call
-                  </span>
-                  <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
+            <button
+              data-cal-link="marketeq/ux-strategy-call"
+              data-cal-config='{"layout":"month_view","theme":"light"}'
+              className="neon-pulse bg-primary-500 3xl:px-[30px] 3xl:py-[21px] hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+            >
+              <span className="3xl:gap-x-3 flex items-center gap-x-2">
+                <span className="3xl:text-xl 3xl:leading-7 inline-block text-sm leading-5 font-semibold whitespace-nowrap text-white">
+                  Book a Strategy Call
                 </span>
-                <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
-                  Yes, I want my FREE Strategy Session
-                </span>
-              </button>
-            </div>
+                <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
+              </span>
+              <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
+                Yes, I want my FREE Strategy Session
+              </span>
+            </button>
           </InitiateCheckoutTrigger>
 
           <p className="3xl:text-sm text-center text-xs leading-[1.6] text-gray-500">
@@ -1580,24 +1572,21 @@ export default function Home() {
 
             <div className="3xl:gap-y-5 3xl:pr-[50px] 3xl:items-start mt-[30px] flex flex-col items-center gap-y-3">
               <InitiateCheckoutTrigger asChild>
-                <div className="group relative inline-block">
-                  <span className="bg-primary-500 absolute inset-0 rounded-lg opacity-0 blur-[25.5px] transition-[opacity,filter,inset] duration-300 group-hover:-inset-1 group-hover:opacity-100" />
-                  <button
-                    data-cal-link="marketeq/ux-strategy-call"
-                    data-cal-config='{"layout":"month_view","theme":"light"}'
-                    className="bg-primary-500 3xl:px-[30px] 3xl:py-[21px] border-primary-500 hover:border-dark-blue-500 hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
-                  >
-                    <span className="3xl:gap-x-3 flex items-center gap-x-2">
-                      <span className="3xl:text-xl 3xl:leading-7 inline-block text-sm leading-5 font-semibold whitespace-nowrap text-white">
-                        Book a Strategy Call
-                      </span>
-                      <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
+                <button
+                  data-cal-link="marketeq/ux-strategy-call"
+                  data-cal-config='{"layout":"month_view","theme":"light"}'
+                  className="neon-pulse bg-primary-500 3xl:px-[30px] 3xl:py-[21px] hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+                >
+                  <span className="3xl:gap-x-3 flex items-center gap-x-2">
+                    <span className="3xl:text-xl 3xl:leading-7 inline-block text-sm leading-5 font-semibold whitespace-nowrap text-white">
+                      Book a Strategy Call
                     </span>
-                    <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
-                      Yes, I want my FREE Strategy Session
-                    </span>
-                  </button>
-                </div>
+                    <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
+                  </span>
+                  <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
+                    Yes, I want my FREE Strategy Session
+                  </span>
+                </button>
               </InitiateCheckoutTrigger>
               <div className="3xl:block 3xl:max-w-[136px] 3xl:ml-[21.5px] 3xl:items-start flex flex-1 items-center">
                 <span className="3xl:text-sm text-center text-[10px] leading-[1.6] whitespace-nowrap text-gray-500">
@@ -1631,24 +1620,21 @@ export default function Home() {
           </p>
 
           <InitiateCheckoutTrigger asChild>
-            <div className="group 3xl:mt-8 relative mt-[30px] inline-block">
-              <span className="bg-primary-500 absolute inset-0 rounded-lg opacity-0 blur-[25.5px] transition-[opacity,filter,inset] duration-300 group-hover:-inset-1 group-hover:opacity-100" />
-              <button
-                data-cal-link="marketeq/ux-strategy-call"
-                data-cal-config='{"layout":"month_view","theme":"light"}'
-                className="bg-primary-500 3xl:gap-y-px 3xl:px-6 3xl:py-3 border-primary-500 hover:border-dark-blue-500 hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start rounded-xl border px-3.5 py-2 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
-              >
-                <span className="3xl:gap-x-3 flex items-center gap-x-2">
-                  <span className="3xl:text-base 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
-                    Book a Strategy Call
-                  </span>
-                  <ArrowRight className="3xl:size-5 size-[15px] text-white" />
+            <button
+              data-cal-link="marketeq/ux-strategy-call"
+              data-cal-config='{"layout":"month_view","theme":"light"}'
+              className="neon-pulse bg-primary-500 3xl:mt-8 3xl:gap-y-px 3xl:px-6 3xl:py-3 hover:bg-primary-600 relative mt-[30x] inline-flex cursor-pointer flex-col items-start rounded-xl px-3.5 py-2 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+            >
+              <span className="3xl:gap-x-3 flex items-center gap-x-2">
+                <span className="3xl:text-base 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
+                  Book a Strategy Call
                 </span>
-                <span className="3xl:text-xs text-[8px] leading-none whitespace-nowrap text-white">
-                  Yes, I want my FREE Strategy Session
-                </span>
-              </button>
-            </div>
+                <ArrowRight className="3xl:size-5 size-[15px] text-white" />
+              </span>
+              <span className="3xl:text-xs text-[8px] leading-none whitespace-nowrap text-white">
+                Yes, I want my FREE Strategy Session
+              </span>
+            </button>
           </InitiateCheckoutTrigger>
         </div>
         <div className="3xl:w-[495px] md:w-[381px] md:flex-none">
@@ -1915,24 +1901,21 @@ export default function Home() {
 
             <div className="3xl:mt-[50px] mt-[30px]">
               <InitiateCheckoutTrigger asChild>
-                <div className="group relative inline-block">
-                  <span className="bg-primary-500 absolute inset-0 rounded-lg opacity-0 blur-[25.5px] transition-[opacity,filter,inset] duration-300 group-hover:-inset-1 group-hover:opacity-100" />
-                  <button
-                    data-cal-link="marketeq/ux-strategy-call"
-                    data-cal-config='{"layout":"month_view","theme":"light"}'
-                    className="bg-primary-500 3xl:gap-y-px 3xl:px-6 3xl:py-3 border-primary-500 hover:border-dark-blue-500 hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start rounded-xl border px-3.5 py-2 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
-                  >
-                    <span className="3xl:gap-x-3 flex items-center gap-x-2">
-                      <span className="3xl:text-base 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
-                        Book a Strategy Call
-                      </span>
-                      <ArrowRight className="3xl:size-5 size-[15px] text-white" />
+                <button
+                  data-cal-link="marketeq/ux-strategy-call"
+                  data-cal-config='{"layout":"month_view","theme":"light"}'
+                  className="neon-pulse bg-primary-500 3xl:gap-y-px 3xl:px-6 3xl:py-3 hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start rounded-xl px-3.5 py-2 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+                >
+                  <span className="3xl:gap-x-3 flex items-center gap-x-2">
+                    <span className="3xl:text-base 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
+                      Book a Strategy Call
                     </span>
-                    <span className="3xl:text-xs text-[8px] leading-none whitespace-nowrap text-white">
-                      Yes, I want my FREE Strategy Session
-                    </span>
-                  </button>
-                </div>
+                    <ArrowRight className="3xl:size-5 size-[15px] text-white" />
+                  </span>
+                  <span className="3xl:text-xs text-[8px] leading-none whitespace-nowrap text-white">
+                    Yes, I want my FREE Strategy Session
+                  </span>
+                </button>
               </InitiateCheckoutTrigger>
             </div>
           </div>
@@ -2344,24 +2327,22 @@ export default function Home() {
 
               <div className="3xl:gap-y-[30px] 3xl:mt-[50px] mt-[30px] flex flex-col items-center gap-y-3">
                 <InitiateCheckoutTrigger asChild>
-                  <div className="group relative inline-block">
-                    <span className="bg-primary-500 absolute inset-0 rounded-lg opacity-0 blur-[25.5px] transition-[opacity,filter,inset] duration-300 group-hover:-inset-1 group-hover:opacity-100" />
-                    <button
-                      data-cal-link="marketeq/ux-strategy-call"
-                      data-cal-config='{"layout":"month_view","theme":"light"}'
-                      className="bg-primary-500 3xl:px-[30px] 3xl:py-[21px] border-primary-500 hover:border-dark-blue-500 hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
-                    >
-                      <span className="3xl:gap-x-3 flex items-center gap-x-2">
-                        <span className="3xl:text-xl 3xl:leading-7 inline-block text-sm leading-5 font-semibold whitespace-nowrap text-white">
-                          Book a Strategy Call
-                        </span>
-                        <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
+                  <button
+                    data-cal-link="marketeq/ux-strategy-call"
+                    data-cal-config='{"layout":"month_view","theme":"light"}'
+                    className="beam-circular bg-primary-500 3xl:px-[30px] 3xl:py-[21px] hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+                  >
+                    <span className="right-left-beam-renderer" />
+                    <span className="3xl:gap-x-3 flex items-center gap-x-2">
+                      <span className="3xl:text-xl 3xl:leading-7 inline-block text-sm leading-5 font-semibold whitespace-nowrap text-white">
+                        Book a Strategy Call
                       </span>
-                      <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
-                        Yes, I want my FREE Strategy Session
-                      </span>
-                    </button>
-                  </div>
+                      <ArrowRight className="3xl:size-[30.38px] size-[15px] text-white" />
+                    </span>
+                    <span className="3xl:text-xs text-[10px] leading-none whitespace-nowrap text-white">
+                      Yes, I want my FREE Strategy Session
+                    </span>
+                  </button>
                 </InitiateCheckoutTrigger>
 
                 <p className="3xl:text-sm text-center text-[10px] leading-[1.6] text-white">

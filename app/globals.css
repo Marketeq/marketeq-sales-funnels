@@ -115,4 +115,139 @@
   --breakpoint-3xl: 1440px;
   --breakpoint-4xl: 1600px;
   --breakpoint-5xl: 1920px;
+
+  --animate-pulse-out: pulseOut 2s ease-out infinite;
+
+  --animate-beam-top-to-right: beamTopToRight 1s linear infinite;
+  --animate-beam-right-top-down: beamRightToDown 1s linear infinite;
+  --animate-beam-bottom-to-left: beamBottomToLeft 1s linear infinite;
+  --animate-beam-left-to-top: beamLeftToTop 1s linear infinite;
+
+  @keyframes pulseOut {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+
+  @keyframes beamTopToRight {
+    0% {
+      left: -100%;
+    }
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+  @keyframes beamRightToDown {
+    0% {
+      top: -100%;
+    }
+    50%,
+    100% {
+      top: 100%;
+    }
+  }
+
+  @keyframes beamBottomToLeft {
+    0% {
+      right: -100%;
+    }
+    50%,
+    100% {
+      right: 100%;
+    }
+  }
+
+  @keyframes beamLeftToTop {
+    0% {
+      bottom: -100%;
+    }
+    50%,
+    100% {
+      bottom: 100%;
+    }
+  }
+}
+
+@layer components {
+  .neon-pulse {
+    @apply relative overflow-visible;
+  }
+  .neon-pulse::before,
+  .neon-pulse::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border: 2px solid theme(--color-primary-500);
+    border-radius: inherit;
+    animation: var(--animate-pulse-out);
+    opacity: 0;
+  }
+
+  .neon-pulse::after {
+    @apply delay-1000;
+  }
+
+  .beam-circular {
+    @apply relative overflow-hidden;
+  }
+
+  .right-left-beam-renderer {
+    @apply contents;
+  }
+
+  .beam-circular::before,
+  .beam-circular::after,
+  .right-left-beam-renderer::before,
+  .right-left-beam-renderer::after {
+    content: "";
+    position: absolute;
+    display: block;
+  }
+
+  .beam-circular::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, theme(--color-white));
+    animation: var(--animate-beam-top-to-right);
+    filter: hue-rotate(270deg);
+  }
+
+  .right-left-beam-renderer::before {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, theme(--color-white));
+    animation: var(--animate-beam-right-top-down);
+    animation-delay: 0.25s;
+    filter: hue-rotate(110deg);
+  }
+
+  .beam-circular::after {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, theme(--color-white));
+    animation: var(--animate-beam-bottom-to-left);
+    animation-delay: 0.5s;
+  }
+
+  .right-left-beam-renderer::after {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, theme(--color-white));
+    animation: var(--animate-beam-left-to-top);
+    animation-delay: 0.75s;
+  }
 }
