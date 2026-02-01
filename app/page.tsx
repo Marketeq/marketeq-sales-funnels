@@ -1625,7 +1625,7 @@ export default function Home() {
             <button
               data-cal-link="marketeq/ux-strategy-call"
               data-cal-config='{"layout":"month_view","theme":"light"}'
-              className="neon-pulse bg-primary-500 3xl:mt-8 3xl:gap-y-px 3xl:px-6 3xl:py-3 hover:bg-primary-600 relative mt-[30x] inline-flex cursor-pointer flex-col items-start rounded-xl px-3.5 py-2 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+              className="neon-pulse bg-primary-500 3xl:mt-8 3xl:gap-y-px 3xl:px-6 3xl:py-3 hover:bg-primary-600 relative mt-[30px] inline-flex cursor-pointer flex-col items-start rounded-xl px-3.5 py-2 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
             >
               <span className="3xl:gap-x-3 flex items-center gap-x-2">
                 <span className="3xl:text-base 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
