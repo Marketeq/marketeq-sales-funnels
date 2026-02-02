@@ -751,7 +751,7 @@ const fetchBooking = async (
 }
 
 interface CalendarLinks {
-  status: "success"
+  status: string
   data: Array<{
     label: string
     link: string
