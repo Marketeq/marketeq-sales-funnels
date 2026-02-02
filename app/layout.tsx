@@ -25,8 +25,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={cn("scroll-smooth", inter.variable)}>
-      <body>
+    <html
+      lang="en"
+      className={cn("overflow-x-hidden scroll-smooth", inter.variable)}
+    >
+      <body className="overflow-x-hidden">
         {children}
         <Footer />
 
