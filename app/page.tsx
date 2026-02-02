@@ -657,8 +657,8 @@ const Circle02 = (props: React.SVGProps<SVGSVGElement>) => {
 export default function Home() {
   return (
     <main className="relative isolate bg-white">
+      <LandingHeader />
       <div className="bg-dark-blue-600">
-        <LandingHeader />
         <Ellipse className="absolute top-0 left-1/2 -translate-1/2" />
         <div className="relative">
           <div className="5xl:px-[300px] 4xl:px-[275px] 3xl:px-[200px] 3xl:py-[100px] px-[30px] pt-5 pb-10 lg:px-[100px]">
@@ -693,7 +693,7 @@ export default function Home() {
                     <button
                       data-cal-link="marketeq/ux-strategy-call"
                       data-cal-config='{"layout":"month_view","theme":"light"}'
-                      className="beam-circular bg-primary-500 3xl:rounded-xl 3xl:px-[30px] 3xl:py-[21px] hover:bg-primary-600 relative isolate inline-flex cursor-pointer flex-col items-start gap-y-px rounded-lg border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:border-white/5 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+                      className="beam-circular bg-primary-500 3xl:rounded-xl 3xl:px-[30px] 3xl:py-[21px] hover:bg-primary-600 relative isolate inline-flex cursor-pointer flex-col items-start gap-y-px rounded-lg border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:scale-[1.02] hover:border-white/5 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
                     >
                       <span className="right-left-beam-renderer" />
                       <span className="3xl:gap-x-3 flex items-center gap-x-2">
@@ -744,12 +744,12 @@ export default function Home() {
           </span>
         </div>
 
-        <div className="3xl:gap-y-8 3xl:mt-[50px] mt-10 flex flex-col items-center gap-y-[18.83px]">
+        <div className="3xl:gap-y-12 3xl:mt-[50px] mt-10 flex flex-col items-center gap-y-[34.83px]">
           <InitiateCheckoutTrigger asChild>
             <button
               data-cal-link="marketeq/ux-strategy-call"
               data-cal-config='{"layout":"month_view","theme":"light"}'
-              className="neon-pulse bg-primary-500 3xl:rounded-xl 3xl:px-12 3xl:py-[21px] hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-[15px] px-[34px] py-[15.89px] shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+              className="neon-pulse bg-primary-500 3xl:rounded-xl 3xl:px-12 3xl:py-[21px] hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-[15px] px-[34px] py-[15.89px] shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:scale-[1.025] hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
             >
               <span className="flex items-center gap-x-3">
                 <span className="3xl:text-[33.76px] 3xl:leading-[47.26px] inline-block text-[19.86px] leading-[27.8px] font-semibold whitespace-nowrap text-white">
@@ -981,12 +981,12 @@ export default function Home() {
           </article>
         </div>
 
-        <div className="3xl:mt-[75px] 3xl:gap-y-5 mt-[30px] flex flex-col items-center gap-y-3">
+        <div className="3xl:mt-[75px] 3xl:gap-y-7 mt-[30px] flex flex-col items-center gap-y-5">
           <InitiateCheckoutTrigger asChild>
             <button
               data-cal-link="marketeq/ux-strategy-call"
               data-cal-config='{"layout":"month_view","theme":"light"}'
-              className="neon-pulse bg-primary-500 3xl:px-[30px] 3xl:py-[21px] hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+              className="neon-pulse bg-primary-500 3xl:px-[30px] 3xl:py-[21px] hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:scale-[1.02] hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
             >
               <span className="3xl:gap-x-3 flex items-center gap-x-2">
                 <span className="3xl:text-xl 3xl:leading-7 inline-block text-sm leading-5 font-semibold whitespace-nowrap text-white">
@@ -1572,12 +1572,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="3xl:gap-y-5 3xl:pr-[50px] 3xl:items-start mt-[30px] flex flex-col items-center gap-y-3">
+            <div className="3xl:gap-y-7 3xl:pr-[50px] 3xl:items-start mt-[30px] flex flex-col items-center gap-y-5">
               <InitiateCheckoutTrigger asChild>
                 <button
                   data-cal-link="marketeq/ux-strategy-call"
                   data-cal-config='{"layout":"month_view","theme":"light"}'
-                  className="neon-pulse bg-primary-500 3xl:px-[30px] 3xl:py-[21px] hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+                  className="neon-pulse bg-primary-500 3xl:px-[30px] 3xl:py-[21px] hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:scale-[1.02] hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
                 >
                   <span className="3xl:gap-x-3 flex items-center gap-x-2">
                     <span className="3xl:text-xl 3xl:leading-7 inline-block text-sm leading-5 font-semibold whitespace-nowrap text-white">
@@ -1612,7 +1612,7 @@ export default function Home() {
           </div>
 
           <h1 className="3xl:mt-5 text-dark-blue-400 3xl:text-[62px] mx-auto mt-3 text-[32px] leading-none font-bold">
-            We Don’t Guess. We Engineer.
+            We Don’t Guess. <span className="block">We Engineer.</span>
           </h1>
 
           <p className="text-dark-blue-400 3xl:mt-5 3xl:text-[45px] mt-3 text-lg leading-none">
@@ -1625,7 +1625,7 @@ export default function Home() {
             <button
               data-cal-link="marketeq/ux-strategy-call"
               data-cal-config='{"layout":"month_view","theme":"light"}'
-              className="neon-pulse bg-primary-500 3xl:mt-8 3xl:gap-y-px 3xl:px-6 3xl:py-3 hover:bg-primary-600 relative mt-[30px] inline-flex cursor-pointer flex-col items-start rounded-xl px-3.5 py-2 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+              className="neon-pulse bg-primary-500 3xl:mt-8 3xl:gap-y-px 3xl:px-6 3xl:py-3 hover:bg-primary-600 relative mt-[30px] inline-flex cursor-pointer flex-col items-start rounded-xl px-3.5 py-2 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:scale-[1.02] hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
             >
               <span className="3xl:gap-x-3 flex items-center gap-x-2">
                 <span className="3xl:text-base 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
@@ -1906,7 +1906,7 @@ export default function Home() {
                 <button
                   data-cal-link="marketeq/ux-strategy-call"
                   data-cal-config='{"layout":"month_view","theme":"light"}'
-                  className="neon-pulse bg-primary-500 3xl:gap-y-px 3xl:px-6 3xl:py-3 hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start rounded-xl px-3.5 py-2 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+                  className="neon-pulse bg-primary-500 3xl:gap-y-px 3xl:px-6 3xl:py-3 hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start rounded-xl px-3.5 py-2 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:scale-[1.02] hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
                 >
                   <span className="3xl:gap-x-3 flex items-center gap-x-2">
                     <span className="3xl:text-base 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
@@ -2332,7 +2332,7 @@ export default function Home() {
                   <button
                     data-cal-link="marketeq/ux-strategy-call"
                     data-cal-config='{"layout":"month_view","theme":"light"}'
-                    className="beam-circular bg-primary-500 3xl:px-[30px] 3xl:py-[21px] hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+                    className="beam-circular bg-primary-500 3xl:px-[30px] 3xl:py-[21px] hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:scale-[1.02] hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
                   >
                     <span className="right-left-beam-renderer" />
                     <span className="3xl:gap-x-3 flex items-center gap-x-2">

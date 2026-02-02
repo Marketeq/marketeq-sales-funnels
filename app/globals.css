@@ -118,10 +118,10 @@
 
   --animate-pulse-out: pulseOut 2s ease-out infinite;
 
-  --animate-beam-top-to-right: beamTopToRight 1s linear infinite;
-  --animate-beam-right-top-down: beamRightToDown 1s linear infinite;
-  --animate-beam-bottom-to-left: beamBottomToLeft 1s linear infinite;
-  --animate-beam-left-to-top: beamLeftToTop 1s linear infinite;
+  --animate-beam-top-to-right: beamTopToRight 1.375s linear infinite;
+  --animate-beam-right-top-down: beamRightToDown 1.375s linear infinite;
+  --animate-beam-bottom-to-left: beamBottomToLeft 1.375s linear infinite;
+  --animate-beam-left-to-top: beamLeftToTop 1.375s linear infinite;
 
   @keyframes pulseOut {
     0% {

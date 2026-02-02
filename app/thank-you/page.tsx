@@ -44,7 +44,6 @@ import Link from "next/link"
 import { SalesConversion } from "@/components/sales-conversion"
 import { TriggerLead } from "@/components/trigger-lead"
 
-import { Suspense } from "react"
 import {
   GoogleBrand,
   GoogleMeet2Brand,
@@ -532,16 +531,16 @@ function ThankYou({
         </div>
 
         <div className="3xl:mt-[50px] 3xl:gap-5 3xl:grid-cols-3 mt-[30px] grid gap-3.5 md:grid-cols-2">
-          <article className="3xl:p-7 3xl:rounded-[25px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="group/article hover:bg-primary-500 3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <RefreshCw className="size-[29px]" />
             </div>
 
             <div className="3xl:mt-[50px] mt-[30px]">
-              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-tight font-bold">
+              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
                 Executive-Level Strategy on Every Project
               </h3>
-              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
+              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                 Your roadmap and UX strategy aren’t handed to juniors. Every
                 project is led by senior partners with real product and business
                 experience, the same experts behind our top enterprise
@@ -549,16 +548,16 @@ function ThankYou({
               </p>
             </div>
           </article>
-          <article className="3xl:p-7 3xl:rounded-[25px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="group/article hover:bg-primary-500 3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <FaceContent className="size-[29px]" />
             </div>
 
             <div className="3xl:mt-[50px] mt-[30px]">
-              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-tight font-bold">
+              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
                 Competitive Intelligence Built Into the Process
               </h3>
-              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
+              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                 We benchmark your user experience directly against leading
                 competitors, feature by feature, touchpoint by touchpoint, so
                 every decision is backed by real market data, not feel-good
@@ -566,16 +565,16 @@ function ThankYou({
               </p>
             </div>
           </article>
-          <article className="3xl:p-7 3xl:rounded-[25px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="group/article hover:bg-primary-500 3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <Dataflow03 className="size-[29px]" />
             </div>
 
             <div className="3xl:mt-[50px] mt-[30px]">
-              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-tight font-bold">
+              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
                 Data-Driven Testing and Validation
               </h3>
-              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
+              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                 Every design decision we make is grounded in usability data, A/B
                 testing, and behavioral research. We validate ideas early to
                 ensure every build drives measurable impact and contributes to
@@ -583,16 +582,16 @@ function ThankYou({
               </p>
             </div>
           </article>
-          <article className="3xl:p-7 3xl:rounded-[25px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="group/article hover:bg-primary-500 3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <Container className="size-[29px]" />
             </div>
 
             <div className="3xl:mt-[50px] mt-[30px]">
-              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-tight font-bold">
+              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
                 Aligned Incentives, Not Just Billable Hours
               </h3>
-              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
+              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                 Our pricing model rewards performance and retention, not just
                 time spent on your project. We’re incentivized to deliver growth
                 wins quickly, not endlessly extend your deadlines with new
@@ -600,16 +599,16 @@ function ThankYou({
               </p>
             </div>
           </article>
-          <article className="3xl:p-7 3xl:rounded-[25px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="group/article hover:bg-primary-500 3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <Beaker02 className="size-[29px]" />
             </div>
 
             <div className="3xl:mt-[50px] mt-[30px]">
-              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-tight font-bold">
+              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
                 Proven Growth Frameworks Not Theories
               </h3>
-              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
+              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                 Our methods were developed through hundreds of successful
                 product launches across SaaS, fintech, marketplaces, and service
                 brands, refined through years of real-world iteration and
@@ -617,16 +616,16 @@ function ThankYou({
               </p>
             </div>
           </article>
-          <article className="3xl:p-7 3xl:rounded-[25px] rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <article className="group/article hover:bg-primary-500 3xl:rounded-[25px] 3xl:p-7 rounded-[18px] border border-gray-200 bg-white p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] transition duration-300 hover:scale-[1.05]">
             <div className="bg-primary-25 text-primary-500 inline-flex size-[50px] shrink-0 items-center justify-center rounded-full">
               <ChartBreakoutCircle className="size-[29px]" />
             </div>
 
             <div className="3xl:mt-[50px] mt-[30px]">
-              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-tight font-bold">
+              <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
                 Systematized Delivery Through Cross Functional Teams
               </h3>
-              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500">
+              <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                 Each client is supported by a dedicated core team of
                 strategists, researchers, and designers, backed by experts in
                 conversion optimization, analytics, and automation to ensure
@@ -789,19 +788,21 @@ export default async function ThankYouRoot({
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }) {
   const { uid } = await searchParams
-  const calendarLinks = await fetchCalendarLinks(uid)
   const booking = await fetchBooking(uid)
+  const calendarLinks = await fetchCalendarLinks(uid)
 
   return (
     <ThankYou
       bookingConfirmation={
-        <BookingConfirmation
-          hostName={first(booking.data.hosts).name}
-          start={booking.data.start}
-          end={booking.data.end}
-          links={calendarLinks.data}
-          timeZone={first(booking.data.attendees).timeZone}
-        />
+        booking.status === "success" ? (
+          <BookingConfirmation
+            hostName={first(booking.data.hosts).name}
+            start={booking.data.start}
+            end={booking.data.end}
+            links={calendarLinks.data}
+            timeZone={first(booking.data.attendees).timeZone}
+          />
+        ) : null
       }
     />
   )
