@@ -5,7 +5,13 @@ import { FaceContent } from "@/components/icons/face-content"
 import { MarketeqWhite } from "@/components/icons/marketeq-white"
 import { RefreshCw } from "@/components/icons/refresh-cw"
 import { cn } from "@/lib/utils"
-import { ChartBreakoutCircle, Lightning01 } from "@blend-metrics/icons"
+import {
+  ChartBreakoutCircle,
+  Clock,
+  Download,
+  Lightning01,
+  Target03,
+} from "@blend-metrics/icons"
 import { Check } from "lucide-react"
 import review01 from "@/public/review-01.png"
 import review02 from "@/public/review-02.png"
@@ -37,8 +43,15 @@ import Image from "next/image"
 import Link from "next/link"
 import { SalesConversion } from "@/components/sales-conversion"
 import { TriggerLead } from "@/components/trigger-lead"
-import { BookingConfirmation } from "@/components/booking-confirmation"
+
 import { Suspense } from "react"
+import {
+  GoogleBrand,
+  GoogleMeet2Brand,
+  MsOutlookBrand,
+} from "@blend-metrics/icons/brands"
+import { Apple } from "@/components/icons/apple"
+import { format, parseISO } from "date-fns"
 
 const CalendarCheck01 = ({
   className,
@@ -173,7 +186,11 @@ const MessageChatSquare = ({
   </svg>
 )
 
-function ThankYou() {
+function ThankYou({
+  bookingConfirmation,
+}: {
+  bookingConfirmation: React.ReactNode
+}) {
   return (
     <main>
       <SalesConversion />
@@ -228,7 +245,7 @@ function ThankYou() {
       </div>
 
       <div className="5xl:px-[300px] 4xl:px-[150px] 4xl:py-[100px] 3xl:p-[100px] 3xl:gap-y-[50px] flex flex-col gap-y-[30px] px-5 py-10 md:p-10 lg:px-[100px] lg:py-[50px]">
-        <BookingConfirmation />
+        {bookingConfirmation}
 
         <div>
           <div className="flex items-center justify-center">
@@ -662,10 +679,272 @@ function ThankYou() {
   )
 }
 
-export default function ThankYouRoot() {
+interface Booking {
+  status: string
+  data: {
+    id: number
+    uid: string
+    title: string
+    description: string
+    hosts: Array<{
+      id: number
+      name: string
+      email: string
+      displayEmail: string
+      username: string
+      timeZone: string
+    }>
+    status: string
+    start: string
+    end: string
+    duration: number
+    eventTypeId: number
+    eventType: {
+      id: number
+      slug: string
+    }
+    location: string
+    absentHost: boolean
+    createdAt: string
+    updatedAt: string
+    attendees: Array<{
+      name: string
+      email: string
+      displayEmail: string
+      timeZone: string
+      absent: boolean
+      language: string
+      phoneNumber: string
+    }>
+    bookingFieldsResponses: Record<string, string>
+    cancellationReason: string
+    cancelledByEmail: string
+    reschedulingReason: string
+    rescheduledByEmail: string
+    rescheduledFromUid: string
+    rescheduledToUid: string
+    meetingUrl: string
+    metadata: Record<string, string>
+    rating: number
+    icsUid: string
+    guests: string[]
+  }
+  error: Record<string, unknown>
+}
+
+const fetchBooking = async (
+  uid: string | string[] | undefined,
+): Promise<Booking> => {
+  const options = {
+    method: "GET",
+    headers: {
+      "cal-api-version": "2024-08-13",
+      Authorization: `Bearer ${process.env.CAL_API_KEY}`,
+    },
+  }
+
+  const response = await fetch(
+    `https://api.cal.com/v2/bookings/${uid}`,
+    options,
+  )
+  const booking = response.json()
+  return booking
+}
+
+interface CalendarLinks {
+  status: "success"
+  data: Array<{
+    label: string
+    link: string
+    id: string
+  }>
+}
+
+const fetchCalendarLinks = async (
+  uid: string | string[] | undefined,
+): Promise<CalendarLinks> => {
+  const options = {
+    method: "GET",
+    headers: {
+      "cal-api-version": "2024-08-13",
+      Authorization: `Bearer ${process.env.CAL_API_KEY}`,
+    },
+  }
+
+  const response = await fetch(
+    `https://api.cal.com/v2/bookings/${uid}/calendar-links`,
+    options,
+  )
+  const links = response.json()
+  return links
+}
+
+function first<T>(value: T[]) {
+  return value[0]
+}
+
+export default async function ThankYouRoot({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}) {
+  const { uid } = await searchParams
+  const calendarLinks = await fetchCalendarLinks(uid)
+  const booking = await fetchBooking(uid)
+
   return (
-    <Suspense>
-      <ThankYou />
-    </Suspense>
+    <ThankYou
+      bookingConfirmation={
+        <BookingConfirmation
+          hostName={first(booking.data.hosts).name}
+          start={booking.data.start}
+          end={booking.data.end}
+          links={calendarLinks.data}
+          timeZone={first(booking.data.attendees).timeZone}
+        />
+      }
+    />
+  )
+}
+
+const CalendarTrigger = ({ id, link }: { id: string; link: string }) => {
+  switch (id) {
+    case "googleCalendar":
+      return (
+        <Link
+          href={link}
+          className="inline-flex size-[35px] shrink-0 cursor-pointer items-center justify-center rounded-[5px] border border-gray-300 bg-white text-gray-500 shadow-[0px_0.67px_2.69px_0px_rgba(0,0,0,.03)] hover:bg-gray-100"
+        >
+          <GoogleBrand className="size-[21.54px]" />
+        </Link>
+      )
+
+    case "microsoftOutlook":
+      return (
+        <Link
+          href={link}
+          className="inline-flex size-[35px] shrink-0 cursor-pointer items-center justify-center rounded-[5px] border border-gray-300 bg-white text-gray-500 shadow-[0px_0.67px_2.69px_0px_rgba(0,0,0,.03)] hover:bg-gray-100"
+        >
+          <MsOutlookBrand className="size-[21.54px]" />
+        </Link>
+      )
+
+    case "ics":
+      return (
+        <>
+          <Link
+            href={link}
+            download="event.ics"
+            className="inline-flex size-[35px] shrink-0 cursor-pointer items-center justify-center rounded-[5px] border border-gray-300 bg-white text-gray-500 shadow-[0px_0.67px_2.69px_0px_rgba(0,0,0,.03)] hover:bg-gray-100"
+          >
+            <Apple />
+          </Link>
+          <Link
+            href={link}
+            download="event.ics"
+            className="inline-flex size-[35px] shrink-0 cursor-pointer items-center justify-center rounded-[5px] border border-gray-300 bg-white text-gray-500 shadow-[0px_0.67px_2.69px_0px_rgba(0,0,0,.03)] hover:bg-gray-100"
+          >
+            <Download className="size-[15px]" />
+          </Link>
+        </>
+      )
+
+    default:
+      return null
+  }
+}
+
+const BookingConfirmation = ({
+  links,
+  end,
+  start,
+  hostName,
+  timeZone,
+}: {
+  hostName: string
+  start: string
+  end: string
+  links: CalendarLinks["data"]
+  timeZone: string
+}) => {
+  return (
+    <div className="mx-auto max-w-[560px] rounded-[10px] border border-gray-200 bg-white p-[30px] shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+      <div className="border-success-300 bg-success-25 rounded-[5px] border px-4 py-2.5">
+        <span className="text-success-600 text-base leading-5">
+          <span className="font-bold">Email Sent.</span> Check your inbox for an
+          email with all the details.
+        </span>
+      </div>
+
+      <div className="mt-[24.5px] flex items-center justify-between">
+        <div className="space-y-1">
+          <h3 className="text-dark-blue-400 text-base leading-none font-medium">
+            Your meeting is scheduled with:
+          </h3>
+          <h1 className="text-dark-blue-400 text-xl leading-none font-semibold">
+            {hostName}
+          </h1>
+        </div>
+
+        <div className="relative size-12 overflow-hidden rounded-full border border-gray-300 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
+          <Image
+            className="object-cover"
+            src="/marketeq.png"
+            height={48}
+            width={48}
+            alt="Marketeq"
+          />
+        </div>
+      </div>
+
+      <div className="mt-6 border-t border-gray-200 pt-6">
+        <div className="space-y-3">
+          <div className="flex items-center justify-between">
+            <div className="inline-flex items-center gap-x-3">
+              <Clock className="text-dark-blue-400 size-[22px]" />
+              <span className="text-dark-blue-400 text-base leading-none font-semibold">
+                Time
+              </span>
+            </div>
+
+            <div className="space-y-1">
+              <h3 className="text-dark-blue-400 text-right text-base leading-none font-semibold">
+                {format(parseISO(start), "EEEE, MMM d, yyyy")}
+              </h3>
+              <h3 className="text-dark-blue-400 text-right text-base leading-none font-semibold">
+                {format(parseISO(start), "hh:mm a")} -{" "}
+                {format(parseISO(end), "hh:mm a")} ({timeZone})
+              </h3>
+            </div>
+          </div>
+          <div className="flex items-center justify-between">
+            <div className="inline-flex items-center gap-x-3">
+              <Target03 className="text-dark-blue-400 size-[22px]" />
+              <span className="text-dark-blue-400 text-base leading-none font-semibold">
+                Location
+              </span>
+            </div>
+
+            <div className="inline-flex items-center gap-x-1.5">
+              <GoogleMeet2Brand className="size-8" />
+              <h3 className="text-dark-blue-400 text-base leading-none font-semibold">
+                Google Meet
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-6 flex items-center justify-center gap-x-3 border-t border-gray-200 pt-6">
+        <span className="text-dark-blue-400 text-sm leading-none font-medium">
+          Add to calendar
+        </span>
+        <div className="inline-flex items-center gap-x-3">
+          {links.map(({ id, link }) => (
+            <CalendarTrigger key={id} id={id} link={link} />
+          ))}
+        </div>
+      </div>
+    </div>
   )
 }
