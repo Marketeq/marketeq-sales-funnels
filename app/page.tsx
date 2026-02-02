@@ -1030,10 +1030,11 @@ export default function Home() {
             results.
           </h1>
         </div>
-        <div className="max-3xl:max-w-[378px] 3xl:mt-5 mx-auto mt-3">
+        <div className="max-3xl:max-w-[378px] 3xl:mt-5 mx-auto mt-3 max-w-[866px]">
           <p className="3xl:text-lg text-center text-sm leading-[1.6] text-gray-500">
-            Data-backed UX/UI design built on user testing, market research, and
-            real-world product strategy.
+            Data-backed ux strategy and design built to maximize market share,
+            strengthen competitive positioning, and turn your product into the
+            obvious choice in your category.
           </p>
         </div>
 
@@ -1952,10 +1953,11 @@ export default function Home() {
           What you can expect
         </h1>
 
-        <div className="3xl:mt-5 max-3xl:max-w-[370px] mx-auto mt-3">
+        <div className="3xl:mt-5 max-3xl:max-w-[370px] mx-auto mt-3 max-w-[782px]">
           <p className="3xl:text-lg text-center text-sm leading-[1.6] text-gray-500">
-            Data-backed UX/UI design built on user testing, market research, and
-            real-world product strategy.
+            A performance-driven UX/UI approach that uses user behavior, market
+            signals, and product data to outmaneuver competitors and help you
+            dominate your market.
           </p>
         </div>
 
