@@ -658,7 +658,7 @@ export default function Home() {
   return (
     <main className="relative isolate bg-white">
       <LandingHeader />
-      <div className="bg-dark-blue-600">
+      <div className="bg-dark-blue-600 3xl:pt-16 pt-14">
         <Ellipse className="absolute top-0 left-1/2 -translate-1/2" />
         <div className="relative">
           <div className="5xl:px-[300px] 4xl:px-[275px] 3xl:px-[200px] 3xl:py-[100px] px-[30px] pt-5 pb-10 lg:px-[100px]">
