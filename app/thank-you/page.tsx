@@ -814,6 +814,7 @@ const CalendarTrigger = ({ id, link }: { id: string; link: string }) => {
       return (
         <Link
           href={link}
+          target="_black"
           className="inline-flex size-[35px] shrink-0 cursor-pointer items-center justify-center rounded-[5px] border border-gray-300 bg-white text-gray-500 shadow-[0px_0.67px_2.69px_0px_rgba(0,0,0,.03)] hover:bg-gray-100"
         >
           <GoogleBrand className="size-[21.54px]" />
@@ -824,6 +825,7 @@ const CalendarTrigger = ({ id, link }: { id: string; link: string }) => {
       return (
         <Link
           href={link}
+          target="_black"
           className="inline-flex size-[35px] shrink-0 cursor-pointer items-center justify-center rounded-[5px] border border-gray-300 bg-white text-gray-500 shadow-[0px_0.67px_2.69px_0px_rgba(0,0,0,.03)] hover:bg-gray-100"
         >
           <MsOutlookBrand className="size-[21.54px]" />
