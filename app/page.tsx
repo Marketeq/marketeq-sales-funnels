@@ -635,9 +635,11 @@ export default function Home() {
                     <button
                       data-cal-link="marketeq/ux-strategy-call"
                       data-cal-config='{"layout":"month_view","theme":"light"}'
-                      className="beam-circular bg-primary-500 3xl:rounded-xl 3xl:px-[30px] 3xl:py-[21px] hover:bg-primary-600 relative isolate inline-flex cursor-pointer flex-col items-start gap-y-px rounded-lg border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:scale-[1.02] hover:border-white/5 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+                      className="bg-primary-500 3xl:rounded-xl 3xl:px-[30px] 3xl:py-[21px] hover:bg-primary-600 relative isolate inline-flex cursor-pointer flex-col items-start gap-y-px rounded-lg border px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:scale-[1.02] hover:border-white/5 hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
                     >
-                      <span className="right-left-beam-renderer" />
+                      <span className="circular-mask">
+                        <span className="circular-glow"></span>
+                      </span>
                       <span className="3xl:gap-x-3 flex items-center gap-x-2">
                         <span className="3xl:text-xl 3xl:leading-7 inline-block text-xs leading-5 font-semibold whitespace-nowrap text-white">
                           Book a Strategy Call
@@ -2276,9 +2278,11 @@ export default function Home() {
                   <button
                     data-cal-link="marketeq/ux-strategy-call"
                     data-cal-config='{"layout":"month_view","theme":"light"}'
-                    className="beam-circular bg-primary-500 3xl:px-[30px] 3xl:py-[21px] hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:scale-[1.02] hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
+                    className="bg-primary-500 3xl:px-[30px] 3xl:py-[21px] hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-xl px-4 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:scale-[1.02] hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
                   >
-                    <span className="right-left-beam-renderer" />
+                    <span className="circular-mask">
+                      <span className="circular-glow"></span>
+                    </span>
                     <span className="3xl:gap-x-3 flex items-center gap-x-2">
                       <span className="3xl:text-xl 3xl:leading-7 inline-block text-sm leading-5 font-semibold whitespace-nowrap text-white">
                         Book a Strategy Call
