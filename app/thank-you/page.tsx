@@ -51,6 +51,8 @@ import {
 } from "@blend-metrics/icons/brands"
 import { Apple } from "@/components/icons/apple"
 import { format, parseISO } from "date-fns"
+import { formatInTimeZone } from "date-fns-tz"
+import { Ellipse } from "@/components/ellipse"
 
 const CalendarCheck01 = ({
   className,
@@ -194,13 +196,14 @@ function ThankYou({
     <main>
       <SalesConversion />
       <TriggerLead />
-      <div className="bg-dark-blue-600 5xl:px-[300px] 4xl:py-0 4xl:px-[150px]">
-        <div className="3xl:h-[72px] flex h-[47.04px] items-end justify-center">
+      <div className="bg-dark-blue-600 5xl:px-[300px] 4xl:py-0 4xl:px-[150px] relative">
+        <Ellipse className="absolute top-0 left-1/2 -translate-1/2" />
+        <div className="3xl:h-[72px] relative flex h-[47.04px] items-end justify-center">
           <Link href="/" className="focus-visible:outline-none" target="_blank">
             <MarketeqWhite className="3xl:h-[22px] 3xl:w-[149.72px] h-[17.04px] w-[116px] shrink-0" />
           </Link>
         </div>
-        <div className="5xl:px-[126px] 4xl:px-[116px] 3xl:px-[200px] 3xl:pt-[50px] 3xl:pb-[100px] p-10 pt-[30px] lg:px-[100px] lg:pt-[30px] lg:pb-10">
+        <div className="5xl:px-[126px] 4xl:px-[116px] 3xl:px-[200px] 3xl:pt-[50px] 3xl:pb-[100px] relative p-10 pt-[30px] lg:px-[100px] lg:pt-[30px] lg:pb-10">
           <div className="flex items-center justify-center">
             <div className="border-primary-500 3xl:h-11 3xl:px-5 3xl:py-3 flex h-8 shrink-0 items-center gap-x-[8.32px] rounded-full border-[1.66px] px-3 py-1.5">
               <Lightning01 className="text-primary-500 max-3xl:size-3.5" />
@@ -810,46 +813,15 @@ export default async function ThankYouRoot({
 
 const CalendarTrigger = ({ id, link }: { id: string; link: string }) => {
   switch (id) {
-    case "googleCalendar":
-      return (
-        <Link
-          href={link}
-          target="_black"
-          className="inline-flex size-[35px] shrink-0 cursor-pointer items-center justify-center rounded-[5px] border border-gray-300 bg-white text-gray-500 shadow-[0px_0.67px_2.69px_0px_rgba(0,0,0,.03)] hover:bg-gray-100"
-        >
-          <GoogleBrand className="size-[21.54px]" />
-        </Link>
-      )
-
-    case "microsoftOutlook":
-      return (
-        <Link
-          href={link}
-          target="_black"
-          className="inline-flex size-[35px] shrink-0 cursor-pointer items-center justify-center rounded-[5px] border border-gray-300 bg-white text-gray-500 shadow-[0px_0.67px_2.69px_0px_rgba(0,0,0,.03)] hover:bg-gray-100"
-        >
-          <MsOutlookBrand className="size-[21.54px]" />
-        </Link>
-      )
-
     case "ics":
       return (
-        <>
-          <Link
-            href={link}
-            download="event.ics"
-            className="inline-flex size-[35px] shrink-0 cursor-pointer items-center justify-center rounded-[5px] border border-gray-300 bg-white text-gray-500 shadow-[0px_0.67px_2.69px_0px_rgba(0,0,0,.03)] hover:bg-gray-100"
-          >
-            <Apple />
-          </Link>
-          <Link
-            href={link}
-            download="event.ics"
-            className="inline-flex size-[35px] shrink-0 cursor-pointer items-center justify-center rounded-[5px] border border-gray-300 bg-white text-gray-500 shadow-[0px_0.67px_2.69px_0px_rgba(0,0,0,.03)] hover:bg-gray-100"
-          >
-            <Download className="size-[15px]" />
-          </Link>
-        </>
+        <Link
+          href={link}
+          download="event.ics"
+          className="text-dark-blue-400 inline-flex h-[35px] shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-[5px] border border-gray-300 bg-white px-2.5 text-sm leading-none font-medium shadow-[0px_0.67px_2.69px_0px_rgba(0,0,0,.03)] hover:bg-gray-100"
+        >
+          <Download className="size-[15px] text-gray-500" /> Download Event
+        </Link>
       )
 
     default:
@@ -912,11 +884,16 @@ const BookingConfirmation = ({
 
             <div className="space-y-1">
               <h3 className="text-dark-blue-400 text-right text-base leading-none font-semibold">
-                {format(parseISO(start), "EEEE, MMM d, yyyy")}
+                {formatInTimeZone(
+                  parseISO(start),
+                  timeZone,
+                  "EEEE, MMM d, yyyy",
+                )}
               </h3>
               <h3 className="text-dark-blue-400 text-right text-base leading-none font-semibold">
-                {format(parseISO(start), "hh:mm a")} -{" "}
-                {format(parseISO(end), "hh:mm a")} ({timeZone})
+                {formatInTimeZone(parseISO(start), timeZone, "hh:mm a")} -{" "}
+                {formatInTimeZone(parseISO(end), timeZone, "hh:mm a")} (
+                {timeZone})
               </h3>
             </div>
           </div>
@@ -940,7 +917,7 @@ const BookingConfirmation = ({
 
       <div className="mt-6 flex items-center justify-center gap-x-3 border-t border-gray-200 pt-6">
         <span className="text-dark-blue-400 text-sm leading-none font-medium">
-          Add to calendar
+          Please confirm this event on your calendar
         </span>
         <div className="inline-flex items-center gap-x-3">
           {links.map(({ id, link }) => (
