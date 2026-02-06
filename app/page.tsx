@@ -18,22 +18,15 @@ import {
   ChartAsSectionMd,
 } from "@/components/chart-as-section"
 import { ChartAsIllustration } from "@/components/chart-as-illustration"
-import testimonial01 from "@/public/testimonial-01.png"
-import testimonial02 from "@/public/testimonial-02.png"
-import testimonial03 from "@/public/testimonial-03.png"
-import testimonial04 from "@/public/testimonial-04.png"
-import testimonial05 from "@/public/testimonial-05.png"
-import testimonial06 from "@/public/testimonial-06.png"
-import testimonial07 from "@/public/testimonial-07.png"
-import testimonial08 from "@/public/testimonial-08.png"
-import testimonial01Lg from "@/public/testimonial-01-lg.png"
-import testimonial02Lg from "@/public/testimonial-02-lg.png"
-import testimonial03Lg from "@/public/testimonial-03-lg.png"
-import testimonial04Lg from "@/public/testimonial-04-lg.png"
-import testimonial05Lg from "@/public/testimonial-05-lg.png"
-import testimonial06Lg from "@/public/testimonial-06-lg.png"
-import testimonial07Lg from "@/public/testimonial-07-lg.png"
-import testimonial08Lg from "@/public/testimonial-08-lg.png"
+import testimonial01 from "@/public/testimonial/testimonial-01.png"
+import testimonial02 from "@/public/testimonial/testimonial-02.png"
+import testimonial03 from "@/public/testimonial/testimonial-03.png"
+import testimonial04 from "@/public/testimonial/testimonial-04.png"
+import testimonial05 from "@/public/testimonial/testimonial-05.png"
+import testimonial06 from "@/public/testimonial/testimonial-06.png"
+import testimonial07 from "@/public/testimonial/testimonial-07.png"
+import testimonial08 from "@/public/testimonial/testimonial-08.png"
+
 import { LandingHeader } from "@/components/landing-header"
 import { InitiateCheckoutTrigger } from "@/components/initiate-checkout-trigger"
 import { WistiaPlayer } from "@wistia/wistia-player-react"
@@ -2014,63 +2007,19 @@ export default function Home() {
 
         <div className="3xl:mt-[50px] 3xl:gap-x-8 mt-[30px] grid gap-3.5 md:grid-cols-2">
           <div>
-            <div className="3xl:block hidden space-y-8">
+            <div className="3xl:space-y-8 space-y-3.5">
               <Image className="w-full" src={testimonial01} alt="Testimonial" />
               <Image className="w-full" src={testimonial02} alt="Testimonial" />
               <Image className="w-full" src={testimonial03} alt="Testimonial" />
               <Image className="w-full" src={testimonial04} alt="Testimonial" />
             </div>
-            <div className="3xl:hidden space-y-3.5">
-              <Image
-                className="w-full"
-                src={testimonial01Lg}
-                alt="Testimonial"
-              />
-              <Image
-                className="w-full"
-                src={testimonial02Lg}
-                alt="Testimonial"
-              />
-              <Image
-                className="w-full"
-                src={testimonial03Lg}
-                alt="Testimonial"
-              />
-              <Image
-                className="w-full"
-                src={testimonial04Lg}
-                alt="Testimonial"
-              />
-            </div>
           </div>
           <div>
-            <div className="3xl:block hidden space-y-8">
+            <div className="3xl:space-y-8 space-y-3.5">
               <Image className="w-full" src={testimonial05} alt="Testimonial" />
               <Image className="w-full" src={testimonial06} alt="Testimonial" />
               <Image className="w-full" src={testimonial07} alt="Testimonial" />
               <Image className="w-full" src={testimonial08} alt="Testimonial" />
-            </div>
-            <div className="3xl:hidden space-y-3.5">
-              <Image
-                className="w-full"
-                src={testimonial05Lg}
-                alt="Testimonial"
-              />
-              <Image
-                className="w-full"
-                src={testimonial06Lg}
-                alt="Testimonial"
-              />
-              <Image
-                className="w-full"
-                src={testimonial07Lg}
-                alt="Testimonial"
-              />
-              <Image
-                className="w-full"
-                src={testimonial08Lg}
-                alt="Testimonial"
-              />
             </div>
           </div>
         </div>
