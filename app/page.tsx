@@ -847,7 +847,7 @@ export default function Home() {
 
             <div className="3xl:mt-[50px] mt-[30px]">
               <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
-                Faster paths to “Aha!” moments
+                Faster paths to success
               </h3>
               <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                 We reduce friction so users reach success faster, turning first
@@ -862,7 +862,7 @@ export default function Home() {
 
             <div className="3xl:mt-[50px] mt-[30px]">
               <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
-                Clearer flows = fewer support tickets
+                Fewer support tickets
               </h3>
               <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                 Simplified interfaces help users navigate solutions quickly,
@@ -878,7 +878,7 @@ export default function Home() {
 
             <div className="3xl:mt-[50px] mt-[30px]">
               <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
-                Consistent, dev-ready design system
+                Dev-ready design system
               </h3>
               <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                 Reusable components and clean documentation ensure seamless
@@ -893,7 +893,7 @@ export default function Home() {
 
             <div className="3xl:mt-[50px] mt-[30px]">
               <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
-                Insight from user testing (not guesswork)
+                Insight from user testing
               </h3>
               <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                 Real feedback guides every iteration, our designs evolve through
@@ -908,7 +908,7 @@ export default function Home() {
 
             <div className="3xl:mt-[50px] mt-[30px]">
               <h3 className="text-dark-blue-400 3xl:text-[22px] text-lg leading-none font-bold group-hover/article:text-white">
-                Designed with awareness of your market
+                Designed for market growth
               </h3>
               <p className="3xl:text-base mt-2.5 text-sm leading-[1.6] text-gray-500 group-hover/article:text-white">
                 We heavily analyze your competitors to create experiences that
