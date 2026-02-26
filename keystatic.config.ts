@@ -23,7 +23,8 @@ export default config({
       schema: {
         actionable: fields.text({ label: "Actionable" }),
         highlight: fields.text({ label: "Highlight" }),
-        title: fields.slug({ name: { label: "Title" } }),
+        title: fields.text({ label: "Title" }),
+        headline: fields.slug({ name: { label: "Headline" } }),
         helptextPrefix: fields.text({ label: "Hep text prefix" }),
         helptext: fields.text({ label: "Helptext" }),
         videoId: fields.text({
