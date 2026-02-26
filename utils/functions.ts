@@ -3,3 +3,7 @@ export function fromLength(len: number) {
 }
 
 export function noop() {}
+
+export function first<T>(value: T[]) {
+  return value[0]
+}

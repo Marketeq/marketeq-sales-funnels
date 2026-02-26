@@ -5,24 +5,23 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import {
-  Check,
-  Clock,
-  Download,
-  Lightning01,
-  Target03,
-} from "@blend-metrics/icons"
-import { GoogleMeet2Brand } from "@blend-metrics/icons/brands"
+import { Check, Lightning01 } from "@blend-metrics/icons"
 import { WistiaPlayer } from "@wistia/wistia-player-react"
 import Image from "next/image"
-import Link from "next/link"
-import { formatInTimeZone } from "date-fns-tz"
-import { parseISO } from "date-fns"
 import { reader } from "@/utils/reader"
-import { notFound } from "next/navigation"
 import { DocumentRenderer } from "@/components/document-renderer"
 import { Entry } from "@keystatic/core/reader"
 import keystaticConfig from "@/keystatic.config"
+import { BookingConfirmation } from "@/components/booking-confirmation"
+import { Suspense } from "react"
+
+export async function generateStaticParams() {
+  const slugs = await reader.collections.landings.list()
+
+  return slugs.map((slug) => ({
+    slug,
+  }))
+}
 
 async function ExplorableCard(
   props: Entry<
@@ -47,16 +46,13 @@ async function ExplorableCard(
   )
 }
 
-async function ThankYou({
-  bookingConfirmation,
-  slug,
+export default async function ThankYou({
+  params,
 }: {
-  bookingConfirmation: React.ReactNode
-  slug: string
+  params: Promise<{ slug: string }>
 }) {
-  const landing = await reader.collections.landings.read(slug)
-
-  if (!landing) notFound()
+  const { slug } = await params
+  const landing = await reader.collections.landings.readOrThrow(slug)
 
   const confirmation = await reader.collections.confirmations.readOrThrow(
     landing.confirmation,
@@ -84,7 +80,11 @@ async function ThankYou({
               </div>
             </div>
 
-            <div className="3xl:mt-[50px] mt-6">{bookingConfirmation}</div>
+            <div className="3xl:mt-[50px] mt-6">
+              <Suspense fallback={null}>
+                <BookingConfirmation />
+              </Suspense>
+            </div>
 
             <h1 className="prose-base prose-h1:3xl:text-[54px] prose-h1:mb-0 3xl:mt-6 prose-h1:text-center prose-h1:text-[21px] prose-h1:leading-tight prose-h1:font-extrabold prose-h1:text-white mt-[30px] md:mt-10 lg:mt-[50px] lg:text-[42px]">
               <DocumentRenderer document={await confirmation.title()} />
@@ -133,6 +133,7 @@ async function ThankYou({
             </h1>
 
             <div className="mt-[30px] grid gap-5 md:grid-cols-3 lg:mt-[50px]">
+              {/* FIXME: do transformation at the start */}
               {await Promise.all(
                 confirmation.calDetails.explorables.map(
                   async (explorable, index) => {
@@ -218,6 +219,7 @@ async function ThankYou({
               defaultValue="item-0"
               className="mt-10 lg:mt-[50px]"
             >
+              {/* FIXME: do transformation at the start */}
               {await Promise.all(
                 confirmation.faqs.items.map(async (item, index) => (
                   <AccordionItem value={`item-${index}`} key={index}>
@@ -263,258 +265,6 @@ async function ThankYou({
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-interface Booking {
-  status: string
-  data: {
-    id: number
-    uid: string
-    title: string
-    description: string
-    hosts: Array<{
-      id: number
-      name: string
-      email: string
-      displayEmail: string
-      username: string
-      timeZone: string
-    }>
-    status: string
-    start: string
-    end: string
-    duration: number
-    eventTypeId: number
-    eventType: {
-      id: number
-      slug: string
-    }
-    location: string
-    absentHost: boolean
-    createdAt: string
-    updatedAt: string
-    attendees: Array<{
-      name: string
-      email: string
-      displayEmail: string
-      timeZone: string
-      absent: boolean
-      language: string
-      phoneNumber: string
-    }>
-    bookingFieldsResponses: Record<string, string>
-    cancellationReason: string
-    cancelledByEmail: string
-    reschedulingReason: string
-    rescheduledByEmail: string
-    rescheduledFromUid: string
-    rescheduledToUid: string
-    meetingUrl: string
-    metadata: Record<string, string>
-    rating: number
-    icsUid: string
-    guests: string[]
-  }
-  error: Record<string, unknown>
-}
-
-const fetchBooking = async (
-  uid: string | string[] | undefined,
-): Promise<Booking> => {
-  const options = {
-    method: "GET",
-    headers: {
-      "cal-api-version": "2024-08-13",
-      Authorization: `Bearer ${process.env.CAL_API_KEY}`,
-    },
-  }
-
-  const response = await fetch(
-    `https://api.cal.com/v2/bookings/${uid}`,
-    options,
-  )
-  const booking = response.json()
-  return booking
-}
-
-interface CalendarLinks {
-  status: string
-  data: Array<{
-    label: string
-    link: string
-    id: string
-  }>
-}
-
-const fetchCalendarLinks = async (
-  uid: string | string[] | undefined,
-): Promise<CalendarLinks> => {
-  const options = {
-    method: "GET",
-    headers: {
-      "cal-api-version": "2024-08-13",
-      Authorization: `Bearer ${process.env.CAL_API_KEY}`,
-    },
-  }
-
-  const response = await fetch(
-    `https://api.cal.com/v2/bookings/${uid}/calendar-links`,
-    options,
-  )
-  const links = response.json()
-  return links
-}
-
-function first<T>(value: T[]) {
-  return value[0]
-}
-
-export default async function ThankYouRoot({
-  searchParams,
-  params,
-}: {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
-  params: Promise<{ slug: string }>
-}) {
-  const { uid } = await searchParams
-  const { slug } = await params
-  const booking = await fetchBooking(uid)
-  const calendarLinks = await fetchCalendarLinks(uid)
-
-  return (
-    <ThankYou
-      slug={slug}
-      bookingConfirmation={
-        booking.status === "success" ? (
-          <BookingConfirmation
-            hostName={first(booking.data.hosts).name}
-            start={booking.data.start}
-            end={booking.data.end}
-            links={calendarLinks.data}
-            timeZone={first(booking.data.attendees).timeZone}
-          />
-        ) : null
-      }
-    />
-  )
-}
-
-const CalendarTrigger = ({ id, link }: { id: string; link: string }) => {
-  switch (id) {
-    case "ics":
-      return (
-        <Link
-          href={link}
-          download="event.ics"
-          className="text-dark-blue-400 inline-flex h-[35px] shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-[5px] border border-gray-300 bg-white px-2.5 text-sm leading-none font-medium shadow-[0px_0.67px_2.69px_0px_rgba(0,0,0,.03)] hover:bg-gray-100"
-        >
-          <Download className="size-[15px] text-gray-500" /> Download Event
-        </Link>
-      )
-
-    default:
-      return null
-  }
-}
-
-const BookingConfirmation = ({
-  links,
-  end,
-  start,
-  hostName,
-  timeZone,
-}: {
-  hostName: string
-  start: string
-  end: string
-  links: CalendarLinks["data"]
-  timeZone: string
-}) => {
-  return (
-    <div className="mx-auto max-w-[560px] rounded-[10px] border border-gray-200 bg-white p-[30px] shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
-      <div className="border-success-300 bg-success-25 rounded-[5px] border px-4 py-2.5">
-        <span className="text-success-600 text-base leading-5">
-          <span className="font-bold">Email Sent.</span> Check your inbox for an
-          email with all the details.
-        </span>
-      </div>
-
-      <div className="mt-[24.5px] flex items-center justify-between">
-        <div className="space-y-1">
-          <h3 className="text-dark-blue-400 text-base leading-none font-medium">
-            Your meeting is scheduled with:
-          </h3>
-          <h1 className="text-dark-blue-400 text-xl leading-none font-semibold">
-            {hostName}
-          </h1>
-        </div>
-
-        <div className="relative size-12 overflow-hidden rounded-full border border-gray-300 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]">
-          <Image
-            className="object-cover"
-            src="/marketeq.png"
-            height={48}
-            width={48}
-            alt="Marketeq"
-          />
-        </div>
-      </div>
-
-      <div className="mt-6 border-t border-gray-200 pt-6">
-        <div className="space-y-3">
-          <div className="flex items-center justify-between">
-            <div className="inline-flex items-center gap-x-3">
-              <Clock className="text-dark-blue-400 size-[22px]" />
-              <span className="text-dark-blue-400 text-base leading-none font-semibold">
-                Time
-              </span>
-            </div>
-
-            <div className="space-y-1">
-              <h3 className="text-dark-blue-400 text-right text-base leading-none font-semibold">
-                {formatInTimeZone(
-                  parseISO(start),
-                  timeZone,
-                  "EEEE, MMM d, yyyy",
-                )}
-              </h3>
-              <h3 className="text-dark-blue-400 text-right text-base leading-none font-semibold">
-                {formatInTimeZone(parseISO(start), timeZone, "hh:mm a")} -{" "}
-                {formatInTimeZone(parseISO(end), timeZone, "hh:mm a")} (
-                {timeZone})
-              </h3>
-            </div>
-          </div>
-          <div className="flex items-center justify-between">
-            <div className="inline-flex items-center gap-x-3">
-              <Target03 className="text-dark-blue-400 size-[22px]" />
-              <span className="text-dark-blue-400 text-base leading-none font-semibold">
-                Location
-              </span>
-            </div>
-
-            <div className="inline-flex items-center gap-x-1.5">
-              <GoogleMeet2Brand className="size-8" />
-              <h3 className="text-dark-blue-400 text-base leading-none font-semibold">
-                Google Meet
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-6 flex items-center justify-center gap-x-3 border-t border-gray-200 pt-6">
-        <span className="text-dark-blue-400 text-sm leading-none font-medium">
-          Please confirm this event on your calendar
-        </span>
-        <div className="inline-flex items-center gap-x-3">
-          {links.map(({ id, link }) => (
-            <CalendarTrigger key={id} id={id} link={link} />
-          ))}
         </div>
       </div>
     </div>
