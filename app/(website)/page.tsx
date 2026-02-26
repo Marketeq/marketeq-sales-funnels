@@ -65,9 +65,9 @@ export default async function Landing({
               </div>
             </div>
 
-            <h1 className="3xl:text-[57px] mt-6 text-center text-lg leading-none text-white md:text-[36px] lg:text-[40px]">
-              {landing.title}
-            </h1>
+            <div className="prose-h1:3xl:text-[57px] prose-base prose-h1:text-lg prose-h1:leading-none prose-h1:md:text-[36px] prose-h1:lg:text-[40px] mt-6 text-center text-white">
+              <DocumentRenderer document={await landing.headline()} />
+            </div>
 
             <div className="mt-[60px] lg:mt-[75px]">
               <div className="3xl:gap-x-6 flex flex-col items-center gap-3 md:flex-row md:justify-center">

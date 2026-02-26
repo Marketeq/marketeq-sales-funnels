@@ -23,9 +23,11 @@ export default config({
       schema: {
         actionable: fields.text({ label: "Actionable" }),
         highlight: fields.text({ label: "Highlight" }),
-        title: fields.text({ label: "Title" }),
-        headline: fields.slug({ name: { label: "Headline" } }),
-        helptextPrefix: fields.text({ label: "Hep text prefix" }),
+        title: fields.slug({ name: { label: "Title" } }),
+        headline: fields.markdoc({
+          label: "Headline",
+        }),
+        helptextPrefix: fields.text({ label: "Help text prefix" }),
         helptext: fields.text({ label: "Helptext" }),
         videoId: fields.text({
           label: "Wistia video ID",
