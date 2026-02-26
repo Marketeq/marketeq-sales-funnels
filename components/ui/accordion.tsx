@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import * as AccordionPrimitive from "@radix-ui/react-accordion"
+import { Accordion as AccordionPrimitive } from "radix-ui"
 
 import { cn } from "@/lib/utils"
 import { Minus, Plus } from "@blend-metrics/icons"
@@ -27,7 +27,7 @@ function AccordionItem({
     <AccordionPrimitive.Item
       data-slot="accordion-item"
       className={cn(
-        "group/item data-[state=open]:bg-primary-50 data-[state=open]:border-primary-100 3xl:rounded-[14px] rounded-[10px] border border-gray-200 bg-white shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)]",
+        "border-dark-blue-400 bg-dark-blue-500 data-[state=open]:bg-dark-blue-400 data-[state=open]:border-primary-500 data-[state=open]:ring-primary-500 rounded-[14px] border p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] data-[state=open]:ring-1 lg:p-7",
         className,
       )}
       {...props}
@@ -45,14 +45,14 @@ function AccordionTrigger({
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
-          "text-dark-blue-400 3xl:px-7 3xl:py-5 3xl:text-xl flex flex-1 cursor-pointer items-center justify-between p-5 text-left text-base font-bold focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50",
+          "group flex flex-1 cursor-pointer items-center justify-between text-base leading-none font-bold text-white transition-all focus:outline-none disabled:pointer-events-none lg:text-xl",
           className,
         )}
         {...props}
       >
         {children}
-        <Plus className="size-5 shrink-0 stroke-3 text-gray-500 group-data-[state=open]/item:hidden" />
-        <Minus className="size-5 shrink-0 stroke-3 text-gray-500 group-data-[state=closed]/item:hidden" />
+        <Plus className="size-5 shrink-0 stroke-3 text-white group-data-[state=open]:hidden" />
+        <Minus className="size-5 shrink-0 stroke-3 text-white group-data-[state=closed]:hidden" />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   )
@@ -66,17 +66,10 @@ function AccordionContent({
   return (
     <AccordionPrimitive.Content
       data-slot="accordion-content"
-      className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden"
+      className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm leading-[1.6] text-white lg:text-lg"
       {...props}
     >
-      <div
-        className={cn(
-          "3xl:px-7 3xl:pb-7 3xl:text-lg px-5 pb-5 text-sm leading-[1.6] text-gray-500",
-          className,
-        )}
-      >
-        {children}
-      </div>
+      <div className={cn("pt-2 pb-0 lg:pt-5", className)}>{children}</div>
     </AccordionPrimitive.Content>
   )
 }

@@ -1,0 +1,43 @@
+actionable: Book a Call
+highlight: Founders & Ceo’s
+title: >-
+  Discover how SMB’s Increase Daily Booked calls on their calendar Without
+  Posting Content, hiring more marketers, or chasing dead leads
+helptextPrefix: Step 1
+helptext: Watch the video below and see exactly how this offer works.
+videoId: 7654igdhr1
+confirmation: something-is-the-title
+booking:
+  helptextPrefix: Step 2
+  helptext: >-
+    Book a strategy call with us so that we can go through the current state of
+    your digital product and put together a plan to fix it.
+  caption: >-
+    For Fintech, eCommerce, Health-tech, Manufacturing, Retail, SAAS, EDU, GOV,
+    Cloud Apps, Mobile Apps, Websites, Marketplaces, ect...
+faqs:
+  tagline: Not convinced yet?
+  title: Answers to your questions...
+  description: >-
+    Here’s a list of questions people usually ask us, so you can get informed
+    before you show up on the call.
+  items:
+    - question: >-
+        Why is your engagement fee higher than hiring a freelancer or a small
+        ads agency?
+    - question: How fast will we start seeing measurable improvements?
+    - question: What kind of long-term results do clients typically experience?
+reviews:
+  title: See for yourself, our clients love us!
+  pictures:
+    - first-testimonial
+    - second-testimonial
+    - third-testimonial
+    - fourth-testimonial
+    - fifth-testimonial
+    - sixth-testmonial
+    - seventh-testimonial
+    - eighth-testimonial
+  actionableTitle: Book a UX Strategy Call
+  actionableSubtitle: Yes, I want my FREE Strategy Session
+  actionableHelptext: Skip the sales team and talk directly with an expert ux/ui designer
