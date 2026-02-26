@@ -26,6 +26,18 @@ export default config({
         title: fields.slug({ name: { label: "Title" } }),
         headline: fields.markdoc({
           label: "Headline",
+          options: {
+            heading: [1],
+            orderedList: false,
+            unorderedList: false,
+            blockquote: false,
+            code: false,
+            codeBlock: false,
+            divider: false,
+            image: false,
+            link: false,
+            table: false,
+          },
         }),
         helptextPrefix: fields.text({ label: "Help text prefix" }),
         helptext: fields.text({ label: "Helptext" }),
@@ -63,6 +75,7 @@ export default config({
                     options: {
                       heading: false,
                       orderedList: false,
+                      unorderedList: false,
                       blockquote: false,
                       code: false,
                       codeBlock: false,
@@ -319,6 +332,7 @@ export default config({
                     options: {
                       heading: false,
                       orderedList: false,
+                      unorderedList: false,
                       blockquote: false,
                       code: false,
                       codeBlock: false,
