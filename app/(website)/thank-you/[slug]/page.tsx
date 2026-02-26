@@ -375,16 +375,19 @@ function first<T>(value: T[]) {
 
 export default async function ThankYouRoot({
   searchParams,
+  params,
 }: {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+  params: Promise<{ slug: string }>
 }) {
-  const { uid, slug } = await searchParams
+  const { uid } = await searchParams
+  const { slug } = await params
   const booking = await fetchBooking(uid)
   const calendarLinks = await fetchCalendarLinks(uid)
 
   return (
     <ThankYou
-      slug={`${slug}`}
+      slug={slug}
       bookingConfirmation={
         booking.status === "success" ? (
           <BookingConfirmation

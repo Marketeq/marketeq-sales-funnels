@@ -19,7 +19,7 @@ export default config({
       label: "Landing pages",
       path: "content/landings/*",
       slugField: "title",
-      previewUrl: "/?slug={slug}",
+      previewUrl: "/{slug}",
       schema: {
         actionable: fields.text({ label: "Actionable" }),
         highlight: fields.text({ label: "Highlight" }),

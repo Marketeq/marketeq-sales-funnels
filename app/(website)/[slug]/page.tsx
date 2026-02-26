@@ -11,19 +11,24 @@ import Image from "next/image"
 import { WistiaPlayer } from "@wistia/wistia-player-react"
 import Link from "next/link"
 import { reader } from "@/utils/reader"
-import { notFound } from "next/navigation"
 import { DocumentRenderer } from "@/components/document-renderer"
 import { CalCalendar } from "@/components/cal-calendar"
 
-export default async function Landing({
-  searchParams,
-}: {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
-}) {
-  const slug = (await searchParams).slug
-  const landing = await reader.collections.landings.read(`${slug}`)
+export async function generateStaticParams() {
+  const slugs = await reader.collections.landings.list()
 
-  if (!landing) notFound()
+  return slugs.map((slug) => ({
+    slug,
+  }))
+}
+
+export default async function Landing({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params
+  const landing = await reader.collections.landings.readOrThrow(slug)
 
   const faqs = await Promise.all(
     landing.faqs.items.map(async (item) => ({
