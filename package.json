@@ -10,7 +10,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --list-different .",
     "prepare": "husky",
-    "type-check": "tsc"
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@blend-metrics/icons": "^0.8.0",

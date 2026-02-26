@@ -44,13 +44,8 @@ import Link from "next/link"
 import { SalesConversion } from "@/components/sales-conversion"
 import { TriggerLead } from "@/components/trigger-lead"
 
-import {
-  GoogleBrand,
-  GoogleMeet2Brand,
-  MsOutlookBrand,
-} from "@blend-metrics/icons/brands"
-import { Apple } from "@/components/icons/apple"
-import { format, parseISO } from "date-fns"
+import { GoogleMeet2Brand } from "@blend-metrics/icons/brands"
+import { parseISO } from "date-fns"
 import { formatInTimeZone } from "date-fns-tz"
 import { Ellipse } from "@/components/ellipse"
 
