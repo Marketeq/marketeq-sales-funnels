@@ -1,0 +1,989 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "id": 4364938,
+      "ownerId": 2048417,
+      "lengthInMinutes": 30,
+      "title": "Discovery Call",
+      "slug": "discovery-call",
+      "description": "",
+      "locations": [
+        {
+          "type": "integration",
+          "integration": "google-meet",
+          "credentialId": 1672848
+        }
+      ],
+      "bookingFields": [],
+      "recurrence": null,
+      "disableGuests": false,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {
+        "apps": {
+          "hubspot": {
+            "enabled": true,
+            "credentialId": 1672847,
+            "appCategories": ["crm"]
+          }
+        }
+      },
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 2048417,
+          "name": "Marketeq Digital Inc.",
+          "username": "marketeq",
+          "avatarUrl": "/api/avatar/2fa5949d-7f50-43a5-8e7f-a201db3255ac.png",
+          "brandColor": "#306CFE",
+          "darkBrandColor": "#fafafa",
+          "weekStart": "Sunday",
+          "metadata": {
+            "stripeCustomerId": "cus_TlPItoxn8AYHP6",
+            "defaultConferencingApp": {
+              "appSlug": "google-meet"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "requiresBookerEmailVerification": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/marketeq/discovery-call",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false
+    },
+    {
+      "id": 4364931,
+      "ownerId": 2048417,
+      "lengthInMinutes": 30,
+      "title": "30 Min Meeting",
+      "slug": "30min",
+      "description": "",
+      "locations": [
+        {
+          "type": "integration",
+          "integration": "google-meet",
+          "credentialId": 1672848
+        }
+      ],
+      "bookingFields": [],
+      "recurrence": null,
+      "disableGuests": false,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 2048417,
+          "name": "Marketeq Digital Inc.",
+          "username": "marketeq",
+          "avatarUrl": "/api/avatar/2fa5949d-7f50-43a5-8e7f-a201db3255ac.png",
+          "brandColor": "#306CFE",
+          "darkBrandColor": "#fafafa",
+          "weekStart": "Sunday",
+          "metadata": {
+            "stripeCustomerId": "cus_TlPItoxn8AYHP6",
+            "defaultConferencingApp": {
+              "appSlug": "google-meet"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "requiresBookerEmailVerification": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/marketeq/30min",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false
+    },
+    {
+      "id": 4364929,
+      "ownerId": 2048417,
+      "lengthInMinutes": 15,
+      "title": "15 Min Meeting",
+      "slug": "15min",
+      "description": "",
+      "locations": [
+        {
+          "type": "integration",
+          "integration": "google-meet",
+          "credentialId": 1672848
+        }
+      ],
+      "bookingFields": [],
+      "recurrence": null,
+      "disableGuests": false,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 2048417,
+          "name": "Marketeq Digital Inc.",
+          "username": "marketeq",
+          "avatarUrl": "/api/avatar/2fa5949d-7f50-43a5-8e7f-a201db3255ac.png",
+          "brandColor": "#306CFE",
+          "darkBrandColor": "#fafafa",
+          "weekStart": "Sunday",
+          "metadata": {
+            "stripeCustomerId": "cus_TlPItoxn8AYHP6",
+            "defaultConferencingApp": {
+              "appSlug": "google-meet"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "requiresBookerEmailVerification": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/marketeq/15min",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false
+    },
+    {
+      "id": 4372777,
+      "ownerId": 2048417,
+      "lengthInMinutes": 30,
+      "title": "UX Strategy Call",
+      "slug": "ux-strategy-call",
+      "description": "Quick call to discuss your current UX strategy.",
+      "locations": [
+        {
+          "type": "integration",
+          "integration": "google-meet",
+          "credentialId": 1672848
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "textarea",
+          "slug": "rescheduleReason",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        },
+        {
+          "isDefault": false,
+          "type": "select",
+          "slug": "need",
+          "label": "Do you have a digital product, cloud application, mobile app, online service, or marketplace that requires a new or improved user experience?",
+          "required": true,
+          "placeholder": "Select one",
+          "disableOnPrefill": false,
+          "options": ["Yes", "No"],
+          "hidden": false
+        },
+        {
+          "isDefault": false,
+          "type": "select",
+          "slug": "revenue",
+          "label": "What is your current monthly revenue in your business?",
+          "required": true,
+          "placeholder": "Select one",
+          "disableOnPrefill": false,
+          "options": [
+            "Below $50k/month",
+            "$50 - $100k/month",
+            "$100k - $250k/month",
+            "$250k - $500k/month",
+            "$500k - $1M/month",
+            "Over $1M/month"
+          ],
+          "hidden": false
+        },
+        {
+          "isDefault": false,
+          "type": "textarea",
+          "slug": "value-prop",
+          "label": "What does your company offer?",
+          "required": true,
+          "placeholder": "Describe how your digital product or service helps your customers...",
+          "disableOnPrefill": false,
+          "hidden": false
+        },
+        {
+          "isDefault": false,
+          "type": "select",
+          "slug": "investment-amount",
+          "label": "How much are you able to invest into professional UX/UI design services?",
+          "required": true,
+          "placeholder": "Select one",
+          "disableOnPrefill": false,
+          "options": [
+            "Below $5k/month",
+            "$5 - $10k/month",
+            "$10k - $25k/month",
+            "$25k - $50k/month",
+            "$50k - $100k/month",
+            "Over $100k/month"
+          ],
+          "hidden": false
+        },
+        {
+          "isDefault": false,
+          "type": "select",
+          "slug": "decision-makers",
+          "label": "Will all the decision-makers be on the call?",
+          "required": true,
+          "placeholder": "Select one",
+          "disableOnPrefill": false,
+          "options": [
+            "I am the only decision maker",
+            "Yes, all my stakeholders will be on the call",
+            "No, there are some decision makers that will not be available for the call (Do NOT book the call)"
+          ],
+          "hidden": false
+        },
+        {
+          "isDefault": false,
+          "type": "select",
+          "slug": "desktop-computer",
+          "label": "This is a discovery call in order to determine whether our services are a good fit for your business, which means you’ll need to join from a desktop computer (not mobile).   Do you understand?",
+          "required": true,
+          "placeholder": "Select one",
+          "disableOnPrefill": false,
+          "options": [
+            "Yes, I understand I need to join the call from my desktop computer or laptop",
+            "No, I don’t have a desktop computer, or I will only be able to join from my mobile phone (do NOT book the call)"
+          ],
+          "hidden": false
+        },
+        {
+          "isDefault": false,
+          "type": "select",
+          "slug": "urgecy",
+          "label": "Due to high demand, we need to prioritize established businesses looking for UX/UI design services right now. Where are you in the decision making process?",
+          "required": true,
+          "placeholder": "Select one",
+          "disableOnPrefill": false,
+          "options": [
+            "I need UX/UI help immediately and I can take action TODAY",
+            "I need UX/UI services within the next 30 days  (please rebook when you’re ready)",
+            "This is not urgent, I was just looking for more info  (do NOT proceed)"
+          ],
+          "hidden": false
+        },
+        {
+          "isDefault": false,
+          "type": "url",
+          "slug": "Website",
+          "label": "What is your website URL?",
+          "required": true,
+          "placeholder": "https://yourwebsite.com",
+          "disableOnPrefill": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "splitName",
+          "slug": "splitName",
+          "firstNameLabel": "Your First Name",
+          "firstNamePlaceholder": "John",
+          "lastNameLabel": "Your Last Name",
+          "lastNamePlaceholder": "Doe",
+          "lastNameRequired": false,
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "email",
+          "slug": "email",
+          "required": true,
+          "label": "Your Primary Email",
+          "placeholder": "you@email.com",
+          "disableOnPrefill": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "What's the best phone number to reach you?",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "textarea",
+          "slug": "notes",
+          "required": false,
+          "label": "Anything you want us to know before the call?",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "multiemail",
+          "slug": "guests",
+          "required": false,
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": false,
+      "slotInterval": 30,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 30,
+      "metadata": {
+        "apps": {
+          "giphy": {
+            "enabled": false,
+            "thankYouPage": ""
+          },
+          "hubspot": {
+            "enabled": true,
+            "credentialId": 1672847,
+            "appCategories": ["crm"]
+          },
+          "metapixel": {
+            "enabled": true,
+            "trackingId": "210420632832791",
+            "credentialId": 1672843,
+            "appCategories": ["analytics"]
+          }
+        }
+      },
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": "https://marketequxpros.com/thank-you",
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 2048417,
+          "name": "Marketeq Digital Inc.",
+          "username": "marketeq",
+          "avatarUrl": "/api/avatar/2fa5949d-7f50-43a5-8e7f-a201db3255ac.png",
+          "brandColor": "#306CFE",
+          "darkBrandColor": "#fafafa",
+          "weekStart": "Sunday",
+          "metadata": {
+            "stripeCustomerId": "cus_TlPItoxn8AYHP6",
+            "defaultConferencingApp": {
+              "appSlug": "google-meet"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "bookingLimitsDuration": {},
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "type": "businessDays",
+        "value": 10,
+        "rolling": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "requiresBookerEmailVerification": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "customName": "UX Strategy Call between Marketeq and {Scheduler}",
+      "useDestinationCalendarEmail": true,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/marketeq/ux-strategy-call",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "allowReschedulingPastBookings": true,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false
+    },
+    {
+      "id": 4364930,
+      "ownerId": 2048417,
+      "lengthInMinutes": 15,
+      "title": "Secret Meeting",
+      "slug": "secret",
+      "description": "",
+      "locations": [
+        {
+          "type": "integration",
+          "integration": "google-meet",
+          "credentialId": 1672848
+        }
+      ],
+      "bookingFields": [],
+      "recurrence": null,
+      "disableGuests": false,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 2048417,
+          "name": "Marketeq Digital Inc.",
+          "username": "marketeq",
+          "avatarUrl": "/api/avatar/2fa5949d-7f50-43a5-8e7f-a201db3255ac.png",
+          "brandColor": "#306CFE",
+          "darkBrandColor": "#fafafa",
+          "weekStart": "Sunday",
+          "metadata": {
+            "stripeCustomerId": "cus_TlPItoxn8AYHP6",
+            "defaultConferencingApp": {
+              "appSlug": "google-meet"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "requiresBookerEmailVerification": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": true,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/marketeq/secret",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false
+    },
+    {
+      "id": 4408759,
+      "ownerId": 2048417,
+      "lengthInMinutes": 30,
+      "title": "Sales Offer Engine Call",
+      "slug": "sales-offer-engine-call",
+      "description": "Quick call to discuss the Sales Offer Engine strategy.",
+      "locations": [
+        {
+          "type": "integration",
+          "integration": "google-meet",
+          "credentialId": 1672848
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "textarea",
+          "slug": "rescheduleReason",
+          "required": false,
+          "disableOnPrefill": false,
+          "hidden": false
+        },
+        {
+          "isDefault": false,
+          "type": "select",
+          "slug": "need",
+          "label": "Do you have a digital product, cloud application, mobile app, online service, or marketplace that requires a new or improved user experience?",
+          "required": true,
+          "placeholder": "Select one",
+          "disableOnPrefill": false,
+          "options": ["Yes", "No"],
+          "hidden": false
+        },
+        {
+          "isDefault": false,
+          "type": "select",
+          "slug": "revenue",
+          "label": "What is your current monthly revenue in your business?",
+          "required": true,
+          "placeholder": "Select one",
+          "disableOnPrefill": false,
+          "options": [
+            "Below $50k/month",
+            "$50 - $100k/month",
+            "$100k - $250k/month",
+            "$250k - $500k/month",
+            "$500k - $1M/month",
+            "Over $1M/month"
+          ],
+          "hidden": false
+        },
+        {
+          "isDefault": false,
+          "type": "textarea",
+          "slug": "value-prop",
+          "label": "What does your company offer?",
+          "required": true,
+          "placeholder": "Describe how your digital product or service helps your customers...",
+          "disableOnPrefill": false,
+          "hidden": false
+        },
+        {
+          "isDefault": false,
+          "type": "select",
+          "slug": "investment-amount",
+          "label": "How much are you able to invest into professional UX/UI design services?",
+          "required": true,
+          "placeholder": "Select one",
+          "disableOnPrefill": false,
+          "options": [
+            "Below $5k/month",
+            "$5 - $10k/month",
+            "$10k - $25k/month",
+            "$25k - $50k/month",
+            "$50k - $100k/month",
+            "Over $100k/month"
+          ],
+          "hidden": false
+        },
+        {
+          "isDefault": false,
+          "type": "select",
+          "slug": "decision-makers",
+          "label": "Will all the decision-makers be on the call?",
+          "required": true,
+          "placeholder": "Select one",
+          "disableOnPrefill": false,
+          "options": [
+            "I am the only decision maker",
+            "Yes, all my stakeholders will be on the call",
+            "No, there are some decision makers that will not be available for the call (Do NOT book the call)"
+          ],
+          "hidden": false
+        },
+        {
+          "isDefault": false,
+          "type": "select",
+          "slug": "desktop-computer",
+          "label": "This is a discovery call in order to determine whether our services are a good fit for your business, which means you’ll need to join from a desktop computer (not mobile).   Do you understand?",
+          "required": true,
+          "placeholder": "Select one",
+          "disableOnPrefill": false,
+          "options": [
+            "Yes, I understand I need to join the call from my desktop computer or laptop",
+            "No, I don’t have a desktop computer, or I will only be able to join from my mobile phone (do NOT book the call)"
+          ],
+          "hidden": false
+        },
+        {
+          "isDefault": false,
+          "type": "select",
+          "slug": "urgecy",
+          "label": "Due to high demand, we need to prioritize established businesses looking for UX/UI design services right now. Where are you in the decision making process?",
+          "required": true,
+          "placeholder": "Select one",
+          "disableOnPrefill": false,
+          "options": [
+            "I need UX/UI help immediately and I can take action TODAY",
+            "I need UX/UI services within the next 30 days  (please rebook when you’re ready)",
+            "This is not urgent, I was just looking for more info  (do NOT proceed)"
+          ],
+          "hidden": false
+        },
+        {
+          "isDefault": false,
+          "type": "url",
+          "slug": "Website",
+          "label": "What is your website URL?",
+          "required": true,
+          "placeholder": "https://yourwebsite.com",
+          "disableOnPrefill": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "splitName",
+          "slug": "splitName",
+          "firstNameLabel": "Your First Name",
+          "firstNamePlaceholder": "John",
+          "lastNameLabel": "Your Last Name",
+          "lastNamePlaceholder": "Doe",
+          "lastNameRequired": false,
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "email",
+          "slug": "email",
+          "required": true,
+          "label": "Your Primary Email",
+          "placeholder": "you@email.com",
+          "disableOnPrefill": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": false,
+          "label": "What's the best phone number to reach you?",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "textarea",
+          "slug": "notes",
+          "required": false,
+          "label": "Anything you want us to know before the call?",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "multiemail",
+          "slug": "guests",
+          "required": false,
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": false,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 30,
+      "metadata": {
+        "apps": {
+          "giphy": {
+            "enabled": false,
+            "thankYouPage": ""
+          },
+          "hubspot": {
+            "enabled": true,
+            "credentialId": 1672847,
+            "appCategories": ["crm"]
+          },
+          "metapixel": {
+            "enabled": true,
+            "trackingId": "210420632832791",
+            "credentialId": 1672843,
+            "appCategories": ["analytics"]
+          }
+        }
+      },
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": "https://marketequxpros.com/thank-you",
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 2048417,
+          "name": "Marketeq Digital Inc.",
+          "username": "marketeq",
+          "avatarUrl": "/api/avatar/2fa5949d-7f50-43a5-8e7f-a201db3255ac.png",
+          "brandColor": "#306CFE",
+          "darkBrandColor": "#fafafa",
+          "weekStart": "Sunday",
+          "metadata": {
+            "stripeCustomerId": "cus_TlPItoxn8AYHP6",
+            "defaultConferencingApp": {
+              "appSlug": "google-meet"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "requiresBookerEmailVerification": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/marketeq/sales-offer-engine-call",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "allowReschedulingPastBookings": true,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false
+    },
+    {
+      "id": 4716523,
+      "ownerId": 2048417,
+      "lengthInMinutes": 30,
+      "title": "Deep Dive Discovery Call",
+      "slug": "deep-dive-discovery-call",
+      "description": "",
+      "locations": [
+        {
+          "type": "integration",
+          "integration": "google-meet",
+          "credentialId": 1672848
+        }
+      ],
+      "bookingFields": [],
+      "recurrence": null,
+      "disableGuests": false,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {
+        "apps": {
+          "hubspot": {
+            "enabled": true,
+            "credentialId": 1672847,
+            "appCategories": ["crm"]
+          }
+        }
+      },
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 2048417,
+          "name": "Marketeq Digital Inc.",
+          "username": "marketeq",
+          "avatarUrl": "/api/avatar/2fa5949d-7f50-43a5-8e7f-a201db3255ac.png",
+          "brandColor": "#306CFE",
+          "darkBrandColor": "#fafafa",
+          "weekStart": "Sunday",
+          "metadata": {
+            "stripeCustomerId": "cus_TlPItoxn8AYHP6",
+            "defaultConferencingApp": {
+              "appSlug": "google-meet"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "requiresBookerEmailVerification": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/marketeq/deep-dive-discovery-call",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false
+    }
+  ]
+}

@@ -1,4 +1,7 @@
 import { config, fields, collection, singleton } from "@keystatic/core"
+import { mark } from "@keystatic/core/content-components"
+import { Highlighter } from "lucide-react"
+import eventTypes from "@/public/event-types.json"
 
 const isProd = process.env.NODE_ENV === "production"
 
@@ -8,6 +11,12 @@ const localMode = () =>
   }) as const
 
 const remoteMode = () => ({ kind: "cloud" }) as const
+
+const options = eventTypes.data.map((eventType) => ({
+  value: eventType.slug,
+  label: eventType.title,
+}))
+const defaultValue = options.at(0)?.value || ""
 
 export default config({
   storage: isProd ? remoteMode() : localMode(),
@@ -19,11 +28,11 @@ export default config({
       label: "Landing pages",
       path: "content/landings/*",
       slugField: "title",
-      previewUrl: "/{slug}",
+      previewUrl: "/preview/start?branch={branch}&to=/{slug}",
       schema: {
-        actionable: fields.text({ label: "Actionable" }),
-        highlight: fields.text({ label: "Highlight" }),
         title: fields.slug({ name: { label: "Title" } }),
+        actionable: fields.text({ label: "CTA" }),
+        highlight: fields.text({ label: "Highlight" }),
         headline: fields.markdoc({
           label: "Headline",
           options: {
@@ -38,6 +47,19 @@ export default config({
             link: false,
             table: false,
           },
+          components: {
+            Highlight: mark({
+              label: "Highlight",
+              schema: {
+                variant: fields.select({
+                  label: "Variant",
+                  options: [{ label: "Primary", value: "primary" }],
+                  defaultValue: "primary",
+                }),
+              },
+              icon: <Highlighter />,
+            }),
+          },
         }),
         helptextPrefix: fields.text({ label: "Help text prefix" }),
         helptext: fields.text({ label: "Helptext" }),
@@ -45,16 +67,23 @@ export default config({
           label: "Wistia video ID",
           validation: { isRequired: true },
         }),
-        confirmation: fields.relationship({
-          label: "'Thank You' page",
-          collection: "confirmations",
-          validation: { isRequired: true },
-        }),
+        metadata: fields.object(
+          {
+            title: fields.text({ label: "Title" }),
+            description: fields.text({ label: "Description" }),
+          },
+          { label: "Metadata", description: "Metadata for the landing page" },
+        ),
         booking: fields.object(
           {
             helptextPrefix: fields.text({ label: "Helptext prefix" }),
             helptext: fields.text({ label: "Helptext" }),
             caption: fields.text({ label: "Caption" }),
+            eventType: fields.select({
+              label: "Event type",
+              options,
+              defaultValue,
+            }),
           },
           {
             label: "Booking",
@@ -107,9 +136,9 @@ export default config({
               label: "Pictures as reviews",
               collection: "images",
             }),
-            actionableTitle: fields.text({ label: "Actionable title" }),
-            actionableSubtitle: fields.text({ label: "Actionable subtitle" }),
-            actionableHelptext: fields.text({ label: "Actionable help text" }),
+            actionableTitle: fields.text({ label: "CTA title" }),
+            actionableSubtitle: fields.text({ label: "CTA subtitle" }),
+            actionableHelptext: fields.text({ label: "CTA help text" }),
           },
           {
             label: "Reviews",
@@ -155,6 +184,7 @@ export default config({
       label: "'Thank You' pages",
       slugField: "highlight",
       path: "content/confirmations/*",
+      previewUrl: "/preview/start?branch={branch}&to=/thank-you/{slug}",
       schema: {
         highlight: fields.slug({ name: { label: "Highlight" } }),
         title: fields.markdoc({
@@ -203,6 +233,13 @@ export default config({
           label: "Wistia video ID",
           validation: { isRequired: true },
         }),
+        metadata: fields.object(
+          {
+            title: fields.text({ label: "Title" }),
+            description: fields.text({ label: "Description" }),
+          },
+          { label: "Metadata", description: "Metadata for the landing page" },
+        ),
         explorables: fields.array(
           fields.object(
             {
@@ -276,7 +313,10 @@ export default config({
                     },
                   }),
                   title: fields.text({ label: "Title" }),
-                  subtitle: fields.text({ label: "Subtitle", multiline: true }),
+                  subtitle: fields.text({
+                    label: "Subtitle",
+                    multiline: true,
+                  }),
                 },
                 { label: "Explorable" },
               ),
@@ -413,7 +453,7 @@ export default config({
       label: "'Additional' Navigation",
       path: "content/additional-navigation",
       schema: {
-        actionable: fields.text({ label: "Actionable" }),
+        actionable: fields.text({ label: "CTA" }),
       },
     }),
   },

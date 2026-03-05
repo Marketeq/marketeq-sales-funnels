@@ -1,10 +1,6 @@
 import "./globals.css"
 import type { Metadata } from "next"
-import { InitializeCal } from "@/components/initialize-cal"
-import Link from "next/link"
-import { MarketeqWhite } from "@/components/icons/marketeq-white"
-import { reader } from "@/utils/reader"
-import { notFound } from "next/navigation"
+import { DisableDraftModeTrigger } from "@/components/disable-draft-mode-trigger"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,62 +12,12 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const footer = await reader.singletons.footer.read()
-
-  if (!footer) notFound()
-
   return (
     <>
-      <div className="bg-dark-blue-600 flex min-h-screen flex-col overflow-x-hidden">
+      <div className="bg-dark-blue-600 isolate flex min-h-screen flex-col overflow-x-hidden">
         {children}
-        <footer className="5xl:px-[300px] bg-dark-blue-600 4xl:px-[250px] 3xl:px-[200px] self-end p-5 md:p-10 lg:px-[150px] lg:py-[50px]">
-          <div className="flex items-center justify-between">
-            <div className="3xl:flex-none 3xl:justify-start 3xl:gap-x-[50px] flex flex-auto flex-col items-center gap-y-5 md:flex-row md:justify-between">
-              <Link className="focus-visible:outline-none" href="/">
-                <MarketeqWhite className="xs:max-3xl:w-[129px] xs:max-3xl:h-[18.95px]" />
-              </Link>
-
-              <span className="3xl:text-sm text-xs leading-none text-white">
-                {footer.copyright}
-              </span>
-            </div>
-
-            <div className="3xl:flex hidden items-center gap-x-5">
-              {footer.links.map((link, index) => (
-                <Link
-                  href={link.to}
-                  key={index}
-                  className="cursor-pointer text-sm leading-5 font-semibold text-white transition duration-300 hover:underline focus-visible:outline-none"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          <div className="3xl:mt-[50px] mt-5">
-            <span className="3xl:text-sm block text-center text-xs leading-none text-white">
-              {footer.title}
-            </span>
-            <span className="3xl:text-sm mt-5 block text-center text-xs text-white">
-              {footer.description}
-            </span>
-          </div>
-
-          <div className="3xl:hidden mt-5 flex items-center justify-center gap-x-5">
-            {footer.links.map((link, index) => (
-              <Link
-                href={link.to}
-                key={index}
-                className="cursor-pointer text-[10px] leading-5 font-semibold text-white transition duration-300 hover:underline focus-visible:outline-none md:text-sm"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
-        </footer>
       </div>
-      <InitializeCal />
+      <DisableDraftModeTrigger />
     </>
   )
 }

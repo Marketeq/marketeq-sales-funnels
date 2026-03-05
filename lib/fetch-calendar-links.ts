@@ -10,7 +10,7 @@ interface CalendarLinks {
 export const fetchCalendarLinks = async (
   uid: string | string[] | undefined,
 ): Promise<CalendarLinks> => {
-  const options = {
+  const options: RequestInit = {
     method: "GET",
     headers: {
       "cal-api-version": "2024-08-13",

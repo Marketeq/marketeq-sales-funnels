@@ -13,6 +13,21 @@ import Link from "next/link"
 import { reader } from "@/utils/reader"
 import { DocumentRenderer } from "@/components/document-renderer"
 import { CalCalendar } from "@/components/cal-calendar"
+import { Footer } from "@/components/footer"
+import type { Metadata } from "next"
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}): Promise<Metadata> {
+  const { slug } = await params
+  const landing = await reader.collections.landings.readOrThrow(slug)
+  return {
+    title: landing.metadata.title,
+    description: landing.metadata.description,
+  }
+}
 
 export async function generateStaticParams() {
   const slugs = await reader.collections.landings.list()
@@ -42,18 +57,20 @@ export default async function Landing({
       async (picture) => await reader.collections.images.readOrThrow(picture),
     ),
   )
+  const { eventType } = landing.booking
+  const calLinkDataAttr = `${process.env.CAL_USERNAME}/${eventType}`
 
   return (
     <div className="relative">
       <Ellipse className="absolute top-0 left-1/2 -translate-x-1/2" />
       <div className="relative">
         <div className="3xl:px-[100px] 3xl:py-[50px] flex items-center justify-center px-5 py-5 md:justify-between md:px-10">
-          <Link className="focus-visible:outline-none" href="/">
+          <Link className="focus-visible:outline-none" href={`/${slug}`}>
             <MarketeqLogo className="xs:max-3xl:w-[46.98px] xs:max-3xl:h-[26.94px] shrink-0" />
           </Link>
 
           <button
-            data-cal-link="marketeq/sales-offer-engine-call"
+            data-cal-link={calLinkDataAttr}
             data-cal-config='{"layout":"month_view","theme":"light"}'
             className="bg-primary-500 3xl:h-10 3xl:px-5 3xl:text-sm hover:bg-primary-600 hidden h-9 shrink-0 cursor-pointer items-center justify-center rounded-lg px-3.5 text-xs leading-none font-semibold whitespace-nowrap text-white shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] hover:scale-[1.025] focus-visible:outline-none md:inline-flex"
           >
@@ -106,7 +123,7 @@ export default async function Landing({
             </div>
 
             <div className="mt-10 lg:mt-[50px]">
-              <CalCalendar />
+              <CalCalendar calLink={calLinkDataAttr} />
             </div>
 
             <div className="mt-5 lg:mt-6">
@@ -186,7 +203,7 @@ export default async function Landing({
             </div>
             <div className="3xl:mt-[75px] mt-10 flex flex-col items-center gap-y-11 lg:mt-[50px] lg:gap-y-14">
               <button
-                data-cal-link="marketeq/ux-strategy-call"
+                data-cal-link={calLinkDataAttr}
                 data-cal-config='{"layout":"month_view","theme":"light"}'
                 className="neon-pulse bg-primary-500 3xl:rounded-xl 3xl:px-12 3xl:py-[21px] hover:bg-primary-600 relative inline-flex cursor-pointer flex-col items-start gap-y-px rounded-[15px] px-[34px] py-[15.89px] shadow-[0px_1px_2px_0px_rgba(16,24,40,.05)] transition duration-300 hover:scale-[1.025] hover:drop-shadow-[0px_0px_9.9px_0px_rgba(48,108,254,1)] focus-visible:outline-none active:drop-shadow-[0px_0px_14.6px_2px_rgba(48,108,254,1)]"
               >
@@ -208,6 +225,7 @@ export default async function Landing({
           </div>
         </div>
       </div>
+      <Footer destination={`/${slug}`} />
     </div>
   )
 }

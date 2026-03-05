@@ -4,7 +4,6 @@ title: Sales Offer Engine V2
 helptextPrefix: Step 1
 helptext: Watch the video below and see exactly how this offer works.
 videoId: 7654igdhr1
-confirmation: something-is-the-title
 booking:
   helptextPrefix: Step 2
   helptext: >-
@@ -13,6 +12,7 @@ booking:
   caption: >-
     For Fintech, eCommerce, Health-tech, Manufacturing, Retail, SAAS, EDU, GOV,
     Cloud Apps, Mobile Apps, Websites, Marketplaces, ect...
+  eventType: secret
 faqs:
   tagline: Not convinced yet?
   title: Answers to your questions...

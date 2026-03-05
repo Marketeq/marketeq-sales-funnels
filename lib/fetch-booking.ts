@@ -54,7 +54,7 @@ interface Booking {
 export const fetchBooking = async (
   uid: string | string[] | undefined,
 ): Promise<Booking> => {
-  const options = {
+  const options: RequestInit = {
     method: "GET",
     headers: {
       "cal-api-version": "2024-08-13",
