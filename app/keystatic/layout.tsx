@@ -9,7 +9,7 @@ export default async function Layout() {
 
   const filename = fileURLToPath(import.meta.url)
 
-  const destinationDirname = path.join(path.dirname(filename), ".../../public")
+  const destinationDirname = path.join(path.dirname(filename), ".../../assets")
   const destinationPath = path.join(destinationDirname, "event-types.json")
 
   await fs.promises.mkdir(destinationDirname, { recursive: true })

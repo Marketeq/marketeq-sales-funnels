@@ -1,7 +1,7 @@
 import { config, fields, collection, singleton } from "@keystatic/core"
 import { mark } from "@keystatic/core/content-components"
 import { Highlighter } from "lucide-react"
-import eventTypes from "@/public/event-types.json"
+import eventTypes from "@/assets/event-types.json"
 
 const isProd = process.env.NODE_ENV === "production"
 
