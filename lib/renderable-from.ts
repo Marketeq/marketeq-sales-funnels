@@ -3,7 +3,9 @@ import Markdoc, { Node as MarkdocNode } from "@markdoc/markdoc"
 
 export function renderableFrom(options: { node: MarkdocNode }) {
   const { node } = options
-  const errors = Markdoc.validate(node)
+  const errors = Markdoc.validate(node, config)
+
+  console.log({ errors })
 
   if (errors.length) {
     console.log(errors)

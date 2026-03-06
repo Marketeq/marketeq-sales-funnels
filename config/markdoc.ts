@@ -7,4 +7,15 @@ export const config: Config = {
       render: "Image",
     },
   },
+  tags: {
+    Highlight: {
+      render: "Highlight",
+      attributes: {
+        variant: {
+          type: String,
+          required: true,
+        },
+      },
+    },
+  },
 }
