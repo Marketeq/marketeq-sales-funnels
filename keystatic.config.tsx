@@ -28,7 +28,7 @@ export default config({
       label: "Landing pages",
       path: "content/landings/*",
       slugField: "title",
-      previewUrl: "/preview/start?branch={branch}&to=/{slug}",
+      previewUrl: "/{slug}",
       schema: {
         title: fields.slug({ name: { label: "Title" } }),
         actionable: fields.text({ label: "CTA" }),
@@ -184,7 +184,7 @@ export default config({
       label: "'Thank You' pages",
       slugField: "highlight",
       path: "content/confirmations/*",
-      previewUrl: "/preview/start?branch={branch}&to=/thank-you/{slug}",
+      previewUrl: "/thank-you/{slug}",
       schema: {
         highlight: fields.slug({ name: { label: "Highlight" } }),
         title: fields.markdoc({
@@ -199,6 +199,19 @@ export default config({
             image: false,
             link: false,
             codeBlock: false,
+          },
+          components: {
+            Highlight: mark({
+              label: "Highlight",
+              schema: {
+                variant: fields.select({
+                  label: "Variant",
+                  options: [{ label: "Primary", value: "primary" }],
+                  defaultValue: "primary",
+                }),
+              },
+              icon: <Highlighter />,
+            }),
           },
         }),
         description: fields.markdoc({
