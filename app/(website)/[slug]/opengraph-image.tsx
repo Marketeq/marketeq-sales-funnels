@@ -125,11 +125,11 @@ export default async function Image({
                 borderWidth: 1,
                 borderStyle: "dashed",
                 borderColor: "#D0D5DD",
-                height: 120,
-                width: 120,
+                height: 240,
+                width: 240,
               }}
             >
-              <MarketeqLogo style={{ height: 44, width: 76.6 }} />
+              <MarketeqLogo style={{ height: 88, width: 153.2 }} />
             </div>
             <div
               style={{
@@ -154,13 +154,13 @@ export default async function Image({
           >
             <span
               style={{
-                fontSize: 34,
+                fontSize: 64,
                 lineHeight: 1.1275,
                 fontWeight: 700,
                 color: "#2459DB",
                 display: "block",
-                lineClamp: 4,
-                WebkitLineClamp: 4,
+                lineClamp: 3,
+                WebkitLineClamp: 3,
                 WebkitBoxOrient: "vertical",
                 overflow: "hidden",
                 textAlign: "center",
