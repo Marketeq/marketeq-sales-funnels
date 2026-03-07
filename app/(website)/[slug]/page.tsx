@@ -57,7 +57,9 @@ export default async function Landing({
       async (picture) => await reader.collections.images.readOrThrow(picture),
     ),
   )
-  const { eventType } = landing.booking
+  const {
+    booking: { eventType },
+  } = landing
   const calLinkDataAttr = `${process.env.CAL_USERNAME}/${eventType}`
 
   return (
