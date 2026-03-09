@@ -1,3 +1,4 @@
+title: Something is the title
 highlight: CEO and Founder
 videoId: 7654igdhr1
 metadata: {}
@@ -15,7 +16,7 @@ calDetails:
         streamline flows, and drive measurable growth.
 phases:
   - videoId: 7654igdhr1
-    title: "Phase 1: Deliverables"
+    title: 'Phase 1: Deliverables'
     subtitle: Tangible assets your team can use right away.
     list:
       - content: UX audit summary (with key findings)
