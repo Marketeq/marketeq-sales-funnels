@@ -24,7 +24,7 @@ export async function generateMetadata({
   const { slug } = await params
   const landing = await reader.collections.landings.readOrThrow(slug)
   return {
-    title: landing.metadata.title,
+    title: landing.title,
     description: landing.metadata.description,
   }
 }

@@ -57,7 +57,7 @@ export async function generateMetadata({
   const { slug } = await params
   const confirmation = await reader.collections.confirmations.readOrThrow(slug)
   return {
-    title: confirmation.metadata.title,
+    title: confirmation.title,
     description: confirmation.metadata.description,
   }
 }
@@ -123,7 +123,7 @@ export default async function ThankYou({
               </div>
 
               <div className="prose-base prose-h1:3xl:text-[54px] prose-h1:mb-0 3xl:mt-6 prose-h1:text-center prose-h1:text-[21px] prose-h1:leading-tight prose-h1:font-extrabold prose-h1:text-white mt-[30px] md:mt-10 lg:mt-[50px] lg:text-[42px]">
-                <DocumentRenderer document={await confirmation.title()} />
+                <DocumentRenderer document={await confirmation.headline()} />
               </div>
 
               <div className="3xl:max-w-[758px] 4xl:max-w-[818px] 5xl:max-w-[1038px] 3xl:mx-auto prose-base prose-p:3xl:text-lg prose-p:text-center prose-p:text-sm prose-p:leading-none prose-p:font-medium prose-p:text-white mt-3 md:mt-5 lg:mt-6">

@@ -27,7 +27,7 @@ function AccordionItem({
     <AccordionPrimitive.Item
       data-slot="accordion-item"
       className={cn(
-        "border-dark-blue-400 bg-dark-blue-500 data-[state=open]:bg-dark-blue-400 data-[state=open]:border-primary-500 data-[state=open]:ring-primary-500 rounded-[14px] border p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] data-[state=open]:ring-1 lg:p-7",
+        "border-dark-blue-400 bg-dark-blue-500 data-[state=open]:bg-dark-blue-400 data-[state=open]:border-primary-500 data-[state=open]:ring-primary-500 rounded-[14px] border shadow-[0px_1px_4px_0px_rgba(0,0,0,.03)] data-[state=open]:ring-1",
         className,
       )}
       {...props}
@@ -41,7 +41,7 @@ function AccordionTrigger({
   ...props
 }: React.ComponentProps<typeof AccordionPrimitive.Trigger>) {
   return (
-    <AccordionPrimitive.Header className="flex">
+    <AccordionPrimitive.Header className="flex p-5 lg:p-7">
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
@@ -66,7 +66,7 @@ function AccordionContent({
   return (
     <AccordionPrimitive.Content
       data-slot="accordion-content"
-      className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm leading-[1.6] text-white lg:text-lg"
+      className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden p-5 pt-0 text-sm leading-[1.6] text-white lg:p-7 lg:pt-0 lg:text-lg"
       {...props}
     >
       <div className={cn("pt-2 pb-0 lg:pt-5", className)}>{children}</div>

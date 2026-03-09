@@ -69,7 +69,6 @@ export default config({
         }),
         metadata: fields.object(
           {
-            title: fields.text({ label: "Title" }),
             description: fields.text({ label: "Description" }),
           },
           { label: "Metadata", description: "Metadata for the landing page" },
@@ -182,12 +181,13 @@ export default config({
     }),
     confirmations: collection({
       label: "'Thank You' pages",
-      slugField: "highlight",
+      slugField: "title",
       path: "content/confirmations/*",
       previewUrl: "/thank-you/{slug}",
       schema: {
-        highlight: fields.slug({ name: { label: "Highlight" } }),
-        title: fields.markdoc({
+        title: fields.slug({ name: { label: "Title" } }),
+        highlight: fields.text({ label: "Highlight" }),
+        headline: fields.markdoc({
           label: "Title",
           options: {
             divider: false,
@@ -248,7 +248,6 @@ export default config({
         }),
         metadata: fields.object(
           {
-            title: fields.text({ label: "Title" }),
             description: fields.text({ label: "Description" }),
           },
           { label: "Metadata", description: "Metadata for the landing page" },

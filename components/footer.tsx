@@ -2,6 +2,7 @@ import { reader } from "@/utils/reader"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { MarketeqWhite } from "./icons/marketeq-white"
+import { Copyrights } from "./copyrights"
 
 export const Footer = async ({ destination }: { destination: string }) => {
   const footer = await reader.singletons.footer.read()
@@ -17,7 +18,7 @@ export const Footer = async ({ destination }: { destination: string }) => {
           </Link>
 
           <span className="3xl:text-sm text-xs leading-none text-white">
-            {footer.copyright}
+            <Copyrights>{footer.copyright}</Copyrights>
           </span>
         </div>
 
