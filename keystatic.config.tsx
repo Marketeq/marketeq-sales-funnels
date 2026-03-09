@@ -188,7 +188,7 @@ export default config({
         title: fields.slug({ name: { label: "Title" } }),
         highlight: fields.text({ label: "Highlight" }),
         headline: fields.markdoc({
-          label: "Title",
+          label: "Headline",
           options: {
             divider: false,
             blockquote: false,
