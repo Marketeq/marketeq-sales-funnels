@@ -1,9 +1,10 @@
+title: Competitive UX Framework
 actionable: Book a Call
 highlight: Founders & Ceo’s
-title: Exceptional UI/UX Design with Pixel-Perfect Precision and Best Practices
 helptextPrefix: 👇
 helptext: Watch the video below and see exactly how this offer works.
 videoId: 7654igdhr1
+metadata: {}
 booking:
   helptextPrefix: 👇
   helptext: >-
@@ -12,6 +13,7 @@ booking:
   caption: >-
     For Fintech, eCommerce, Health-tech, Manufacturing, Retail, SAAS, EDU, GOV,
     Cloud Apps, Mobile Apps, Websites, Marketplaces, ect...
+  eventType: discovery-call
 faqs:
   tagline: Not convinced yet?
   title: Answers to your questions...
