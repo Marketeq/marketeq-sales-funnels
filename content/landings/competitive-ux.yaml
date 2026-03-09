@@ -1,12 +1,12 @@
 title: Competitive UX Framework
 actionable: Book a Call
 highlight: Founders & Ceo’s
-helptextPrefix: 👇
+helptextPrefix: Step 1
 helptext: Watch the video below and see exactly how this offer works.
 videoId: 7654igdhr1
 metadata: {}
 booking:
-  helptextPrefix: 👇
+  helptextPrefix: Step 2
   helptext: >-
     Book a strategy call with us so that we can go through the current state of
     your digital product and put together a plan to fix it.
