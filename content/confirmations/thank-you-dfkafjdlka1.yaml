@@ -1,0 +1,42 @@
+title: thank you dfkafjdlka1
+highlight: CEO and Founder
+videoId: 7654igdhr1
+metadata: {}
+explorables:
+  - indicator: mail-05
+brief:
+  videoId: 7654igdhr1
+calDetails:
+  title: How the call works...
+  explorables:
+    - indicator: calendar-check-01
+      title: Higher conversion & activation
+      subtitle: >-
+        Every design decision is tested and refined to boost engagement,
+        streamline flows, and drive measurable growth.
+phases:
+  - videoId: 7654igdhr1
+    title: 'Phase 1: Deliverables'
+    subtitle: Tangible assets your team can use right away.
+    list:
+      - content: UX audit summary (with key findings)
+      - content: Market growth strategy baked into every screen
+      - content: Dev-ready handoff (Figma Inspect, redlines)
+faqs:
+  title: Answers to your questions...
+  description: >-
+    Data-backed UX/UI design built on user testing, market research, and
+    real-world product strategy.
+  items:
+    - question: What exactly do we get each month?
+testimonials:
+  title: See for yourself, our clients love us!
+  pictures:
+    - eighth-testimonial
+    - fifth-testimonial
+    - first-testimonial
+    - fourth-testimonial
+    - second-testimonial
+    - seventh-testimonial
+    - sixth-testmonial
+    - third-testimonial
